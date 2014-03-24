@@ -7,6 +7,7 @@
   <style>
 
     .wrapper {
+      position: relative;
       text-align: center;
       width: 1170px;
     }
@@ -25,11 +26,13 @@
     }
 
     img#techparty {
-      float: left;
+      position: absolute;
+      right: 30px;
     }
 
     img#faccat {
-      float: right;
+      left: 30px;
+      position: absolute;      
     }
 
     #people {
@@ -51,9 +54,13 @@
       border-top: 1px solid #000000;
       display: block;
       left: 50%;
-      margin-left: -150px;
+      margin-left: -225px;
       position: absolute;
-      width: 300px;
+      width: 450px;
+    }
+
+    .responsible p {
+      margin: 0;
     }
 
     @media print {
@@ -75,7 +82,7 @@
   <div class="wrapper">
 
     <img id="techparty" src="../assets/img/tech-party.png" alt="TechParty">
-    <img id="faccat" src="../assets/img/faccat.png" alt="Faccat">
+    <img id="faccat" src="../assets/img/faccat-white.png" alt="Faccat">
 
     <section class="data">
       <h1>Certificado de participação</h1>
@@ -92,8 +99,11 @@
     </section>
 
     <section class="responsible">
+      <img id="assinatura" src="../assets/img/assinatura.png" alt="assinatura">
       <span>
-        Marcelo Azambuja
+        <p>Prof. Dr. Marcelo Azambuja.</p>
+        <p>Coordenador do Curso de Bacharelado em Sistemas de Informação</p>
+        <p>Coordenador do Curso de Tecnólogo em Sistemas para Internet</p>
       </span>
     </section>
 
