@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Certificado TechParty 2014.1</title>
+
+  <style>
+
+    .wrapper {
+      text-align: center;
+      width: 1170px;
+    }
+
+    h1 {
+      font-size: 50px;
+    }
+
+    h4 {
+      font-size: 20px;
+    }
+
+    section {
+      margin-top: 60px;
+      position: relative;
+    }
+
+    img#techparty {
+      float: left;
+    }
+
+    img#faccat {
+      float: right;
+    }
+
+    #people {
+      border-bottom: 1px solid #000000;
+      bottom: -40px;
+      display: block;
+      font-size: 20px;
+      left: 50%;
+      margin-left: -350px;
+      position: absolute;
+      width: 700px;
+    }
+
+    .responsible {
+      margin-top: 120px;
+    }
+
+    .responsible span {
+      border-top: 1px solid #000000;
+      display: block;
+      left: 50%;
+      margin-left: -150px;
+      position: absolute;
+      width: 300px;
+    }
+
+    @media print {
+      @page {
+        size: landscape;
+      }
+
+      #name {
+        display: none;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  
+  <label id="name">Seu Nome: <input type="text" name="people"> <button>OK</button> </label>
+
+  <div class="wrapper">
+
+    <img id="techparty" src="../assets/img/tech-party.png" alt="TechParty">
+    <img id="faccat" src="../assets/img/faccat.png" alt="Faccat">
+
+    <section class="data">
+      <h1>Certificado de participação</h1>
+      <h4>Este certificado está sendo conferido a</h4>
+
+      <span id="people"></span>
+    </section>
+
+    <section class="description">
+      <h4>
+        <span>Certificamos a sua participação na TechParty, realizado nos dias 31 de Março de 2014 a 04 de Abril de 2014,</span><br>
+        <span>na cidade de Taquara/RS, com carga horária de <span id="time"></span></span>
+      </h4>
+    </section>
+
+    <section class="responsible">
+      <span>
+        Marcelo Azambuja
+      </span>
+    </section>
+
+  </div>
+
+  <script>
+    ;(function (window, document, undefined) {
+
+      'use strict';
+
+      document.querySelector('button').addEventListener('click', function () {
+        document.getElementById('people').innerHTML = document.querySelector('input[name="people"]').value;
+        document.getElementById('time').innerHTML = '0 horas';
+        window.print();
+      });
+
+    })(window, document);
+  </script>
+</body>
+</html>
