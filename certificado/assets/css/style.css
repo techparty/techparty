@@ -1,0 +1,91 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body,
+ul,
+h1, h2, h3,
+p {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+body {
+  background: #dfdfdf;
+  font-family: tahoma;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.content {
+  width: 1000px;
+  outline: 1px solid;
+  margin: 0 auto;
+}
+
+
+.proj-title {
+  width: 100%;
+  float: left;
+  margin-top: 50px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-description {
+  margin-top: 50px;
+  float: left;
+  width: 100%;
+}
+
+#username-input {
+  width: 70%;
+  margin: 50px 15% 0;
+  height: 50px;
+  font-size: 30px;
+  padding: 0 10px;
+  text-transform: uppercase;
+}
+
+#resp {
+  width: 100%;
+  float: left;
+  margin-top: 30px;
+}
+
+.resp-list-item {
+  margin-bottom: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

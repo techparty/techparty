@@ -2,125 +2,48 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Certificado TechParty 2014.1</title>
+  <title>Certificados - TechParty</title>
 
-  <style>
-
-    .wrapper {
-      position: relative;
-      text-align: center;
-      width: 1170px;
-    }
-
-    h1 {
-      font-size: 50px;
-    }
-
-    h4 {
-      font-size: 20px;
-    }
-
-    section {
-      margin-top: 60px;
-      position: relative;
-    }
-
-    img#techparty {
-      position: absolute;
-      right: 30px;
-    }
-
-    img#faccat {
-      left: 30px;
-      position: absolute;      
-    }
-
-    #people {
-      border-bottom: 1px solid #000000;
-      bottom: -40px;
-      display: block;
-      font-size: 20px;
-      left: 50%;
-      margin-left: -350px;
-      position: absolute;
-      width: 700px;
-    }
-
-    .responsible {
-      margin-top: 120px;
-    }
-
-    .responsible span {
-      border-top: 1px solid #000000;
-      display: block;
-      left: 50%;
-      margin-left: -225px;
-      position: absolute;
-      width: 450px;
-    }
-
-    .responsible p {
-      margin: 0;
-    }
-
-    @media print {
-      @page {
-        size: landscape;
-      }
-
-      #name {
-        display: none;
-      }
-    }
-
-  </style>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  
-  <label id="name">Seu Nome: <input type="text" name="people"> <button>OK</button> </label>
+	
+  <div class="content">
+    <header>
+      <h1 class="section-title proj-title text-center">Certificados - TechParty</h1>  
 
-  <div class="wrapper">
+      <p class="text-center section-description">
+        Participou da TechParty(<a href="http://techparty.faccat.br">techparty.faccat.br</a>) e precisa do certificado? <br> 
+        Você pode usar o campo abaixo para pesquisar seu nome!
+      </p>
+    </header>
 
-    <img id="techparty" src="../assets/img/tech-party.png" alt="TechParty">
-    <img id="faccat" src="../assets/img/faccat-white.png" alt="Faccat">
+    <main class="main">
+      <input type="text" name="username" id="username-input" placeholder="Nome">
 
-    <section class="data">
-      <h1>Certificado de participação</h1>
-      <h4>Este certificado está sendo conferido a</h4>
-
-      <span id="people"></span>
-    </section>
-
-    <section class="description">
-      <h4>
-        <span>Certificamos a sua participação na TechParty, realizado nos dias 31 de Março de 2014 a 04 de Abril de 2014,</span><br>
-        <span>na cidade de Taquara/RS, com carga horária de <span id="time"></span></span>
-      </h4>
-    </section>
-
-    <section class="responsible">
-      <img id="assinatura" src="../assets/img/assinatura.png" alt="assinatura">
-      <span>
-        <p>Prof. Dr. Marcelo Azambuja.</p>
-        <p>Coordenador do Curso de Bacharelado em Sistemas de Informação</p>
-        <p>Coordenador do Curso de Tecnólogo em Sistemas para Internet</p>
-      </span>
-    </section>
-
+      <section id="resp">
+        <ul>
+          <li class="resp-list-item">
+            <input type="checkbox" id="user-1" data->
+            <label for="user-1">Fernando de Siqueira Porazzi</label>
+          </li>
+          <li class="resp-list-item">
+            <input type="checkbox" id="user-2">
+            <label for="user-2">Lorem ipsum.</label>
+          </li>
+          <li class="resp-list-item">
+            <input type="checkbox" id="user-3">
+            <label for="user-3">Lorem ipsum dolor sit amet.</label>
+          </li>
+          <li class="resp-list-item">
+            <input type="checkbox" id="user-4">
+            <label for="user-4">Lorem ipsum dolor.</label>
+          </li>
+        </ul>
+      </section>
+    </main>
   </div>
 
-  <script>
-    ;(function (window, document, undefined) {
-
-      'use strict';
-
-      document.querySelector('button').addEventListener('click', function () {
-        document.getElementById('people').innerHTML = document.querySelector('input[name="people"]').value;
-        document.getElementById('time').innerHTML = '0 horas';
-        window.print();
-      });
-
-    })(window, document);
-  </script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
