@@ -21,7 +21,7 @@
 
       <p class="text-center section-description">
         Participou da TechParty(<a href="http://techparty.faccat.br">techparty.faccat.br</a>) e precisa do certificado? <br> 
-        Você pode usar o campo abaixo para pesquisar seu nome!
+        Você pode usar o campo abaixo para pesquisar seu nome e imprimir o certificado.
       </p>
     </header>
 
