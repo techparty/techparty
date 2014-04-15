@@ -69,6 +69,9 @@
       assinatura.onload = function () {
         ctx.drawImage(assinatura, (canvas.width / 2) - 64, canvas.height - 120 );
       }
+
+      ctx.font = "bold 50px sans-serif";
+      ctx.fillText("Certificado de participação", 250, 163);
     }
 
     function _print (button) {
