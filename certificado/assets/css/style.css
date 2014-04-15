@@ -65,3 +65,8 @@ ul {
 .resp-list-item {
   margin-bottom: 8px;
 }
+
+.bold {
+  font-weight: bold;
+  text-transform: lowercase;
+}
