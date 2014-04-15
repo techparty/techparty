@@ -97,3 +97,19 @@ a:hover {
 .actions {
   width: 100%;
 }
+
+.actions-bt {
+  padding: 5px 15px;
+  float: left;
+  background: #2F6CEF;
+  color: #fff;
+  font: 15px tahoma;
+  border: 0;
+
+  cursor: pointer;
+  margin: 5px 10px 0 10px;
+}
+
+.actions-bt:hover {
+  text-decoration: none;
+}

@@ -60,9 +60,13 @@
           assinatura = new Image(),
           x = canvas.width / 2;
 
-      logoFaccat.src = 'https://raw.githubusercontent.com/techparty/techparty/master/assets/img/faccat-white.png';
+      /*logoFaccat.src = 'https://raw.githubusercontent.com/techparty/techparty/master/assets/img/faccat-white.png';
       logo.src = 'https://raw.githubusercontent.com/techparty/techparty/master/assets/img/tech-party.png';
-      assinatura.src = 'https://raw.githubusercontent.com/techparty/techparty/master/assets/img/assinatura.png';
+      assinatura.src = 'https://raw.githubusercontent.com/techparty/techparty/master/assets/img/assinatura.png';*/
+
+      logoFaccat.src = 'assets/img/faccat-white.png';
+      logo.src = 'assets/img/tech-party.png';
+      assinatura.src = 'assets/img/assinatura.png';
 
       logoFaccat.onload = function () {
 
@@ -128,8 +132,8 @@
     }
 
     function _print (button) {
-      
-      button.classList.add('hidden');
+
+      d.querySelector('#actions').classList.add('hidden');
 
       setTimeout(function(){
         w.print();
@@ -137,10 +141,20 @@
 
     }
 
+    function _download (el) {
+      var canvas = d.querySelector('#c'),
+          dt = canvas.toDataURL('image/png');
+
+      el.href = dt.replace(/^data:image\/[^;]/, 'data:application/octet-stream');
+
+      return false;
+    }
+
     return {
       init: _init,
       bindCheckbox: _checkboxChange,
-      print: _print
+      print: _print,
+      download: _download
     };
 
   })();
