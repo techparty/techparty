@@ -59,11 +59,7 @@
           logo = new Image(),
           assinatura = new Image(),
           x = canvas.width / 2;
-
-      /*logoFaccat.src = 'https://raw.githubusercontent.com/techparty/techparty/master/assets/img/faccat-white.png';
-      logo.src = 'https://raw.githubusercontent.com/techparty/techparty/master/assets/img/tech-party.png';
-      assinatura.src = 'https://raw.githubusercontent.com/techparty/techparty/master/assets/img/assinatura.png';*/
-
+          
       logoFaccat.src = 'assets/img/faccat-white.png';
       logo.src = 'assets/img/tech-party.png';
       assinatura.src = 'assets/img/assinatura.png';
