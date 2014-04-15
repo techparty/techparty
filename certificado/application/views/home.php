@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="en">
 <head>
+	
+  <base href="<?php echo base_url(); ?>">
+
   <meta charset="UTF-8">
   <title>Certificados - TechParty</title>
 

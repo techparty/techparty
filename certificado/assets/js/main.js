@@ -6,15 +6,18 @@
     function _doSearch (val) {
       var xhr = new XMLHttpRequest();
 
-      xhr.open('POST', './search', true);
+      xhr.open('POST', './index.php/search', true);
 
-      xhr.onreadystatechange = function () {
+      xhr.onload = function () {
         if (xhr.status === 200) {
           console.log(xhr.responseText);
+        } else if (xhr.status === 404) {
+          console.log('Página não encontrada =(');
         }
       };
 
-      xhr.send(val);
+      xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+      xhr.send('username=' + val);
     }
 
     function _init() {
