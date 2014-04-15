@@ -15,7 +15,7 @@ p {
 }
 
 body {
-  background: #efefef;
+  background: #fff;
   font-family: tahoma;
 }
 
@@ -59,7 +59,6 @@ ul {
   width: 100%;
   float: left;
   margin-top: 30px;
-  text-transform: uppercase;
 }
 
 .resp-list-item {
@@ -68,5 +67,20 @@ ul {
 
 .bold {
   font-weight: bold;
-  text-transform: lowercase;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.actions {
+  width: 100%;
+}
+
+#c {
+  border: 1px solid;
 }

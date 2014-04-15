@@ -11,7 +11,7 @@
 </head>
 <body>
 	
-  <div class="content">
+  <div class="content" id="content">
     <header>
       <h1 class="section-title proj-title text-center">Certificados - TechParty</h1>  
 
@@ -26,6 +26,14 @@
 
       <section id="resp"></section>
     </main>
+  </div>
+
+  <div class="print-area hidden" id="print-area">
+    <div class="actions">
+      <button id="print-button" onclick="Search.print(this);">Imprimir</button>
+    </div>
+
+    <canvas id="c" width="1170" height="690"></canvas>
   </div>
 
   <script src="assets/js/main.js"></script>

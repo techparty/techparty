@@ -8,7 +8,7 @@ class Users extends CI_Model {
 
   public function getNames ($val) {
 
-    $this->db->select("name, id, count(name) as times");
+    $this->db->select('name, id, count(name) as times');
     $this->db->like('name', $val); // like na coluna `name`
     $this->db->group_by('name');
 
