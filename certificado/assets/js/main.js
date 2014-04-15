@@ -55,23 +55,76 @@
 
       var canvas = d.querySelector('#c'),
           ctx = canvas.getContext('2d'),
+          logoFaccat = new Image(),
           logo = new Image(),
-          assinatura = new Image();
+          assinatura = new Image(),
+          x = canvas.width / 2;
 
+      logoFaccat.src = 'https://raw.githubusercontent.com/techparty/techparty/master/assets/img/faccat-white.png';
       logo.src = 'https://raw.githubusercontent.com/techparty/techparty/master/assets/img/tech-party.png';
       assinatura.src = 'https://raw.githubusercontent.com/techparty/techparty/master/assets/img/assinatura.png';
 
-      logo.onload = function () {
-        ctx.drawImage(logo, 20, 10);
-      };
+      logoFaccat.onload = function () {
 
-      
-      assinatura.onload = function () {
-        ctx.drawImage(assinatura, (canvas.width / 2) - 64, canvas.height - 120 );
+        ctx.drawImage(logoFaccat, 40, 25);        
+
       }
 
-      ctx.font = "bold 50px sans-serif";
-      ctx.fillText("Certificado de participação", 250, 163);
+      logo.onload = function () {
+
+        ctx.drawImage(logo, canvas.width - 180, 10);
+
+      };
+
+      assinatura.onload = function () {
+
+        ctx.drawImage(assinatura, (canvas.width / 2) - 64, canvas.height - 205 );
+
+      }
+
+      ctx.font = 'bold 50px sans-serif';
+      ctx.textAlign = 'center';
+      ctx.fillText('Certificado de participação', x, 163);
+
+      ctx.font = 'bold 20px sans-serif';
+      ctx.textAlign = 'center';
+      ctx.fillText('Este certificado está sendo conferido a', x, 223);
+
+      // username
+
+      ctx.font = 'bold 40px sans-serif';
+      ctx.textAlign = 'center';
+      ctx.fillText(name, x, 290);
+
+      // username underline
+      ctx.beginPath();
+      ctx.moveTo(200, 300);
+      ctx.lineTo(970, 300);
+      ctx.stroke();
+
+      // assinatura underline
+      ctx.beginPath();
+      ctx.moveTo(710, canvas.height - 125);
+      ctx.lineTo(450, canvas.height - 125);
+      ctx.lineWidth = 1;
+      ctx.stroke();
+
+      ctx.font = 'bold 20px sans-serif';
+      ctx.textAlign = 'center';
+      ctx.fillText('Certificamos sua participação na TechParty Faccat, realizada entre', x, 383);
+      ctx.fillText('31 de Março de 2014 e 04 de Abril de 2014, na cidade de Taquara/RS, com carga horária de ' + (days * 3) + ' horas.', x, 410);
+
+      ctx.font = '18px sans-serif';
+      ctx.textAlign = 'center';
+      ctx.fillText('Prof. Dr. Marcelo Azambuja', x, canvas.height - 100);
+
+      ctx.font = '18px sans-serif';
+      ctx.textAlign = 'center';
+      ctx.fillText('Coordenador do Curso de Bacharelado em Sistemas de Informação', x, canvas.height - 70);
+      
+      ctx.font = '18px sans-serif';
+      ctx.textAlign = 'center';
+      ctx.fillText('Coordenador do Curso de Tecnólogo em Sistemas para Internet', x, canvas.height - 45);
     }
 
     function _print (button) {

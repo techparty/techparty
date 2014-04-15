@@ -12,7 +12,19 @@ Um fork é a forma como o GitHub (não o git) faz para que alguém possa copiar 
 
 Mais informações: [https://help.github.com/articles/fork-a-repo](https://help.github.com/articles/fork-a-repo)
 
-## Instruções
+### Tenho um fork do projeto. E agora?
+
+Depois de ter um fork do projeto e ter o projeto clonado em sua máquina, é hora de trocar o branch. Um branch serve para separarmos as modificações que desejamos fazer do branch master do projeto, que teoricamente é o que está em produção. Nós, já temos um branch criado (development) para desenvolvimento. Para isto, basta executar o seguinte comando (no diretório do projeto):
+
+    $ git checkout development
+    
+Caso queira criar seu próprio branch, execute:
+
+    $ git checkout -b seu-branch
+    
+Depois de trocado o branch, você pode fazer as alterações que você quiser no projeto, fazer os commits e então fazer push. Após fazer push, poderá entrar na sua página do projeto no GitHub e fazer um pull request ao projeto.
+
+## Intruções
 
 Crie um arquivo `.htaccess` e coloque o nome de sua pasta nas linhas 3 e 34 conforme o `.htaccess-sample`
 

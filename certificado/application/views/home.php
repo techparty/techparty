@@ -8,6 +8,10 @@
   <title>Certificados - TechParty</title>
 
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <style type="text/css" media="print">
+    @page { size: landscape; }
+  </style>
 </head>
 <body>
 	
