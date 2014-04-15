@@ -1,3 +1,8 @@
-<?php // essa view mostra o retorno do banco de dados e será inserida na interface com innerHTML ?>
-
-<?php echo $username; ?>
+<ul>
+  <?php foreach ($names as $n): ?>
+    <li class="resp-list-item">
+      <input type="checkbox" id="user-3" data-days="5">
+      <label for="user-3"><?php echo $n->name; ?></label>
+    </li>
+  <?php endforeach; ?>
+</ul>

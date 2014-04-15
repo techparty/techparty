@@ -24,26 +24,7 @@
     <main class="main">
       <input type="text" name="username" id="username-input" placeholder="Nome">
 
-      <section id="resp">
-        <ul>
-          <li class="resp-list-item">
-            <input type="checkbox" id="user-1" data-days="2">
-            <label for="user-1">Fernando de Siqueira Porazzi</label>
-          </li>
-          <li class="resp-list-item">
-            <input type="checkbox" id="user-2" data-days="1">
-            <label for="user-2">Lorem ipsum.</label>
-          </li>
-          <li class="resp-list-item">
-            <input type="checkbox" id="user-3" data-days="5">
-            <label for="user-3">Lorem ipsum dolor sit amet.</label>
-          </li>
-          <li class="resp-list-item">
-            <input type="checkbox" id="user-4" data-days="3">
-            <label for="user-4">Lorem ipsum dolor.</label>
-          </li>
-        </ul>
-      </section>
+      <section id="resp"></section>
     </main>
   </div>
 

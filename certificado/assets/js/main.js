@@ -10,7 +10,8 @@
 
       xhr.onload = function () {
         if (xhr.status === 200) {
-          console.log(xhr.responseText);
+          // console.log(xhr.responseText);
+          d.querySelector('#resp').innerHTML = xhr.responseText;
         } else if (xhr.status === 404) {
           console.log('Página não encontrada =(');
         }
