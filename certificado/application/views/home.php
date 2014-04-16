@@ -35,7 +35,7 @@
   <div class="print-area hidden" id="print-area">
     <div class="actions" id="actions">
       <button id="print-button" onclick="Search.print(this);" class="actions-bt">Imprimir</button>
-      <a href="" id="download" download="certificado-techparty.png" onclick="Search.download(this);" class="actions-bt">Download</a>
+      <a href="" id="download" download="certificado-techparty.png" onclick="Search.download(this);" class="actions-bt">Download PNG</a>
     </div>
 
     <canvas id="c" width="1170" height="690"></canvas>
