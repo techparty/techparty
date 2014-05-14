@@ -19,14 +19,16 @@
     $speakers = array(
       array('id' => 1, 'name' => 'Fernando de Siqueira Porazzi', 'subject' => 'CSS Media Queries', 'date' => '31/03/2014'),
       array('id' => 2, 'name' => 'Cícero Raupp Rolim', 'subject' => 'Do cabrito ao bode', 'date' => '31/03/2014'),
-      array('id' => 3, 'name' => 'Lauro Becker', 'subject' => 'Versatilidade, negócios e nerdices', 'date' => '01/04/2014'),
-      array('id' => 4, 'name' => 'Mauricio Baum Jr.', 'subject' => 'Overview AngularJS + Ruby on Rails', 'date' => '01/04/2014'),
-      array('id' => 5, 'name' => 'Juliano Selli', 'subject' => 'O que é experiência do usuário?', 'date' => '02/04/2014'),
-      array('id' => 6, 'name' => 'Leonardo Dalmina', 'subject' => 'Criando Jogos 2D com Lua + Corona SDK', 'date' => '02/04/2014'),
-      array('id' => 7, 'name' => 'Rafael Kellermann Streit', 'subject' => 'Como começar a desenvolver para iOS', 'date' => '03/04/2014'),
-      array('id' => 8, 'name' => 'Rodrigo Krummenauer', 'subject' => 'The MEAN Stack: MongoDB, ExpressJS, AngularJS and Node.js', 'date' => '03/04/2014'),
-      array('id' => 9, 'name' => 'Giovani Facchini', 'subject' => 'Performance Engineering in a Nutshell', 'date' => '04/04/2014'),
-      array('id' => 10, 'name' => 'Maiko Gabriel Kinzel Engelke', 'subject' => 'Web e a criação de Jogos', 'date' => '04/04/2014'),
+      array('id' => 3, 'name' => 'Paulo Bridi', 'subject' => 'Do cabrito ao bode', 'date' => '31/03/2014'),
+      array('id' => 4, 'name' => 'Santiago Andreuzza', 'subject' => 'Do cabrito ao bode', 'date' => '31/03/2014'),
+      array('id' => 5, 'name' => 'Lauro Becker', 'subject' => 'Versatilidade, negócios e nerdices', 'date' => '01/04/2014'),
+      array('id' => 6, 'name' => 'Mauricio Baum Jr.', 'subject' => 'Overview AngularJS + Ruby on Rails', 'date' => '01/04/2014'),
+      array('id' => 7, 'name' => 'Juliano Selli', 'subject' => 'O que é experiência do usuário?', 'date' => '02/04/2014'),
+      array('id' => 8, 'name' => 'Leonardo Dalmina', 'subject' => 'Criando Jogos 2D com Lua + Corona SDK', 'date' => '02/04/2014'),
+      array('id' => 9, 'name' => 'Rafael Kellermann Streit', 'subject' => 'Como começar a desenvolver para iOS', 'date' => '03/04/2014'),
+      array('id' => 10, 'name' => 'Rodrigo Krummenauer', 'subject' => 'The MEAN Stack: MongoDB, ExpressJS, AngularJS and Node.js', 'date' => '03/04/2014'),
+      array('id' => 11, 'name' => 'Giovani Facchini', 'subject' => 'Performance Engineering in a Nutshell', 'date' => '04/04/2014'),
+      array('id' => 12, 'name' => 'Maiko Gabriel Kinzel Engelke', 'subject' => 'Web e a criação de Jogos', 'date' => '04/04/2014'),
     );
   ?>
 
