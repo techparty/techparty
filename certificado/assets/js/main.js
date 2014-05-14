@@ -31,27 +31,33 @@
 
       var input = d.querySelector('#username-input');
 
-      input.addEventListener('keyup', function(){
+      if (input) {
 
-        _doSearch(this.value);
+        input.addEventListener('keyup', function(){
 
-      }, false);
+          _doSearch(this.value);
+
+        }, false);
+      }
 
     }
 
     function _checkboxChange (el) {
       
       var dataName = el.getAttribute('data-name'),
-          dataDays = el.getAttribute('data-days');
+          dataDays = el.getAttribute('data-days'),
+          dataIsSpeaker = el.getAttribute('data-is-speaker'),
+          dataSubject = el.getAttribute('data-subject'),
+          dataDate = el.getAttribute('data-date');
 
       d.querySelector('#content').classList.add('hidden');
       d.querySelector('#print-area').classList.toggle('hidden');
 
-      _drawCanvas(dataName, dataDays);
+      _drawCanvas(dataName, dataDays, dataIsSpeaker, dataSubject, dataDate);
 
     }
 
-    function _drawCanvas(name, days) {
+    function _drawCanvas(name, days, isSpeaker, subject, date) {
 
       var canvas = d.querySelector('#c'),
           ctx = canvas.getContext('2d'),
@@ -111,8 +117,15 @@
 
       ctx.font = 'bold 20px sans-serif';
       ctx.textAlign = 'center';
-      ctx.fillText('Certificamos sua participação na TechParty Faccat, realizada entre', x, 383);
-      ctx.fillText('31 de Março de 2014 e 04 de Abril de 2014, na cidade de Taquara/RS, com carga horária de ' + (days * 3) + ' horas.', x, 410);
+
+      if (!isSpeaker) {
+        ctx.fillText('Certificamos sua participação na TechParty Faccat, realizada entre', x, 383);
+        ctx.fillText('31 de Março de 2014 e 04 de Abril de 2014, na cidade de Taquara/RS, com carga horária de ' + (days * 3) + ' horas.', x, 410);
+      } else {
+        ctx.fillText('Conferimos a ' + name + ' o presente ceritificado por haver ministrado a ', x, 383);
+        ctx.fillText('palestra "' + subject + '" durante a TechParty 2014', x, 410);
+        ctx.fillText('promovida pela Faculdades Integradas de Taquara no dia ' + date + ', com duração de 1 hora.', x, 437);
+      }
 
       ctx.font = '18px sans-serif';
       ctx.textAlign = 'center';
