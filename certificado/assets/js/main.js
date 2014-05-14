@@ -122,7 +122,7 @@
         ctx.fillText('Certificamos sua participação na TechParty Faccat, realizada entre', x, 383);
         ctx.fillText('31 de Março de 2014 e 04 de Abril de 2014, na cidade de Taquara/RS, com carga horária de ' + (days * 3) + ' horas.', x, 410);
       } else {
-        ctx.fillText('Conferimos a ' + name + ' o presente ceritificado por haver ministrado a ', x, 383);
+        ctx.fillText('Conferimos a ' + name + ' o presente certificado por haver ministrado a ', x, 383);
         ctx.fillText('palestra "' + subject + '" durante a TechParty 2014', x, 410);
         ctx.fillText('promovida pela Faculdades Integradas de Taquara no dia ' + date + ', com duração de 1 hora.', x, 437);
       }
