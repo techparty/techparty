@@ -12,5 +12,5 @@ npm install
 gulp dist
 ```
 
-#### Pré-requisitos
+#### Requisitos
 [Node.js](http://nodejs.org)
