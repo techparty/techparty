@@ -217,4 +217,27 @@ a:hover {
   background-color: #003A77;
 }
 
+@media (max-width: 530px) {
+  .header h1 {
+    font-size: 100px;
+  }
+}
+
+@media (max-width: 475px) {
+  .header h1 {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 375px) {
+  .header h1 {
+    font-size: 60px;
+    margin-top: 35px;
+  }
+  
+  .sponsor h1 {
+    font-size: 35px;
+  }
+}
+
 
