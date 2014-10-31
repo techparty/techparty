@@ -1,0 +1,220 @@
+/* -- custom css for Bootstrap 3.x --*/
+
+/* move special fonts to HTML head for better performance */
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:200,300,400,600');
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+/* fix bs3 horizontal scrollbar bug */
+.row { margin: 0; padding: 0 }
+
+h1 {
+  font-size:45px;
+}
+
+img.grayscale {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}
+
+.icon-bar {
+   background-color:#fff;
+}
+
+.scroll-down a, .scroll-top a {
+   color:#ffffff;
+}
+
+.scroll-down {
+   position:fixed;
+   bottom:20%;
+   right:0%;
+   color:#f9f9f9;
+}
+
+.scroll-top {
+  background-color:#E46F73;
+}
+
+.header .btn-lg {
+   font-size:28px;
+   border-color:#eeeeee;
+   padding:15px;
+   background-color:transparent;
+   color:#ffffff;
+}
+
+.header .btn-lg:hover {
+   background-color:#eeeeee;
+   color:#777777;
+}
+
+.navbar a {
+  color:#fff;
+}
+
+.navbar-bold {
+  background-color:#D0080F;
+  font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.navbar-bold li a:hover, .navbar-bold li.active {
+  background-color: #F75C61;
+}
+
+.vert {
+  vertical-align: middle;
+  width:100%;
+  padding-top:4%;
+}
+
+.header h1 {
+  font-size:110px;
+  -webkit-text-stroke: 1px rgba(0,0,0,0.1);
+  color:#D0080F;
+  margin-left:-5px;
+  margin-bottom:5px;
+  font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.header .lead,
+.header a {
+  color:#D0080F;
+  font-size:25px;
+}
+
+.header .description {
+  text-align: justify;
+  color: #4D4D4D;
+}
+
+.header {
+  min-height: 100%;
+  background: #FFFFFF url('http://www.bootply.com/assets/example/pt_squares_lg.png') repeat center center fixed;
+  text-align: center;
+}
+
+.blurb {
+  padding: 120px 0;
+  background-color:#fefefe;
+}
+
+.blurb .panel {
+  background-color:transparent;
+}
+
+.bright {
+  background: #7fbbda url('http://www.bootply.com/assets/example/bg_suburb.jpg') no-repeat center center fixed;
+  color:#fff;
+}
+
+.featurette {
+  background: #545455;
+  padding: 50px 0;
+  color: #ffffff;
+}
+
+.featurette-item {
+  margin-bottom: 15px;
+}
+
+.featurette-item > i {
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 56px;
+  width: 140px;
+  height: 140px;
+  line-height: 136px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.featurette-item > i:hover {
+  font-size: 68px;
+}
+
+.callout {
+  color: #ffffff;
+  height: 100%;
+  width: 100%;
+  background: url('http://www.bootply.com/assets/example/bg_suburb.jpg') no-repeat center center fixed;
+  background-color: #Cf080E;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+
+.gallery {
+  padding: 50px 0;
+}
+
+.call-to-action {
+  background: #eeeeee;
+  padding: 50px 0;
+}
+
+.call-to-action .btn {
+  margin: 10px;
+}
+
+footer {
+  padding: 100px 0;
+}
+
+/* -- end custom css for Bootstrap 3.x --*/
+
+a:hover {
+  text-decoration: none;
+}
+
+.header .icon {
+  margin-right: 1em;
+}
+
+/* LOCAL */
+
+#local p {
+  text-align: center;
+  padding-top: 1.5%;
+  font-size: 15px;
+}
+
+/* SPONSORS */
+
+.sponsor a {
+  color: #4D4D4D;
+}
+
+.sponsor-adamantium .panel {
+  min-height: 400px;
+}
+
+.sponsor-gold .panel {
+  min-height: 300px;
+}
+
+.sponsor-contact p {
+  display: inline;
+  margin-right: 1em;
+}
+
+/* SUPPORT */
+
+.support .panel {
+  height: 200px;
+}
+
+.support .support-faccat {
+  background-color: #003A77;
+}
+
+
