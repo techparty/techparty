@@ -74,7 +74,7 @@ gulp.task('dist', ['dist-assets', 'dist-certificado', 'dist-html'], function () 
   gulp.src(current + '/assets/img/**')
       .pipe(gulp.dest('dist/assets/img'));
 
-  gulp.src(current + '/assets/font/*')
+  gulp.src(current + '/assets/font/**')
       .pipe(gulp.dest('dist/assets/font'));
 
   gulp.src(current + '/*.html')
