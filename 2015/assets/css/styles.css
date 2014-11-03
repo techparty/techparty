@@ -199,7 +199,7 @@ a:hover {
 }
 
 .sponsor-gold .panel {
-  min-height: 300px;
+  min-height: 280px;
 }
 
 .sponsor-contact p {
@@ -234,10 +234,14 @@ a:hover {
     font-size: 60px;
     margin-top: 35px;
   }
-  
+
   .sponsor h1 {
     font-size: 35px;
   }
+}
+
+.navbar-fixed-top {
+  border-width: 0 0 2px !important;
 }
 
 
