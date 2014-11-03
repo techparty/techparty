@@ -2,9 +2,10 @@ var gulp = require('gulp');
 var del = require('del');
 var uglify = require('gulp-uglify');
 var minifyCSS = require('gulp-minify-css');
+var minifyHTML = require('gulp-minify-html');
 
-var current = 2014;
 var years = [2014, 2015];
+var current = 2015;
 
 function _each (array, cb) {
   if (array) {
@@ -58,6 +59,7 @@ gulp.task('dist-certificado', ['clean'], function () {
 gulp.task('dist-html', ['clean'], function () {
   _each(years, function (year) {
     gulp.src(year + '/*.html')
+      .pipe(minifyHTML())
       .pipe(gulp.dest('dist/' + year));
   });
 });
@@ -78,5 +80,6 @@ gulp.task('dist', ['dist-assets', 'dist-certificado', 'dist-html'], function () 
       .pipe(gulp.dest('dist/assets/font'));
 
   gulp.src(current + '/*.html')
+    .pipe(minifyHTML())
     .pipe(gulp.dest('dist/'));
 });
