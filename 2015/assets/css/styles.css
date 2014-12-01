@@ -221,6 +221,12 @@ a:hover {
   border-width: 0 0 2px !important;
 }
 
+/* ICONS */
+
+.list-inline li {
+  margin: 0 1em;
+}
+
 /* TWITTER */
 
 .twitter-list {
