@@ -217,6 +217,44 @@ a:hover {
   background-color: #003A77;
 }
 
+.navbar-fixed-top {
+  border-width: 0 0 2px !important;
+}
+
+/* TWITTER */
+
+.twitter-list {
+  margin-top: 40px;
+}
+
+.twitter-list h2 {
+  float: left;
+  margin-top: 150px;
+  font-size: 3em;
+}
+
+.twitter-list iframe {
+  float: right;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1200px) {
+  .twitter-list {
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .twitter-list h2 {
+    float: none;
+  }
+
+  .twitter-list iframe {
+    float: none;
+    margin-top: 50px
+  }
+}
+
 @media (max-width: 530px) {
   .header h1 {
     font-size: 100px;
@@ -238,10 +276,10 @@ a:hover {
   .sponsor h1 {
     font-size: 35px;
   }
-}
 
-.navbar-fixed-top {
-  border-width: 0 0 2px !important;
+  .twitter-list h2 {
+    font-size: 2em;
+  }
 }
 
 
