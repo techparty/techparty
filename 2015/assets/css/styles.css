@@ -180,6 +180,35 @@ a:hover {
   margin-right: 1em;
 }
 
+/* SPEAKERS */
+
+#speakers {
+  background-color: #D2D2D2;
+  color: #242424;
+}
+
+#speakers a {
+  color: #D0080F;
+  transition: color .25s;
+}
+
+#speakers a:hover {
+  color: #F75C61;
+  transition: color .25s;
+}
+
+#speakers img {
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+}
+
+#speakers p {
+  text-align: justify;
+  padding: 0 1em;
+}
+
 /* LOCAL */
 
 #local p {
@@ -190,21 +219,52 @@ a:hover {
 
 /* SPONSORS */
 
-.sponsor a {
+a.sponsor {
   color: #4D4D4D;
+  display: block;
+  transition: background .5s;
+}
+
+a:hover.sponsor {
+  transition: background .5s;
+}
+
+.sponsor img {
+  max-width: 100%;
+}
+
+.sponsor p {
+  text-align: justify;
 }
 
 .sponsor-adamantium .panel {
   min-height: 400px;
+  max-height: 400px;
 }
 
 .sponsor-gold .panel {
   min-height: 280px;
+  max-height: 280px;
+}
+
+.sponsor-silver .panel {
+  min-height: 200px;
+  max-height: 200px;
 }
 
 .sponsor-contact p {
   display: inline;
   margin-right: 1em;
+}
+
+/* sponsor */
+
+.sponsor.sanvitron {
+  background: #F2F0F0;
+}
+
+.sponsor.sanvitron:hover {
+  background: #DEDEDE;
 }
 
 /* SUPPORT */

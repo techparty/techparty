@@ -11,9 +11,4 @@ $(document).ready(function(){/* smooth scrolling for scroll to top */
 
   /* highlight the top nav as scrolling occurs */
   $('body').scrollspy({ target: '#navbar' });
-
-  $.get('https://twitter.com/hashtag/techpartyfaccat')
-    .fail(function () {
-      document.querySelector('.twitter-list').style.display = 'none';
-    });
 });
