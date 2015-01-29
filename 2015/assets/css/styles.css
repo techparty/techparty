@@ -134,6 +134,7 @@ img.grayscale {
   line-height: 136px;
   vertical-align: middle;
   text-align: center;
+  transition: 0.5s;
 }
 
 .featurette-item > i:hover {
