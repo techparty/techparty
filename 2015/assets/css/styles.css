@@ -198,7 +198,7 @@ a:hover {
   transition: color .25s;
 }
 
-#speakers img {
+#speakers img  {
   height: 140px;
   width: 140px;
   border-radius: 50%;
