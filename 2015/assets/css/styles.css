@@ -239,8 +239,8 @@ a:hover.sponsor {
 }
 
 .sponsor-adamantium .panel {
-  min-height: 400px;
-  max-height: 400px;
+  min-height: 470px;
+  max-height: 470px;
 }
 
 .sponsor-gold .panel {
@@ -266,6 +266,18 @@ a:hover.sponsor {
 
 .sponsor.sanvitron:hover {
   background: #DEDEDE;
+}
+
+.sponsor.zenvia {
+  background: #D5F0F9;
+}
+
+.sponsor.zenvia:hover {
+  background: #94D7ED;
+}
+
+.sponsor.zenvia img {
+  margin-bottom: 33px;
 }
 
 /* SUPPORT */
