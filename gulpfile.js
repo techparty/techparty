@@ -22,7 +22,7 @@ gulp.task('clean', function (cb) {
 gulp.task('dist-minify', ['clean'], function() {
   _each(years, function (year) {
     gulp.src(year + '/assets/css/*.css')
-      .pipe(minifyCSS({ keepBreaks:true }))
+      .pipe(minifyCSS({ advanced: true }))
       .pipe(gulp.dest('dist/' + year + '/assets/css'));
   });
 });
@@ -66,7 +66,7 @@ gulp.task('dist-html', ['clean'], function () {
 
 gulp.task('dist', ['dist-assets', 'dist-certificado', 'dist-html'], function () {
   gulp.src(current + '/assets/css/*.css')
-      .pipe(minifyCSS({ keepBreaks:true }))
+      .pipe(minifyCSS({ advanced: true }))
       .pipe(gulp.dest('dist/assets/css'));
 
   gulp.src(current + '/assets/js/*.js')
