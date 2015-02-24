@@ -280,6 +280,14 @@ a:hover.sponsor {
   margin-bottom: 33px;
 }
 
+.sponsor.cwi:hover {
+  background: #F2F0F0;
+}
+
+.sponsor.cwi img {
+  height: 260px;
+}
+
 /* SUPPORT */
 
 .support .panel {
