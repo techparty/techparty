@@ -290,6 +290,10 @@ a:hover.sponsor {
 
 /* SUPPORT */
 
+.support a {
+  display: block;
+}
+
 .support .panel {
   height: 200px;
 }
