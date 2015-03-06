@@ -210,6 +210,22 @@ a:hover {
   padding: 0 1em;
 }
 
+/* PROGRAMMIN */
+
+#programming img {
+  border-radius: 50%;
+  height: 40px;
+  margin-right: 15px;
+}
+
+#programming h5 {
+  font-weight: bold;
+}
+
+#programming p {
+  text-align: justify;
+}
+
 /* LOCAL */
 
 #local p {
