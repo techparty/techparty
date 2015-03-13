@@ -226,6 +226,22 @@ a:hover {
   text-align: justify;
 }
 
+#programming .monday {
+  min-height: 190px;
+}
+
+#programming .tuesday {
+  min-height: 270px;
+}
+
+#programming .thursday {
+  min-height: 380px;
+}
+
+#programming .wednesday {
+  min-height: 350px;
+}
+
 /* LOCAL */
 
 #local p {
@@ -255,8 +271,7 @@ a:hover.sponsor {
 }
 
 .sponsor-adamantium .panel {
-  min-height: 470px;
-  max-height: 470px;
+  min-height: 480px;
 }
 
 .sponsor-gold .panel {
