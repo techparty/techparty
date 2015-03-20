@@ -242,6 +242,10 @@ a:hover {
   min-height: 350px;
 }
 
+#programming .techparty {
+  background-color: #F75C61;
+}
+
 /* LOCAL */
 
 #local p {
