@@ -323,6 +323,18 @@ a:hover.sponsor {
   height: 260px;
 }
 
+.sponsor.loophost {
+  background: #88D5E8;
+}
+
+.sponsor.loophost:hover {
+  background: #DAF4FA;
+}
+
+.sponsor.loophost img {
+  margin: 91px 0;
+}
+
 /* SUPPORT */
 
 .support a {
