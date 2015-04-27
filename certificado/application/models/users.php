@@ -10,7 +10,7 @@ class Users extends CI_Model {
 
     $this->db->select('name, id, count(name) as times');
     $this->db->like('name', $val); // like na coluna `name`
-    $this->db->where('year = ', $year);
+    $this->db->where('year', $year);
     $this->db->group_by('name');
 
     $names = $this->db->get('names'); // escolhe a tabela `names`

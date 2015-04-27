@@ -8,11 +8,7 @@
 
       var xhr = new XMLHttpRequest();
 
-      var year = window.location.pathname.replace(/.*\//, '');
-
-      var url = './index.php/search/' + year;
-
-      xhr.open('POST', url, true);
+      xhr.open('POST', './index.php/search', true);
 
       xhr.onload = function () {
         if (xhr.status === 200) {
