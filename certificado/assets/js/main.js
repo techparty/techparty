@@ -1,5 +1,5 @@
 ;(function(w, d, undefined){
-  
+
   'use strict';
 
   var Search = (function(){
@@ -8,7 +8,11 @@
 
       var xhr = new XMLHttpRequest();
 
-      xhr.open('POST', './index.php/search', true);
+      var year = window.location.pathname.replace(/.*\//, '');
+
+      var url = './index.php/search/' + year;
+
+      xhr.open('POST', url, true);
 
       xhr.onload = function () {
         if (xhr.status === 200) {
@@ -43,7 +47,7 @@
     }
 
     function _checkboxChange (el) {
-      
+
       var dataName = el.getAttribute('data-name'),
           dataDays = el.getAttribute('data-days'),
           dataIsSpeaker = el.getAttribute('data-is-speaker'),
@@ -65,14 +69,14 @@
           logo = new Image(),
           assinatura = new Image(),
           x = canvas.width / 2;
-          
+
       logoFaccat.src = 'assets/img/faccat-white.png';
       logo.src = 'assets/img/tech-party.png';
       assinatura.src = 'assets/img/assinatura.png';
 
       logoFaccat.onload = function () {
 
-        ctx.drawImage(logoFaccat, 40, 25);        
+        ctx.drawImage(logoFaccat, 40, 25);
 
       }
 
@@ -118,13 +122,19 @@
       ctx.font = 'bold 20px sans-serif';
       ctx.textAlign = 'center';
 
+      var year = window.location.pathname.replace(/.*\//, '') || new Date().getFullYear();
+
       if (!isSpeaker) {
-        ctx.fillText('Certificamos sua participação na TechParty Faccat, realizada entre', x, 383);
-        ctx.fillText('31 de Março de 2014 e 04 de Abril de 2014, na cidade de Taquara/RS, com carga horária de ' + (days * 3) + ' horas.', x, 410);
+        switch (year) {
+          case 2015:
+            _drawCanvas2015(ctx, x, days, name, subject, year, date);
+            break;
+          case 2014:
+            _drawCanvas2014(ctx, x, days, name, subject, year, date);
+            break;
+        }
       } else {
-        ctx.fillText('Conferimos a ' + name + ' o presente certificado por haver ministrado a ', x, 383);
-        ctx.fillText('palestra "' + subject + '" durante a TechParty 2014', x, 410);
-        ctx.fillText('promovida pela Faculdades Integradas de Taquara no dia ' + date + ', com duração de 1 hora.', x, 437);
+        _drawCanvasSpeaker(ctx, x, name, subject, year, date);
       }
 
       ctx.font = '18px sans-serif';
@@ -134,10 +144,26 @@
       ctx.font = '18px sans-serif';
       ctx.textAlign = 'center';
       ctx.fillText('Coordenador do Curso de Bacharelado em Sistemas de Informação', x, canvas.height - 70);
-      
+
       ctx.font = '18px sans-serif';
       ctx.textAlign = 'center';
       ctx.fillText('Coordenador do Curso de Tecnólogo em Sistemas para Internet', x, canvas.height - 45);
+    }
+
+    function _drawCanvas2014 (ctx, x, days);
+      ctx.fillText('Certificamos sua participação na TechParty Faccat, realizada entre', x, 383);
+      ctx.fillText('31 de Março de 2014 e 04 de Abril de 2014, na cidade de Taquara/RS, com carga horária de ' + (days * 3) + ' horas.', x, 410);
+    }
+
+    function _drawCanvas2015 (ctx, x, days, name, subject, year, date);
+      ctx.fillText('Certificamos sua participação na TechParty Faccat, realizada entre', x, 383);
+      ctx.fillText('6 de Abril de 2015 e 10 de Abril de 2015, na cidade de Taquara/RS, com carga horária de ' + (days * 3) + ' horas.', x, 410);
+    }
+
+    function _drawCanvasSpeaker (ctx, x, name, subject, year, date) {
+      ctx.fillText('Conferimos a ' + name + ' o presente certificado por haver ministrado a ', x, 383);
+      ctx.fillText('palestra "' + subject + '" durante a TechParty ' + year, x, 410);
+      ctx.fillText('promovida pela Faculdades Integradas de Taquara no dia ' + date + ', com duração de 1 hora.', x, 437);
     }
 
     function _print (button) {
