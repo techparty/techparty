@@ -1,21 +1,20 @@
 /*! Author: github.com/fernandoporazzi */
 
-;(function(w, d, undefined) {
+'use strict';
 
-  'use strict';
+var App = React.createClass({
 
-  var App = React.createClass({
-    render: function () {
+  render: function () {
 
-      return(
-        <div>
-          <h1>TechParty</h1>
-        </div>
-      );
+    return (
+      <div>
+        <Header name="TechParty"/>
+        <Footer />
+      </div>
+    );
 
-    },
-  });
+  }
 
-  React.render(<App />, document.getElementById('content'));
+});
 
-})(window, document);
+React.render(<App />, document.getElementById('container'));
