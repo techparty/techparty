@@ -1,0 +1,115 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body,
+ul,
+h1, h2, h3,
+p {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+body {
+  background: #fff;
+  font-family: tahoma;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  width: 1000px;
+  margin: 0 auto;
+  color: #555;
+}
+
+
+.proj-title {
+  width: 100%;
+  float: left;
+  margin-top: 50px;
+  font-size: 40px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-description {
+  margin-top: 50px;
+  float: left;
+  width: 100%;
+}
+
+#username-input {
+  width: 70%;
+  margin: 50px 15% 0;
+  height: 50px;
+  font-size: 30px;
+  padding: 0 10px;
+  border-radius: 8px;
+  border: 1px solid #666;
+  color: #666;
+}
+
+#resp {
+  width: 100%;
+  float: left;
+  margin-top: 30px;
+}
+
+#resp ul {
+  margin-left: 150px;
+}
+
+.resp-list-item {
+  margin-bottom: 8px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.actions {
+  width: 100%;
+}
+
+.actions-bt {
+  padding: 5px 15px;
+  float: left;
+  background: #2F6CEF;
+  color: #fff;
+  font: 15px tahoma;
+  border: 0;
+
+  cursor: pointer;
+  margin: 5px 10px 0 10px;
+}
+
+.actions-bt:hover {
+  text-decoration: none;
+}

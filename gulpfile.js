@@ -52,8 +52,11 @@ gulp.task('dist-font', ['clean'], function () {
 gulp.task('dist-assets', ['dist-minify', 'dist-uglify', 'dist-img', 'dist-font'])
 
 gulp.task('dist-certificado', ['clean'], function () {
-  gulp.src('certificado/**')
-    .pipe(gulp.dest('dist/certificado'));
+  _each(years, function (year) {
+    gulp.src(year + '/certificado/**')
+      .pipe(minifyHTML())
+      .pipe(gulp.dest('dist/' + year + '/certificado'));
+  });
 });
 
 gulp.task('dist-html', ['clean'], function () {
@@ -78,6 +81,10 @@ gulp.task('dist', ['dist-assets', 'dist-certificado', 'dist-html'], function () 
 
   gulp.src(current + '/assets/font/**')
       .pipe(gulp.dest('dist/assets/font'));
+
+  gulp.src(current + '/certificado/**')
+    .pipe(minifyHTML())
+    .pipe(gulp.dest('dist/certificado/'));
 
   gulp.src(current + '/*.html')
     .pipe(minifyHTML())
