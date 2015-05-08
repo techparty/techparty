@@ -1,20 +1,9 @@
 /*! Author: github.com/fernandoporazzi */
 
-'use strict';
+;(function(window, document, undefined){
 
-var App = React.createClass({
+  'use strict';
 
-  render: function () {
 
-    return (
-      <div>
-        <Header name="TechParty"/>
-        <Footer />
-      </div>
-    );
 
-  }
-
-});
-
-React.render(<App />, document.getElementById('container'));
+})(window, document);

@@ -12,7 +12,7 @@ var Nav = React.createClass({
             <a href="#home">Home</a>
           </li>
           <li className="nav__li span-2">
-            <a href="#palestrantes">Palestrantes</a>
+            <a href="#speakers">Palestrantes</a>
           </li>
           <li className="nav__li span-2">
             <a href="#programacao">Programação</a>
@@ -39,19 +39,21 @@ var Header = React.createClass({
 
   render: function () {
     return (
-      <header className="header span-12">
+      <div>
         <div className="span-12 header__menu">
           <div className="span-10 content">
             <Nav />
           </div>
         </div>
 
-        <div className="span-12 header__info">
-          <div className="span-10 content">
-
+        <header className="header span-12">
+          <div className="span-12 header__info">
+            <div className="span-10 content">
+              header
+            </div>
           </div>
-        </div>
-      </header>
+        </header>
+      </div>
     );
   }
 

@@ -4,8 +4,8 @@ var Footer = React.createClass({
 
   render: function () {
     return (
-      <footer className="footer">
-        this is a footer text
+      <footer className="footer span-12">
+        footer
       </footer>
     );
   }
