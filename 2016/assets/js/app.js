@@ -20,14 +20,11 @@
             scriptTemplate = document.getElementById('speakers-template').innerHTML,
             template;
 
-
           _.templateSettings.variable = 'data';
 
           template = _.template(scriptTemplate);
 
           speakersHolder.innerHTML = template(data);
-
-          console.log(data);
         }
       };
 
