@@ -5,22 +5,33 @@
       "company": "company Name",
       "bio": "Lorem ipsum dolor sit amet",
       "image": "todd.jpg",
-      "links": {
-        "facebook": ["facebook.com/todd", "fa-facebook-official"],
-        "twitter": ["twitter.com/todd", "fa-twitter"],
-        "github": ["github.com/todd", "fa-github"]
-      }
+      "links": [
+        {"link": "fb.com/todd", "icon": "fa-facebook-official"},
+        {"link": "tt.com/todd", "icon": "fa-twitter"},
+        {"link": "gh.com/todd", "icon": "fa-github"}
+      ]
     },
     {
       "name": "Zeno Rocha",
       "company": "Liferay",
-      "bio": "Teste",
+      "bio": "Lorem ipsum dolor sit amet",
       "image": "zeno.jpeg",
-      "links": {
-        "facebook": ["facebook.com/zeno", "fa-facebook-official"],
-        "twitter": ["twitter.com/zeno", "fa-twitter"],
-        "github": ["github.com/zeno", "fa-github"]
-      }
+      "links": [
+        {"link": "fb.com/zeno", "icon": "fa-facebook-official"},
+        {"link": "tt.com/zeno", "icon": "fa-twitter"},
+        {"link": "gh.com/zeno", "icon": "fa-github"}
+      ]
+    },
+    {
+      "name": "Fernando Porazzi",
+      "company": "CWI Software",
+      "bio": "Lorem ipsum dolor sit amet",
+      "image": "fernandoporazzi.jpg",
+      "links": [
+        {"link": "fb.com/fernando", "icon": "fa-facebook-official"},
+        {"link": "tt.com/fernando", "icon": "fa-twitter"},
+        {"link": "gh.com/fernando", "icon": "fa-github"}
+      ]
     }
   ]
 }

@@ -62,24 +62,23 @@
             <div class="full" id="speakers-holder"></div>
           </article>
 
-          <script type="text/template" id="speakers-template">
-            <% _.each(data.speakers, function (item, index) { %>
+          <script id="speakers-template" type="x-tmpl-mustache">
+            {{#data}}
               <div class="span_1-4">
                 <div class="speaker">
-                  <div class="speaker-photo octagon" style="background-image: url('assets/img/speakers/<%= item.image %>');"></div>
-                  <h3><%= item.name %></h3>
-                  <h4><%= item.company %></h4>
+                  <div class="speaker-photo octagon" style="background-image: url('assets/img/speakers/{{image}}');"></div>
+                  <h3>{{name}}</h3>
+                  <h4>{{company}}</h4>
                   <p class="full speaker-links">
-                    <% _.each(item.links, function(link, linkIndex) { %>
-                      <a href="<%= link[0] %>"><i class="fa <%= link[1] %>"></i></a>
-                    <% }); %>
+                    {{#links}}
+                      <a href="{{link}}"><i class="fa {{icon}}"></i></a>
+                    {{/links}}
                   </p>
-                  <p><%= item.bio %></p>
+                  <p>{{bio}}</p>
                 </div>
               </div>
-            <% }); %>
+            {{/data}}
           </script>
-
         </div>
       </section>
 
@@ -98,7 +97,7 @@
 
   </div>
 
-  <script src="assets/js/underscore.js"></script>
+  <script src="assets/js/mustache.js"></script>
   <script src="assets/js/app.js"></script>
 </body>
 </html>

@@ -17,14 +17,11 @@
         if (xhr.status === 200) {
           var data = JSON.parse(xhr.responseText),
             speakersHolder = document.getElementById('speakers-holder'),
-            scriptTemplate = document.getElementById('speakers-template').innerHTML,
-            template;
+            scriptTemplate = document.getElementById('speakers-template').innerHTML;
 
-          _.templateSettings.variable = 'data';
-
-          template = _.template(scriptTemplate);
-
-          speakersHolder.innerHTML = template(data);
+          Mustache.parse(scriptTemplate);
+          var rendered = Mustache.render(scriptTemplate, {data: data.speakers});
+          speakersHolder.innerHTML = rendered;
         }
       };
 
