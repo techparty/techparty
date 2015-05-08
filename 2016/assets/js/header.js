@@ -41,8 +41,14 @@ var Header = React.createClass({
     return (
       <header className="header span-12">
         <div className="span-12 header__menu">
-          <div className="span-9 content">
+          <div className="span-10 content">
             <Nav />
+          </div>
+        </div>
+
+        <div className="span-12 header__info">
+          <div className="span-10 content">
+
           </div>
         </div>
       </header>

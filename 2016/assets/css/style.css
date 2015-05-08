@@ -47,6 +47,10 @@ a {
   background: #D0080F;
 }
 
+.header__info {
+  height: 500px;
+}
+
 .nav {
   height: 50px;
   font-family: 'Rambla', sans-serif;
