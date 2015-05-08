@@ -59,37 +59,27 @@
           <article class="full article">
             <h2 class="article-title">Palestrantes</h2>
 
-            <div class="full">
-              <div class="span_1-4">
-                <div class="speaker">
-                  <div class="speaker-photo octagon" style="background: url('assets/img/speakers/todd.jpg') no-repeat;"></div>
-                  <h3>Todd Motto</h3>
-                  <h4>Google Inc.</h4>
-                  <p class="full speaker-links">
-                    <a href="#"><i class="fa fa-github"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-facebook-official"></i></a>
-                  </p>
-                  <p>lorem ipsum dolor sit amet consectetuer adispicing elit</p>
-                </div>
-              </div>
-
-              <div class="span_1-4">
-                <div class="speaker">
-                  <div class="speaker-photo octagon" style="background-image: url('assets/img/speakers/zeno.jpeg');"></div>
-                  <h3>Zeno Rocha</h3>
-                  <h4>Liferay Latin America</h4>
-                  <p class="full speaker-links">
-                    <a href="#"><i class="fa fa-github"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-facebook-official"></i></a>
-                  </p>
-                  <p>Zeno Rocha é desenvolvedor no Portal Liferay da América Latina, contribuidor open source e figura importante no desenvolvimento de Web Components</p>
-                </div>
-              </div>
-
-            </div>
+            <div class="full" id="speakers-holder"></div>
           </article>
+
+          <script type="text/template" id="speakers-template">
+            <% _.each(data.speakers, function (item, index) { %>
+              <div class="span_1-4">
+                <div class="speaker">
+                  <div class="speaker-photo octagon" style="background-image: url('assets/img/speakers/<%= item.image %>');"></div>
+                  <h3><%= item.name %></h3>
+                  <h4><%= item.company %></h4>
+                  <p class="full speaker-links">
+                    <% _.each(item.links, function(link, linkIndex) { %>
+                      <a href="<%= link[0] %>"><i class="fa <%= link[1] %>"></i></a>
+                    <% }); %>
+                  </p>
+                  <p><%= item.bio %></p>
+                </div>
+              </div>
+            <% }); %>
+          </script>
+
         </div>
       </section>
 
@@ -108,6 +98,7 @@
 
   </div>
 
+  <script src="assets/js/underscore.js"></script>
   <script src="assets/js/app.js"></script>
 </body>
 </html>

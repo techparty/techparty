@@ -1,0 +1,26 @@
+{
+  "speakers": [
+    {
+      "name": "Todd Motto",
+      "company": "company Name",
+      "bio": "Lorem ipsum dolor sit amet",
+      "image": "todd.jpg",
+      "links": {
+        "facebook": ["facebook.com/todd", "fa-facebook-official"],
+        "twitter": ["twitter.com/todd", "fa-twitter"],
+        "github": ["github.com/todd", "fa-github"]
+      }
+    },
+    {
+      "name": "Zeno Rocha",
+      "company": "Liferay",
+      "bio": "Teste",
+      "image": "zeno.jpeg",
+      "links": {
+        "facebook": ["facebook.com/zeno", "fa-facebook-official"],
+        "twitter": ["twitter.com/zeno", "fa-twitter"],
+        "github": ["github.com/zeno", "fa-github"]
+      }
+    }
+  ]
+}
