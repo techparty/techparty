@@ -7,7 +7,7 @@
 }
 
 body,
-h1, h2, h3, h4,
+h1, h2, h3, h4, h5, h6,
 nav, ul, li {
   margin: 0;
   padding: 0;
@@ -107,7 +107,8 @@ body {
 }
 
 #speakers {
-  background: #E7EBED;
+  background: #EF7247;
+  color: #fff;
 }
 
 .span_1-4 {
@@ -145,7 +146,7 @@ body {
   float: left;
   font-size: 30px;
   margin-left: 8px;
-  color: #393e46;
+  color: #fff;
 }
 
 .speaker p {
@@ -153,9 +154,118 @@ body {
 }
 
 #schedule {
+  background: #E7EBED;
+  color: #393e46;
+}
+
+.schedule-ul {
+  float: left;
+}
+
+.schedule-ul li {
+  background: rgba(0, 0, 0, .2);
+  cursor: pointer;
+  float: left;
+  width: 19%;
+  padding: 15px 10px;
+  margin-left: 0.8%;
+  text-align: center;
+  border-radius: 8px;
+  transition: .25s;
+  color: #fff;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.schedule-ul li:hover {
   background: #EF7247;
 }
 
-.white {
-  color: #fff;
+li.active-day {
+  background: #2C3840;
 }
+
+li.active-day:hover {
+  background: #2C3840;
+}
+
+.timeline {
+  width: 90%;
+  margin-left: 13.8%;
+  border-left: 5px solid #2C3840;
+  float: left;
+  margin-top: 40px;
+}
+
+.timeline-item {
+  margin: 0 0 30px -113px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-left {
+  float: left;
+  width: 130px;
+  font-size: 20px;
+  font-weight: 700;
+  padding-top: 30px;
+}
+
+.timeline-left time {
+  margin-top: 10px;
+  float: left;
+}
+
+.timeline-icon-container {
+  height: 30px;
+  width: 30px;
+  background: #EF7247;
+  border-radius: 50%;
+  margin: 5px 0 0 5px;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.timeline-right {
+  padding-left: 30px;
+  float: left;
+}
+.timeline-icon {
+  height: 40px;
+  width: 40px;
+  background: none repeat scroll 0 0 rgba(72, 163, 166, .4);
+  border-radius: 50%;
+  float: right;
+}
+
+.timeline-right-desc {
+  background: #fff;
+  width: 885px;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.timeline-right-desc h4 {
+  font-size: 25px;
+}
+
+.timeline-right-desc h5 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.timeline-right-desc h5 span{
+  color: #999;
+}
+
+.timeline-right-desc p {
+  font-size: 15px;
+  line-height: 24px;
+  color: #393e46;
+}
+

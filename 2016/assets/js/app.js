@@ -14,14 +14,17 @@
       xhr.responseType = 'text';
 
       xhr.onload = function () {
+        var speakersHolder = document.getElementById('speakers-holder');
+
         if (xhr.status === 200) {
           var data = JSON.parse(xhr.responseText),
-            speakersHolder = document.getElementById('speakers-holder'),
             scriptTemplate = document.getElementById('speakers-template').innerHTML;
 
           Mustache.parse(scriptTemplate);
           var rendered = Mustache.render(scriptTemplate, {data: data.speakers});
           speakersHolder.innerHTML = rendered;
+        } else {
+          speakersHolder.innerHTML = '<h3>Sorry =(</h3><p>Não foi possível carregar a lista de palestrantes.</p>';
         }
       };
 
