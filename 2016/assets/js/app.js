@@ -128,13 +128,41 @@
     };
 
     return {
-      initialize: _init
+      init: _init
+    };
+
+  })();
+
+  var Sponsors = (function() {
+
+    var sponsorsHolder = document.getElementById('sponsors-holder');
+
+    var _success = function (resp) {
+      var scriptTemplate = document.getElementById('sponsors-template').innerHTML,
+        rendered;
+
+      Mustache.parse(scriptTemplate);
+      rendered = Mustache.render(scriptTemplate, {data: resp.sponsors});
+      sponsorsHolder.innerHTML = rendered;
+    };
+
+    var _error = function () {
+      console.log('deu merda');
+    };
+
+    var _init = function () {
+      xhr('GET', 'assets/js/data/sponsors.json', _success, _error);
+    };
+
+    return {
+      init: _init
     };
 
   })();
 
   Speakers.init();
   Schedule.init();
-  google.maps.event.addDomListener(window, 'load', Maps.initialize);
+  Maps.init();
+  Sponsors.init();
 
 })(window, document);

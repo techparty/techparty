@@ -138,6 +138,35 @@
       </section>
 
       <section class="full section" id="map"></section>
+
+
+      <section class="full section" id="sponsors">
+        <div class="content">
+          <article class="full article">
+            <h2 class="article-title">Parceiros</h2>
+            <h3 class="full">Nossos parceiros contribuem para o sucesso da TechParty</h3>
+
+            <div class="full" id="sponsors-holder"></div>
+
+            <script type="x-tmpl-mustache" id="sponsors-template">
+              {{#data}}
+                <div class="full sponsor-type">
+                  <div class="sponsor-type-label">{{type}}</div>
+                  <div class="sponsors-type-items full">
+                    {{#companies}}
+                      <div class="{{class}} sponsor-logo">
+                        <a href="{{link}}" title="{{name}}">
+                          <img src="{{image}}" alt="{{name}}">
+                        </a>
+                      </div>
+                    {{/companies}}
+                  </div>
+                </div>
+              {{/data}}
+            </script>
+          </article>
+        </div>
+      </section>
     </main>
 
   </div>
