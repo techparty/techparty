@@ -160,6 +160,22 @@
 
   })();
 
+  var App = (function() {
+
+    var _init = function () {
+      smoothScroll.init({
+        speed: 1000,
+        easing: 'easeInOutCubic'
+      });
+    };
+
+    return {
+      init: _init
+    }
+
+  })();
+
+  App.init();
   Speakers.init();
   Schedule.init();
   Maps.init();
