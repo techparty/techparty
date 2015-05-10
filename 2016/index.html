@@ -21,13 +21,13 @@
         <div class="full header-top">
           <nav class="nav">
             <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">Sobre</a></li>
-              <li><a href="#speakers">Palestrantes</a></li>
-              <li><a href="#schedule">Programação</a></li>
-              <li><a href="#local">Local</a></li>
-              <li><a href="#sponsors">Parceiros</a></li>
-              <li><a href="#register">Inscrição</a></li>
+              <li><a data-scroll href="#header">Home</a></li>
+              <li><a data-scroll href="#about">Sobre</a></li>
+              <li><a data-scroll href="#speakers">Palestrantes</a></li>
+              <li><a data-scroll href="#schedule">Programação</a></li>
+              <li><a data-scroll href="#local">Local</a></li>
+              <li><a data-scroll href="#sponsors">Parceiros</a></li>
+              <li><a data-scroll href="#register">Inscrição</a></li>
             </ul>
           </nav>
         </div>
@@ -138,6 +138,63 @@
       </section>
 
       <section class="full section" id="map"></section>
+
+
+      <section class="full section" id="sponsors">
+        <div class="content">
+          <article class="full article">
+            <h2 class="article-title">Parceiros</h2>
+            <h3 class="full">Nossos parceiros contribuem para o sucesso da TechParty</h3>
+
+            <div class="full" id="sponsors-holder"></div>
+
+            <script type="x-tmpl-mustache" id="sponsors-template">
+              {{#data}}
+                <div class="full sponsor-type">
+                  <div class="sponsor-type-label">{{type}}</div>
+                  <div class="sponsors-type-items full">
+                    {{#companies}}
+                      <div class="{{class}} sponsor-logo">
+                        <a href="{{link}}" title="{{name}}">
+                          <img src="{{image}}" alt="{{name}}">
+                        </a>
+                      </div>
+                    {{/companies}}
+                  </div>
+                </div>
+              {{/data}}
+            </script>
+          </article>
+        </div>
+      </section>
+
+      <section class="full section" id="footer">
+        <div class="content">
+          <article class="full article">
+            <h2 class="article-title"><a href="./">TechParty</a></h2>
+
+            <div class="full">
+              <ul>
+                <li>
+                  <a href="https://www.fb.com/pages/TechParty/172292782845961" title="Facebook - TechParty">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/techpartyfaccat" title="Twitter - TechParty">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://plus.google.com/u/0/116649057797832269453" title="Google+ TechParty">
+                    <i class="fa fa-google-plus"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
     </main>
 
   </div>
@@ -145,6 +202,7 @@
   <script src="assets/js/mustache.js"></script>
   <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
   <script src="assets/js/classlist.shim.js"></script>
+  <script src="assets/js/smooth-scroll.min.js"></script>
   <script src="assets/js/app.js"></script>
 </body>
 </html>
