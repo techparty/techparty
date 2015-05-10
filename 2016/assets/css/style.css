@@ -288,6 +288,8 @@ li.active-day:hover {
   color: #393e46;
 }
 
+.hidden-info { display: none; }
+
 #local {
   background: #4C5D67;
   color: #fff;
@@ -411,6 +413,31 @@ li.active-day:hover {
   .span_1-4.sponsor-logo img,
   .span_1-6.sponsor-logo img {max-width: 80%}
   #footer ul {margin-left: 30%;}
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 468px){
+  .timeline {margin-left: 0; width: 100%;border: 0; margin-top: 70px;}
+  .timeline-left {display: none;}
+  .timeline-right {width: 100%;padding-right: 7px;}
+  .timeline-item {margin-left: 0;margin-bottom: 70px;}
+
+  .hidden-info{
+    float: left;
+    margin-top: -45px;
+    display: block;
+  }
+  .timeline-icon{float: left;}
+  .hidden-info span {
+    float: left;
+    margin: 7px 0 0 10px;
+    font-weight: 700;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 540px){
+  .hyphen {display: none}
 }
 
 @media only screen and (min-width: 569px) and (max-width: 768px) {
