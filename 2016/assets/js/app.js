@@ -162,11 +162,110 @@
 
   var App = (function() {
 
+    var modal = document.getElementById('register-modal'),
+      registeringForm = document.getElementById('register-form'),
+      errorBox =  document.getElementById('form-error-message');
+
+    var _openRegisteringModal = function () {
+      modal.classList.remove('hidden');
+    };
+
+    var _closeRegisteringModal = function () {
+      registeringForm.reset();
+      modal.classList.add('hidden');
+      window.location.hash = '#header';
+    };
+
+    var _bindCloseModal = function () {
+      var resetButton = document.getElementById('reset-form');
+
+      resetButton.addEventListener('click', _closeRegisteringModal, false);
+
+      modal.addEventListener('click', function (e) {
+        if (e.target.id === 'register-modal') {
+          _closeRegisteringModal();
+        }
+      }, false);
+    };
+
+    var _bindRegisteringModal = function () {
+      var registerLink = document.getElementById('open-register-modal');
+
+      registerLink.addEventListener('click', _openRegisteringModal, false);
+    };
+
+    var _showError = function (m) {
+      errorBox.innerHTML = m;
+      errorBox.classList.remove('hidden');
+    };
+
+    var _success = function (resp) {
+      var modalTitle = document.getElementById('modal-title');
+
+      errorBox.classList.add('hidden');
+
+      modalTitle.innerHTML = 'Sua inscrição foi efetuada com sucesso. Obrigado!';
+
+      setTimeout(_closeRegisteringModal, 2000);
+    };
+
+    var _error = function () {
+      _showError('Houve um erro ao enviar seus dados. Por favor, tente novamente!');
+    };
+
+    var _sendDataToServer = function (data) {
+      xhr(registeringForm.method, registeringForm.action, _success, _error);
+    };
+
+    var _validateFormData = function (e) {
+      e.preventDefault();
+
+      var name = document.getElementById('r-name').value,
+        email = document.getElementById('r-email').value,
+        checkboxes = document.getElementsByName('day-to-attend'),
+        selectedDays = [];
+
+      for (var i = 0; i < checkboxes.length; i++) {
+        if (checkboxes[i].checked ) {
+
+          selectedDays.push(checkboxes[i].value);
+        }
+      }
+
+      if ( name === '' || email === '' ) {
+        _showError('Nome e Email tem preenchimento obrigatório.');
+
+        return;
+      }
+
+      if ( selectedDays.length === 0 ) {
+        _showError('Por favor, selecione pelo menos 1 dia para participar.');
+
+        return;
+      }
+
+      var dataToPost = {
+        name: name,
+        email: email,
+        days: selectedDays
+      };
+
+      _sendDataToServer(dataToPost);
+    };
+
+    var _bindRegisteringFormSubmission = function () {
+      registeringForm.addEventListener('submit', _validateFormData, false);
+    };
+
     var _init = function () {
       smoothScroll.init({
         speed: 1000,
         easing: 'easeInOutCubic'
       });
+
+      _bindRegisteringModal();
+      _bindCloseModal();
+      _bindRegisteringFormSubmission();
     };
 
     return {
