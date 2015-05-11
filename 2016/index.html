@@ -27,7 +27,7 @@
               <li><a data-scroll href="#schedule">Programação</a></li>
               <li><a data-scroll href="#local">Local</a></li>
               <li><a data-scroll href="#sponsors">Parceiros</a></li>
-              <li><a data-scroll href="#register">Inscrição</a></li>
+              <li><a href="#register" id="open-register-modal">Inscrição</a></li>
             </ul>
           </nav>
         </div>
@@ -185,35 +185,87 @@
           </article>
         </div>
       </section>
-
-      <section class="full section" id="footer">
-        <div class="content">
-          <article class="full article">
-            <h2 class="article-title"><a href="./">TechParty</a></h2>
-
-            <div class="full">
-              <ul>
-                <li>
-                  <a href="https://www.fb.com/pages/TechParty/172292782845961" title="Facebook - TechParty">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/techpartyfaccat" title="Twitter - TechParty">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://plus.google.com/u/0/116649057797832269453" title="Google+ TechParty">
-                    <i class="fa fa-google-plus"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </article>
-        </div>
-      </section>
     </main>
+
+    <footer class="full section" id="footer">
+      <div class="content">
+        <article class="full article">
+          <h2 class="article-title"><a href="./">TechParty</a></h2>
+
+          <div class="full">
+            <ul>
+              <li>
+                <a href="https://www.fb.com/pages/TechParty/172292782845961" title="Facebook - TechParty">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/techpartyfaccat" title="Twitter - TechParty">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://plus.google.com/u/0/116649057797832269453" title="Google+ TechParty">
+                  <i class="fa fa-google-plus"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </footer>
+
+    <div id="register-modal" class="hidden">
+      <div class="register-modal-content">
+        <span class="register-modal-bracket">{</span>
+        <h4 class="register-modal-title" id="modal-title">Lorem ipsum dolor sit amet consectetuer adispicing elit</h4>
+        <form name="register-form" id="register-form" method="post" action="http://jsonplaceholder.typicode.com/posts">
+          <div class="form-line full">
+            <label for="r-name" class="full" name="r-name">Nome:</label>
+            <input id="r-name" type="text" class="full form-input" name="r-name">
+          </div>
+          <div class="form-line full">
+            <label for="r-email" class="full" name="r-email">Email:</label>
+            <input id="r-email" type="text" class="full form-input" name="r-email">
+          </div>
+          <div class="form-line full">
+            <label class="full">Dias à participar:</label>
+
+            <div class="cb-holder">
+              <input type="checkbox" name="day-to-attend" id="cb-monday" value="monday">
+              <label for="cb-monday" class="cb-label">Segunda</label>
+            </div>
+
+            <div class="cb-holder">
+              <input type="checkbox" name="day-to-attend" id="cb-tuesday" value="tuesday">
+              <label for="cb-tuesday" class="cb-label">Terça</label>
+            </div>
+
+            <div class="cb-holder">
+              <input type="checkbox" name="day-to-attend" id="cb-wednesday" value="wednesday">
+              <label for="cb-wednesday" class="cb-label">Quarta</label>
+            </div>
+
+            <div class="cb-holder">
+              <input type="checkbox" name="day-to-attend" id="cb-thursday" value="thursday">
+              <label for="cb-thursday" class="cb-label">Quinta</label>
+            </div>
+
+            <div class="cb-holder">
+              <input type="checkbox" name="day-to-attend" id="cb-friday" value="friday">
+              <label for="cb-friday" class="cb-label">Quarta</label>
+            </div>
+          </div>
+
+          <div class="form-line full hidden" id="form-error-message"></div>
+
+          <div class="form-line full form-buttons">
+            <input type="submit" id="submit-form" value="Salvar" class="form-btn form-btn-submit">
+            <input type="reset" id="reset-form" value="Cancelar" class="form-btn form-btn-reset">
+          </div>
+        </form>
+      </div>
+    </div>
 
   </div>
 
