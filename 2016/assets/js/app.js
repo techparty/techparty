@@ -173,6 +173,7 @@
     var _closeRegisteringModal = function () {
       registeringForm.reset();
       modal.classList.add('hidden');
+      errorBox.classList.add('hidden');
       window.location.hash = '#header';
     };
 
@@ -206,7 +207,7 @@
 
       modalTitle.innerHTML = 'Sua inscrição foi efetuada com sucesso. Obrigado!';
 
-      setTimeout(_closeRegisteringModal, 2000);
+      setTimeout(_closeRegisteringModal, 3000);
     };
 
     var _error = function () {

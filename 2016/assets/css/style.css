@@ -392,7 +392,7 @@ li.active-day:hover {
 }
 
 .register-modal-content {
-  background: #48A3A6;
+  background: #E7EBED;
   width: 650px;
   height: 400px;
   position: absolute;
@@ -406,11 +406,11 @@ li.active-day:hover {
   padding: 10px 10px 10px 68px;
   font-family: 'Roboto';
   font-weight: 700;
-  color: #fff;
+  color: #393e46;
 }
 
 .register-modal-bracket {
-  color: #EF7247;
+  color: #48A3A6;
   font-size: 473px;
   font-family: 'Roboto';
   font-weight: 400;
@@ -437,6 +437,7 @@ li.active-day:hover {
   font-family: 'Roboto';
   font-weight: 700;
   font-size: 15px;
+  background: rgba(0, 0, 0, .2);
 }
 
 .cb-holder {
@@ -455,7 +456,7 @@ li.active-day:hover {
   content: '';
   height: 30px;
   width: 30px;
-  background: #EF7247;
+  background: #48A3A6;
   border-radius: 50%;
   margin-left: -32px;
 }
@@ -468,7 +469,7 @@ input[type=checkbox]:checked + .cb-label:before {
 }
 
 #form-error-message {
-  color: #F2BC47;
+  color: #EF7247;
   margin-top: 20px;
 }
 
@@ -492,8 +493,8 @@ input[type=checkbox]:checked + .cb-label:before {
 
 .hidden {display: none;}
 
-.form-btn-submit {background: #F2BC47;}
-.form-btn-reset {background: #EF7247;}
+.form-btn-submit {background: #48A3A6;}
+.form-btn-reset {background: rgba(0, 0, 0, .4);}
 
 @media only screen and (min-width: 320px) and (max-width: 768px){
   .content { width: 100%; }
