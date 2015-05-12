@@ -164,7 +164,9 @@
 
     var modal = document.getElementById('register-modal'),
       registeringForm = document.getElementById('register-form'),
-      errorBox =  document.getElementById('form-error-message');
+      errorBox =  document.getElementById('form-error-message'),
+      modalTitle = document.getElementById('modal-title'),
+      modalTitleOriginalText = modalTitle.innerHTML;
 
     var _openRegisteringModal = function () {
       modal.classList.remove('hidden');
@@ -174,6 +176,8 @@
       registeringForm.reset();
       modal.classList.add('hidden');
       errorBox.classList.add('hidden');
+      modalTitle.innerHTML = modalTitleOriginalText;
+
       window.location.hash = '#header';
     };
 
@@ -201,8 +205,6 @@
     };
 
     var _success = function (resp) {
-      var modalTitle = document.getElementById('modal-title');
-
       errorBox.classList.add('hidden');
 
       modalTitle.innerHTML = 'Sua inscrição foi efetuada com sucesso. Obrigado!';
