@@ -207,7 +207,7 @@
 
       modalTitle.innerHTML = 'Sua inscrição foi efetuada com sucesso. Obrigado!';
 
-      setTimeout(_closeRegisteringModal, 3000);
+      setTimeout(_closeRegisteringModal, 5000);
     };
 
     var _error = function () {
