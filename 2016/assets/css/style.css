@@ -411,11 +411,11 @@ li.active-day:hover {
 
 .register-modal-bracket {
   color: #48A3A6;
-  font-size: 473px;
+  font-size: 487px;
   font-family: 'Roboto';
   font-weight: 400;
   position: absolute;
-  margin: -116px 0 0 -135px;
+  margin: -116px 0 0 -136px;
   cursor: default;
 }
 
