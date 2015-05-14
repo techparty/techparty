@@ -90,7 +90,7 @@
     };
 
     var _error = function () {
-      console.log('deu merda');
+      timelineHolder.innerHTML = '<h3>Sorry =(</h3><p>Não foi possível carregar a programação.</p>';
     };
 
     var _init = function () {
@@ -147,7 +147,7 @@
     };
 
     var _error = function () {
-      console.log('deu merda');
+      sponsorsHolder.innerHTML = '<p>Sorry =( <br>Não foi possível carregar a lista de patrocinadores.</p>';
     };
 
     var _init = function () {
