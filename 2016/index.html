@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/Event">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +13,7 @@
   <meta property="og:url" content="http://techparty.faccat.br/">
   <meta property="og:title" content="TechParty - Faccat">
   <meta property="og:description" content="A TechParty é um evento totalmente gratuito e aberto a toda a comunidade, visa promover a tecnologia e compartilhamento de conhecimento.">
-  <meta property="og:image" content="assets/img/tech-party.jpg">
+  <meta property="og:image" content="assets/img/techparty.jpg">
 
   <title>TechParty - 2016</title>
 
@@ -44,8 +44,8 @@
         </div>
 
         <div class="full header-info">
-          <h1>TechParty - 2016</h1>
-          <h2>Lorem ipsum dolor sit amet</h2>
+          <h1 itemprop="name">TechParty - 2016</h1>
+          <h2>De XX à XX de abril</h2>
         </div>
       </div>
     </header>
@@ -56,11 +56,11 @@
           <article class="full article">
             <h2 class="article-title">Sobre</h2>
 
-            <p>A TechParty é um evento totalmente gratuito e aberto a toda a comunidade, visa promover a tecnologia e compartilhamento de conhecimento. Serão duas talks por noite durante uma semana inteira dedicada a promover tecnologias e experiências com profissionais qualificados em suas áreas de atuação.</p>
+            <p itemprop="description">A TechParty é um evento totalmente gratuito e aberto a toda a comunidade, visa promover a tecnologia e compartilhamento de conhecimento. Serão duas talks por noite durante uma semana inteira dedicada a promover tecnologias e experiências com profissionais qualificados em suas áreas de atuação.</p>
 
-            <p>As atividades serão ministradas por profissionais internos e de fora da instituição.</p>
+            <p itemprop="description">As atividades serão ministradas por profissionais internos e de fora da instituição.</p>
 
-            <p>O evento também irá gerar certificado. Então, quem comparecer, pode contar com ele.</p>
+            <p itemprop="description">O evento também irá gerar certificado. Então, quem comparecer, pode contar com ele.</p>
           </article>
         </div>
       </section>
@@ -75,16 +75,16 @@
           <script id="speakers-template" type="x-tmpl-mustache">
             {{#data}}
               <div class="span_1-4">
-                <div class="speaker">
-                  <div class="speaker-photo octagon" style="background-image: url('assets/img/speakers/{{image}}');"></div>
-                  <h3>{{name}}</h3>
-                  <h4>{{company}}</h4>
+                <div class="speaker" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+                  <div itemprop="image" class="speaker-photo octagon" style="background-image: url('assets/img/speakers/{{image}}');"></div>
+                  <h3 itemprop="name">{{name}}</h3>
+                  <h4 itemprop="brand">{{company}}</h4>
                   <p class="full speaker-links">
                     {{#links}}
-                      <a href="{{link}}"><i class="fa {{icon}}"></i></a>
+                      <a itemprop="potentialAction" href="{{link}}"><i class="fa {{icon}}"></i></a>
                     {{/links}}
                   </p>
-                  <p>{{bio}}</p>
+                  <p itemprop="description">{{bio}}</p>
                 </div>
               </div>
             {{/data}}
@@ -154,13 +154,13 @@
         </div>
       </section>
 
-      <section class="full section" id="local">
+      <section class="full section" id="local" itemscope itemtype="http://schema.org/Place">
         <div class="content">
           <article class="full article">
-            <h2 class="article-title">Local</h2>
+            <h2 class="article-title" itemprop="name">Local</h2>
 
             <div class="full">
-              <h3>Avenida Oscar Martins Rangel, 4500 - Fogão Gaúcho - Taquara, Rio Grande do Sul</h3>
+              <h3 itemprop="description">Avenida Oscar Martins Rangel, 4500 - Fogão Gaúcho - Taquara, Rio Grande do Sul</h3>
             </div>
           </article>
         </div>
@@ -183,9 +183,9 @@
                   <div class="sponsor-type-label">{{type}}</div>
                   <div class="sponsors-type-items full">
                     {{#companies}}
-                      <div class="{{class}} sponsor-logo">
-                        <a href="{{link}}" title="{{name}}">
-                          <img src="{{image}}" alt="{{name}}">
+                      <div class="{{class}} sponsor-logo" itemscope itemtype="http://schema.org/Organization">
+                        <a href="{{link}}" title="{{name}}" itemprop="url">
+                          <img src="{{image}}" alt="{{name}}" itemprop="image">
                         </a>
                       </div>
                     {{/companies}}
@@ -202,10 +202,10 @@
           <article class="full article">
             <h2 class="article-title">Manifesto</h2>
 
-            <p>Mussum ipsum cacilds, vidis litro abertis. Consetis <a href="#">adipiscings</a> elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-            <p>Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Interagi no mé, cursus quis, vehicula ac nisi. Aenean vel dui dui. Nullam leo erat, aliquet quis tempus a, posuere ut mi. Ut scelerisque <a href="#">neque et turpis posuere</a> pulvinar pellentesque nibh ullamcorper. Pharetra in mattis molestie, volutpat elementum justo. Aenean ut ante turpis. Pellentesque laoreet mé vel lectus scelerisque interdum cursus velit auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac mauris lectus, non scelerisque augue. Aenean justo massa.</p>
-            <p>Casamentiss faiz malandris se pirulitá, Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer Ispecialista im mé intende tudis nuam golada, vinho, uiski, carirí, rum da jamaikis, só num pode ser mijis. Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-            <p><a href="http://mussumipsum.com/">Mussum Ipsum generator</a></p>
+            <p itemprop="description">Mussum ipsum cacilds, vidis litro abertis. Consetis <a href="#">adipiscings</a> elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+            <p itemprop="description">Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Interagi no mé, cursus quis, vehicula ac nisi. Aenean vel dui dui. Nullam leo erat, aliquet quis tempus a, posuere ut mi. Ut scelerisque <a href="#">neque et turpis posuere</a> pulvinar pellentesque nibh ullamcorper. Pharetra in mattis molestie, volutpat elementum justo. Aenean ut ante turpis. Pellentesque laoreet mé vel lectus scelerisque interdum cursus velit auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac mauris lectus, non scelerisque augue. Aenean justo massa.</p>
+            <p itemprop="description">Casamentiss faiz malandris se pirulitá, Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer Ispecialista im mé intende tudis nuam golada, vinho, uiski, carirí, rum da jamaikis, só num pode ser mijis. Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+            <p itemprop="description"><a href="http://mussumipsum.com/">Mussum Ipsum generator</a></p>
           </article>
         </div>
       </section>
@@ -219,17 +219,17 @@
           <div class="full">
             <ul>
               <li>
-                <a href="https://www.fb.com/pages/TechParty/172292782845961" title="Facebook - TechParty">
+                <a itemprop="url" href="https://www.fb.com/pages/TechParty/172292782845961" title="Facebook - TechParty">
                   <i class="fa fa-facebook"></i>
                 </a>
               </li>
               <li>
-                <a href="https://twitter.com/techpartyfaccat" title="Twitter - TechParty">
+                <a itemprop="url" href="https://twitter.com/techpartyfaccat" title="Twitter - TechParty">
                   <i class="fa fa-twitter"></i>
                 </a>
               </li>
               <li>
-                <a href="https://plus.google.com/u/0/116649057797832269453" title="Google+ TechParty">
+                <a itemprop="url" href="https://plus.google.com/u/0/116649057797832269453" title="Google+ TechParty">
                   <i class="fa fa-google-plus"></i>
                 </a>
               </li>
