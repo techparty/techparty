@@ -1,3 +1,5 @@
+/*! Author: Fernando Porazzi - github.com/fernandoporazzi */
+
 *,
 *:before,
 *:after {
@@ -27,6 +29,17 @@ a {
 
 body {
   color: #393e46;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: #E7EBED;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #777;
 }
 
 .full {
@@ -497,6 +510,8 @@ input[type=checkbox]:checked + .cb-label:before {
 .form-btn-submit {background: #48A3A6;}
 .form-btn-reset {background: rgba(0, 0, 0, .4);}
 
+.hidden-overflow {overflow: hidden;}
+
 @media only screen and (min-width: 320px) and (max-width: 768px){
   .content { width: 100%; }
   .header-info h1 {font-size: 35px;}
@@ -526,6 +541,23 @@ input[type=checkbox]:checked + .cb-label:before {
   .span_1-4.sponsor-logo img,
   .span_1-6.sponsor-logo img {max-width: 80%}
   #footer ul {margin-left: 30%;}
+
+  /* Modal stuff */
+  .register-modal-content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    margin: 0;
+    border-radius: 0;
+    padding: 10px;
+    overflow: auto;
+  }
+  .register-modal-bracket {display: none;}
+  .cb-holder {
+    width: 100%;
+  }
 }
 
 
@@ -535,7 +567,7 @@ input[type=checkbox]:checked + .cb-label:before {
   .timeline-right {width: 100%;padding-right: 7px;}
   .timeline-item {margin-left: 0;margin-bottom: 70px;}
 
-  .hidden-info{
+  .hidden-info {
     float: left;
     margin-top: -45px;
     display: block;

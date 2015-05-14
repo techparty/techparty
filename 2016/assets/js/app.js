@@ -1,4 +1,4 @@
-/*! Author: github.com/fernandoporazzi */
+/*! Author: Fernando Porazzi - github.com/fernandoporazzi */
 
 ;(function(window, document, undefined){
 
@@ -166,15 +166,20 @@
       registeringForm = document.getElementById('register-form'),
       errorBox =  document.getElementById('form-error-message'),
       modalTitle = document.getElementById('modal-title'),
+      html = document.querySelector('html'),
       modalTitleOriginalText = modalTitle.innerHTML;
 
     var _openRegisteringModal = function () {
       modal.classList.remove('hidden');
+      modal.classList.add('modal-is-open');
+      html.classList.add('hidden-overflow');
     };
 
     var _closeRegisteringModal = function () {
       registeringForm.reset();
       modal.classList.add('hidden');
+      modal.classList.remove('modal-is-open');
+      html.classList.remove('hidden-overflow');
       errorBox.classList.add('hidden');
       modalTitle.innerHTML = modalTitleOriginalText;
 
@@ -184,11 +189,24 @@
     var _bindCloseModal = function () {
       var resetButton = document.getElementById('reset-form');
 
+      // Closes modal by clicking on the cancel button
       resetButton.addEventListener('click', _closeRegisteringModal, false);
 
+      // Closes modal by clicking on the black overlay
       modal.addEventListener('click', function (e) {
         if (e.target.id === 'register-modal') {
           _closeRegisteringModal();
+        }
+      }, false);
+
+      // Closes modal on esc press
+      document.addEventListener('keydown', function (e) {
+        var keyCode = e.which || e.keyCode;
+
+        if (keyCode === 27 ) {
+          if ( ! modal.classList.contains('hidden') ) {
+            _closeRegisteringModal();
+          }
         }
       }, false);
     };
