@@ -54,7 +54,7 @@ body {
 
 #header {
   height: 600px;
-  background: url('../img/header.jpg') no-repeat center center fixed;
+  background: url('../img/header.jpg') no-repeat center bottom fixed;
   background-size: cover;
 }
 
@@ -412,8 +412,8 @@ li.active-day:hover {
   left: 50%;
   top: 50%;
   margin: -200px 0 0 -305px;
-  border-top-left-radius: 55px;
-  border-bottom-left-radius: 55px;
+  border-top-left-radius: 65px;
+  border-bottom-left-radius: 65px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   padding: 10px 10px 10px 68px;
