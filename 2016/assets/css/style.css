@@ -97,14 +97,14 @@ body {
   font-family: 'Roboto Slab';
   font-weight: 700;
   font-size: 100px;
-  text-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 1);
 }
 
 .header-info h2 {
   font-family: 'Roboto';
   font-weight: 400;
   font-size: 48px;
-  text-shadow: 0 0 8px rgba(0, 0, 0, .3);
+  text-shadow: 0 0 8px rgba(0, 0, 0, .9);
 }
 
 .section {
