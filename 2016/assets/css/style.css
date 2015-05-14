@@ -583,6 +583,7 @@ input[type=checkbox]:checked + .cb-label:before {
 
 @media only screen and (min-width: 320px) and (max-width: 540px){
   .hyphen {display: none}
+  .register-modal-title {font-size: 18px;}
 }
 
 @media only screen and (min-width: 569px) and (max-width: 768px) {
