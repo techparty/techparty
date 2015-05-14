@@ -56,7 +56,6 @@ body {
   height: 600px;
   background: url('../img/header.jpg') no-repeat center bottom fixed;
   background-size: cover;
-  -webkit-animation: bganimate 0.5s linear infinite alternate;
 }
 
 .header-top {
