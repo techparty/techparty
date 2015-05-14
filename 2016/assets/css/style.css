@@ -531,6 +531,7 @@ input[type=checkbox]:checked + .cb-label:before {
   .nav li {width: 45%; margin: 0 0 10px 2.5%;}
   .nav li a {width: 100%; float: left; text-align: center;}
 
+  #manifest .article,
   #about .article {padding: 0 10px;}
 
   .span_1-4{width: 100%;}
