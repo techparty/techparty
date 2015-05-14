@@ -1,3 +1,5 @@
+/*! Author: Fernando Porazzi - github.com/fernandoporazzi */
+
 *,
 *:before,
 *:after {
@@ -27,6 +29,17 @@ a {
 
 body {
   color: #393e46;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: #E7EBED;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #777;
 }
 
 .full {
@@ -392,7 +405,7 @@ li.active-day:hover {
 }
 
 .register-modal-content {
-  background: #48A3A6;
+  background: #E7EBED;
   width: 650px;
   height: 400px;
   position: absolute;
@@ -406,11 +419,11 @@ li.active-day:hover {
   padding: 10px 10px 10px 68px;
   font-family: 'Roboto';
   font-weight: 700;
-  color: #fff;
+  color: #393e46;
 }
 
 .register-modal-bracket {
-  color: #EF7247;
+  color: #48A3A6;
   font-size: 473px;
   font-family: 'Roboto';
   font-weight: 400;
@@ -436,7 +449,8 @@ li.active-day:hover {
   color: #4C5D67;
   font-family: 'Roboto';
   font-weight: 700;
-  font-size: 15px;
+  font-size: 18px;
+  background: rgba(0, 0, 0, .2);
 }
 
 .cb-holder {
@@ -455,20 +469,21 @@ li.active-day:hover {
   content: '';
   height: 30px;
   width: 30px;
-  background: #EF7247;
+  background: #48A3A6;
   border-radius: 50%;
   margin-left: -32px;
 }
 
 input[type=checkbox]:checked + .cb-label:before {
   content: '✔';
+  color: #fff;
   text-align: center;
   font-size: 25px;
   line-height: 30px;
 }
 
 #form-error-message {
-  color: #F2BC47;
+  color: #EF7247;
   margin-top: 20px;
 }
 
@@ -492,8 +507,10 @@ input[type=checkbox]:checked + .cb-label:before {
 
 .hidden {display: none;}
 
-.form-btn-submit {background: #F2BC47;}
-.form-btn-reset {background: #EF7247;}
+.form-btn-submit {background: #48A3A6;}
+.form-btn-reset {background: rgba(0, 0, 0, .4);}
+
+.hidden-overflow {overflow: hidden;}
 
 @media only screen and (min-width: 320px) and (max-width: 768px){
   .content { width: 100%; }
@@ -524,6 +541,23 @@ input[type=checkbox]:checked + .cb-label:before {
   .span_1-4.sponsor-logo img,
   .span_1-6.sponsor-logo img {max-width: 80%}
   #footer ul {margin-left: 30%;}
+
+  /* Modal stuff */
+  .register-modal-content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    margin: 0;
+    border-radius: 0;
+    padding: 10px;
+    overflow: auto;
+  }
+  .register-modal-bracket {display: none;}
+  .cb-holder {
+    width: 100%;
+  }
 }
 
 
@@ -533,7 +567,7 @@ input[type=checkbox]:checked + .cb-label:before {
   .timeline-right {width: 100%;padding-right: 7px;}
   .timeline-item {margin-left: 0;margin-bottom: 70px;}
 
-  .hidden-info{
+  .hidden-info {
     float: left;
     margin-top: -45px;
     display: block;

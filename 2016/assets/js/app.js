@@ -1,4 +1,4 @@
-/*! Author: github.com/fernandoporazzi */
+/*! Author: Fernando Porazzi - github.com/fernandoporazzi */
 
 ;(function(window, document, undefined){
 
@@ -164,26 +164,49 @@
 
     var modal = document.getElementById('register-modal'),
       registeringForm = document.getElementById('register-form'),
-      errorBox =  document.getElementById('form-error-message');
+      errorBox =  document.getElementById('form-error-message'),
+      modalTitle = document.getElementById('modal-title'),
+      html = document.querySelector('html'),
+      modalTitleOriginalText = modalTitle.innerHTML;
 
     var _openRegisteringModal = function () {
       modal.classList.remove('hidden');
+      modal.classList.add('modal-is-open');
+      html.classList.add('hidden-overflow');
     };
 
     var _closeRegisteringModal = function () {
       registeringForm.reset();
       modal.classList.add('hidden');
+      modal.classList.remove('modal-is-open');
+      html.classList.remove('hidden-overflow');
+      errorBox.classList.add('hidden');
+      modalTitle.innerHTML = modalTitleOriginalText;
+
       window.location.hash = '#header';
     };
 
     var _bindCloseModal = function () {
       var resetButton = document.getElementById('reset-form');
 
+      // Closes modal by clicking on the cancel button
       resetButton.addEventListener('click', _closeRegisteringModal, false);
 
+      // Closes modal by clicking on the black overlay
       modal.addEventListener('click', function (e) {
         if (e.target.id === 'register-modal') {
           _closeRegisteringModal();
+        }
+      }, false);
+
+      // Closes modal on esc press
+      document.addEventListener('keydown', function (e) {
+        var keyCode = e.which || e.keyCode;
+
+        if (keyCode === 27 ) {
+          if ( ! modal.classList.contains('hidden') ) {
+            _closeRegisteringModal();
+          }
         }
       }, false);
     };
@@ -200,13 +223,11 @@
     };
 
     var _success = function (resp) {
-      var modalTitle = document.getElementById('modal-title');
-
       errorBox.classList.add('hidden');
 
       modalTitle.innerHTML = 'Sua inscrição foi efetuada com sucesso. Obrigado!';
 
-      setTimeout(_closeRegisteringModal, 2000);
+      setTimeout(_closeRegisteringModal, 5000);
     };
 
     var _error = function () {
