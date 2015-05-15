@@ -11,12 +11,14 @@
     xhr.responseType = 'text';
 
     xhr.onload = function() {
-      if ( xhr.status === 200 || xhr.status === 201) {
+      if ( xhr.status >= 200 && xhr.status <= 226) {
         var d = JSON.parse(xhr.responseText);
-        success(d);
-      } else {
-        error();
+
+        return success(d);
       }
+
+      error();
+
     };
 
     xhr.send();
@@ -57,17 +59,20 @@
     var _bindNavigation = function () {
       var links = document.querySelectorAll('.schedule-ul li'),
         i = 0,
-        clicked = document.getElementById('monday');
+        linksLength = links.length,
+        clicked = document.getElementById('monday'),
+        self,
+        day;
 
-      for ( i; i < links.length; i++ ) {
-        var s = links[i];
+      for ( i; i < linksLength; i++ ) {
+        self = links[i];
 
-        s.addEventListener('click', function (e) {
+        self.addEventListener('click', function (e) {
           e.preventDefault();
 
           clicked.classList.remove('active-day');
 
-          var day = this.getAttribute('data-schedule');
+          day = this.getAttribute('data-schedule');
 
           this.classList.add('active-day');
           clicked = this;
@@ -231,9 +236,12 @@
         modalTitle.innerHTML = resp.message;
 
         setTimeout(_closeRegisteringModal, 5000);
-      } else {
-        _showError(resp.message);
+
+        return;
       }
+
+      _showError(resp.message);
+
     };
 
     var _error = function () {
@@ -250,12 +258,17 @@
       var name = document.getElementById('r-name').value,
         email = document.getElementById('r-email').value,
         checkboxes = document.getElementsByName('day-to-attend'),
+        cbLength = checkboxes.length,
         selectedDays = [],
-        i = 0;
+        i = 0,
+        self,
+        dataToPost;
 
-      for ( i; i < checkboxes.length; i++ ) {
-        if (checkboxes[i].checked ) {
-          selectedDays.push(checkboxes[i].value);
+      for ( i; i < cbLength; i++ ) {
+        self = checkboxes[i];
+
+        if (self.checked ) {
+          selectedDays.push(self.value);
         }
       }
 
@@ -271,7 +284,7 @@
         return;
       }
 
-      var dataToPost = {
+      dataToPost = {
         name: name,
         email: email,
         daysToAttend: selectedDays
