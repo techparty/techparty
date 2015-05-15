@@ -11,7 +11,7 @@
     xhr.responseType = 'text';
 
     xhr.onload = function() {
-      if (xhr.status === 200) {
+      if ( xhr.status === 200 || xhr.status === 201) {
         var d = JSON.parse(xhr.responseText);
         success(d);
       } else {
@@ -45,7 +45,7 @@
 
     return {
       init: _init
-    }
+    };
 
   })();
 
@@ -59,7 +59,7 @@
         i = 0,
         clicked = document.getElementById('monday');
 
-      for (i; i < links.length; i++) {
+      for ( i; i < links.length; i++ ) {
         var s = links[i];
 
         s.addEventListener('click', function (e) {
@@ -68,8 +68,10 @@
           clicked.classList.remove('active-day');
 
           var day = this.getAttribute('data-schedule');
+
           this.classList.add('active-day');
           clicked = this;
+
           _success(scheduleData, day);
         }, false);
       }
@@ -114,14 +116,14 @@
         center: center,
         zoom: 16,
         scrollwheel: false,
-        mapTypeId:google.maps.MapTypeId.ROADMAP
+        mapTypeId: google.maps.MapTypeId.ROADMAP
       };
 
       var map = new google.maps.Map(document.getElementById("map"), properties);
 
       var marker = new google.maps.Marker({
         position: center,
-        icon:'assets/img/tp.png'
+        icon: 'assets/img/tp.png'
       });
 
       marker.setMap(map);
@@ -194,7 +196,7 @@
 
       // Closes modal by clicking on the black overlay
       modal.addEventListener('click', function (e) {
-        if (e.target.id === 'register-modal') {
+        if ( e.target.id === 'register-modal' ) {
           _closeRegisteringModal();
         }
       }, false);
@@ -203,7 +205,7 @@
       document.addEventListener('keydown', function (e) {
         var keyCode = e.which || e.keyCode;
 
-        if (keyCode === 27 ) {
+        if ( keyCode === 27 ) {
           if ( ! modal.classList.contains('hidden') ) {
             _closeRegisteringModal();
           }
@@ -223,11 +225,15 @@
     };
 
     var _success = function (resp) {
-      errorBox.classList.add('hidden');
+      if ( resp.situation === 'ok') {
+        errorBox.classList.add('hidden');
 
-      modalTitle.innerHTML = 'Sua inscrição foi efetuada com sucesso. Obrigado!';
+        modalTitle.innerHTML = resp.message;
 
-      setTimeout(_closeRegisteringModal, 5000);
+        setTimeout(_closeRegisteringModal, 5000);
+      } else {
+        _showError(resp.message);
+      }
     };
 
     var _error = function () {
@@ -244,11 +250,11 @@
       var name = document.getElementById('r-name').value,
         email = document.getElementById('r-email').value,
         checkboxes = document.getElementsByName('day-to-attend'),
-        selectedDays = [];
+        selectedDays = [],
+        i = 0;
 
-      for (var i = 0; i < checkboxes.length; i++) {
+      for ( i; i < checkboxes.length; i++ ) {
         if (checkboxes[i].checked ) {
-
           selectedDays.push(checkboxes[i].value);
         }
       }
@@ -268,7 +274,7 @@
       var dataToPost = {
         name: name,
         email: email,
-        days: selectedDays
+        daysToAttend: selectedDays
       };
 
       _sendDataToServer(dataToPost);
@@ -291,7 +297,7 @@
 
     return {
       init: _init
-    }
+    };
 
   })();
 
