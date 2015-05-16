@@ -18,4 +18,4 @@ then in your browser:
 
 
 ## Apiary Mock URL
-[http://docs.techpartyregistering.apiary.io/](Apiary)
+<http://docs.techpartyregistering.apiary.io>
