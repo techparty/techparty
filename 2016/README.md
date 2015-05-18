@@ -16,6 +16,5 @@ then in your browser:
     
     $ http://127.0.0.1:8080/
 
-
 ## Apiary Mock URL
 <http://docs.techpartyregistering.apiary.io>
