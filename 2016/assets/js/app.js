@@ -297,6 +297,23 @@
       registeringForm.addEventListener('submit', _validateFormData, false);
     };
 
+    var _getScrollPosition = function (e) {
+      var scrollTop = document.body.scrollTop,
+        header = document.getElementById('header-top');
+
+      if (scrollTop > 300) {
+        header.classList.add('header-fixed');
+      } else {
+        header.classList.remove('header-fixed');
+      }
+    };
+
+    var _bindScroll = function () {
+      console.log('_bindScroll');
+
+      document.addEventListener('scroll', _getScrollPosition, false);
+    };
+
     var _init = function () {
       smoothScroll.init({
         speed: 1000,
@@ -306,6 +323,7 @@
       _bindRegisteringModal();
       _bindCloseModal();
       _bindRegisteringFormSubmission();
+      _bindScroll();
     };
 
     return {
