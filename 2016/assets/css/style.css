@@ -425,11 +425,11 @@ li.active-day:hover {
 .register-modal-content {
   background: #E7EBED;
   width: 650px;
-  height: 400px;
+  height: 480px;
   position: absolute;
   left: 50%;
   top: 50%;
-  margin: -200px 0 0 -305px;
+  margin: -240px 0 0 -305px;
   border-top-left-radius: 65px;
   border-bottom-left-radius: 65px;
   border-top-right-radius: 10px;
@@ -442,17 +442,18 @@ li.active-day:hover {
 
 .register-modal-bracket {
   color: #48A3A6;
-  font-size: 473px;
+  font-size: 563px;
   font-family: 'Roboto';
   font-weight: 400;
   position: absolute;
-  margin: -116px 0 0 -135px;
+  margin: -123px 0 0 -149px;
   cursor: default;
 }
 
 .register-modal-title {
   font-family: 'Roboto Slab';
   font-size: 27px;
+  margin-left: 10px;
 }
 
 .form-line {
@@ -469,6 +470,12 @@ li.active-day:hover {
   font-weight: 700;
   font-size: 18px;
   background: rgba(0, 0, 0, .2);
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .cb-holder {

@@ -257,6 +257,7 @@
 
       var name = document.getElementById('r-name').value,
         email = document.getElementById('r-email').value,
+        cpf = document.getElementById('r-cpf').value,
         checkboxes = document.getElementsByName('day-to-attend'),
         cbLength = checkboxes.length,
         selectedDays = [],
@@ -272,8 +273,8 @@
         }
       }
 
-      if ( name === '' || email === '' ) {
-        _showError('Nome e Email tem preenchimento obrigatório.');
+      if ( name.trim() === '' || email.trim() === '' || cpf.trim() === '') {
+        _showError('Todos os campos tem preechimento obrigatório.');
 
         return;
       }
@@ -287,6 +288,7 @@
       dataToPost = {
         name: name,
         email: email,
+        cpf: cpf,
         daysToAttend: selectedDays
       };
 
