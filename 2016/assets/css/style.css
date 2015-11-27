@@ -187,8 +187,13 @@ body {
   color: #fff;
 }
 
+.speaker-links a:first-child {
+  margin-left: 80px;
+}
+
 .speaker p {
   font-size: 18px;
+  text-align: justify;
 }
 
 #schedule {
