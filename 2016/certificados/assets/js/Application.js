@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Form from './Form';
+import SearchGroup from './SearchGroup';
 import InfoBox from './InfoBox';
 
 class Application extends React.Component {
@@ -21,7 +21,7 @@ class Application extends React.Component {
   render() {
     return (
       <div>
-        <Form />
+        <SearchGroup />
         <InfoBox />
       </div>
     );
