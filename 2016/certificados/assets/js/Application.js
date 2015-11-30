@@ -21,11 +21,15 @@ class Application extends React.Component {
   }
 
   render() {
-    return <div>{this.state.obj}</div>
+    return <div>{this.state.obj} - {this.props.name}</div>
   }
 }
 
+Application.defaultProps = {
+  name: 'No name...'
+};
+
 ReactDOM.render(
-  <Application />,
+  <Application name="Fernando Porazzi" />,
   document.getElementById('application')
 );
