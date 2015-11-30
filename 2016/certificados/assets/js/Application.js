@@ -30,6 +30,6 @@ Application.defaultProps = {
 };
 
 ReactDOM.render(
-  <Application name="Fernando Porazzi" />,
+  <Application name="Fernando" />,
   document.getElementById('application')
 );
