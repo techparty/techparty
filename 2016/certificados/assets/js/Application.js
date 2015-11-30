@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Form from './Form';
+import InfoBox from './InfoBox';
 
 class Application extends React.Component {
 
@@ -21,6 +22,7 @@ class Application extends React.Component {
     return (
       <div>
         <Form />
+        <InfoBox />
       </div>
     );
   }
