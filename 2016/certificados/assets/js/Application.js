@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Form from './Form';
 
 class Application extends React.Component {
 
@@ -12,22 +13,18 @@ class Application extends React.Component {
     };
   }
 
-  _fetch() {
-    console.log('fetch server data and then populate the state');
-  }
-
   componentDidMount() {
-    this._fetch();
+    //
   }
 
   render() {
-    return <div>{this.state.obj} - {this.props.name}</div>
+    return (
+      <div>
+        <Form />
+      </div>
+    );
   }
 }
-
-Application.defaultProps = {
-  name: 'No name...'
-};
 
 ReactDOM.render(
   <Application name="Fernando" />,
