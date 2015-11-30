@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDom from 'react-dom';
+import ReactDOM from 'react-dom';
 
 class Application extends React.Component {
   render() {
@@ -7,7 +7,7 @@ class Application extends React.Component {
   }
 }
 
-ReactDom.render(
+ReactDOM.render(
   <Application />,
   document.getElementById('application')
 );
