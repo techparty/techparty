@@ -20,7 +20,7 @@ class Application extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="wrapper">
         <SearchGroup />
         <InfoBox />
       </div>

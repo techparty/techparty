@@ -4,11 +4,6 @@ import Form from './Form';
 export default class SearchGroup extends React.Component {
   constructor(props) {
     super(props);
-
-    this.state = {
-      showError: false,
-      showSuccess: false
-    };
   }
 
   _fetch() {
@@ -21,18 +16,8 @@ export default class SearchGroup extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="col">
         <Form />
-
-        {this.state.showError
-          ? 'Error while fetching data'
-          : ''
-        }
-
-        {this.state.showSuccess
-          ? 'show Success component'
-          : ''
-        }
       </div>
     );
   }
