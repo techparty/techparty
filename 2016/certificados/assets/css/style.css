@@ -17,6 +17,7 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 body {
@@ -30,10 +31,18 @@ body {
   margin: 0 auto;
 }
 
+.header {
+  padding: 20px;
+}
+
+.header a {
+  color: rgba(0,0,0,0.8);
+}
+
 .col {
   float: left;
   width: 50%;
-  padding: 50px 20px 0 20px;
+  padding: 20px 20px 0 20px;
 }
 
 .card {
@@ -93,6 +102,10 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 30px 0 0 0;
 }
 
+.user-card h2 {
+  font-weight: 400;
+}
+
 .user-card__info {
   margin: 10px 0 20px 0;
 }
@@ -103,7 +116,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .user-card__desc {
   margin-top: 10px;
-  font-weight: 700;
+  font-weight: 300;
 }
 
 .user-card__count {
