@@ -1,5 +1,4 @@
 import React from 'react';
-import UserCard from './UserCard';
 import Loader from './Loader';
 
 export default class Form extends React.Component {
@@ -7,13 +6,15 @@ export default class Form extends React.Component {
     super(props);
 
     this.state = {
-      showError: true,
-      showSuccess: true,
-      isFetchingData: false,
-
       userEmail: '',
-      userCpf: ''
+      userCpf: '',
+      showError: this.props.showError,
+      errorMessage: ''
     };
+  }
+
+  componentWillReceiveProps() {
+    this.setState({showError: this.props.showError});
   }
 
   _handleEmailChange(e) {
@@ -27,15 +28,18 @@ export default class Form extends React.Component {
   _handleSubmit(e) {
     e.preventDefault();
 
-    this.setState({isFetchingData: true});
+    //validate data here and send back to parent class
+    var email = this.state.userEmail.trim(),
+      cpf = this.state.userCpf.trim();
 
-    console.log(this.state.userEmail, this.state.userCpf);
+    if (!email || !cpf) {
+      this.setState({showError: true});
+      this.setState({errorMessage: 'Preencha os campos E-mail e CPF'});
+      return;
+    }
 
-    // Just to to check if states are working properly =)
-    // Remove later
-    setTimeout(() => {
-      this.setState({isFetchingData: false});
-    }, 4000);
+    // Send data to parent
+    this.props.onFormSubmit({email: email, cpf: cpf});
   }
 
   render() {
@@ -44,31 +48,26 @@ export default class Form extends React.Component {
         <section className="card">
           <form onSubmit={this._handleSubmit.bind(this)}>
             <div className="form-item">
-              <input type="email" name="email" id="email" required placeholder="E-mail" onChange={this._handleEmailChange.bind(this)} />
+              <input type="email" name="email" id="email" placeholder="E-mail" onChange={this._handleEmailChange.bind(this)} />
             </div>
 
             <div className="form-item">
-              <input type="number" name="cpf" id="cpf" required placeholder="CPF" onChange={this._handleCpfChange.bind(this)} />
+              <input type="number" name="cpf" id="cpf" placeholder="CPF" onChange={this._handleCpfChange.bind(this)} />
             </div>
 
             <div className="form-item">
-              {this.state.isFetchingData ? <Loader /> : false}
+              {this.props.isFetchingData ? <Loader /> : false}
               <button className="btn-default">PESQUISAR</button>
             </div>
           </form>
 
           {this.state.showError
             ? <div className="error">
-                <p>Error while fetching data from server.</p>
+                <p>{this.state.errorMessage}</p>
               </div>
             : false
           }
         </section>
-
-        {this.state.showSuccess
-          ? <UserCard />
-          : false
-        }
       </div>
     );
   }
