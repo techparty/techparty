@@ -139,3 +139,15 @@ input[type=number]::-webkit-outer-spin-button {
   color: #417fec;
   font-weight: 400;
 }
+
+.logo-box {
+  margin-top: 30px;
+  float: left;
+  width: 100%;
+}
+
+.logo-box img {
+  display: block;
+  width: 250px;
+  margin: 0 auto;
+}
