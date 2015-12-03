@@ -159,3 +159,8 @@ input[type=number]::-webkit-outer-spin-button {
   width: 250px;
   margin: 0 auto;
 }
+
+canvas {
+  display: none;
+  background-color: #ffffff;
+}

@@ -121,6 +121,7 @@
 
       ctx.font = 'bold 40px sans-serif';
       ctx.textAlign = 'center';
+      ctx.fillStyle = 'black';
       ctx.fillText(name, x, 290);
 
       // username underline

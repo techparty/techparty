@@ -5,18 +5,16 @@ import SearchGroup from './SearchGroup';
 import InfoBox from './InfoBox';
 
 class Application extends React.Component {
-
-  // React's getInitialState() should live inside the constructor
   constructor(props) {
     super(props);
 
     this.state = {
-      obj: 'teste'
     };
+
+    console.log('Init Application');
   }
 
   componentDidMount() {
-    //
   }
 
   render() {
@@ -31,6 +29,6 @@ class Application extends React.Component {
 }
 
 ReactDOM.render(
-  <Application name="Fernando" />,
+  <Application />,
   document.getElementById('application')
 );

@@ -1,7 +1,6 @@
 import React from 'react';
 import Form from './Form';
 import UserCard from './UserCard';
-import Canvas from './Canvas';
 
 export default class SearchGroup extends React.Component {
   constructor(props) {
@@ -26,7 +25,7 @@ export default class SearchGroup extends React.Component {
   }
 
   _handleSubmit(user) {
-    console.log(user);
+    console.log('_handleSubmit user', user);
 
     this.setState({isFetchingData: true});
 
@@ -45,8 +44,6 @@ export default class SearchGroup extends React.Component {
         <Form onFormSubmit={this._handleSubmit.bind(this)} isFetchingData={this.state.isFetchingData} showError={this.state.showError} />
 
         {this.state.showSuccess ? <UserCard user={this.state.userData} /> : false }
-
-        <Canvas />
       </div>
     );
   }
