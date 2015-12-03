@@ -22,7 +22,8 @@ export default class UserCard extends React.Component {
           </p>
         </div>
 
-        <button className="btn-default">IMPRIMIR</button>
+        <button className="btn btn-primary">IMPRIMIR</button>
+        <button className="btn btn-secondary">DOWNLOAD</button>
       </section>
     );
   }

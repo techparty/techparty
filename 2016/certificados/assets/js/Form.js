@@ -57,7 +57,7 @@ export default class Form extends React.Component {
 
             <div className="form-item">
               {this.props.isFetchingData ? <Loader /> : false}
-              <button className="btn-default">PESQUISAR</button>
+              <button className="btn btn-primary">PESQUISAR</button>
             </div>
           </form>
 
