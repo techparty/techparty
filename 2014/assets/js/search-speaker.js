@@ -4,8 +4,8 @@
 
   var Search = (function(){
 
-    var _year = 2015;
-    var _url = 'https://techparty-data.herokuapp.com/api/v1/participant/'
+    var _year = 2014;
+    var _url = 'https://techparty-data.herokuapp.com/api/v1/speaker/';
 
     function _ajax (data, cb) {
       var xhr = new XMLHttpRequest();
@@ -66,16 +66,21 @@
         url: _url + 'get',
         form: 'id=' + el.dataset.id
       }, function (response) {
-        var participant = JSON.parse(response);
+        var speaker = JSON.parse(response);
+
+        var dataName = speaker.name;
+        var dataSubject = speaker.talk;
+        var dataDate = moment(speaker.date).format('DD/MM/YYYY');
+        var dataMinutes = speaker.minutes;
 
         d.querySelector('#content').classList.add('hidden');
         d.querySelector('#print-area').classList.toggle('hidden');
 
-        _drawCanvas(participant.name, participant.days.length);
+        _drawCanvas(dataName, dataSubject, dataDate, dataMinutes);
       })
     }
 
-    function _drawCanvas(name, days) {
+    function _drawCanvas(name, subject, date, minutes) {
 
       var canvas = d.querySelector('#c'),
           ctx = canvas.getContext('2d'),
@@ -84,9 +89,9 @@
           assinatura = new Image(),
           x = canvas.width / 2;
 
-      logoFaccat.src = '../assets/img/faccat-white.png';
-      logo.src = '../assets/img/tech-party.png';
-      assinatura.src = '../assets/img/assinatura.png';
+      logoFaccat.src = '../../assets/img/faccat-white.png';
+      logo.src = '../../assets/img/tech-party.png';
+      assinatura.src = '../../assets/img/assinatura.png';
 
       logoFaccat.onload = function () {
 
@@ -118,6 +123,7 @@
 
       ctx.font = 'bold 40px sans-serif';
       ctx.textAlign = 'center';
+      ctx.fillStyle = 'black';
       ctx.fillText(name, x, 290);
 
       // username underline
@@ -136,8 +142,9 @@
       ctx.font = 'bold 20px sans-serif';
       ctx.textAlign = 'center';
 
-      ctx.fillText('Certificamos sua participação na TechParty Faccat, realizada entre', x, 383);
-      ctx.fillText('6 de Abril de 2015 e 10 de Abril de 2015, na cidade de Taquara/RS, com carga horária de ' + (days * 3) + ' horas.', x, 410);
+      ctx.fillText('Conferimos a ' + name + ' o presente certificado por haver ministrado a ', x, 383);
+      ctx.fillText('palestra "' + subject + '" durante a TechParty ' + _year, x, 410);
+      ctx.fillText('promovida pela Faculdades Integradas de Taquara no dia ' + date + '.', x, 437);
 
       ctx.font = '18px sans-serif';
       ctx.textAlign = 'center';

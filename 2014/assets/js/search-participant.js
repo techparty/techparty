@@ -34,8 +34,10 @@
         var data = '<ul>'
         participants.forEach(function (participant) {
           data += '<li class="resp-list-item">'
-          data += ' <input type="checkbox" data-name="' + participant + '" onchange="Search.bindCheckbox(this);">'
-          data += ' <label>' + participant + '</label>'
+          data += '  <label>'
+          data += '      <input type="checkbox" data-id="' + participant._id + '" onchange="Search.bindCheckbox(this);">'
+          data +=        participant.name
+          data += '  </label>'
           data += '</li>'
         })
         data+='</ul>'
@@ -59,27 +61,21 @@
     }
 
     function _checkboxChange (el) {
-      var dataName = el.getAttribute('data-name');
       _ajax({
         method: 'POST',
         url: _url + 'get',
-        form: 'username=' + dataName + '&year=' + _year
+        form: 'id=' + el.dataset.id
       }, function (response) {
         var participant = JSON.parse(response);
-
-        var dataDays = participant.count;
-        var dataIsSpeaker = false;
-        var dataSubject = null;
-        var dataDate = null;
 
         d.querySelector('#content').classList.add('hidden');
         d.querySelector('#print-area').classList.toggle('hidden');
 
-        _drawCanvas(dataName, dataDays, dataIsSpeaker, dataSubject, dataDate);
+        _drawCanvas(participant.name, participant.days.length);
       })
     }
 
-    function _drawCanvas(name, days, isSpeaker, subject, date) {
+    function _drawCanvas(name, days) {
 
       var canvas = d.querySelector('#c'),
           ctx = canvas.getContext('2d'),
@@ -140,14 +136,8 @@
       ctx.font = 'bold 20px sans-serif';
       ctx.textAlign = 'center';
 
-      if (!isSpeaker) {
-        ctx.fillText('Certificamos sua participação na TechParty Faccat, realizada entre', x, 383);
-        ctx.fillText('31 de Março de 2014 e 04 de Abril de 2014, na cidade de Taquara/RS, com carga horária de ' + (days * 3) + ' horas.', x, 410);
-      } else {
-        ctx.fillText('Conferimos a ' + name + ' o presente certificado por haver ministrado a ', x, 383);
-        ctx.fillText('palestra "' + subject + '" durante a TechParty ' + _year, x, 410);
-        ctx.fillText('promovida pela Faculdades Integradas de Taquara no dia ' + date + ', com duração de 1 hora.', x, 437);
-      }
+      ctx.fillText('Certificamos sua participação na TechParty Faccat, realizada entre', x, 383);
+      ctx.fillText('6 de Abril de 2015 e 10 de Abril de 2015, na cidade de Taquara/RS, com carga horária de ' + (days * 3) + ' horas.', x, 410);
 
       ctx.font = '18px sans-serif';
       ctx.textAlign = 'center';
