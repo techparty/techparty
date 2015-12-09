@@ -4,7 +4,7 @@
 
   var Search = (function(){
 
-    var _year = 2015;
+    var _year = 2014;
     var _url = 'https://techparty-data.herokuapp.com/api/v1/participant/'
 
     function _ajax (data, cb) {

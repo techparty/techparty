@@ -5,7 +5,7 @@
   var Search = (function(){
 
     var _year = 2015;
-    var _url = 'https://techparty-data.herokuapp.com/api/speaker/';
+    var _url = 'https://techparty-data.herokuapp.com/api/v1/speaker/';
 
     function _ajax (data, cb) {
       var xhr = new XMLHttpRequest();
@@ -34,8 +34,10 @@
         var data = '<ul>'
         participants.forEach(function (participant) {
           data += '<li class="resp-list-item">'
-          data += ' <input type="checkbox" data-name="' + participant + '" onchange="Search.bindCheckbox(this);">'
-          data += ' <label>' + participant + '</label>'
+          data += '  <label>'
+          data += '      <input type="checkbox" data-id="' + participant._id + '" onchange="Search.bindCheckbox(this);">'
+          data +=        participant.name
+          data += '  </label>'
           data += '</li>'
         })
         data+='</ul>'
@@ -59,16 +61,16 @@
     }
 
     function _checkboxChange (el) {
-      var dataName = el.getAttribute('data-name');
       _ajax({
         method: 'POST',
         url: _url + 'get',
-        form: 'username=' + dataName + '&year=' + _year
+        form: 'id=' + el.dataset.id
       }, function (response) {
         var speaker = JSON.parse(response);
 
+        var dataName = speaker.name;
         var dataSubject = speaker.talk;
-        var dataDate = speaker.date;
+        var dataDate = moment(speaker.date).format('DD/MM/YYYY');
         var dataMinutes = speaker.minutes;
 
         d.querySelector('#content').classList.add('hidden');
