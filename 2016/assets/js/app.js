@@ -4,7 +4,7 @@
 
   'use strict';
 
-  function xhr(type, url, success, error) {
+  function xhr(type, url, success, error, data) {
     var xhr = new XMLHttpRequest();
 
     xhr.open(type, url, true);
@@ -21,7 +21,10 @@
 
     };
 
-    xhr.send();
+    //xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+    xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+
+    xhr.send(JSON.stringify(data));
   }
 
   var Speakers = (function() {
@@ -249,7 +252,7 @@
     };
 
     var _sendDataToServer = function (data) {
-      xhr(registeringForm.method, registeringForm.action, _success, _error);
+      xhr(registeringForm.method, registeringForm.action, _success, _error, data);
     };
 
     var _validateFormData = function (e) {
@@ -311,8 +314,6 @@
     };
 
     var _bindScroll = function () {
-      console.log('_bindScroll');
-
       document.addEventListener('scroll', _getScrollPosition, false);
     };
 
