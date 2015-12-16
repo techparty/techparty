@@ -139,6 +139,17 @@ body {
   color: #fff;
 }
 
+.speaker-want-help {
+  text-align: center;
+  font: 20px 'Roboto';
+  font-weight: 300;
+}
+
+.speaker-want-help a {
+  text-decoration: underline;
+  color: #2C3840;
+}
+
 .span_1-4 {
   width: 25%;
   float: left;
@@ -339,6 +350,15 @@ li.active-day:hover {
   font-weight: 400;
   text-align: center;
   float: left;
+}
+
+#sponsors p {
+  text-align: center;
+}
+
+#sponsors p a {
+  color: #EF7247;
+  text-decoration: underline;
 }
 
 #sponsors-holder {
