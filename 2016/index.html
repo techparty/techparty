@@ -253,7 +253,7 @@
       <div class="register-modal-content">
         <span class="register-modal-bracket">{</span>
         <h4 class="register-modal-title" id="modal-title">Preencha o formulário abaixo para efetuar sua inscrição.</h4>
-        <form name="register-form" id="register-form" method="post" action="http://private-34a02-techpartyregistering.apiary-mock.com/submissions">
+        <form name="register-form" id="register-form" method="post" action="https://techparty-data.herokuapp.com/api/v1/participant">
           <div class="form-line full">
             <label for="r-name" class="full" name="r-name">Nome:</label>
             <input id="r-name" type="text" class="full form-input" name="r-name">
@@ -270,29 +270,29 @@
             <label class="full">Dias à participar:</label>
 
             <div class="cb-holder">
-              <input type="checkbox" name="day-to-attend" id="cb-monday" value="monday">
+              <input type="checkbox" name="day-to-attend" id="cb-monday" value="1">
               <label for="cb-monday" class="cb-label">Segunda</label>
             </div>
 
             <div class="cb-holder">
-              <input type="checkbox" name="day-to-attend" id="cb-tuesday" value="tuesday">
+              <input type="checkbox" name="day-to-attend" id="cb-tuesday" value="2">
               <label for="cb-tuesday" class="cb-label">Terça</label>
             </div>
 
             <div class="cb-holder">
-              <input type="checkbox" name="day-to-attend" id="cb-wednesday" value="wednesday">
+              <input type="checkbox" name="day-to-attend" id="cb-wednesday" value="3">
               <label for="cb-wednesday" class="cb-label">Quarta</label>
             </div>
 
             <div class="cb-holder">
-              <input type="checkbox" name="day-to-attend" id="cb-thursday" value="thursday">
+              <input type="checkbox" name="day-to-attend" id="cb-thursday" value="4">
               <label for="cb-thursday" class="cb-label">Quinta</label>
             </div>
 
-            <div class="cb-holder">
-              <input type="checkbox" name="day-to-attend" id="cb-friday" value="friday">
+            <!--<div class="cb-holder">
+              <input type="checkbox" name="day-to-attend" id="cb-friday" value="5">
               <label for="cb-friday" class="cb-label">Sexta</label>
-            </div>
+            </div>-->
           </div>
 
           <div class="form-line full hidden" id="form-error-message"></div>
