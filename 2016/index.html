@@ -80,13 +80,13 @@
                 <div class="speaker" itemprop="performer" itemscope itemtype="http://schema.org/Person">
                   <div itemprop="image" class="speaker-photo octagon" style="background-image: url('assets/img/speakers/{{image}}');"></div>
                   <h3 itemprop="name">{{name}}</h3>
-                  <h4 itemprop="brand">{{company}}</h4>
+                  <h4 itemprop="brand">{{&company}}</h4>
                   <p class="full speaker-links">
                     {{#links}}
                       <a itemprop="potentialAction" href="{{link}}"><i class="fa {{icon}}"></i></a>
                     {{/links}}
                   </p>
-                  <p itemprop="description">{{bio}}</p>
+                  <p itemprop="description">{{&bio}}</p>
                 </div>
               </div>
             {{/data}}
