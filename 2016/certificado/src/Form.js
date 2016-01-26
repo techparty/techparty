@@ -8,6 +8,7 @@ export default class Form extends React.Component {
     this.state = {
       userEmail: '',
       userCpf: '',
+      isSpeaker: false,
       showError: this.props.showError,
       errorMessage: ''
     };
@@ -23,6 +24,12 @@ export default class Form extends React.Component {
 
   _handleCpfChange(e) {
     this.setState({userCpf: e.target.value});
+  }
+
+  _handleIsSpeakerChange(e) {
+    var speaker = !this.state.isSpeaker;
+
+    this.setState({isSpeaker: speaker});
   }
 
   _validateCpf(strCPF) {
@@ -84,6 +91,11 @@ export default class Form extends React.Component {
 
             <div className="form-item">
               <input type="number" name="cpf" id="cpf" placeholder="CPF" onChange={this._handleCpfChange.bind(this)} />
+            </div>
+
+            <div className="form-item">
+              <input type="checkbox" name="is_speaker" id="is_speaker" className="is_speaker" onChange={this._handleIsSpeakerChange.bind(this)} />
+              <label htmlFor="is_speaker">Sou palestrante teste {this.state.isSpeaker} </label>
             </div>
 
             <div className="form-item">
