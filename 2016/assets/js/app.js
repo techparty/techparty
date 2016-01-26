@@ -47,7 +47,7 @@
     };
 
     var _init = function () {
-      xhr('GET', 'assets/js/data/speakers.json', _success, _error)
+      xhr('GET', 'assets/data/speakers.json', _success, _error)
     };
 
     return {
@@ -106,7 +106,7 @@
     };
 
     var _init = function () {
-      xhr('GET', 'assets/js/data/schedule.json', _success, _error);
+      xhr('GET', 'assets/data/schedule.json', _success, _error);
 
       _bindNavigation();
     };
@@ -163,7 +163,7 @@
     };
 
     var _init = function () {
-      xhr('GET', 'assets/js/data/sponsors.json', _success, _error);
+      xhr('GET', 'assets/data/sponsors.json', _success, _error);
     };
 
     return {

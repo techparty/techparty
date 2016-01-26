@@ -1,92 +1,95 @@
-var gulp = require('gulp');
-var del = require('del');
-var uglify = require('gulp-uglify');
-var minifyCSS = require('gulp-minify-css');
-var minifyHTML = require('gulp-minify-html');
+'use strict';
 
-var years = [2014, 2015];
-var current = 2015;
+const gulp = require('gulp');
+const del = require('del');
+const uglify = require('gulp-uglify');
+const minifyCSS = require('gulp-minify-css');
+const minifyHTML = require('gulp-htmlmin');
 
-function _each (array, cb) {
-  if (array) {
-    for (var i = 0, l = array.length; i < l; i++) {
-      cb(array[i]);
-    }
-  }
-}
+const years = [2014, 2015, 2016];
+const current = 2016;
 
-gulp.task('clean', function (cb) {
+let _move = (src_path, dest_path) => {
+  gulp
+    .src(src_path)
+    .pipe(gulp.dest(dest_path))
+};
+
+let _minifyCss = (src_path, dest_path) => {
+  gulp
+    .src(src_path)
+    .pipe(minifyCSS({ advanced: true }))
+    .pipe(gulp.dest(dest_path))
+};
+
+let _uglify = (src_path, dest_path) => {
+  gulp
+    .src(src_path)
+    .pipe(uglify())
+    .pipe(gulp.dest(dest_path))
+};
+
+let _minifyHtml = (src_path, dest_path) => {
+  gulp
+    .src(src_path)
+    .pipe(minifyHTML({collapseWhitespace: true}))
+    .pipe(gulp.dest(dest_path))
+};
+
+let _moveYear = year => {
+  _move(`${year}/assets/fonts/**`, `dist/${year}/assets/fonts`);
+  _move(`${year}/assets/data/**`, `dist/${year}/assets/data`);
+  _move(`${year}/assets/img/**`, `dist/${year}/assets/img`);
+};
+
+let _minifyCssYear = year => {
+  _minifyCss(`${year}/assets/css/*.css`, `dist/${year}/assets/css`);
+  _minifyCss(`${year}/certificado/assets/css/*.css`, `dist/${year}/certificado/assets/css`);
+};
+
+let _uglifyYear = year => {
+  _uglify(`${year}/assets/js/*.js`, `dist/${year}/assets/js`);
+  _uglify(`${year}/certificado/assets/js/*.js`, `dist/${year}/certificado/assets/js`);
+};
+
+let _minifyHtmlYear = year => {
+  _minifyHtml(`${year}/*.html`, `dist/${year}`);
+  _minifyHtml(`${year}/certificado/*.html`, `dist/${year}/certificado`);
+  _minifyHtml(`${year}/certificado/palestrante/*.html`, `dist/${year}/certificado/palestrante`);
+};
+
+gulp.task('clean', cb => {
   del(['dist'], cb);
 });
 
-gulp.task('dist-minify', ['clean'], function() {
-  _each(years, function (year) {
-    gulp.src(year + '/assets/css/*.css')
-      .pipe(minifyCSS({ advanced: true }))
-      .pipe(gulp.dest('dist/' + year + '/assets/css'));
-  });
+gulp.task('dist-move', ['clean'], () => {
+  years.forEach(_moveYear);
 });
 
-gulp.task('dist-uglify', ['clean'], function() {
-  _each(years, function (year) {
-    gulp.src(year + '/assets/js/*.js')
-      .pipe(uglify())
-      .pipe(gulp.dest('dist/' + year + '/assets/js'));
-  });
+gulp.task('dist-minify', ['clean'], () => {
+  years.forEach(_minifyCssYear);
 });
 
-gulp.task('dist-img', ['clean'], function () {
-  _each(years, function (year) {
-    gulp.src(year + '/assets/img/**')
-      .pipe(gulp.dest('dist/' + year + '/assets/img'));
-  });
+gulp.task('dist-uglify', ['clean'], () => {
+  years.forEach(_uglifyYear);
 });
 
-gulp.task('dist-font', ['clean'], function () {
-  _each(years, function (year) {
-    gulp.src(year + '/assets/font/*')
-      .pipe(gulp.dest('dist/' + year + '/assets/font'));
-  });
+gulp.task('dist-html', ['clean'], () => {
+  years.forEach(_minifyHtmlYear);
 });
 
-gulp.task('dist-assets', ['dist-minify', 'dist-uglify', 'dist-img', 'dist-font'])
+gulp.task('dist', ['dist-move', 'dist-minify', 'dist-uglify', 'dist-html'], () => {
+    _move(`${current}/assets/fonts/**`, 'dist/assets/fonts');
+    _move(`${current}/assets/data/**`, 'dist/assets/data');
+    _move(`${current}/assets/img/**`, 'dist/assets/img');
 
-gulp.task('dist-certificado', ['clean'], function () {
-  _each(years, function (year) {
-    gulp.src(year + '/certificado/**')
-      .pipe(minifyHTML())
-      .pipe(gulp.dest('dist/' + year + '/certificado'));
-  });
-});
+    _minifyCss(`${current}/assets/css/*.css`, 'dist/assets/css');
+    _minifyCss(`${current}/certificado/assets/css/*.css`, 'dist/certificado/assets/css');
 
-gulp.task('dist-html', ['clean'], function () {
-  _each(years, function (year) {
-    gulp.src(year + '/*.html')
-      .pipe(minifyHTML())
-      .pipe(gulp.dest('dist/' + year));
-  });
-});
+    _uglify(`${current}/assets/js/*.js`, 'dist/assets/js');
+    _uglify(`${current}/certificado/assets/js/*.js`, 'dist/certificado/assets/js');
 
-gulp.task('dist', ['dist-assets', 'dist-certificado', 'dist-html'], function () {
-  gulp.src(current + '/assets/css/*.css')
-      .pipe(minifyCSS({ advanced: true }))
-      .pipe(gulp.dest('dist/assets/css'));
-
-  gulp.src(current + '/assets/js/*.js')
-      .pipe(uglify())
-      .pipe(gulp.dest('dist/assets/js'));
-
-  gulp.src(current + '/assets/img/**')
-      .pipe(gulp.dest('dist/assets/img'));
-
-  gulp.src(current + '/assets/font/**')
-      .pipe(gulp.dest('dist/assets/font'));
-
-  gulp.src(current + '/certificado/**')
-    .pipe(minifyHTML())
-    .pipe(gulp.dest('dist/certificado/'));
-
-  gulp.src(current + '/*.html')
-    .pipe(minifyHTML())
-    .pipe(gulp.dest('dist/'));
+    _minifyHtml(`${current}/*.html`, 'dist');
+    _minifyHtml(`${current}/certificado/*.html`, 'dist/certificado');
+    _minifyHtml(`${current}/certificado/palestrante/*.html`, 'dist/certificado/palestrante');
 });

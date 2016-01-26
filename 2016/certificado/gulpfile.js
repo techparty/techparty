@@ -8,15 +8,15 @@ const buffer = require('vinyl-buffer');
 const uglify = require('gulp-uglify');
 
 gulp.task('transform', () => {
-  browserify('./assets/js/Application.js')
+  browserify('./src/Application.js')
     .transform('babelify', {presets: ['es2015', 'react']})
     .bundle()
     .pipe(source('bundle.js'))
     .pipe(buffer())
     .pipe(uglify())
-    .pipe(gulp.dest('./dist/js/'));
+    .pipe(gulp.dest('./assets/js/'));
 });
 
 gulp.task('dev', () => {
-  gulp.watch('./assets/js/*.js', ['transform']);
+  gulp.watch('./src/*.js', ['transform']);
 });
