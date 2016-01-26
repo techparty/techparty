@@ -6,7 +6,8 @@ export default class Canvas extends React.Component {
     super(props);
 
     this.state = {
-      canvasData: this.props.canvasData
+      canvasData: this.props.canvasData,
+      hoursPerDay: 3
     };
   }
 
@@ -41,7 +42,7 @@ export default class Canvas extends React.Component {
 
     ctx.font = 'bold 20px sans-serif';
     ctx.textAlign = 'center';
-    ctx.fillText('Este certificado está sendo conferido a', xCenter, 223);
+    ctx.fillText('Este certificado está sendo conferido à', xCenter, 223);
 
     ctx.font = 'bold 40px sans-serif';
     ctx.textAlign = 'center';
@@ -64,7 +65,7 @@ export default class Canvas extends React.Component {
     ctx.textAlign = 'center';
 
     ctx.fillText('Certificamos sua participação na TechParty Faccat, realizada entre', xCenter, 383);
-    ctx.fillText('6 de Abril de 2015 e 10 de Abril de 2015, na cidade de Taquara/RS, totalizando ' + this.state.canvasData.totalHours + ' horas', xCenter, 410);
+    ctx.fillText('25 e 28 de Abril de 2016, na cidade de Taquara/RS, totalizando ' + this.state.canvasData.days.length * this.state.hoursPerDay + ' horas.', xCenter, 410);
 
     ctx.font = '18px sans-serif';
     ctx.textAlign = 'center';
