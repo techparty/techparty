@@ -10,8 +10,6 @@ class Application extends React.Component {
 
     this.state = {
     };
-
-    console.log('Init Application');
   }
 
   componentDidMount() {

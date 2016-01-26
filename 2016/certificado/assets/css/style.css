@@ -75,6 +75,11 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0;
 }
 
+input.is_speaker {
+  height: auto;
+  width: auto;
+}
+
 .btn {
   float: right;
   font-size: 15px;
