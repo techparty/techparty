@@ -77,7 +77,7 @@ export default class Form extends React.Component {
     }
 
     // Send data to parent
-    this.props.onFormSubmit({email: email, cpf: cpf});
+    this.props.onFormSubmit({email: email, cpf: cpf, isSpeaker: this.state.isSpeaker});
   }
 
   render() {
@@ -95,7 +95,7 @@ export default class Form extends React.Component {
 
             <div className="form-item">
               <input type="checkbox" name="is_speaker" id="is_speaker" className="is_speaker" onChange={this._handleIsSpeakerChange.bind(this)} />
-              <label htmlFor="is_speaker">Sou palestrante teste {this.state.isSpeaker} </label>
+              <label htmlFor="is_speaker">Sou palestrante</label>
             </div>
 
             <div className="form-item">
