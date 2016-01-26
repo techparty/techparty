@@ -4,34 +4,31 @@
       "type": "Adamantium",
       "class": "span_1-3",
       "companies": [
-        {"name": "CWI Software", "link": "cwi.com.br", "image": "http://placehold.it/200x200"},
-        {"name": "CR Sistemas e Web", "link": "cr.inf.br", "image": "http://placehold.it/200x200/2F4F2F"},
-        {"name": "Zenvia", "link": "Zenvia.com.br", "image": "http://placehold.it/200x200/3299cc"},
-        {"name": "Safetech", "link": "Safetech.com.br", "image": "http://placehold.it/200x200/a4b21c"},
-        {"name": "Bode.io", "link": "bode.io", "image": "http://placehold.it/200x200/963147"}
+        {"name": "", "link": "#", "image": "http://placehold.it/200x200"},
+        {"name": "", "link": "#", "image": "http://placehold.it/200x200/2F4F2F"},
+        {"name": "", "link": "#", "image": "http://placehold.it/200x200/a4b21c"}
       ]
     },
     {
       "type": "Golden",
       "class": "span_1-4",
       "companies": [
-        {"name": "CWI Software", "link": "cwi.com.br", "image": "http://placehold.it/200x200"},
-        {"name": "CR Sistemas e Web", "link": "cr.inf.br", "image": "http://placehold.it/200x200/abc123"},
-        {"name": "Zenvia", "link": "Zenvia.com.br", "image": "http://placehold.it/200x200/333300"},
-        {"name": "Safetech", "link": "Safetech.com.br", "image": "http://placehold.it/200x200/00ff33"},
-        {"name": "Bode.io", "link": "bode.io", "image": "http://placehold.it/200x200/951357"}
+        {"name": "", "link": "#", "image": "http://placehold.it/200x200"},
+        {"name": "", "link": "#", "image": "http://placehold.it/200x200/abc123"},
+        {"name": "", "link": "#", "image": "http://placehold.it/200x200/333300"},
+        {"name": "", "link": "#", "image": "http://placehold.it/200x200/00ff33"}
       ]
     },
     {
       "type": "Silver",
       "class": "span_1-6",
       "companies": [
-        {"name": "CWI Software", "link": "cwi.com.br", "image": "http://placehold.it/200x200"},
-        {"name": "CR Sistemas e Web", "link": "cr.inf.br", "image": "http://placehold.it/200x200/abc123"},
-        {"name": "Zenvia", "link": "Zenvia.com.br", "image": "http://placehold.it/200x200/333300"},
-        {"name": "Safetech", "link": "Safetech.com.br", "image": "http://placehold.it/200x200/00ff33"},
-        {"name": "Bode.io", "link": "bode.io", "image": "http://placehold.it/200x200/951357"},
-        {"name": "CWI Software", "link": "cwi.com.br", "image": "http://placehold.it/200x200"}
+        {"name": "", "link": "#", "image": "http://placehold.it/200x200"},
+        {"name": "", "link": "#", "image": "http://placehold.it/200x200/abc123"},
+        {"name": "", "link": "#", "image": "http://placehold.it/200x200/333300"},
+        {"name": "", "link": "#", "image": "http://placehold.it/200x200/00ff33"},
+        {"name": "", "link": "#", "image": "http://placehold.it/200x200/951357"},
+        {"name": "", "link": "#", "image": "http://placehold.it/200x200"}
       ]
     }
   ]

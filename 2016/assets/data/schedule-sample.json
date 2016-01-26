@@ -1,0 +1,124 @@
+{
+  "monday": [
+    {
+      "time": "19:45",
+      "icon": "fa-microphone",
+      "talkName": "Future Of Web Apps",
+      "subtitle": "Todd Motto",
+      "subtitleSpan": "Google",
+      "talkDescription": "With a focus on toolkits and APIs you'll leave the conference inspired, with valuable contacts and the knowledge to grow and succeed in this fast changing digital landscape."
+    },
+    {
+      "time": "20:30",
+      "icon": "fa-microphone",
+      "talkName": "Web Components - The past, present and future",
+      "subtitle": "Zeno Rocha",
+      "subtitleSpan": "Liferay",
+      "talkDescription": "By now, you may have heard a lot of things about Web Components. Some people say it's the promise land, others say it has been oversold. Although they're not going to solve all your life's problems, they do provide a paradigm shift from the traditional approach of web development."
+    },
+    {
+      "time": "21:15",
+      "icon": "fa-coffee",
+      "talkName": "Rango Break",
+      "subtitle": "Cachorro quente do nerd",
+      "subtitleSpan": "Lucas Maria",
+      "talkDescription": "Cachorro-quente ou hot dog é uma comida típica dos Estados Unidos1 em que se coloca salsicha dentro de um pão sovado. Nos Estados Unidos, o preparo típico do cachorro-quente é colocando a salsicha com o molho agridoce, picles à base de pepino, mostarda e ketchup. Também são muito utilizados o chucrute (repolho azedo) e o chili, espécie de massa de feijão com carne moída picante. No Brasil, a forma de se fazer o cachorro-quente depende da região do país."
+    }
+  ],
+  "tuesday": [
+    {
+      "time": "19:45",
+      "icon": "fa-microphone",
+      "talkName": "GO Lang By Exemple",
+      "subtitle": "Fernando Porazzi",
+      "subtitleSpan": "CWI Software",
+      "talkDescription": "Go é uma linguagem de programação criada pela Google e lançada em código livre em novembro de 2009. É uma linguagem compilada e programação concorrente, baseada em trabalhos feitos no sistema operacional chamado Inferno. O projeto inicial da linguagem foi feito em setembro de 2007 por Robert Griesemer, Rob Pike e Ken Thompson.4 Atualmente, há implementações para Windows, Linux, Mac OS X e FreeBSD."
+    },
+    {
+      "time": "20:30",
+      "icon": "fa-microphone",
+      "talkName": "NodeJS is Fucking Cool",
+      "subtitle": "Daniel Rohers",
+      "subtitleSpan": "Handson.tv",
+      "talkDescription": "Node.js é um interpretador de código JavaScript que funciona do lado do servidor. Seu objetivo é ajudar programadores na criação de aplicações de alta escalabilidade (como um servidor web1 ), com códigos capazes de manipular dezenas de milhares de conexões simultâneas, numa única máquina física. O Node.js é baseado no interpretador V8. Foi criado por Ryan Dahl em 2009, e seu desenvolvimento é mantido pela empresa Joyent, onde Dahl trabalha."
+    },
+    {
+      "time": "21:15",
+      "icon": "fa-coffee",
+      "talkName": "Rango Break",
+      "subtitle": "Pastel + Cupcake da",
+      "subtitleSpan": "Flávia Pereira de Carvalho",
+      "talkDescription": "Bolo de copo, bolo de forminha ou cupcake (em inglês), é um pequeno bolo designado para servir uma única pessoa, frequentemente assado em um pequeno copo de papel alumínio."
+    }
+  ],
+  "wednesday": [
+    {
+      "time": "19:45",
+      "icon": "fa-microphone",
+      "talkName": "Uma introdução ao GitHub",
+      "subtitle": "Rafael Eyng - Marlon Bernardes",
+      "subtitleSpan": "CWI Software",
+      "talkDescription": "Conheça o GitHub, a plataforma web que revolucionou a comunidade open-source e se tornou o maior host de código aberto do mundo. Vamos mostrar a plataforma e ensinar como contribuir para projetos e utilizando o Git, a ferramenta de controle de versão que está por trás disso tudo."
+    },
+    {
+      "time": "20:30",
+      "icon": "fa-microphone",
+      "talkName": "Legado é mais importante que dinheiro",
+      "subtitle": "Rodrigo Barros",
+      "subtitleSpan": "Handson.tv",
+      "talkDescription": "Rodrigo acredita que vivemos uma revolução cultural que se da por conta do novo comportamento de consumo de informações. Esta revolução trará uma mudança de mentalidade que Rodrigo chama de \"Mentalidade de Compartilhamento\". Através da sua história irá abordar esta revolução, seus aprendizados e como afeta sua vida."
+    },
+    {
+      "time": "21:15",
+      "icon": "fa-coffee",
+      "talkName": "Rango Break",
+      "subtitle": "Buraco Quente do ",
+      "subtitleSpan": "Nome do responsável",
+      "talkDescription": "Em uma panela quente, refogue a carne moída em azeite, cebola e alho. Acerte o sal. Acrescente um pouco de água e, quando estiver fervendo, adicione o queijo e misture com o fogo desligado. Adicione a salsinha. Corte uma das extremidades do pão francês, tire o miolo e recheie."
+    }
+  ],
+  "thursday": [
+    {
+      "time": "19:45",
+      "icon": "fa-microphone",
+      "talkName": "The Business Intelligence's Toolbox",
+      "subtitle": "Eduardo Brandes",
+      "subtitleSpan": "Company Name",
+      "talkDescription": "Milhões de transações diárias constituem um insumo importante para geração de conhecimento dentro da organização. Tirar proveito deste grande volume de dados é um desafio, e faz da disciplina de BI um diferencial competitivo à operação. Contribuir para o autoconhecimento e apoiar à tomada de decisão, são alguns dos objetivos do Business Intelligence. Se você quer saber mais sobre práticas, ferramentas e processos de tratamento de dados, participe e descubra mais sobre: As Ferramentas do Business Intelligence."
+    },
+    {
+      "time": "20:30",
+      "icon": "fa-microphone",
+      "talkName": "Growth hacking, conquistando seus primeiros usuários",
+      "subtitle": "Marcus Sá",
+      "subtitleSpan": "Bixaria",
+      "talkDescription": "Muito se fala sobre criação de novos produtos e serviços, mas ainda precisamos pensar em como crescer nossa base de usuários. Startups e desenvolvedores independentes precisam de meios criativos e de baixo impacto financeiro na busca desses primeiros usuários, ou de uma base de usuários ainda maior, principalmente em estágio de validação. Nessa talk veremos métodos usados por empresas de TI já consgradas no mercado e discutiremos algumas dessas ideias já aplicadas."
+    },
+    {
+      "time": "21:15",
+      "icon": "fa-coffee",
+      "talkName": "Rango Break",
+      "subtitle": "Frango Frito do nerd",
+      "subtitleSpan": "Fulando de Tal",
+      "talkDescription": "Um texto bem legal sobre frango frito."
+    }
+  ],
+  "friday": [
+    {
+      "time": "19:45",
+      "icon": "fa-microphone",
+      "talkName": "O Bode vai pro espaço!",
+      "subtitle": "Bode.io",
+      "subtitleSpan": "Bode.io",
+      "talkDescription": "Nesta palestra a empresa Bode apresenta como se comporta perante a mudanças e novas oportunidades de negócios. Em menos de um ano, a empresa precisou navegar em novos mares, e descobriu novos mundos. Serão apresentados um rápido resumo do que era fundamento da empresa, como identificamos novas oportunidades de negócios e como participamos de 5 frentes de negócios: software, curso de futurismo, internet das coisas, robótica para crianças e brand tech."
+    },
+    {
+      "time": "21:15",
+      "icon": "fa-glass",
+      "talkName": "After Party, TechParty",
+      "subtitle": "",
+      "subtitleSpan": "",
+      "talkDescription": "Ao final da apresentação da Bode.io (10/04/2015), vai rolar um churras muito especial para permitir a interação entre os participantes do evento, trocar ideias, escutar música, comer, bebemorar e muita nerdice! Adesão por pessoa R$ 15,00. Pagamento no laboratório B202 da FACCAT ou durante a TechParty. Prazo de inscrição 09/04/2015."
+    }
+  ]
+}

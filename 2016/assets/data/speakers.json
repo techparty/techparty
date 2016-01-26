@@ -21,28 +21,6 @@
         {"link": "//twitter.com/stopassola", "icon": "fa-twitter"},
         {"link": "http://pt.linkedin.com/in/stopassola", "icon": "fa-linkedin"}
       ]
-    },
-    {
-      "name": "Fernando Porazzi",
-      "company": "CWI Software",
-      "bio": "Lorem ipsum dolor sit amet",
-      "image": "fernandoporazzi.jpg",
-      "links": [
-        {"link": "fb.com/fernando", "icon": "fa-facebook-official"},
-        {"link": "tt.com/fernando", "icon": "fa-twitter"},
-        {"link": "gh.com/fernando", "icon": "fa-github"}
-      ]
-    },
-    {
-      "name": "Daniel Rohers",
-      "company": "Handson.tv",
-      "bio": "Trabalha com Javascript, html, css na handson.tv. Lorem ipsum dolor sit amet",
-      "image": "daniel.jpeg",
-      "links": [
-        {"link": "fb.com/danie", "icon": "fa-facebook-official"},
-        {"link": "tt.com/daniel", "icon": "fa-twitter"},
-        {"link": "gh.com/daniel", "icon": "fa-github"}
-      ]
     }
   ]
 }
