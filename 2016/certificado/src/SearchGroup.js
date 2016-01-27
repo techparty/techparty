@@ -70,7 +70,7 @@ export default class SearchGroup extends React.Component {
   render() {
     return (
       <div className="col">
-        <Form onFormSubmit={this._handleSubmit.bind(this)} isFetchingData={this.state.isFetchingData} showError={this.state.showError} errorMsg={this.state.errorMsg} />
+        <Form onFormSubmit={this._handleSubmit.bind(this)} isFetchingData={this.state.isFetchingData} showError={this.state.showError} />
 
         {this.state.showSuccess ? <UserCard user={this.state.userData} /> : false }
       </div>
