@@ -47,6 +47,18 @@
     },
 
     {
+      "name": "Anderson Aguiar",
+      "company": "<a href='http://www.arezzoco.com.br'>Arezzo&CO</a>",
+      "bio": "Trabalha com desenvolvimento web desde 2008, já trabalhou com PHP, Delphi e Java. Atualmente atua como Front-End Analyst na Arezzo&CO. É apaixonado por JS e automatização, obsecado por organização e focado em entrega de qualidade.",
+      "image": "anderson-aguiar.jpg",
+      "links": [
+        {"link": "//facebook.com/andersonaguiarrr", "icon": "fa-facebook-official"},
+        {"link": "//twitter.com/andersonaguiar", "icon": "fa-twitter"},
+        {"link": "//github.com/andersonaguiar", "icon": "fa-github"}
+      ]
+    },
+
+    {
       "name": "Ari Stopassola Junior",
       "company": "<a href='http://perito.inf.br'>Perito</a>",
       "bio": "Bacharel em Informática com ênfase em Análise de Sistemas pela Unisinos, cursou mestrado em Engenharia Informática e de Computadores pelo Instituto Superior Técnico da Universidade Técnica de Lisboa (Portugal), perito judicial 'ad hoc' especializado em TI (mantenedor do site <a href='http://perito.inf.br'>PERITO.inf.br</a>), Zend Certified Engineer (PHP 5.3) e Zend Certified PHP Engineer (PHP 5.5), Zend Framework 2 Certified Architect (ZFCA), Certified ScrumMaster pela Scrum Alliance, Microsoft Certified Professional (MCP), consultor web e PHP evangelist.",
