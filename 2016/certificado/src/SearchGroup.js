@@ -10,8 +10,7 @@ export default class SearchGroup extends React.Component {
       userData: {},
       showError: false,
       showSuccess: false,
-      isFetchingData: false,
-      errorMsg: ''
+      isFetchingData: false
     };
   }
 
