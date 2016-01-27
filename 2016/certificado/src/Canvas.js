@@ -6,13 +6,11 @@ export default class Canvas extends React.Component {
     super(props);
 
     this.state = {
-      canvasData: this.props.canvasData,
-      hoursPerDay: 3
+      canvasData: this.props.canvasData
     };
   }
 
   componentDidMount() {
-    console.log('canvasData', this.state.canvasData);
 
     var canvas = ReactDOM.findDOMNode(this.refs.canvas),
       ctx = canvas.getContext('2d'),
@@ -65,7 +63,7 @@ export default class Canvas extends React.Component {
     ctx.textAlign = 'center';
 
     ctx.fillText('Certificamos sua participação na TechParty Faccat, realizada entre', xCenter, 383);
-    ctx.fillText('25 e 28 de Abril de 2016, na cidade de Taquara/RS, totalizando ' + this.state.canvasData.days.length * this.state.hoursPerDay + ' horas.', xCenter, 410);
+    ctx.fillText('25 e 28 de Abril de 2016, na cidade de Taquara/RS, totalizando ' + this.state.canvasData.totalTime + ' horas.', xCenter, 410);
 
     ctx.font = '18px sans-serif';
     ctx.textAlign = 'center';
