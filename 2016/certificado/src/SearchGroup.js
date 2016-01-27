@@ -11,6 +11,7 @@ export default class SearchGroup extends React.Component {
       showError: false,
       showSuccess: false,
       isFetchingData: false,
+      errorMsg: ''
     };
   }
 
@@ -38,6 +39,12 @@ export default class SearchGroup extends React.Component {
         if (xhr.responseText) {
           var response = JSON.parse(xhr.responseText);
 
+          if (response === null) {
+            self.setState({isFetchingData: false});
+            alert('Confira seus dados e tente novamente!');
+            return;
+          }
+
           response.present = self._calculateTotalPresent(response.days);
           response.totalTime = self._calculateTotalTime(response.days);
 
@@ -64,7 +71,7 @@ export default class SearchGroup extends React.Component {
   render() {
     return (
       <div className="col">
-        <Form onFormSubmit={this._handleSubmit.bind(this)} isFetchingData={this.state.isFetchingData} showError={this.state.showError} />
+        <Form onFormSubmit={this._handleSubmit.bind(this)} isFetchingData={this.state.isFetchingData} showError={this.state.showError} errorMsg={this.state.errorMsg} />
 
         {this.state.showSuccess ? <UserCard user={this.state.userData} /> : false }
       </div>
