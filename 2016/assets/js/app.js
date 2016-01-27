@@ -19,7 +19,7 @@
         return success();
       }
 
-      error();
+      error(xhr);
 
     };
 
@@ -248,8 +248,27 @@
       return;
     };
 
-    var _error = function () {
-      _showError('Houve um erro ao enviar seus dados. Por favor, tente novamente!');
+    var _error = function (e) {
+      if (e.status === 400 && e.responseText.indexOf('Maximum number') !== -1) {
+        var day = e.responseText.replace(/.* /, '').replace('"', '');
+        switch (day) {
+          case '1':
+            day = 'segunda-feira';
+            break;
+          case '2':
+            day = 'terça-feira';
+            break;
+          case '3':
+            day = 'quarta-feira';
+            break;
+          case '4':
+            day = 'quinta-feira';
+            break;
+        }
+        return _showError('Desculpe, mas ' + day + ' não possui mais vagas!');
+      }
+
+      return _showError('Houve um erro ao enviar seus dados. Por favor, tente novamente!');
     };
 
     var _sendDataToServer = function (data) {
