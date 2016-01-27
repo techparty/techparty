@@ -102,6 +102,7 @@
         timelineHolder.innerHTML = rendered;
       } else {
         document.getElementById('schedule').style.display = 'none';
+        document.querySelector('#header-top a[href="#schedule"]').style.display = 'none';
       }
     };
 
