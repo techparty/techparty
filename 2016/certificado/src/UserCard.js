@@ -24,7 +24,12 @@ export default class UserCard extends React.Component {
   }
 
   render() {
-    var downloadName = 'Certificado_' + this.props.user.name.replace(/\s+/g, '') + '.png';
+    var downloadName = 'Certificado_' + this.props.user.name.replace(/\s+/g, '') + '.png',
+      showButton;
+
+    if (this.props.user.present) {
+      showButton = <a ref="downloadAnchor" download={downloadName} className="btn btn-secondary" onClick={this._download.bind(this)}>DOWNLOAD</a>
+    }
 
     return (
       <section className="card user-card">
@@ -42,7 +47,7 @@ export default class UserCard extends React.Component {
           </p>
         </div>
 
-        <a ref="downloadAnchor" download={downloadName} className="btn btn-secondary" onClick={this._download.bind(this)}>DOWNLOAD</a>
+        {showButton}
 
         <Canvas onFinished={this._encodeCanvas.bind(this)} canvasData={this.props.user} />
       </section>
