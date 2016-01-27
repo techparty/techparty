@@ -14,12 +14,15 @@ export default class SearchGroup extends React.Component {
     };
   }
 
-  _calculateTotalTime(days) {
+  _calculateTotalPresent(days) {
     var filtered = days.filter( (d) => {
       return d.present;
     } );
+    return filtered.length;
+  }
 
-    return filtered.length * 3;
+  _calculateTotalTime(days) {
+    return this._calculateTotalPresent(days) * 3;
   }
 
   _fetch(user) {
@@ -35,6 +38,7 @@ export default class SearchGroup extends React.Component {
         if (xhr.responseText) {
           var response = JSON.parse(xhr.responseText);
 
+          response.present = self._calculateTotalPresent(response.days);
           response.totalTime = self._calculateTotalTime(response.days);
 
           self.setState({userData: response});

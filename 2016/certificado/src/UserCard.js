@@ -33,7 +33,7 @@ export default class UserCard extends React.Component {
         <div className="user-card__info">
           <p className="user-card__p">
             <span className="user-card__desc">Dias comparecidos:</span>
-            <span className="user-card__count">{this.props.user.days.length}</span>
+            <span className="user-card__count">{this.props.user.present}</span>
           </p>
 
           <p className="user-card__p">
