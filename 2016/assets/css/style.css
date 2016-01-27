@@ -165,7 +165,7 @@ body {
   float: left;
 }
 
-.speaker-item:nth-child(5n+5) {
+.speaker-item:nth-child(5) {
   clear: both;
 }
 
