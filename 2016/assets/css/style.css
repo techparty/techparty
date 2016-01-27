@@ -165,6 +165,10 @@ body {
   float: left;
 }
 
+.speaker-item:nth-child(5n+5) {
+  clear: both;
+}
+
 .speaker-photo {
   margin: 0 auto;
   width: 260px;
