@@ -7,8 +7,7 @@ export default class UserCard extends React.Component {
     super(props);
 
     this.state = {
-      encoded: false,
-      hoursPerDay: 3
+      encoded: false
     };
   }
 
@@ -39,7 +38,7 @@ export default class UserCard extends React.Component {
 
           <p className="user-card__p">
             <span className="user-card__desc">Total de horas:</span>
-            <span className="user-card__count">{this.props.user.days.length * this.state.hoursPerDay}</span>
+            <span className="user-card__count">{this.props.user.totalTime}</span>
           </p>
         </div>
 

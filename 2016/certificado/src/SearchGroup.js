@@ -14,9 +14,16 @@ export default class SearchGroup extends React.Component {
     };
   }
 
+  _calculateTotalTime(days) {
+    var filtered = days.filter( (d) => {
+      return d.present;
+    } );
+
+    return filtered.length * 3;
+  }
+
   _fetch(user) {
     var self = this;
-    console.log('fetching data from server');
 
     var xhr = new XMLHttpRequest();
 
@@ -27,6 +34,8 @@ export default class SearchGroup extends React.Component {
       if ( xhr.status >= 200 && xhr.status <= 226) {
         if (xhr.responseText) {
           var response = JSON.parse(xhr.responseText);
+
+          response.totalTime = self._calculateTotalTime(response.days);
 
           self.setState({userData: response});
 
@@ -42,7 +51,6 @@ export default class SearchGroup extends React.Component {
   }
 
   _handleSubmit(user) {
-    console.log('_handleSubmit user', user);
 
     this.setState({isFetchingData: true});
 
