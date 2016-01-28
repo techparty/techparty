@@ -80,7 +80,9 @@
             {{#data}}
               <div class="span_1-4 speaker-item">
                 <div class="speaker" itemprop="performer" itemscope itemtype="http://schema.org/Person">
-                  <div itemprop="image" class="speaker-photo octagon" style="background-image: url('assets/img/speakers/{{image}}');"></div>
+                  <div class="speaker-photo-frame octagon">
+                    <div itemprop="image" class="speaker-photo octagon" style="background-image: url('assets/img/speakers/{{image}}');"></div>
+                  </div>
                   <h3 itemprop="name">{{name}}</h3>
                   <h4 itemprop="brand">{{&company}}</h4>
                   <p class="full speaker-links">
