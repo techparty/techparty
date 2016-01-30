@@ -80,6 +80,18 @@
         {"link": "//twitter.com/orodrigok", "icon": "fa-twitter"},
         {"link": "//github.com/rodrigok", "icon": "fa-github"}
       ]
+    },
+
+    {
+      "name": "Rafael Kellermann Streit",
+      "company": "<a href='http://weheartit.com'>We Heart It</a>",
+      "bio": "Trabalha com desenvolvimento iOS há mais de 5 anos em diversos projetos, atualmente na We Heart It, com 50 milhões de usuários. Gosta de qualidade, atenção a usabilidade e aos pequenos detalhes nas entregas.",
+      "image": "rafael-kellermann-streit.jpg",
+      "links": [
+        {"link": "//facebook.com/rafaelkellermann", "icon": "fa-facebook-official"},
+        {"link": "//twitter.com/rafaelks", "icon": "fa-twitter"},
+        {"link": "//github.com/rafaelks", "icon": "fa-github"}
+      ]
     }
   ]
 }
