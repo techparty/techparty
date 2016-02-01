@@ -4,7 +4,7 @@
       "type": "Adamantium",
       "class": "span_1-3",
       "companies": [
-        {"name": "", "link": "#", "image": "http://placehold.it/200x200"},
+        {"name": "GitLab", "link": "https://gitlab.com", "image": "assets/img/sponsors/gitlab.jpg"},
         {"name": "", "link": "#", "image": "http://placehold.it/200x200/2F4F2F"},
         {"name": "", "link": "#", "image": "http://placehold.it/200x200/a4b21c"}
       ]
