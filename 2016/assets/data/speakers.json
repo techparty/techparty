@@ -47,14 +47,14 @@
     },
 
     {
-      "name": "Anderson Aguiar",
-      "company": "<a href='http://www.arezzoco.com.br'>Arezzo&CO</a>",
-      "bio": "Trabalha com desenvolvimento web desde 2008, já trabalhou com PHP, Delphi e Java. Atualmente atua como Front-End Analyst na Arezzo&CO. É apaixonado por JS e automatização, obsecado por organização e focado em entrega de qualidade.",
-      "image": "anderson-aguiar.jpg",
+      "name": "Fabiano Franz",
+      "company": "<a href='http://www.redhat.com'>Red Hat</a>",
+      "bio": "Senior Software Engineer na Red Hat, atuando há mais 4 anos no desenvolvimento do projeto <a href='https://www.openshift.com'>OpenShift</a>, juntamente com uma equipe de engenheiros distribuída por vários países. Committer do <a href='http://kubernetes.io'>Google Kubernetes</a>. Desenvolvedor e full-stack web developer há mais de 15 anos, tendo passado pelas linguagens Java, Ruby e Go e por projetos de pesquisa e desenvolvimento em empresas como Banco do Brasil, Dell, Siemens, Ministério da Educação e outras.",
+      "image": "fabiano-franz.jpg",
       "links": [
-        {"link": "//facebook.com/andersonaguiarrr", "icon": "fa-facebook-official"},
-        {"link": "//twitter.com/andersonaguiar", "icon": "fa-twitter"},
-        {"link": "//github.com/andersonaguiar", "icon": "fa-github"}
+        {"link": "//linkedin.com/in/fabianofranz", "icon": "fa-linkedin"},
+        {"link": "//twitter.com/fabianofranz", "icon": "fa-twitter"},
+        {"link": "//github.com/fabianofranz", "icon": "fa-github"}
       ]
     },
 
@@ -91,6 +91,18 @@
         {"link": "//facebook.com/rafaelkellermann", "icon": "fa-facebook-official"},
         {"link": "//twitter.com/rafaelks", "icon": "fa-twitter"},
         {"link": "//github.com/rafaelks", "icon": "fa-github"}
+      ]
+    },
+
+    {
+      "name": "Anderson Aguiar",
+      "company": "<a href='http://www.arezzoco.com.br'>Arezzo&CO</a>",
+      "bio": "Trabalha com desenvolvimento web desde 2008, já trabalhou com PHP, Delphi e Java. Atualmente atua como Front-End Analyst na Arezzo&CO. É apaixonado por JS e automatização, obsecado por organização e focado em entrega de qualidade.",
+      "image": "anderson-aguiar.jpg",
+      "links": [
+        {"link": "//facebook.com/andersonaguiarrr", "icon": "fa-facebook-official"},
+        {"link": "//twitter.com/andersonaguiar", "icon": "fa-twitter"},
+        {"link": "//github.com/andersonaguiar", "icon": "fa-github"}
       ]
     }
   ]
