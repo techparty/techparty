@@ -68,6 +68,25 @@ body {
   margin-top: 60px;
 }
 
+.languages {
+  float: right;
+  margin-top: 10px;
+}
+
+.languages li {
+  float: left;
+  margin-right: 5px;
+  font-family: 'Roboto';
+  font-weight: 700;
+}
+
+.languages a {
+  background: #48A3A6;
+  padding: 5px;
+  border-radius: 5px;
+  color: #fff;
+}
+
 .nav {
   float: right;
   font-family: 'Roboto';
