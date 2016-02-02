@@ -1,0 +1,35 @@
+{
+  "sponsors": [
+    {
+      "type": "Adamantium",
+      "class": "span_1-3",
+      "companies": [
+        {"name": "GitLab", "link": "https://gitlab.com", "image": "assets/img/sponsors/gitlab.jpg"},
+        {"name": "", "link": "#", "image": "http://placehold.it/200x200/2F4F2F"},
+        {"name": "", "link": "#", "image": "http://placehold.it/200x200/a4b21c"}
+      ]
+    },
+    {
+      "type": "Golden",
+      "class": "span_1-4",
+      "companies": [
+        {"name": "", "link": "#", "image": "http://placehold.it/200x200"},
+        {"name": "", "link": "#", "image": "http://placehold.it/200x200/abc123"},
+        {"name": "", "link": "#", "image": "http://placehold.it/200x200/333300"},
+        {"name": "", "link": "#", "image": "http://placehold.it/200x200/00ff33"}
+      ]
+    },
+    {
+      "type": "Silver",
+      "class": "span_1-6",
+      "companies": [
+        {"name": "We Heart It", "link": "http://weheartit.com", "image": "assets/img/sponsors/we-heart-it.jpg"},
+        {"name": "Rocket.Chat", "link": "https://rocket.chat", "image": "assets/img/sponsors/rocket-chat.jpg"},
+        {"name": "", "link": "#", "image": "http://placehold.it/200x200/333300"},
+        {"name": "", "link": "#", "image": "http://placehold.it/200x200/00ff33"},
+        {"name": "", "link": "#", "image": "http://placehold.it/200x200/951357"},
+        {"name": "", "link": "#", "image": "http://placehold.it/200x200"}
+      ]
+    }
+  ]
+}

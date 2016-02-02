@@ -4,6 +4,8 @@
 
   'use strict';
 
+  var language = 'pt';
+
   function xhr(type, url, success, error, data) {
     var xhr = new XMLHttpRequest();
 
@@ -47,7 +49,7 @@
     };
 
     var _init = function () {
-      xhr('GET', 'assets/data/speakers.json', _success, _error)
+      xhr('GET', baseUrl + '/assets/data/' + language + '/speakers.json', _success, _error)
     };
 
     return {
@@ -111,7 +113,7 @@
     };
 
     var _init = function () {
-      xhr('GET', 'assets/data/schedule.json', _success, _error);
+      xhr('GET', baseUrl + '/assets/data/' + language + '/schedule.json', _success, _error);
 
       _bindNavigation();
     };
@@ -139,7 +141,7 @@
 
       var marker = new google.maps.Marker({
         position: center,
-        icon: 'assets/img/tp.png'
+        icon: baseUrl + '/assets/img/tp.png'
       });
 
       marker.setMap(map);
@@ -169,7 +171,7 @@
     };
 
     var _init = function () {
-      xhr('GET', 'assets/data/sponsors.json', _success, _error);
+      xhr('GET', baseUrl + '/assets/data/' + language + '/sponsors.json', _success, _error);
     };
 
     return {
@@ -371,12 +373,26 @@
       document.addEventListener('scroll', _getScrollPosition, false);
     };
 
+    var _bindLanguage = function () {
+      var pathname = window.location.pathname.slice(1,3);
+
+      if (pathname !== '') {
+        language = pathname;
+      }
+    };
+
+    var _setBaseUrl = function () {
+      window.baseUrl = window.location.origin;
+    };
+
     var _init = function () {
       smoothScroll.init({
         speed: 1000,
         easing: 'easeInOutCubic'
       });
 
+      _bindLanguage();
+      _setBaseUrl();
       _bindRegisteringModal();
       _bindCloseModal();
       _bindRegisteringFormSubmission();
