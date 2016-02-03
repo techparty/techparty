@@ -45,11 +45,11 @@
     };
 
     var _error = function () {
-      speakersHolder.innerHTML = '<h3>Sorry =(</h3><p>Não foi possível carregar a lista de palestrantes.</p>';
+      speakersHolder.innerHTML = messages[language].speakersFetchError;
     };
 
     var _init = function () {
-      xhr('GET', baseUrl + '/assets/data/' + language + '/speakers.json', _success, _error)
+      xhr('GET', baseUrl + '/assets/data/' + language + '/speakers.jso', _success, _error)
     };
 
     return {
@@ -109,7 +109,7 @@
     };
 
     var _error = function () {
-      timelineHolder.innerHTML = '<h3>Sorry =(</h3><p>Não foi possível carregar a programação.</p>';
+      timelineHolder.innerHTML = messages[language].scheduleFetchError;
     };
 
     var _init = function () {
@@ -167,7 +167,7 @@
     };
 
     var _error = function () {
-      sponsorsHolder.innerHTML = '<p>Sorry =( <br>Não foi possível carregar a lista de patrocinadores.</p>';
+      sponsorsHolder.innerHTML = messages[language].sponsorsFetchError;
     };
 
     var _init = function () {
@@ -245,7 +245,7 @@
     var _success = function () {
       errorBox.classList.add('hidden');
 
-      modalTitle.innerHTML = 'Sua inscrição foi efetuada com sucesso. Obrigado!';
+      modalTitle.innerHTML = messages[language].registerSuccess;
 
       //setTimeout(_closeRegisteringModal, 5000);
 
@@ -257,22 +257,22 @@
         var day = e.responseText.replace(/.* /, '').replace('"', '');
         switch (day) {
           case '1':
-            day = 'segunda-feira';
+            day = messages[language].days[0];
             break;
           case '2':
-            day = 'terça-feira';
+            day = messages[language].days[1];
             break;
           case '3':
-            day = 'quarta-feira';
+            day = messages[language].days[2];
             break;
           case '4':
-            day = 'quinta-feira';
+            day = messages[language].days[3];
             break;
         }
-        return _showError('Desculpe, mas ' + day + ' não possui mais vagas!');
+        return _showError(day + ' - ' + messages[language].soldOut);
       }
 
-      return _showError('Houve um erro ao enviar seus dados. Por favor, tente novamente!');
+      return _showError(messages[language].registerError);
     };
 
     var _sendDataToServer = function (data) {
@@ -318,7 +318,7 @@
         dataToPost;
 
       if (!_validateCpf(cpf)) {
-        _showError('Digite um CPF válido.');
+        _showError(messages[language].invalidCpf);
 
         return;
       }
@@ -332,13 +332,13 @@
       }
 
       if ( name.trim() === '' || email.trim() === '' || cpf.trim() === '') {
-        _showError('Todos os campos tem preechimento obrigatório.');
+        _showError(messages[language].allFieldsRequired);
 
         return;
       }
 
       if ( selectedDays.length === 0 ) {
-        _showError('Por favor, selecione pelo menos 1 dia para participar.');
+        _showError(messages[language].enforceDaySelect);
 
         return;
       }
