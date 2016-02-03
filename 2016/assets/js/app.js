@@ -49,7 +49,7 @@
     };
 
     var _init = function () {
-      xhr('GET', baseUrl + '/assets/data/' + language + '/speakers.jso', _success, _error)
+      xhr('GET', baseUrl + '/assets/data/' + language + '/speakers.json', _success, _error)
     };
 
     return {
