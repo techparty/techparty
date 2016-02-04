@@ -25,7 +25,6 @@
 
     };
 
-    //xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
 
     xhr.send(JSON.stringify(data));
