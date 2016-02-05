@@ -49,7 +49,7 @@
     {
       "name": "Fabiano Franz",
       "company": "<a href='http://www.redhat.com'>Red Hat</a>",
-      "bio": "Senior Software Engineer na Red Hat, atuando há mais 4 anos no desenvolvimento do projeto <a href='https://www.openshift.com'>OpenShift</a>, juntamente com uma equipe de engenheiros distribuída por vários países. Committer do <a href='http://kubernetes.io'>Google Kubernetes</a>. Desenvolvedor e full-stack web developer há mais de 15 anos, tendo passado pelas linguagens Java, Ruby e Go e por projetos de pesquisa e desenvolvimento em empresas como Banco do Brasil, Dell, Siemens, Ministério da Educação e outras.",
+      "bio": "Senior Software Engineer at Red Hat, working for over 4 years developing the <a href='https://www.openshift.com'>OpenShift</a> project, with an engineering team distributed across the world. <a href='http://kubernetes.io'>Google Kubernetes</a> Commiter. Developer and full-stack web developer for over 15 years. Fabiano has worked with languages like Java, Ruby and Go while working on research projects and working at the development of companies like Banco do Brasil, Dell, Siemens, Ministério da Educação and many others.",
       "image": "fabiano-franz.jpg",
       "links": [
         {"link": "//linkedin.com/in/fabianofranz", "icon": "fa-linkedin"},
