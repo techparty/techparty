@@ -542,6 +542,10 @@ input[type=number]::-webkit-outer-spin-button {
   margin-top: 10px;
 }
 
+.en .cb-holder {
+  margin-right: 17px;
+}
+
 .cb-label {
   line-height: 30px;
 }
