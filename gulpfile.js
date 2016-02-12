@@ -56,6 +56,7 @@ let _minifyHtmlYear = year => {
   _minifyHtml(`${year}/*.html`, `dist/${year}`);
   _minifyHtml(`${year}/certificado/*.html`, `dist/${year}/certificado`);
   _minifyHtml(`${year}/certificado/palestrante/*.html`, `dist/${year}/certificado/palestrante`);
+  _minifyHtml(`${year}/en/*.html`, `dist/${year}/en`);
 };
 
 gulp.task('clean', cb => {
@@ -92,4 +93,5 @@ gulp.task('dist', ['dist-move', 'dist-minify', 'dist-uglify', 'dist-html'], () =
     _minifyHtml(`${current}/*.html`, 'dist');
     _minifyHtml(`${current}/certificado/*.html`, 'dist/certificado');
     _minifyHtml(`${current}/certificado/palestrante/*.html`, 'dist/certificado/palestrante');
+    _minifyHtml(`${current}/en/*.html`, `dist/en`);
 });
