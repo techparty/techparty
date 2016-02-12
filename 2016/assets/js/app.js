@@ -242,11 +242,11 @@
     };
 
     var _success = function () {
+      registeringForm.reset();
+
       errorBox.classList.add('hidden');
 
       modalTitle.innerHTML = messages[language].registerSuccess;
-
-      //setTimeout(_closeRegisteringModal, 5000);
 
       return;
     };
