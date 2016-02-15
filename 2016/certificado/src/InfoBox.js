@@ -16,10 +16,6 @@ export default class InfoBox extends React.Component {
             <li><a href="mailto:rohersmoura@gmail.com">rohersmoura@gmail.com</a></li>
           </ul>
         </section>
-
-        <section className="logo-box">
-          <img src="" />
-        </section>
       </div>
     );
   }
