@@ -1,2 +1,12 @@
 {
+  "monday": [
+    {
+      "time": "19:45",
+      "icon": "fa-microphone",
+      "talkName": "Mercado de trabalho no Brasil, no exterior e no mundo OpenSource",
+      "subtitle": "Rodrigo Nascimento & Rafael Kellermann Streit",
+      "subtitleSpan": "Rocket.Chat & We Heart It",
+      "talkDescription": "Um bate papo sobre o mercado de trabalho no Brasil e no exterior, sobre trabalho remoto e seus desafios, uma pincelada sobre empreendedorismo e como tudo isso funciona no mundo Open Source."
+    }
+  ]
 }

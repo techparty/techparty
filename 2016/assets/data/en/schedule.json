@@ -1,2 +1,12 @@
 {
+  "monday": [
+    {
+      "time": "19:45",
+      "icon": "fa-microphone",
+      "talkName": "Job market in Brazil, abroad and in the world OpenSource",
+      "subtitle": "Rodrigo Nascimento & Rafael Kellermann Streit",
+      "subtitleSpan": "Rocket.Chat & We Heart It",
+      "talkDescription": "A chat about the job market in Brazil and abroad, about remote jobs and its challenges, a dab on entrepreneurship and how it all works in the Open Source world."
+    }
+  ]
 }

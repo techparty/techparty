@@ -97,14 +97,9 @@
 
       obj = day ? resp[day] : resp.monday;
 
-      if (obj) {
-        Mustache.parse(scriptTemplate);
-        rendered = Mustache.render(scriptTemplate, {data: obj});
-        timelineHolder.innerHTML = rendered;
-      } else {
-        document.getElementById('schedule').style.display = 'none';
-        document.querySelector('#header-top a[href="#schedule"]').style.display = 'none';
-      }
+      Mustache.parse(scriptTemplate);
+      rendered = Mustache.render(scriptTemplate, {data: obj});
+      timelineHolder.innerHTML = rendered;
     };
 
     var _error = function () {
