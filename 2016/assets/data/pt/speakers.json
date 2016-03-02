@@ -104,6 +104,18 @@
         {"link": "//twitter.com/andersonaguiar", "icon": "fa-twitter"},
         {"link": "//github.com/andersonaguiar", "icon": "fa-github"}
       ]
+    },
+
+    {
+      "name": "Adriano Bonfiglio",
+      "company": "<a href='http://go.sap.com'>SAP</a>",
+      "bio": "Formado em Sistemas para Internet e pós-graduado em Gestão de Projetos. Desenvolvedor a mais de 7 anos, na maior parte dedicada a WEB, principalmente utilizando Java. Fã de NodeJS, Rest, Cloud, Microservices e entusiasta de Agile. Atualmente trabalhando como Developer no Cloud Service Center na SAP.",
+      "image": "adriano-bonfiglio.jpg",
+      "links": [
+        {"link": "//facebook.com/adriano.bonfiglio", "icon": "fa-facebook-official"},
+        {"link": "//twitter.com/abonfiglio", "icon": "fa-twitter"},
+        {"link": "//linkedin.com/in/adriano-bonfiglio-a3873823", "icon": "fa-linkedin"}
+      ]
     }
   ]
 }
