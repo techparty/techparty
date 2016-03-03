@@ -8,5 +8,16 @@
       "subtitleSpan": "Rocket.Chat & We Heart It",
       "talkDescription": "A chat about the job market in Brazil and abroad, about remote jobs and its challenges, a dab on entrepreneurship and how it all works in the Open Source world."
     }
+  ],
+
+  "tuesday": [
+    {
+      "time": "20:40",
+      "icon": "fa-microphone",
+      "talkName": "Modern PHP",
+      "subtitle": "Ari Stopassola Junior",
+      "subtitleSpan": "Perito",
+      "talkDescription": "PHP renaissance (evolution since version 5.3), new features (Traits, Generators, Closures, OPCache, built-in server), PHP-FIG and PSR standards, components (Composer), frameworks, best practices, hosting, provisioning, optimization , continuous integration, deployment, testing (PHPUnit, Behat and Codeception), profiling (debug), queue mechanisms, ORM (Object-Relational Mapping), HHVM, Hack and PHP7, PHP ecosystem, extensions and community."
+    }
   ]
 }
