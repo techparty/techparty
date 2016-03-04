@@ -4,7 +4,7 @@
       "type": "Adamantium",
       "class": "span_1-2",
       "companies": [
-        {"name": "GitLab", "link": "https://gitlab.com", "image": "assets/img/sponsors/gitlab.jpg", "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ipsa a natus nobis, debitis qui soluta sapiente recusandae ad non nihil reiciendis eaque facere minus modi dolores ratione quisquam quos."},
+        {"name": "GitLab", "link": "https://gitlab.com", "image": "assets/img/sponsors/gitlab.jpg", "description": "GitLab é uma aplicação completamente grátis para programar, testar e fazer deploy, tanto para projetos públicos quanto para projetos privados. GitLab provê o gerenciamento de repositórios Git com controle de acesso, revisão de código, mapeamento de issues, feed de atividades e integração contínua."},
         {"name": "Adamantium level", "link": "#", "image": "http://placehold.it/400x400/2F4F2F", "description": "Adamantium description goes here."}
       ]
     },
