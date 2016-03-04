@@ -2,33 +2,29 @@
   "sponsors": [
     {
       "type": "Adamantium",
-      "class": "span_1-3",
+      "class": "span_1-2",
       "companies": [
-        {"name": "GitLab", "link": "https://gitlab.com", "image": "assets/img/sponsors/gitlab.jpg"},
-        {"name": "", "link": "#", "image": "http://placehold.it/200x200/2F4F2F"},
-        {"name": "", "link": "#", "image": "http://placehold.it/200x200/a4b21c"}
+        {"name": "GitLab", "link": "https://gitlab.com", "image": "assets/img/sponsors/gitlab.jpg", "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ipsa a natus nobis, debitis qui soluta sapiente recusandae ad non nihil reiciendis eaque facere minus modi dolores ratione quisquam quos."},
+        {"name": "Adamantium level", "link": "#", "image": "http://placehold.it/400x400/2F4F2F", "description": "Adamantium description goes here."}
       ]
     },
     {
       "type": "Golden",
-      "class": "span_1-4",
+      "class": "span_1-3",
       "companies": [
-        {"name": "", "link": "#", "image": "http://placehold.it/200x200"},
-        {"name": "", "link": "#", "image": "http://placehold.it/200x200/abc123"},
-        {"name": "", "link": "#", "image": "http://placehold.it/200x200/333300"},
-        {"name": "", "link": "#", "image": "http://placehold.it/200x200/00ff33"}
+        {"name": "Golden level", "link": "#", "image": "http://placehold.it/275x275", "description": "Description goes here."},
+        {"name": "Golden level", "link": "#", "image": "http://placehold.it/275x275/abc123", "description": "Description goes here."},
+        {"name": "Golden level", "link": "#", "image": "http://placehold.it/275x275/333300", "description": "Description goes here."}
       ]
     },
     {
       "type": "Silver",
-      "class": "span_1-6",
+      "class": "span_1-4",
       "companies": [
         {"name": "We Heart It", "link": "http://weheartit.com", "image": "assets/img/sponsors/we-heart-it.jpg"},
         {"name": "Rocket.Chat", "link": "https://rocket.chat", "image": "assets/img/sponsors/rocket-chat.jpg"},
-        {"name": "", "link": "#", "image": "http://placehold.it/200x200/333300"},
-        {"name": "", "link": "#", "image": "http://placehold.it/200x200/00ff33"},
-        {"name": "", "link": "#", "image": "http://placehold.it/200x200/951357"},
-        {"name": "", "link": "#", "image": "http://placehold.it/200x200"}
+        {"name": "Silver level", "link": "#", "image": "http://placehold.it/200x200/333300"},
+        {"name": "Silver level", "link": "#", "image": "http://placehold.it/200x200/00ff33"}
       ]
     }
   ]

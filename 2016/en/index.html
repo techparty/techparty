@@ -199,9 +199,21 @@
                   <div class="sponsors-type-items full">
                     {{#companies}}
                       <div class="{{class}} sponsor-logo" itemscope itemtype="http://schema.org/Organization">
-                        <a href="{{link}}" title="{{name}}" itemprop="url">
-                          <img src="{{image}}" alt="{{name}}" itemprop="image">
-                        </a>
+                        <div class="sponsor-logo__top">
+                          <a href="{{link}}" title="{{name}}" itemprop="url">
+                            <img src="{{image}}" alt="{{name}}" itemprop="image">
+                          </a>
+                        </div>
+                        <div class="sponsor-logo__desc">
+                          <h3>
+                            <a href="{{link}}" title="{{name}}" itemprop="url">
+                              {{name}}
+                            </a>
+                          </h3>
+                          {{#description}}
+                            <p>{{description}}</p>
+                          {{/description}}
+                        </div>
                       </div>
                     {{/companies}}
                   </div>
