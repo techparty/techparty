@@ -12,9 +12,9 @@
       "type": "Golden",
       "class": "span_1-3",
       "companies": [
-        {"name": "Golden level", "link": "#", "image": "http://placehold.it/275x275", "description": "Description goes here."},
-        {"name": "Golden level", "link": "#", "image": "http://placehold.it/275x275/abc123", "description": "Description goes here."},
-        {"name": "Golden level", "link": "#", "image": "http://placehold.it/275x275/333300", "description": "Description goes here."}
+        {"name": "Golden level", "link": "#", "image": "http://placehold.it/275x275"},
+        {"name": "Golden level", "link": "#", "image": "http://placehold.it/275x275/abc123"},
+        {"name": "Golden level", "link": "#", "image": "http://placehold.it/275x275/333300"}
       ]
     },
     {
