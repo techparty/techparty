@@ -19,5 +19,16 @@
       "subtitleSpan": "Perito",
       "talkDescription": "Renascimento do PHP (evolução desde a versão 5.3), novos recursos (Traits, Generators, Closures, OPCache, built-in server), PHP-FIG e padrões PSR, componentes (Composer), frameworks, boas práticas, hospedagens, provisionamento, otimização, integração contínua, deployment, testes (PHPUnit, Behat e Codeception), profiling (debug), mecanismos de fila, ORM (Object-Relational Mapping), HHVM, Hack e PHP7, ecossistema PHP, extensões e comunidade."
     }
+  ],
+
+  "wednesday": [
+    {
+      "time": "19:45",
+      "icon": "fa-microphone",
+      "talkName": "A queda do muro de Berlim",
+      "subtitle": "Gabriel Viégas & Roberto Fermann",
+      "subtitleSpan": "Terra Networks",
+      "talkDescription": "Derrubando barreiras para desenvolver (bons) produtos."
+    }
   ]
 }
