@@ -291,6 +291,10 @@ li.active-day:hover {
   margin: 0 0 30px -113px;
 }
 
+.timeline-item ul {
+  list-style-type: circle;
+}
+
 .timeline-item:last-child {
   margin-bottom: 0;
 }

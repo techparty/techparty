@@ -29,6 +29,14 @@
       "subtitle": "Gabriel Viégas & Roberto Fermann",
       "subtitleSpan": "Terra Networks",
       "talkDescription": "Bringing down barriers to develop (good) products."
+    },
+    {
+      "time": "20:40",
+      "icon": "fa-microphone",
+      "talkName": "Infinite Power",
+      "subtitle": "Robson Júnior",
+      "subtitleSpan": "Terra Networks",
+      "talkDescription": "Show the importance of JavaScript and why it is so powerful. I will address the evolution of language and things that can be done with it, such as: <ul><li>Set (a simple game of old, running in Client-Side)</li><li>Augmented Reality</li><li>Back-End</li><li>Database</li><li>A small little game Hack (XSS - Reflected / Storage)</li></ul>"
     }
   ]
 }
