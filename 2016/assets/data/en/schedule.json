@@ -38,5 +38,16 @@
       "subtitleSpan": "Terra Networks",
       "talkDescription": "Show the importance of JavaScript and why it is so powerful. I will address the evolution of language and things that can be done with it, such as: <ul><li>Set (a simple game of old, running in Client-Side)</li><li>Augmented Reality</li><li>Back-End</li><li>Database</li><li>A small little game Hack (XSS - Reflected / Storage)</li></ul>"
     }
+  ],
+
+  "thursday": [
+    {
+      "time": "19:45",
+      "icon": "fa-microphone",
+      "talkName": "An objective introduction to the framework Grails",
+      "subtitle": "Rodrigo Gomes da Silva",
+      "subtitleSpan": "Stefanini IT Solutions",
+      "talkDescription": "How it works, components that make up the framework, practical demonstration and when to use."
+    }
   ]
 }
