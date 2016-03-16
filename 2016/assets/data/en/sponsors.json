@@ -26,6 +26,16 @@
         {"name": "Silver level", "link": "#", "image": "http://placehold.it/200x200/333300"},
         {"name": "Silver level", "link": "#", "image": "http://placehold.it/200x200/00ff33"}
       ]
+    },
+    {
+      "type": "Supporters",
+      "class": "span_1-4",
+      "companies": [
+        {"name": "", "link": "#", "image": "http://placehold.it/200x200/333300"},
+        {"name": "", "link": "#", "image": "http://placehold.it/200x200/abc123"},
+        {"name": "", "link": "#", "image": "http://placehold.it/200x200/1f3daa"},
+        {"name": "", "link": "#", "image": "http://placehold.it/200x200/00ff33"}
+      ]
     }
   ]
 }
