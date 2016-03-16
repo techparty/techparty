@@ -49,5 +49,16 @@
       "subtitleSpan": "Stefanini IT Solutions",
       "talkDescription": "How it works, components that make up the framework, practical demonstration and when to use."
     }
+  ],
+
+  "friday": [
+    {
+      "time": "19:45",
+      "icon": "fa-microphone",
+      "talkName": "REST APIs Dos and Dont's",
+      "subtitle": "Adriano Bonfiglio",
+      "subtitleSpan": "SAP",
+      "talkDescription": "REST APIs are everywhere, you've probably made use of some of them, as the Facebook API or Google API. If you did not, someday will still do. APIs are the best way to interact with other applications, but you know how to create a trustworthy REST API and easy to use? In this talk the intention is to show the common mistakes and correct them by following good practices and the principles of REST APIs design and of course, to maintain a secure API."
+    }
   ]
 }
