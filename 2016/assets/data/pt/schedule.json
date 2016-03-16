@@ -58,7 +58,7 @@
       "talkName": "REST APIs Dos and Dont's",
       "subtitle": "Adriano Bonfiglio",
       "subtitleSpan": "SAP",
-      "talkDescription": "APIs REST estão por tada parte, provavelmente você já fez uso de alguma delas, como a Facebook API ou Google API. Se não fez, algum dia ainda fará. APIs são a melhor forma de interagir com outras aplicações, mas vocês sabem como criar uma API REST confiável e fácil de usar? Nesta palestra a intenção é mostrar os erros comuns e corrigi-los seguindo boas práticas e os princípios de design de APIs REST e claro, como manter uma API segura."
+      "talkDescription": "APIs REST estão por toda parte, provavelmente você já fez uso de alguma delas, como a Facebook API ou Google API. Se não fez, algum dia ainda fará. APIs são a melhor forma de interagir com outras aplicações, mas vocês sabem como criar uma API REST confiável e fácil de usar? Nesta palestra a intenção é mostrar os erros comuns e corrigí-los seguindo boas práticas e os princípios de design de APIs REST e, claro, como manter uma API segura."
     }
   ]
 }
