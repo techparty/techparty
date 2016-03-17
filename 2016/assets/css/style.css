@@ -390,10 +390,11 @@ li.active-day:hover {
   font-weight: 400;
   text-align: center;
   float: left;
+  margin: 10px 0;
 }
 
 #sponsors p {
-  text-align: center;
+  text-align: justify;
 }
 
 #sponsors p a {
@@ -426,6 +427,10 @@ li.active-day:hover {
   text-align: center;
   margin-bottom: 40px;
   float: left;
+}
+
+.sponsor-supporter img {
+  width: 150px !important;
 }
 
 .span_1-2.sponsor-logo {

@@ -4,8 +4,8 @@
       "type": "Adamantium",
       "class": "span_1-2",
       "companies": [
-        {"name": "GitLab", "link": "https://gitlab.com", "image": "assets/img/sponsors/gitlab.jpg", "description": "GitLab é uma aplicação completamente grátis para programar, testar e fazer deploy, tanto para projetos públicos quanto para projetos privados. GitLab provê o gerenciamento de repositórios Git com controle de acesso, revisão de código, mapeamento de issues, feed de atividades e integração contínua."},
-        {"name": "Adamantium level", "link": "#", "image": "http://placehold.it/400x400/2F4F2F", "description": "Adamantium description goes here."}
+        {"name": "GitLab", "link": "https://gitlab.com", "image": "../assets/img/sponsors/gitlab.jpg", "description": "GitLab é uma aplicação completamente grátis para programar, testar e fazer deploy, tanto para projetos públicos quanto para projetos privados. GitLab provê o gerenciamento de repositórios Git com controle de acesso, revisão de código, mapeamento de issues, feed de atividades e integração contínua."},
+        {"name": "FlyByte", "link": "http://www.flybyte.com.br", "image": "../assets/img/sponsors/flybyte.jpg", "description": "A Flybyte nasceu em 2008 com o objetivo de trazer internet de qualidade a cidade de Taquara. Desde então, ampliamos nossa área de cobertura e hoje atendemos 4 municípios do Vale do Paranhana. A excelência no atendimento é um diferencial da Flybyte, conhecemos as necessidades do mercado e procuramos atender os nossos clientes de maneira rápida e eficaz. Nossa equipe técnica garante qualidade e satisfação nos serviços prestados."}
       ]
     },
     {
@@ -21,17 +21,17 @@
       "type": "Silver",
       "class": "span_1-4",
       "companies": [
-        {"name": "We Heart It", "link": "http://weheartit.com", "image": "assets/img/sponsors/we-heart-it.jpg"},
-        {"name": "Rocket.Chat", "link": "https://rocket.chat", "image": "assets/img/sponsors/rocket-chat.jpg"},
+        {"name": "We Heart It", "link": "http://weheartit.com", "image": "../assets/img/sponsors/we-heart-it.jpg"},
+        {"name": "Rocket.Chat", "link": "https://rocket.chat", "image": "../assets/img/sponsors/rocket-chat.jpg"},
         {"name": "Silver level", "link": "#", "image": "http://placehold.it/200x200/333300"},
         {"name": "Silver level", "link": "#", "image": "http://placehold.it/200x200/00ff33"}
       ]
     },
     {
       "type": "Apoiadores",
-      "class": "span_1-4",
+      "class": "span_1-4 sponsor-supporter",
       "companies": [
-        {"name": "", "link": "https://twitter.com/", "image": "assets/img/sponsors/twitter.png"},
+        {"name": "", "link": "https://twitter.com/", "image": "../assets/img/sponsors/twitter.png"},
         {"name": "", "link": "#", "image": "http://placehold.it/200x200/abc123"},
         {"name": "", "link": "#", "image": "http://placehold.it/200x200/1f3daa"},
         {"name": "", "link": "#", "image": "http://placehold.it/200x200/00ff33"}

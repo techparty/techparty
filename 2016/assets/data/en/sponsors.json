@@ -5,7 +5,7 @@
       "class": "span_1-2",
       "companies": [
         {"name": "GitLab", "link": "https://gitlab.com", "image": "../assets/img/sponsors/gitlab.jpg", "description": "GitLab is a completely free application to code, test, and deploy code together, both for public and private projects. It provides Git repository management with fine grained access controls, code reviews, issue tracking, activity feeds, wikis, and continuous integration."},
-        {"name": "Adamantium level", "link": "#", "image": "http://placehold.it/400x400/2F4F2F", "description": "Adamantium description goes here."}
+        {"name": "FlyByte", "link": "http://www.flybyte.com.br", "image": "../assets/img/sponsors/flybyte.jpg", "description": "A Flybyte nasceu em 2008 com o objetivo de trazer internet de qualidade a cidade de Taquara. Desde então, ampliamos nossa área de cobertura e hoje atendemos 4 municípios do Vale do Paranhana. A excelência no atendimento é um diferencial da Flybyte, conhecemos as necessidades do mercado e procuramos atender os nossos clientes de maneira rápida e eficaz. Nossa equipe técnica garante qualidade e satisfação nos serviços prestados."}
       ]
     },
     {
@@ -29,9 +29,9 @@
     },
     {
       "type": "Supporters",
-      "class": "span_1-4",
+      "class": "span_1-4 sponsor-supporter",
       "companies": [
-        {"name": "", "link": "https://twitter.com/", "image": "assets/img/sponsors/twitter.png"},
+        {"name": "", "link": "https://twitter.com/", "image": "../assets/img/sponsors/twitter.png"},
         {"name": "", "link": "#", "image": "http://placehold.it/200x200/abc123"},
         {"name": "", "link": "#", "image": "http://placehold.it/200x200/1f3daa"},
         {"name": "", "link": "#", "image": "http://placehold.it/200x200/00ff33"}
