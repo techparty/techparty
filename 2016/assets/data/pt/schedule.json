@@ -48,6 +48,14 @@
       "subtitle": "Rodrigo Gomes da Silva",
       "subtitleSpan": "Stefanini IT Solutions",
       "talkDescription": "Como funciona, componentes que compõem o framework, demonstração prática e quando utilizar."
+    },
+    {
+      "time": "20:40",
+      "icon": "fa-microphone",
+      "talkName": "All Things Containers",
+      "subtitle": "Fabiano Franz",
+      "subtitleSpan": "Red Hat",
+      "talkDescription": "Docker é uma plataforma aberta revolucionária, em especial no contexto recente de Cloud Computing. Apesar disso, muitos dos conceitos por trás dessa tecnologia de containers não são novos. Vamos analisar de onde veio essa tecnologia, como chegamos até aqui, e detalhes relacionados a como ela funciona e como podemos utilizá-la.  Baseado na experiência arquitetural e operacional do OpenShift, a plataforma da Red Hat que coordena mais de 3 milhões de aplicações rodando containers em produção, vamos esmiuçar práticas de adoção para que você também possa, finalmente, fazer uso da tecnologia de containers em suas necessidades tecnológicas cotidianas."
     }
   ],
 
