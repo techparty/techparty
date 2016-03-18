@@ -55,7 +55,7 @@
       "talkName": "All Things Containers",
       "subtitle": "Fabiano Franz",
       "subtitleSpan": "Red Hat",
-      "talkDescription": "Docker é uma plataforma aberta revolucionária, em especial no contexto recente de Cloud Computing. Apesar disso, muitos dos conceitos por trás dessa tecnologia de containers não são novos. Vamos analisar de onde veio essa tecnologia, como chegamos até aqui, e detalhes relacionados a como ela funciona e como podemos utilizá-la.  Baseado na experiência arquitetural e operacional do OpenShift, a plataforma da Red Hat que coordena mais de 3 milhões de aplicações rodando containers em produção, vamos esmiuçar práticas de adoção para que você também possa, finalmente, fazer uso da tecnologia de containers em suas necessidades tecnológicas cotidianas."
+      "talkDescription": "Docker is a revolutionary open platform, specially in the Cloud Computing context. Nevertheless, many concepts behind this containers technology are not new. Let's analyze where this technology came from, how it has evolved so far and detail related to how it works and how we can make use of it. By following the OpenShift's operational and arquiteture experience, the Red Hat platform, that coordinates more than 3 millions applications running Containers in production, we will present adoption practices, so you can, finnaly, make use of this containers technology in your daily activities."
     }
   ],
 
