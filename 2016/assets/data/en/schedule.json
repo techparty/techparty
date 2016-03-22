@@ -12,6 +12,14 @@
 
   "tuesday": [
     {
+      "time": "19:45",
+      "icon": "fa-microphone",
+      "talkName": "React.js: You deserve to know about it",
+      "subtitle": "Anderson Aguiar",
+      "subtitleSpan": "Arezzo&CO",
+      "talkDescription": "Chosing a library/framework never must be guided by others opinions only. Knowing what to use is the main thing to avoid headaches. In this talk, we will know the real React's purpose e we will see how it can help us to build interfaces and to understand the core's main concepts: Virtual DOM, JSX, Components(props, states, lifecycles) and Unidirectional Data Flow."
+    },
+    {
       "time": "20:40",
       "icon": "fa-microphone",
       "talkName": "Modern PHP",
