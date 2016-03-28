@@ -13,7 +13,7 @@
       "type": "Golden",
       "class": "span_1-3",
       "companies": [
-        {"name": "Golden level", "link": "#", "image": "http://placehold.it/275x275"},
+        {"name": "LoopHost", "link": "https://www.loophost.com.br", "image": "../assets/img/sponsors/loophost.jpg"},
         {"name": "Golden level", "link": "#", "image": "http://placehold.it/275x275/abc123"},
         {"name": "Golden level", "link": "#", "image": "http://placehold.it/275x275/333300"}
       ]
