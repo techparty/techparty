@@ -7,6 +7,9 @@
   var language = 'pt';
 
   function xhr(type, url, success, error, data) {
+    success = success || function () {};
+    error = error || function () {};
+
     var xhr = new XMLHttpRequest();
 
     xhr.open(type, url, true);
@@ -184,6 +187,7 @@
       modalTitleOriginalText = modalTitle.innerHTML;
 
     var _openRegisteringModal = function () {
+      xhr('GET', 'https://techparty-data.herokuapp.com/api/v1/healthcheck')
       modal.classList.remove('hidden');
       modal.classList.add('modal-is-open');
       html.classList.add('hidden-overflow');
