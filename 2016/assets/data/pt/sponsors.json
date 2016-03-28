@@ -24,7 +24,7 @@
       "companies": [
         {"name": "We Heart It", "link": "http://weheartit.com", "image": "../assets/img/sponsors/we-heart-it.jpg"},
         {"name": "Rocket.Chat", "link": "https://rocket.chat", "image": "../assets/img/sponsors/rocket-chat.jpg"},
-        {"name": "Silver level", "link": "#", "image": "http://placehold.it/200x200/333300"},
+        {"name": "Sanvitron", "link": "http://www.sanvitron.com.br", "image": "../assets/img/sponsors/sanvitron.jpg"},
         {"name": "Silver level", "link": "#", "image": "http://placehold.it/200x200/00ff33"}
       ]
     },
@@ -32,7 +32,7 @@
       "type": "Apoiadores",
       "class": "span_1-4 sponsor-supporter",
       "companies": [
-        {"name": "", "link": "https://twitter.com/", "image": "../assets/img/sponsors/twitter.png"},
+        {"name": "", "link": "https://twitter.com/", "image": "../assets/img/sponsors/twitter.jpg"},
         {"name": "", "link": "#", "image": "http://placehold.it/200x200/abc123"},
         {"name": "", "link": "#", "image": "http://placehold.it/200x200/1f3daa"},
         {"name": "", "link": "#", "image": "http://placehold.it/200x200/00ff33"}
