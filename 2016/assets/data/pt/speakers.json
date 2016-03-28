@@ -13,18 +13,6 @@
     },
 
     {
-      "name": "Robson Júnior",
-      "company": "<a href='http://www.terra.com.br'>Terra Networks</a>",
-      "bio": "Estudante de Análise e Desenvolvimento de Sistemas, membro da Organização JSRocks, Analista e Web Developer no Terra. Possui 23 anos de idade, atua na área há 4 anos e atualmente reside na imensidão da Weblândia.",
-      "image": "robson-junior.jpg",
-      "links": [
-        {"link": "//linkedin.com/in/robsongajunior", "icon": "fa-linkedin"},
-        {"link": "//twitter.com/robsongajunior", "icon": "fa-twitter"},
-        {"link": "//github.com/robsongajunior", "icon": "fa-github"}
-      ]
-    },
-
-    {
       "name": "Gabriel Viégas",
       "company": "<a href='http://www.terra.com.br'>Terra Networks</a>",
       "bio": "Administrador de Empresas, Especialista em Gestão de Projetos de TI, CSPO (Certified Scrum Product Owner) e aluno de Especialização em Marketing Digital e E-commerce. 43 anos de idade, sendo 15 deles vendendo soluções de software e 8 anos como líder de projetos de TI. Nos dias atuais é Product Owner no Terra",

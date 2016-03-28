@@ -41,10 +41,10 @@
     {
       "time": "20:40",
       "icon": "fa-microphone",
-      "talkName": "Infinite Power",
-      "subtitle": "Robson Júnior",
-      "subtitleSpan": "Terra Networks",
-      "talkDescription": "Mostrar a importancia do JavaScript e porque ele é tão poderoso. Irei abordar evolução da linguagem e coisas que podem ser feitas com ela, como:<ul><li>Jogo (um simples jogo da velha, rodando no Client-Side)</li><li>Realidade aumentada</li><li>Back-End</li><li>Database</li><li>Uma pequena brincadeirinha Hack (XSS - Reflected/Storage)</li></ul>"
+      "talkName": "",
+      "subtitle": "",
+      "subtitleSpan": "",
+      "talkDescription": ""
     }
   ],
 

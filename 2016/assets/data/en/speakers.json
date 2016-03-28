@@ -13,18 +13,6 @@
     },
 
     {
-      "name": "Robson Júnior",
-      "company": "<a href='http://www.terra.com.br'>Terra Networks</a>",
-      "bio": "System Analist student, JSRocks Organization member and web developer at Terra. Robson is 23 years old and he has been working as a developer for 4 years. Currently living in the ocean of Webland.",
-      "image": "robson-junior.jpg",
-      "links": [
-        {"link": "//linkedin.com/in/robsongajunior", "icon": "fa-linkedin"},
-        {"link": "//twitter.com/robsongajunior", "icon": "fa-twitter"},
-        {"link": "//github.com/robsongajunior", "icon": "fa-github"}
-      ]
-    },
-
-    {
       "name": "Gabriel Viégas",
       "company": "<a href='http://www.terra.com.br'>Terra Networks</a>",
       "bio": "Business Administrator, IT Project Management Specialist, CSPO(Certified Scrum Product Owner) and E-Commerce and Digital Marketing Student. Gabriel is 43 years old. He has been working for 15 years selling software solutions and 8 years as an IT project leader. Currently working as a Product Owner at Terra.",
