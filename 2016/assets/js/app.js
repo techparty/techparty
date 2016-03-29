@@ -270,6 +270,10 @@
         return _showError(day + ' - ' + messages[language].soldOut);
       }
 
+      if (e.responseText.indexOf('Existing') !== -1) {
+        return _showError(messages[language].existing);
+      }
+
       return _showError(messages[language].registerError);
     };
 

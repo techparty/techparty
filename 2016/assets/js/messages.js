@@ -9,7 +9,8 @@ window.messages = {
     soldOut: 'Sold out!',
     invalidCpf: 'Invalid CPF',
     allFieldsRequired: 'All fields are required',
-    enforceDaySelect: 'Please, select at least one day to attend.'
+    enforceDaySelect: 'Please, select at least one day to attend.',
+    existing: 'Participant already registered'
   },
   pt: {
     speakersFetchError: '<h3>Sorry =(</h3><p>Não foi possível carregar a lista de palestrantes. Recarregue a página.</p>',
@@ -21,6 +22,7 @@ window.messages = {
     soldOut: 'não possui mais vagas',
     invalidCpf: 'CPF inválido.',
     allFieldsRequired: 'Todos campos tem preechimento obrigatório',
-    enforceDaySelect: 'Por favor, selecione pelo menos 1 dia para participar.'
+    enforceDaySelect: 'Por favor, selecione pelo menos 1 dia para participar.',
+    existing: 'Participante já inscrito.'
   }
 };
