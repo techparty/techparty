@@ -243,9 +243,8 @@
     var _success = function () {
       registeringForm.reset();
 
-      errorBox.classList.add('hidden');
-
-      modalTitle.innerHTML = messages[language].registerSuccess;
+      errorBox.innerHTML = messages[language].registerSuccess;
+      errorBox.classList.remove('hidden');
 
       return;
     };
