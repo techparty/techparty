@@ -243,7 +243,8 @@ body {
   text-align: justify;
 }
 
-#schedule {
+#schedule,
+#workshop {
   background: #E7EBED;
   color: #393e46;
 }
@@ -787,11 +788,15 @@ input[type=checkbox]:checked + .cb-label:before {
   }
 
   .header-fixed .nav {
-    width: 808px;
-    margin: 0 auto;
+    width: 920px;
     float: none;
     left: 50%;
-    margin-left: -404px;
+    margin-left: -460px;
     position: relative;
   }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 950px) {
+  .nav li {width: 45%; margin: 0 0 10px 2.5%;}
+  .nav li a {width: 100%; float: left; text-align: center;}
 }
