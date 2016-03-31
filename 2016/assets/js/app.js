@@ -338,11 +338,11 @@
         return;
       }
 
-      if ( selectedDays.length === 0 ) {
-        _showError(messages[language].enforceDaySelect);
-
-        return;
-      }
+      // if ( selectedDays.length === 0 ) {
+      //   _showError(messages[language].enforceDaySelect);
+      //
+      //   return;
+      // }
 
       dataToPost = {
         name: name,
