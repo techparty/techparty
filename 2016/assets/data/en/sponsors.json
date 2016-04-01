@@ -4,16 +4,16 @@
       "type": "Adamantium",
       "class": "span_1-2",
       "companies": [
-        {"name": "GitLab", "link": "https://gitlab.com", "image": "../assets/img/sponsors/gitlab.jpg", "description": "GitLab is a completely free application to code, test, and deploy code together, both for public and private projects. It provides Git repository management with fine grained access controls, code reviews, issue tracking, activity feeds, wikis, and continuous integration."},
-        {"name": "FlyByte", "link": "http://www.flybyte.com.br", "image": "../assets/img/sponsors/flybyte.jpg", "description": "Flybyte was created in 2008 in order to bring high quality internet to the city of Taquara. Since that time, the covering area has increased and today it attends 4 cities in the Vale do Paranhana. Service excellence is the biggest Flybyte's differential, knowing the consumer needs and serving clients rapidly and efficiently. The technical team guarantee quality and satisfaction on the delivered services."},
-        {"name": "Infisc", "link": "https://www.infisc.com.br", "image": "../assets/img/sponsors/infisc.jpg", "description": "Taquara company focused on developing software for Web, using mostly technologies J2EE platform, facing the Municipal Public Sector. It pioneered in the South, with the development and implementation of the first \"Invoice Electronic Services\" in the city of Campo Bom (2007), and innovative in the implementation of \"granting of credits program linked to ISSQN\" in the city of Farroupilha (2011). Innovation in technology is our wave!"}
+        {"name": "GitLab", "link": "https://gitlab.com", "image": "assets/img/sponsors/gitlab.jpg", "description": "GitLab is a completely free application to code, test, and deploy code together, both for public and private projects. It provides Git repository management with fine grained access controls, code reviews, issue tracking, activity feeds, wikis, and continuous integration."},
+        {"name": "FlyByte", "link": "http://www.flybyte.com.br", "image": "assets/img/sponsors/flybyte.jpg", "description": "Flybyte was created in 2008 in order to bring high quality internet to the city of Taquara. Since that time, the covering area has increased and today it attends 4 cities in the Vale do Paranhana. Service excellence is the biggest Flybyte's differential, knowing the consumer needs and serving clients rapidly and efficiently. The technical team guarantee quality and satisfaction on the delivered services."},
+        {"name": "Infisc", "link": "https://www.infisc.com.br", "image": "assets/img/sponsors/infisc.jpg", "description": "Taquara company focused on developing software for Web, using mostly technologies J2EE platform, facing the Municipal Public Sector. It pioneered in the South, with the development and implementation of the first \"Invoice Electronic Services\" in the city of Campo Bom (2007), and innovative in the implementation of \"granting of credits program linked to ISSQN\" in the city of Farroupilha (2011). Innovation in technology is our wave!"}
       ]
     },
     {
       "type": "Golden",
       "class": "span_1-3",
       "companies": [
-        {"name": "LoopHost", "link": "https://www.loophost.com.br", "image": "../assets/img/sponsors/loophost.jpg"},
+        {"name": "LoopHost", "link": "https://www.loophost.com.br", "image": "assets/img/sponsors/loophost.jpg"},
         {"name": "Golden level", "link": "#", "image": "http://placehold.it/275x275/abc123"},
         {"name": "Golden level", "link": "#", "image": "http://placehold.it/275x275/333300"}
       ]
@@ -22,9 +22,9 @@
       "type": "Silver",
       "class": "span_1-4",
       "companies": [
-        {"name": "We Heart It", "link": "http://weheartit.com", "image": "../assets/img/sponsors/we-heart-it.jpg"},
-        {"name": "Rocket.Chat", "link": "https://rocket.chat", "image": "../assets/img/sponsors/rocket-chat.jpg"},
-        {"name": "Sanvitron", "link": "http://www.sanvitron.com.br", "image": "../assets/img/sponsors/sanvitron.jpg"},
+        {"name": "We Heart It", "link": "http://weheartit.com", "image": "assets/img/sponsors/we-heart-it.jpg"},
+        {"name": "Rocket.Chat", "link": "https://rocket.chat", "image": "assets/img/sponsors/rocket-chat.jpg"},
+        {"name": "Sanvitron", "link": "http://www.sanvitron.com.br", "image": "assets/img/sponsors/sanvitron.jpg"},
         {"name": "Silver level", "link": "#", "image": "http://placehold.it/200x200/00ff33"}
       ]
     },
@@ -32,8 +32,8 @@
       "type": "Supporters",
       "class": "span_1-4 sponsor-supporter",
       "companies": [
-        {"name": "", "link": "https://twitter.com/", "image": "../assets/img/sponsors/twitter.jpg"},
-        {"name": "", "link": "http://www.bibi.com.br/", "image": "../assets/img/sponsors/bibi.jpg"},
+        {"name": "", "link": "https://twitter.com/", "image": "assets/img/sponsors/twitter.jpg"},
+        {"name": "", "link": "http://www.bibi.com.br/", "image": "assets/img/sponsors/bibi.jpg"},
         {"name": "", "link": "#", "image": "http://placehold.it/200x200/1f3daa"},
         {"name": "", "link": "#", "image": "http://placehold.it/200x200/00ff33"}
       ]
