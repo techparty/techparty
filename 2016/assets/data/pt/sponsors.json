@@ -14,7 +14,7 @@
       "class": "span_1-3",
       "companies": [
         {"name": "LoopHost", "link": "https://www.loophost.com.br", "image": "../assets/img/sponsors/loophost.jpg"},
-        {"name": "Golden level", "link": "#", "image": "http://placehold.it/275x275/abc123"},
+        {"name": "CR Sistemas e Web", "link": "http://cr.inf.br", "image": "../assets/img/sponsors/cr.jpg"},
         {"name": "Golden level", "link": "#", "image": "http://placehold.it/275x275/333300"}
       ]
     },
