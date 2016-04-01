@@ -249,6 +249,19 @@ body {
   color: #393e46;
 }
 
+#workshop ul {
+  font-size: 20px;
+}
+
+#workshop a {
+  color: #EF7247;
+  font-weight: bold;
+}
+
+#workshop a:hover {
+  text-decoration: underline;
+}
+
 .schedule-ul {
   float: left;
 }
@@ -797,6 +810,6 @@ input[type=checkbox]:checked + .cb-label:before {
 }
 
 @media only screen and (min-width: 769px) and (max-width: 950px) {
-  .nav li {width: 45%; margin: 0 0 10px 2.5%;}
-  .nav li a {width: 100%; float: left; text-align: center;}
+  .pt .nav li {width: 45%; margin: 0 0 10px 2.5%;}
+  .pt .nav li a {width: 100%; float: left; text-align: center;}
 }
