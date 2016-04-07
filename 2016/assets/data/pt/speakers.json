@@ -116,6 +116,17 @@
         {"link": "//twitter.com/benhurott", "icon": "fa-twitter"},
         {"link": "//github.com/benhurott​", "icon": "fa-github"}
       ]
+    },
+
+    {
+      "name": "Nelson Dutra Junior",
+      "company": "<a href='http://www.mozillabrasil.org.br'>Mozilla Brasil</a>",
+      "bio": "Graduando em Engenharia de Computação pela UFPel, entusiasta de Software Livre e voluntário na Comunidade Mozilla Brasil, atua como desenvolvedor Full Stack. Atualmente engajado com o projeto Firefox Student Ambassadors.",
+      "image": "nelson.jpg",
+      "links": [
+        {"link": "//facebook.com/dutra.fox", "icon": "fa-facebook-official"},
+        {"link": "//linkedin.com/in/dutrafox", "icon": "fa-linkedin"}
+      ]
     }
   ]
 }

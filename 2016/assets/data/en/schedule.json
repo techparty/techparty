@@ -7,6 +7,14 @@
       "subtitle": "Rodrigo Nascimento & Rafael Kellermann Streit",
       "subtitleSpan": "Rocket.Chat & We Heart It",
       "talkDescription": "A chat about the job market in Brazil and abroad, about remote jobs and its challenges, a dab on entrepreneurship and how it all works in the Open Source world."
+    },
+    {
+      "time": "20:40",
+      "icon": "fa-microphone",
+      "talkName": "What's new in Firefox?",
+      "subtitle": "Nelson Dutra Junior",
+      "subtitleSpan": "Mozilla Brasil",
+      "talkDescription": "See what was implemented in Firefox last year and what will be implemented in the future, and know some features that probably have passed unnoticed and make Firefox become the easiest browser to use in daily."
     }
   ],
 

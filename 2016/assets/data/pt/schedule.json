@@ -7,6 +7,14 @@
       "subtitle": "Rodrigo Nascimento & Rafael Kellermann Streit",
       "subtitleSpan": "Rocket.Chat & We Heart It",
       "talkDescription": "Um bate papo sobre o mercado de trabalho no Brasil e no exterior, sobre trabalho remoto e seus desafios, uma pincelada sobre empreendedorismo e como tudo isso funciona no mundo Open Source."
+    },
+    {
+      "time": "20:40",
+      "icon": "fa-microphone",
+      "talkName": "O que há de novo no Firefox?",
+      "subtitle": "Nelson Dutra Junior",
+      "subtitleSpan": "Mozilla Brasil",
+      "talkDescription": "Veja o que foi implementado no Firefox no último ano e o que será implementado no futuro, além de conhecer algumas features que provavelmente tenham passadas despercebidas e que fazem o Firefox se tornar o navegador mais fácil de se utilizar no dia­ a­ dia."
     }
   ],
 
