@@ -35,7 +35,7 @@
         {"name": "", "link": "https://twitter.com/", "image": "../assets/img/sponsors/twitter.jpg"},
         {"name": "", "link": "http://www.bibi.com.br/", "image": "../assets/img/sponsors/bibi.jpg"},
         {"name": "", "link": "https://eucompraria.com.br/", "image": "../assets/img/sponsors/eucompraria.jpg"},
-        {"name": "", "link": "#", "image": "http://placehold.it/200x200/00ff33"}
+        {"name": "", "link": "http://www.mozillabrasil.org.br/", "image": "../assets/img/sponsors/mozilla.jpg"}
       ]
     }
   ]
