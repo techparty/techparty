@@ -104,6 +104,18 @@
         {"link": "//twitter.com/abonfiglio", "icon": "fa-twitter"},
         {"link": "//linkedin.com/in/adriano-bonfiglio-a3873823", "icon": "fa-linkedin"}
       ]
+    },
+
+    {
+      "name": "Ben-hur Santos Ott",
+      "company": "<a href='http://www.cwi.com.br'>CWI Software</a>",
+      "bio": "Ben-hur Santos Ott, apaixonado por novas tecnologias, atuou como programador e arquiteto de sistemas em projetos de clientes de grande porte. Focado em tecnologias Microsoft e Mobile Híbridos, sempre busca inovação e desafios em tecnologias emergentes.",
+      "image": "ben-hur.jpg",
+      "links": [
+        {"link": "//facebook.com/benhur.ott", "icon": "fa-facebook-official"},
+        {"link": "//twitter.com/benhurott", "icon": "fa-twitter"},
+        {"link": "//github.com/benhurott​", "icon": "fa-github"}
+      ]
     }
   ]
 }

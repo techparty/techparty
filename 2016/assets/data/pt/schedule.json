@@ -41,10 +41,10 @@
     {
       "time": "20:40",
       "icon": "fa-microphone",
-      "talkName": "",
-      "subtitle": "",
-      "subtitleSpan": "",
-      "talkDescription": ""
+      "talkName": "Aplicativos Híbridos - Tecnologias para desenvolvimento",
+      "subtitle": "Ben-hur Santos Ott",
+      "subtitleSpan": "CWI Software",
+      "talkDescription": "Nesta palestra veremos algumas das principais tecnologias para desenvolvimento de aplicativos híbridos. Falaremos especificamente das seguintes plataformas: Ionic, Xamarin, Nativescript e React Native."
     }
   ],
 

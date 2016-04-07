@@ -41,10 +41,10 @@
     {
       "time": "20:40",
       "icon": "fa-microphone",
-      "talkName": "",
-      "subtitle": "",
-      "subtitleSpan": "",
-      "talkDescription": ""
+      "talkName": "Hybrid applications - Development for Technology",
+      "subtitle": "Ben-hur Santos Ott",
+      "subtitleSpan": "CWI Software",
+      "talkDescription": "This talk will look at some of the main technologies for the development of hybrid applications. We will speak specifically of the following platforms: Ionic, Xamarin, Nativescript and React Native."
     }
   ],
 
