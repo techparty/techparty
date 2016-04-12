@@ -230,9 +230,11 @@
     };
 
     var _bindRegisteringModal = function () {
-      var registerLink = document.getElementById('open-register-modal');
+      var registerLink = document.querySelectorAll('.open-register-modal');
 
-      registerLink.addEventListener('click', _openRegisteringModal, false);
+      [].forEach.call(registerLink, function (link) {
+        link.addEventListener('click', _openRegisteringModal, false);
+      });
     };
 
     var _showError = function (m) {

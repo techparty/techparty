@@ -813,3 +813,27 @@ input[type=checkbox]:checked + .cb-label:before {
   .pt .nav li {width: 45%; margin: 0 0 10px 2.5%;}
   .pt .nav li a {width: 100%; float: left; text-align: center;}
 }
+
+.btn {
+    cursor: pointer;
+    height: 35px;
+    width: 100px;
+    margin-left: 10px;
+    background: rgba(0, 0, 0, .2);
+    border: 0;
+    border-radius: 8px;
+    color: #fff;
+    font-family: 'Roboto';
+    font-size: 18px;
+}
+
+.btn-register-wrapper {
+  text-align: center;
+  margin-top: 70px;
+}
+
+.btn-register {
+  width: 150px;
+  height: 40px;
+  background: #EF7247;
+}
