@@ -2,8 +2,8 @@
   "speakers": [
     {
       "name": "Rodrigo Gomes da Silva",
-      "company": "<a href='https://stefanini.com'>Stefanini IT Solutions</a>",
-      "bio": "Self-taught, JavaScript enthusiastic and open source contributor. He started developing simple tools using VB. Rodrigo started working professionally as a full-stack developer using Grails. Currently, he works at Stefanini IT solutions.",
+      "company": "<a href='https://www.ntxdev.com.br'>ntxdev</a>",
+      "bio": "Self-taught, JavaScript enthusiast and open source contributor, started alone to develop simple tools in VB, professionally started as full-stack developer using Grails framework, and currently operates with Rails and angular at ntxdev.",
       "image": "rodrigo-gomes-da-silva.jpg",
       "links": [
         {"link": "//facebook.com/rodrigo.smscom", "icon": "fa-facebook-official"},
