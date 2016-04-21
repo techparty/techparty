@@ -15,6 +15,12 @@
       "subtitle": "Nelson Dutra Junior",
       "subtitleSpan": "Mozilla Brasil",
       "talkDescription": "Veja o que foi implementado no Firefox no último ano e o que será implementado no futuro, além de conhecer algumas features que provavelmente tenham passadas despercebidas e que fazem o Firefox se tornar o navegador mais fácil de se utilizar no dia­ a­ dia."
+    },
+    {
+      "time": "21:30",
+      "icon": "fa-cutlery",
+      "talkName": "RangoBreak",
+      "subtitleSpan": "Cachorro DuKassio"
     }
   ],
 
@@ -34,6 +40,12 @@
       "subtitle": "Ari Stopassola Junior",
       "subtitleSpan": "Perito",
       "talkDescription": "Renascimento do PHP (evolução desde a versão 5.3), novos recursos (Traits, Generators, Closures, OPCache, built-in server), PHP-FIG e padrões PSR, componentes (Composer), frameworks, boas práticas, hospedagens, provisionamento, otimização, integração contínua, deployment, testes (PHPUnit, Behat e Codeception), profiling (debug), mecanismos de fila, ORM (Object-Relational Mapping), HHVM, Hack e PHP7, ecossistema PHP, extensões e comunidade."
+    },
+    {
+      "time": "21:30",
+      "icon": "fa-cutlery",
+      "talkName": "RangoBreak",
+      "subtitleSpan": "Cupcake e Buraco Quente"
     }
   ],
 
@@ -53,6 +65,12 @@
       "subtitle": "Ben-hur Santos Ott",
       "subtitleSpan": "CWI Software",
       "talkDescription": "Nesta palestra veremos algumas das principais tecnologias para desenvolvimento de aplicativos híbridos. Falaremos especificamente das seguintes plataformas: Ionic, Xamarin, Nativescript e React Native."
+    },
+    {
+      "time": "21:30",
+      "icon": "fa-cutlery",
+      "talkName": "RangoBreak",
+      "subtitleSpan": "Pastel de Carne + Pastel de Chocolate"
     }
   ],
 
@@ -72,6 +90,12 @@
       "subtitle": "Fabiano Franz",
       "subtitleSpan": "Red Hat",
       "talkDescription": "Docker é uma plataforma aberta revolucionária, em especial no contexto recente de Cloud Computing. Apesar disso, muitos dos conceitos por trás dessa tecnologia de containers não são novos. Vamos analisar de onde veio essa tecnologia, como chegamos até aqui, e detalhes relacionados a como ela funciona e como podemos utilizá-la.  Baseado na experiência arquitetural e operacional do OpenShift, a plataforma da Red Hat que coordena mais de 3 milhões de aplicações rodando containers em produção, vamos esmiuçar práticas de adoção para que você também possa, finalmente, fazer uso da tecnologia de containers em suas necessidades tecnológicas cotidianas."
+    },
+    {
+      "time": "21:30",
+      "icon": "fa-cutlery",
+      "talkName": "RangoBreak",
+      "subtitleSpan": "Pizza ou Cachorro Quente do FoodTruck QTVQTV"
     }
   ],
 
