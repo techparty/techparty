@@ -41,7 +41,8 @@
       "talkName": "Modern PHP",
       "subtitle": "Ari Stopassola Junior",
       "subtitleSpan": "Perito",
-      "talkDescription": "Renascimento do PHP (evolução desde a versão 5.3), novos recursos (Traits, Generators, Closures, OPCache, built-in server), PHP-FIG e padrões PSR, componentes (Composer), frameworks, boas práticas, hospedagens, provisionamento, otimização, integração contínua, deployment, testes (PHPUnit, Behat e Codeception), profiling (debug), mecanismos de fila, ORM (Object-Relational Mapping), HHVM, Hack e PHP7, ecossistema PHP, extensões e comunidade."
+      "talkDescription": "Renascimento do PHP (evolução desde a versão 5.3), novos recursos (Traits, Generators, Closures, OPCache, built-in server), PHP-FIG e padrões PSR, componentes (Composer), frameworks, boas práticas, hospedagens, provisionamento, otimização, integração contínua, deployment, testes (PHPUnit, Behat e Codeception), profiling (debug), mecanismos de fila, ORM (Object-Relational Mapping), HHVM, Hack e PHP7, ecossistema PHP, extensões e comunidade.",
+      "slidesLink": "http://pt.slideshare.net/arijunior/modern-php-61267013"
     },
     {
       "time": "21:30",
