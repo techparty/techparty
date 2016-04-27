@@ -377,6 +377,14 @@ li.active-day:hover {
   color: #393e46;
 }
 
+.timeline-right-desc p a {
+  color: #ef7247;
+}
+
+.timeline-right-desc p a:hover {
+  text-decoration: underline;
+}
+
 .hidden-info { display: none; }
 
 #local {
