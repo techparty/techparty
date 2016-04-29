@@ -47,7 +47,8 @@
       "talkName": "The fall of the Berlin Wall",
       "subtitle": "Gabriel Viégas & Roberto Fermann",
       "subtitleSpan": "Terra Networks",
-      "talkDescription": "Bringing down barriers to develop (good) products."
+      "talkDescription": "Bringing down barriers to develop (good) products.",
+      "slidesLink": "http://bit.ly/1SsGWGL"
     },
     {
       "time": "20:40",
@@ -66,7 +67,8 @@
       "talkName": "An objective introduction to the framework Grails",
       "subtitle": "Rodrigo Gomes da Silva",
       "subtitleSpan": "ntxdev",
-      "talkDescription": "How it works, components that make up the framework, practical demonstration and when to use."
+      "talkDescription": "How it works, components that make up the framework, practical demonstration and when to use.",
+      "slidesLink": "http://slides.com/rodrigogomesdasilva/deck-1#/"
     },
     {
       "time": "20:40",
@@ -74,7 +76,8 @@
       "talkName": "All Things Containers",
       "subtitle": "Fabiano Franz",
       "subtitleSpan": "Red Hat",
-      "talkDescription": "Docker is a revolutionary open platform, specially in the Cloud Computing context. Nevertheless, many concepts behind this containers technology are not new. Let's analyze where this technology came from, how it has evolved so far and detail related to how it works and how we can make use of it. By following the OpenShift's operational and arquiteture experience, the Red Hat platform, that coordinates more than 3 millions applications running Containers in production, we will present adoption practices, so you can, finnaly, make use of this containers technology in your daily activities."
+      "talkDescription": "Docker is a revolutionary open platform, specially in the Cloud Computing context. Nevertheless, many concepts behind this containers technology are not new. Let's analyze where this technology came from, how it has evolved so far and detail related to how it works and how we can make use of it. By following the OpenShift's operational and arquiteture experience, the Red Hat platform, that coordinates more than 3 millions applications running Containers in production, we will present adoption practices, so you can, finnaly, make use of this containers technology in your daily activities.",
+      "slidesLink": "http://www.slideshare.net/fabianofranz/all-things-containers-techparty-faccat-2016"
     }
   ],
 

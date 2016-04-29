@@ -59,7 +59,8 @@
       "talkName": "A queda do muro de Berlim",
       "subtitle": "Gabriel Viégas & Roberto Fermann",
       "subtitleSpan": "Terra Networks",
-      "talkDescription": "Derrubando barreiras para desenvolver (bons) produtos."
+      "talkDescription": "Derrubando barreiras para desenvolver (bons) produtos.",
+      "slidesLink": "http://bit.ly/1SsGWGL"
     },
     {
       "time": "20:40",
@@ -84,7 +85,8 @@
       "talkName": "Uma introdução objetiva ao framework Grails",
       "subtitle": "Rodrigo Gomes da Silva",
       "subtitleSpan": "ntxdev",
-      "talkDescription": "Como funciona, componentes que compõem o framework, demonstração prática e quando utilizar."
+      "talkDescription": "Como funciona, componentes que compõem o framework, demonstração prática e quando utilizar.",
+      "slidesLink": "http://slides.com/rodrigogomesdasilva/deck-1#/"
     },
     {
       "time": "20:40",
@@ -92,7 +94,8 @@
       "talkName": "All Things Containers",
       "subtitle": "Fabiano Franz",
       "subtitleSpan": "Red Hat",
-      "talkDescription": "Docker é uma plataforma aberta revolucionária, em especial no contexto recente de Cloud Computing. Apesar disso, muitos dos conceitos por trás dessa tecnologia de containers não são novos. Vamos analisar de onde veio essa tecnologia, como chegamos até aqui, e detalhes relacionados a como ela funciona e como podemos utilizá-la.  Baseado na experiência arquitetural e operacional do OpenShift, a plataforma da Red Hat que coordena mais de 3 milhões de aplicações rodando containers em produção, vamos esmiuçar práticas de adoção para que você também possa, finalmente, fazer uso da tecnologia de containers em suas necessidades tecnológicas cotidianas."
+      "talkDescription": "Docker é uma plataforma aberta revolucionária, em especial no contexto recente de Cloud Computing. Apesar disso, muitos dos conceitos por trás dessa tecnologia de containers não são novos. Vamos analisar de onde veio essa tecnologia, como chegamos até aqui, e detalhes relacionados a como ela funciona e como podemos utilizá-la.  Baseado na experiência arquitetural e operacional do OpenShift, a plataforma da Red Hat que coordena mais de 3 milhões de aplicações rodando containers em produção, vamos esmiuçar práticas de adoção para que você também possa, finalmente, fazer uso da tecnologia de containers em suas necessidades tecnológicas cotidianas.",
+      "slidesLink": "http://www.slideshare.net/fabianofranz/all-things-containers-techparty-faccat-2016"
     },
     {
       "time": "21:30",
