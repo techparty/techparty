@@ -57,7 +57,7 @@ export default class SearchGroup extends React.Component {
     };
 
     xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
-    xhr.send(JSON.stringify({email: user.email, cpf: user.cpf}));
+    xhr.send(JSON.stringify({email: user.email, cpf: user.cpf, isSpeaker: user.isSpeaker}));
   }
 
   _handleSubmit(user) {
