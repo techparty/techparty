@@ -30,7 +30,11 @@ export default class SearchGroup extends React.Component {
 
     var xhr = new XMLHttpRequest();
 
-    xhr.open('POST', 'https://techparty-data.herokuapp.com/api/v2/participant/get', true);
+    var endpoint = '/participant/get';
+
+    if (user.isSpeaker) endpoint = '/speaker/get';
+
+    xhr.open('POST', 'https://techparty-data.herokuapp.com/api/v2' + endpoint, true);
     xhr.responseType = 'text';
 
     xhr.onload = function() {
@@ -44,8 +48,12 @@ export default class SearchGroup extends React.Component {
             return;
           }
 
-          response.present = self._calculateTotalPresent(response.days);
-          response.totalTime = self._calculateTotalTime(response.days);
+          if (!user.isSpeaker) {
+            response.present = self._calculateTotalPresent(response.days);
+            response.totalTime = self._calculateTotalTime(response.days);
+          }
+
+          response.isSpeaker = user.isSpeaker;
 
           self.setState({userData: response});
 
@@ -57,7 +65,19 @@ export default class SearchGroup extends React.Component {
     };
 
     xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
-    xhr.send(JSON.stringify({email: user.email, cpf: user.cpf, isSpeaker: user.isSpeaker}));
+
+    var params = {};
+
+    if (user.isSpeaker) params = {email: user.email};
+
+    if (!user.isSpeaker) {
+      params = {
+        email: user.email,
+        cpf: user.cpf
+      };
+    }
+
+    xhr.send(JSON.stringify(params));
   }
 
   _handleSubmit(user) {

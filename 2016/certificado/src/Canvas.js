@@ -62,8 +62,19 @@ export default class Canvas extends React.Component {
     ctx.font = 'bold 20px sans-serif';
     ctx.textAlign = 'center';
 
-    ctx.fillText('Certificamos sua participação na TechParty Faccat, realizada entre', xCenter, 383);
-    ctx.fillText('25 e 28 de Abril de 2016, na cidade de Taquara/RS, totalizando ' + this.state.canvasData.totalTime + ' horas.', xCenter, 410);
+    if (this.state.canvasData.isSpeaker) {
+      ctx.fillText(`Conferimos o presente certificado à ${this.state.canvasData.name} por ter ministrado`, xCenter, 383);
+      ctx.fillText(`a palestra "${this.state.canvasData.talk}" durante a TechParty 2016`, xCenter, 410);
+      ctx.fillText('promovida pela Faculdades Integradas de Taquara no dia XX.', xCenter, 437);
+    }
+
+    if (!this.state.canvasData.isSpeaker) {
+      ctx.fillText('Certificamos sua participação na TechParty Faccat, realizada entre', xCenter, 383);
+    }
+
+    if (!this.state.canvasData.isSpeaker) {
+      ctx.fillText(`25 e 29 de Abril de 2016, na cidade de Taquara/RS, totalizando ${this.state.canvasData.totalTime} horas.`, xCenter, 410);
+    }
 
     ctx.font = '18px sans-serif';
     ctx.textAlign = 'center';

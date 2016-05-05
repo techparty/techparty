@@ -64,15 +64,23 @@ export default class Form extends React.Component {
     var email = this.state.userEmail.trim(),
       cpf = this.state.userCpf.trim();
 
-    if (!email || !cpf) {
-      this.setState({showError: true});
-      this.setState({errorMessage: 'Preencha os campos E-mail e CPF'});
-      return;
+    if (!this.state.isSpeaker) {
+      if (!cpf) {
+        this.setState({showError: true});
+        this.setState({errorMessage: 'Preencha o campo CPF'});
+        return;
+      }
+
+      if (!this._validateCpf(cpf)) {
+        this.setState({showError: true});
+        this.setState({errorMessage: 'CPF inválido'});
+        return;
+      }
     }
 
-    if (!this._validateCpf(cpf)) {
+    if (!email) {
       this.setState({showError: true});
-      this.setState({errorMessage: 'CPF inválido'});
+      this.setState({errorMessage: 'Preencha o campo Email'});
       return;
     }
 
@@ -81,22 +89,26 @@ export default class Form extends React.Component {
   }
 
   render() {
+    var cpfField = !this.state.isSpeaker ?
+            <div className="form-item">
+              <input type="number" name="cpf" id="cpf" placeholder="CPF" onChange={this._handleCpfChange.bind(this)} />
+            </div>
+            : '';
+
     return (
       <div>
         <section className="card">
           <form onSubmit={this._handleSubmit.bind(this)}>
             <div className="form-item">
-              <input type="email" name="email" id="email" placeholder="E-mail" onChange={this._handleEmailChange.bind(this)} />
-            </div>
-
-            <div className="form-item">
-              <input type="number" name="cpf" id="cpf" placeholder="CPF" onChange={this._handleCpfChange.bind(this)} />
-            </div>
-
-            <div className="form-item">
               <input type="checkbox" name="is_speaker" id="is_speaker" className="is_speaker" onChange={this._handleIsSpeakerChange.bind(this)} />
               <label htmlFor="is_speaker">Sou palestrante</label>
             </div>
+
+            <div className="form-item">
+              <input type="email" name="email" id="email" placeholder="E-mail" onChange={this._handleEmailChange.bind(this)} />
+            </div>
+
+            {cpfField}
 
             <div className="form-item">
               {this.props.isFetchingData ? <Loader /> : false}
