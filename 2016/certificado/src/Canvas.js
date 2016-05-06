@@ -10,8 +10,17 @@ export default class Canvas extends React.Component {
     };
   }
 
-  componentDidMount() {
+  formatDate(date) {
+    let time = new Date(date);
 
+    let day = time.getDate();
+    let month = time.getMonth() + 1;
+    let year = time.getFullYear();
+
+    return `${day}/0${month}/${year}`;
+  }
+
+  componentDidMount() {
     var canvas = ReactDOM.findDOMNode(this.refs.canvas),
       ctx = canvas.getContext('2d'),
       faccatImage = new Image(),
@@ -65,7 +74,7 @@ export default class Canvas extends React.Component {
     if (this.state.canvasData.isSpeaker) {
       ctx.fillText(`Conferimos o presente certificado à ${this.state.canvasData.name} por ter ministrado`, xCenter, 383);
       ctx.fillText(`a palestra "${this.state.canvasData.talk}" durante a TechParty 2016`, xCenter, 410);
-      ctx.fillText('promovida pela Faculdades Integradas de Taquara no dia XX.', xCenter, 437);
+      ctx.fillText(`promovida pela Faculdades Integradas de Taquara no dia ${this.formatDate(this.state.canvasData.date)}, totalizando 50 minutos.`, xCenter, 437);
     }
 
     if (!this.state.canvasData.isSpeaker) {
