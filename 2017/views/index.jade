@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+doctype html
 html(lang="#{lang}")
-head
-  link(rel="stylesheet", href="/dist/css/main.css")
-  meta(charset="UTF-8")
-  title #{title}
-body
-  h1 teste novo
+  head
+    link(rel="stylesheet", href="/dist/css/main.css")
+    meta(charset="UTF-8")
+    title #{title}
+  body
+    div.root
+      include header.jade
 
-  script(src="/dist/js/bundle.js")
+    script(src="/dist/js/bundle.js")
