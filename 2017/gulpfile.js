@@ -20,7 +20,6 @@ gulp.task('jade', () => {
       }))
       .pipe(gulp.dest(lang === 'pt' ? './' : `./${lang}/`));
   }
-
 });
 
 gulp.task('stylus', () => {

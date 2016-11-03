@@ -2,3 +2,5 @@ node_modules
 *.log
 dist
 temp
+en
+2017/*.html
