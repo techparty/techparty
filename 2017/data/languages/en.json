@@ -1,6 +1,6 @@
 {
   "lang": "en",
   "title": "TechParty - Faccat",
-  "navigation": ["Home", "Sobre", "Palestrantes", "Programação", "Local", "Parceiros"],
+  "navigation": ["Home", "About", "Speakers", "Schedule", "Local", "Sponsors"],
   "registerButton": "Register"
 }
