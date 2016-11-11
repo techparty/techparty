@@ -1,2 +1,17 @@
-header(class="full")
-  h1 #{header}
+header(class="header")
+  .header-top
+    .center
+      .logo
+        a(href="/")
+          img(src="http://showthemes.com/conferencepro-demo/wp-content/themes/conference-pro/assets/img/logo.png" alt="TechParty")
+      .menu-btn
+        span
+      .header-menu
+        .header-menu__wrap
+          .header-menu__layout
+            ul.header-menu__ul
+              each val, index in navigation
+                li
+                  a(href="#") #{val}
+              li
+                a(class="btn", href="#") #{registerButton}

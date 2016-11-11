@@ -1,5 +1,6 @@
 {
   "lang": "pt-br",
   "title": "TechParty - Faccat",
-  "header": "teste em portugues"
+  "navigation": ["Home", "Sobre", "Palestrantes", "Programação", "Local", "Parceiros"],
+  "registerButton": "Inscrição"
 }
