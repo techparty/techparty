@@ -1,0 +1,74 @@
+$desktop = 1000px
+$variant1 = 620px
+
+.speakers
+  padding 67px 0 69px
+  background $scale4
+  text-align center
+  overflow hidden
+
+.speakers__layout
+  width 100%
+  +below($desktop)
+    width 590px
+    margin 0 auto
+  +below($variant1)
+    width 100%
+    max-width 320px
+    margin 0 auto
+
+.speakers__item
+  float left
+  width 50%
+  padding 10px
+  height 305px
+  position relative
+  +below($desktop)
+    width 100%
+  +below($variant1)
+    height auto
+
+.speakers__item-content
+  width 100%
+  background $scale2
+  float left
+  position relative
+  height 100%
+  display table
+  +below($variant1)
+    display block
+
+.speakers__photo
+.speakers__info
+  width 50%
+  display table-cell
+  +below($variant1)
+    display block
+    width 100%
+
+.speakers__photo
+  height 100%
+  +below($variant1)
+    height 300px
+
+.speakers__info
+  vertical-align middle
+  position relative
+  padding 20px 20px
+
+.speakers__name
+  text-transform uppercase
+  font-size 20px
+  display block
+  margin 0 0 19px
+
+.speakers__social
+  text-align center
+  position absolute
+  bottom 16px;
+  color $scale6
+  font-size 24px
+  width 100%
+  +below($variant1)
+    position relative
+    bottom 0
