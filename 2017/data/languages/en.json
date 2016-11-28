@@ -10,5 +10,12 @@
       "The event is indeed to have two presentations per night, those presentations will be performed by experienced professionals in their working fields.",
       "In the last day of TechParty, certificates will be delivered to the ones who registered and attended the event."
     ]
+  },
+  "speakers": [
+
+  ],
+  "speakers_call": {
+    "title": "Would you like to speak at TechParty?",
+    "text": "Fill the form and we will get in touch soon."
   }
 }

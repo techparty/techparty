@@ -43,7 +43,7 @@ $variant1 = 620px
   width 50%
   display table-cell
   +below($variant1)
-    display block
+    display $block
     width 100%
 
 .speakers__photo
@@ -72,3 +72,17 @@ $variant1 = 620px
   +below($variant1)
     position relative
     bottom 0
+
+.speakers-call-to-action
+  background $scale7
+  padding 36px 0
+  text-align center
+  .center
+    background $scale2
+    padding 40px 0
+    h2
+      text-transform uppercase
+      margin 0 0 10px 0
+    a
+      color $scale1
+      text-decoration underline

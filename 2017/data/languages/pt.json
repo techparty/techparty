@@ -11,5 +11,12 @@
       "As atividades serão ministradas por profissionais internos e de fora da instituição.",
       "O evento irá fornecer certificado de participação. Quem se inscrever e comparecer, pode contar com ele."
     ]
+  },
+  "speakers": [
+
+  ],
+  "speakers_call": {
+    "title": "Deseja palestrar na TechParty?",
+    "text": "Preencha o formulário e entraremos em contato."
   }
 }
