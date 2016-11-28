@@ -2,5 +2,14 @@
   "lang": "pt-br",
   "title": "TechParty - Faccat",
   "navigation": ["Home", "Sobre", "Palestrantes", "Programação", "Local", "Parceiros"],
-  "registerButton": "Inscrição"
+  "registerButton": "Inscrição",
+  "about": {
+    "title": "Sobre",
+    "paragraphs": [
+      "A TechParty Faccat é um evento totalmente gratuito e aberto à comunidade, visando promover a Tecnologia da Informação (TI) e compartilhamento de conhecimentos.",
+      "Serão duas talks por noite durante uma semana inteira, com profissionais qualificados e experientes em suas áreas de atuação.",
+      "As atividades serão ministradas por profissionais internos e de fora da instituição.",
+      "O evento irá fornecer certificado de participação. Quem se inscrever e comparecer, pode contar com ele."
+    ]
+  }
 }

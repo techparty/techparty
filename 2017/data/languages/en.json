@@ -2,5 +2,13 @@
   "lang": "en",
   "title": "TechParty - Faccat",
   "navigation": ["Home", "About", "Speakers", "Schedule", "Local", "Sponsors"],
-  "registerButton": "Register"
+  "registerButton": "Register",
+  "about": {
+    "title": "About",
+    "paragraphs": [
+      "TechParty Faccat is a totally free event and opened to the whole community. It aims to promote technology and knowledge sharing.",
+      "The event is indeed to have two presentations per night, those presentations will be performed by experienced professionals in their working fields.",
+      "In the last day of TechParty, certificates will be delivered to the ones who registered and attended the event."
+    ]
+  }
 }
