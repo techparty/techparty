@@ -41,7 +41,9 @@ gulp.task('js', () => {
 });
 
 gulp.task('webserver', () => {
-  connect.server();
+  connect.server({
+    port: 3000,
+  });
 });
 
 gulp.task('watch', () => {
@@ -52,4 +54,4 @@ gulp.task('watch', () => {
 });
 
 gulp.task('build', ['jade', 'stylus', 'js']);
-gulp.task('dev', ['build', 'watch']);
+gulp.task('dev', ['build', 'watch', 'webserver']);
