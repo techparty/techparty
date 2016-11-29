@@ -52,4 +52,4 @@ gulp.task('watch', () => {
 });
 
 gulp.task('build', ['jade', 'stylus', 'js']);
-gulp.task('dev', ['build', 'watch', 'webserver']);
+gulp.task('dev', ['build', 'watch']);

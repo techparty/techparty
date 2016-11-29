@@ -23,8 +23,17 @@ $variant1 = 620px
   padding 10px
   height 305px
   position relative
+  &.left
+    direction ltr
+  &.right
+    direction rtl
   +below($desktop)
     width 100%
+    &:nth-child(odd)
+      direction ltr  
+    &:nth-child(even)
+      direction rtl
+
   +below($variant1)
     height auto
 
@@ -43,7 +52,7 @@ $variant1 = 620px
   width 50%
   display table-cell
   +below($variant1)
-    display $block
+    display block
     width 100%
 
 .speakers__photo

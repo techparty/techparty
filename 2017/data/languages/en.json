@@ -17,5 +17,9 @@
   "speakers_call": {
     "title": "Would you like to speak at TechParty?",
     "text": "Fill the form and we will get in touch soon."
+  },
+  "schedule": {
+    "title": "Schedule"
+
   }
 }

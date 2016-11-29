@@ -18,5 +18,8 @@
   "speakers_call": {
     "title": "Deseja palestrar na TechParty?",
     "text": "Preencha o formulário e entraremos em contato."
+  },
+  "schedule": {
+    "title": "Programação"
   }
 }
