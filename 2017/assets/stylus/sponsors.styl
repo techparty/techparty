@@ -1,0 +1,91 @@
+$tablet = 768px
+$variant1 = 590px
+
+.sponsors
+  padding 67px 0
+  text-align center
+  background $scale4
+
+.sponsors__layout
+  > h2
+    margin-bottom 10px
+
+.sponsors-content
+  margin-top 40px
+
+.sponsors-group
+  margin-bottom 65px
+  &.adamantium
+    .sponsor-item
+      width 100%
+      background $scale2
+      display table
+      margin 20px 0
+    .sponsor-photo
+      width 30%
+      height 200px
+      display table-cell
+      vertical-align middle
+      +below($variant1)
+        width 100%
+        display block
+      img
+        height 100%
+
+    .sponsor-info
+      text-align left
+      display table-cell
+      width 70%
+      vertical-align top
+      padding 30px
+      +below($variant1)
+        width 100%
+        display block
+  &.golden
+    padding 0 100px
+    .sponsor-item
+      width 30%
+      display inline-block
+      margin 1.5% 1.5%
+      background $scale2
+      +below($tablet)
+        width 47%
+    +below($tablet)
+      padding 0 80px
+    +below($variant1)
+      padding 0 10px
+      font-size 12px
+
+    .sponsor-photo
+      img
+        padding 30px
+        width 100%
+    .sponsor-info
+      background $scale5
+      color $scale2
+      padding 10px 0
+  &.silver
+    padding 0 90px
+    +below($tablet)
+      padding 0 50px
+    +below($variant1)
+      padding 0
+      font-size 11px
+    .sponsor-item
+      width 22%
+      display inline-block
+      margin 20px 1.5%
+      background $scale2
+      +below($tablet)
+        width 30%
+        margin 1.5% 1.5%
+    .sponsor-photo
+      padding 30px
+      img
+        width 100%
+      +below($variant1)
+        padding 5px
+    .sponsor-info
+      background $scale5
+      color $scale2
+      padding 10px 0
