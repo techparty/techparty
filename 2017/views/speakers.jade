@@ -2,96 +2,29 @@
   .center
     h2.section__title Palestrantes
     .speakers__layout
-      .speakers__item.left
-        .speakers__item-content
-          .speakers__photo(style="background:url(http://showthemes.com/conferencepro-demo/wp-content/uploads/2016/06/7.png);background-size:cover;")
-          .speakers__info
-            h3.speakers__name Fernando Porazzi
-            span.speakers__bio Software engineer at CWI
-            .speakers__social
-              span tt
-              span in
-              span fb
-      .speakers__item.left
-        .speakers__item-content
-          .speakers__photo(style="background:url(http://showthemes.com/conferencepro-demo/wp-content/uploads/2016/06/7.png);background-size:cover;")
-          .speakers__info
-            h3.speakers__name Daniel Rohers Moura
-            span.speakers__bio Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-            .speakers__social
-              span tt
-              span in
-              span fb
-      .speakers__item.right
-        .speakers__item-content
-          .speakers__photo(style="background:url(http://showthemes.com/conferencepro-demo/wp-content/uploads/2016/06/7.png);background-size:cover;")
-          .speakers__info
-            h3.speakers__name Marcelo Azambuja
-            span.speakers__bio Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            .speakers__social
-              span tt
-              span in
-              span fb
-      .speakers__item.right
-        .speakers__item-content
-          .speakers__photo(style="background:url(http://showthemes.com/conferencepro-demo/wp-content/uploads/2016/06/7.png);background-size:cover;")
-          .speakers__info
-            h3.speakers__name Fernando Porazzi
-            span.speakers__bio Software engineer at CWI
-            .speakers__social
-              span tt
-              span in
-              span fb
-      .speakers__item.left
-        .speakers__item-content
-          .speakers__photo(style="background:url(http://showthemes.com/conferencepro-demo/wp-content/uploads/2016/06/7.png);background-size:cover;")
-          .speakers__info
-            h3.speakers__name Fernando Porazzi
-            span.speakers__bio Software engineer at CWI
-            .speakers__social
-              span tt
-              span in
-              span fb
-      .speakers__item.left
-        .speakers__item-content
-          .speakers__photo(style="background:url(http://showthemes.com/conferencepro-demo/wp-content/uploads/2016/06/7.png);background-size:cover;")
-          .speakers__info
-            h3.speakers__name Fernando Porazzi
-            span.speakers__bio Software engineer at CWI
-            .speakers__social
-              span tt
-              span in
-              span fb
-      .speakers__item.right
-        .speakers__item-content
-          .speakers__photo(style="background:url(http://showthemes.com/conferencepro-demo/wp-content/uploads/2016/06/7.png);background-size:cover;")
-          .speakers__info
-            h3.speakers__name Fernando Porazzi
-            span.speakers__bio Software engineer at CWI
-            .speakers__social
-              span tt
-              span in
-              span fb
-      .speakers__item.right
-        .speakers__item-content
-          .speakers__photo(style="background:url(http://showthemes.com/conferencepro-demo/wp-content/uploads/2016/06/7.png);background-size:cover;")
-          .speakers__info
-            h3.speakers__name Fernando Porazzi
-            span.speakers__bio Software engineer at CWI
-            .speakers__social
-              span tt
-              span in
-              span fb
-      .speakers__item.left
-        .speakers__item-content
-          .speakers__photo(style="background:url(http://showthemes.com/conferencepro-demo/wp-content/uploads/2016/06/7.png);background-size:cover;")
-          .speakers__info
-            h3.speakers__name Fernando Porazzi
-            span.speakers__bio Software engineer at CWI
-            .speakers__social
-              span tt
-              span in
-              span fb
+
+      - var counter=0
+      - var css=''
+      
+      each speaker, index in speakers
+        - counter++
+        if counter <= 2
+          - css='left'
+        if counter > 2
+          - css='right'
+        if counter >= 4
+          - counter=0
+
+        div(class="speakers__item #{css}")
+          .speakers__item-content
+            .speakers__photo(style="background:url(http://showthemes.com/conferencepro-demo/wp-content/uploads/2016/06/7.png);background-size:cover;")
+            .speakers__info
+              h3.speakers__name #{speaker.name}
+              span.speakers__bio #{speaker.bio}
+              .speakers__social
+                span tt
+                span in
+                span fb
 
 .speakers-call-to-action
   .center
