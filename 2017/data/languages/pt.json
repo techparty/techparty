@@ -39,6 +39,61 @@
     "text": "Preencha o formulário e entraremos em contato."
   },
   "schedule": {
-    "title": "Programação"
+    "title": "Programação",
+    "days": [
+      {"day": "monday", "date": "25 de março, 2017"},
+      {"day": "tuesday", "date": "22 de março, 2017"},
+      {"day": "wednesday", "date": "27 de março, 2017"},
+      {"day": "thursday", "date": "28 de março, 2017"}
+    ],
+    "talks": [
+      {
+        "day": "monday",
+        "time": "19:45 - 20:30",
+        "title": "Audio Driven Applications",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "tags": ["audio", "javascript", "html5", "media"],
+        "performers": [
+          {
+            "name": "Fernando Porazzi",
+            "photo": "https://scontent.fpoa8-1.fna.fbcdn.net/v/t1.0-9/13061946_1292843007411833_4041981927349872052_n.jpg?oh=4d59ef7e6ac6f21e0c626611c9c54b66&oe=58C8B2B4"
+          }
+        ]
+      },
+      {
+        "day": "monday",
+        "time": "20:45 - 21:00",
+        "title": "Node ES6",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "tags": ["node", "es6", "js"],
+        "performers": [
+          {
+            "name": "Daniel Rohers",
+            "photo": "https://scontent.fpoa8-1.fna.fbcdn.net/v/t1.0-9/10885062_604940959610919_4876682460404124091_n.jpg?oh=478c9fdcad59778b28f417277edb74f0&oe=58F7C957"
+          },
+          {
+            "name": "Fernando Porazzi",
+            "photo": "https://scontent.fpoa8-1.fna.fbcdn.net/v/t1.0-9/13061946_1292843007411833_4041981927349872052_n.jpg?oh=4d59ef7e6ac6f21e0c626611c9c54b66&oe=58C8B2B4"
+          }
+        ]
+      },
+      {
+        "day": "tuesday",
+        "time": "20:45 - 21:00",
+        "title": "Empreendedorismo no Brasil e Exterior",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "tags": ["node", "es6", "js"],
+        "performers": [
+          {
+            "name": "Daniel Rohers",
+            "photo": "https://scontent.fpoa8-1.fna.fbcdn.net/v/t1.0-9/10885062_604940959610919_4876682460404124091_n.jpg?oh=478c9fdcad59778b28f417277edb74f0&oe=58F7C957"
+          },
+          {
+            "name": "Fernando Porazzi",
+            "photo": "https://scontent.fpoa8-1.fna.fbcdn.net/v/t1.0-9/13061946_1292843007411833_4041981927349872052_n.jpg?oh=4d59ef7e6ac6f21e0c626611c9c54b66&oe=58C8B2B4"
+          }
+        ]
+      }
+    ]
   }
 }
