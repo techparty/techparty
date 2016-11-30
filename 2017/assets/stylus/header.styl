@@ -48,14 +48,14 @@ $breakpoint = 1000px
     margin-top -2px
     transition background-color 0.3s
     font-size 0
-    background #ff7777
+    background $scale1
     &:before
     &:after
       position absolute
       left 0
       width 100%
       height 100%
-      background #ff7777
+      background $scale1
       content ''
       transition transform 0.3s, background .3s
     &:before
@@ -154,7 +154,7 @@ $breakpoint = 1000px
       right 10px
       left 10px
       height 4px
-      background #ff7777
+      background $scale1
       content ''
       opacity 0
       transition opacity 0.3s, transform 0.3s
@@ -176,7 +176,7 @@ $breakpoint = 1000px
     height: 44px;
     letter-spacing: 0;
     line-height: 1;
-    color: #FFF;
+    color: $scale2;
     display: inline-block;
   +below($breakpoint)
     position relative

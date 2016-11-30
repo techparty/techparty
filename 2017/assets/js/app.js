@@ -5,6 +5,23 @@
     scheduleLinks = document.querySelectorAll('.schedule-nav a'),
     closeButtons = document.querySelectorAll('.schedule-talk__close');
 
+  function bindMobileNavigation() {
+    if (!isMobile()) return;
+
+    var icon = document.getElementById('mobile-navigation-trigger'),
+      nav = document.getElementById('header-navigation');
+
+    icon.addEventListener('click', function(e) {
+      if (this.classList.contains('opened')) {
+        this.classList.remove('opened')
+        nav.style.display = 'none';
+        return;
+      }
+      this.classList.add('opened');
+      nav.style.display = 'block';
+   }, false);
+  }
+
   function closeTalks() {
     for (var i = 0; i < talks.length; i++) {
       talks[i].classList.remove('open');
@@ -83,7 +100,12 @@
     marker.setMap(map);
   }
 
+  function isMobile() {
+    return window.innerWidth < 1000;
+  }
+
   function init() {
+    bindMobileNavigation();
     bindEvents();
     initMap();
   }
