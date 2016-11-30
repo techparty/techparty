@@ -3,47 +3,23 @@
     .schedule__layout
       h2.section__title #{schedule.title}
       .schedule-nav
-        a(href="#", class="active") 25 de janeiro, 2017
-        a(href="#", class="") 26 de janeiro, 2017
-        a(href="#", class="") 27 de janeiro, 2017
-        a(href="#", class="") 28 de janeiro, 2017
+        each day, index in schedule.days
+          a(href="#", class="#{index < 1 ? 'active' : ''}", data-day="#{day.day}") #{day.date}
       .schedule-talks
         .schedule-talks-group
-          .schedule-talk
-            time(class="schedule-talk__time", datetime="19:45") 19:45 - 20:30
-            h2.schedule-talk__title This is the title for the talk
-            a(href="#", class="schedule-talk__close") &times;
-            .schedule-talk__details
-              .schedule__speakers-group
-                .schedule__speakers-group__item
-                  img(src="http://placehold.it/100x100")
-                  h3 Fernando Porazzi
-                .schedule__speakers-group__item
-                  img(src="http://placehold.it/100x100")
-                  h3 Daniel Rohers
-              .schedule__info
-                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                .schedule-talk__tags
-                  span Javascript
-                  span API
-                  span WebAudio
-                  span Gulp
-          .schedule-talk
-            time(class="schedule-talk__time", datetime="19:45") 19:45 - 20:30
-            h2.schedule-talk__title This is the title for the talk
-            a(href="#", class="schedule-talk__close") &times;
-            .schedule-talk__details
-              .schedule__speakers-group
-                .schedule__speakers-group__item
-                  img(src="http://placehold.it/100x100")
-                  h3 Fernando Porazzi
-                .schedule__speakers-group__item
-                  img(src="http://placehold.it/100x100")
-                  h3 Daniel Rohers
-              .schedule__info
-                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                .schedule-talk__tags
-                  span Javascript
-                  span API
-                  span WebAudio
-                  span Gulp
+          each talk, index in schedule.talks
+            div(class="schedule-talk #{talk.day != 'monday' ? 'none' : ''}", data-talk-day="#{talk.day}-talk")
+              time(class="schedule-talk__time", datetime="#{talk.time}") #{talk.time}
+              h2.schedule-talk__title #{talk.title}
+              a(href="#", class="schedule-talk__close") &times;
+              .schedule-talk__details
+                .schedule__speakers-group
+                  each performer, index in talk.performers
+                    .schedule__speakers-group__item
+                      img(src="#{performer.photo}")
+                      h3 #{performer.name}
+                .schedule__info
+                  p #{talk.desc}
+                  .schedule-talk__tags
+                    each tag, index in talk.tags
+                      span #{tag}

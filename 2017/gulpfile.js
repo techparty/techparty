@@ -40,6 +40,11 @@ gulp.task('js', () => {
     .pipe(gulp.dest('dist/js/'));
 });
 
+gulp.task('img', () => {
+  gulp.src('assets/img/**/')
+    .pipe(gulp.dest('dist/img'));
+});
+
 gulp.task('webserver', () => {
   connect.server({
     port: 3000,
@@ -53,5 +58,5 @@ gulp.task('watch', () => {
   gulp.watch('data/languages/*.json', ['jade']);
 });
 
-gulp.task('build', ['jade', 'stylus', 'js']);
+gulp.task('build', ['jade', 'stylus', 'js', 'img']);
 gulp.task('dev', ['build', 'watch', 'webserver']);

@@ -38,7 +38,44 @@
     "text": "Fill the form and we will get in touch soon."
   },
   "schedule": {
-    "title": "Schedule"
-
+    "title": "Schedule",
+    "days": [
+      {"day": "monday", "date": "March 25, 2017"},
+      {"day": "tuesday", "date": "March 26, 2017"},
+      {"day": "wednesday", "date": "March 27, 2017"},
+      {"day": "thursday", "date": "March 28, 2017"}
+    ],
+    "talks": [
+      {
+        "day": "monday",
+        "time": "19:45 - 20:30",
+        "title": "Audio Driven Applications",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "tags": ["audio", "javascript", "html5", "media"],
+        "performers": [
+          {
+            "name": "Fernando Porazzi",
+            "photo": "https://scontent.fpoa8-1.fna.fbcdn.net/v/t1.0-9/13061946_1292843007411833_4041981927349872052_n.jpg?oh=4d59ef7e6ac6f21e0c626611c9c54b66&oe=58C8B2B4"
+          }
+        ]
+      },
+      {
+        "day": "monday",
+        "time": "20:45 - 21:00",
+        "title": "Node ES6",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "tags": ["node", "es6", "js"],
+        "performers": [
+          {
+            "name": "Daniel Rohers",
+            "photo": "https://scontent.fpoa8-1.fna.fbcdn.net/v/t1.0-9/10885062_604940959610919_4876682460404124091_n.jpg?oh=478c9fdcad59778b28f417277edb74f0&oe=58F7C957"
+          },
+          {
+            "name": "Fernando Porazzi",
+            "photo": "https://scontent.fpoa8-1.fna.fbcdn.net/v/t1.0-9/13061946_1292843007411833_4041981927349872052_n.jpg?oh=4d59ef7e6ac6f21e0c626611c9c54b66&oe=58C8B2B4"
+          }
+        ]
+      }
+    ]
   }
 }

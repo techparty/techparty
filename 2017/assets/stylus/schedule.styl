@@ -27,7 +27,9 @@ $tablet = 768px
 .schedule-talk
   padding 25px 50px
   border-top 1px solid $scale4
+  cursor pointer
   &.open
+    cursor default
     border 0
     box-shadow 0 0 40px 5px rgba(0, 0, 0, 0.1)
     .schedule-talk__close
@@ -59,7 +61,6 @@ $tablet = 768px
   +below($tablet)
     width 100%
     text-align center
-
 
 .schedule-talk__details
   padding 8px 0 18px 15%
