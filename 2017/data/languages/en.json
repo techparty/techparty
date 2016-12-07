@@ -11,28 +11,31 @@
       "In the last day of TechParty, certificates will be delivered to the ones who registered and attended the event."
     ]
   },
-  "speakers": [
-    {
-      "name": "Fernando Porazzi",
-      "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "photo": "https://scontent.fpoa8-1.fna.fbcdn.net/v/t1.0-9/13061946_1292843007411833_4041981927349872052_n.jpg?oh=4d59ef7e6ac6f21e0c626611c9c54b66&oe=58C8B2B4"
-    },
-    {
-      "name": "Daniel Rohers",
-      "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "photo": "https://scontent.fpoa8-1.fna.fbcdn.net/v/t1.0-9/10885062_604940959610919_4876682460404124091_n.jpg?oh=478c9fdcad59778b28f417277edb74f0&oe=58F7C957"
-    },
-    {
-      "name": "Marcelo Azambuja",
-      "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "photo": "https://scontent.fpoa8-1.fna.fbcdn.net/v/t1.0-9/555815_10202277919739281_254458156_n.jpg?oh=63bf87834e9a8ad346247988f8831136&oe=58B9A830"
-    },
-    {
-      "name": "Rodrigo Nascimento",
-      "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "photo": "https://scontent.fpoa8-1.fna.fbcdn.net/v/t1.0-9/11427243_10207274378126231_3834296775850402671_n.jpg?oh=147b119b9c7e04b24eccf4d901d64ced&oe=58BB93B0"
-    }
-  ],
+  "speakers": {
+    "title": "Speakers",
+    "items": [
+      {
+        "name": "Fernando Porazzi",
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "photo": "https://scontent.fpoa8-1.fna.fbcdn.net/v/t1.0-9/13061946_1292843007411833_4041981927349872052_n.jpg?oh=4d59ef7e6ac6f21e0c626611c9c54b66&oe=58C8B2B4"
+      },
+      {
+        "name": "Daniel Rohers",
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "photo": "https://scontent.fpoa8-1.fna.fbcdn.net/v/t1.0-9/10885062_604940959610919_4876682460404124091_n.jpg?oh=478c9fdcad59778b28f417277edb74f0&oe=58F7C957"
+      },
+      {
+        "name": "Marcelo Azambuja",
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "photo": "https://scontent.fpoa8-1.fna.fbcdn.net/v/t1.0-9/555815_10202277919739281_254458156_n.jpg?oh=63bf87834e9a8ad346247988f8831136&oe=58B9A830"
+      },
+      {
+        "name": "Rodrigo Nascimento",
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "photo": "https://scontent.fpoa8-1.fna.fbcdn.net/v/t1.0-9/11427243_10207274378126231_3834296775850402671_n.jpg?oh=147b119b9c7e04b24eccf4d901d64ced&oe=58BB93B0"
+      }
+    ]
+  },
   "speakers_call": {
     "title": "Would you like to speak at TechParty?",
     "text": "Fill the form and we will get in touch soon."

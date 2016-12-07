@@ -1,12 +1,12 @@
 .speakers
   .center
-    h2.section__title Palestrantes
+    h2.section__title #{speakers.title}
     .speakers__layout
 
       - var counter=0
       - var css=''
 
-      each speaker, index in speakers
+      each speaker, index in speakers.items
         - counter++
         if counter <= 2
           - css='left'
