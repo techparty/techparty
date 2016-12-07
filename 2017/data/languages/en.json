@@ -78,26 +78,66 @@
       }
     ]
   },
-  "sponsors": [
-    {
-      "type": "adamantium",
-      "label": "Adamantium",
-      "companies": [
-        {
-          "name": "CWI Software",
-          "url": "http://cwi.com.br",
-          "image": "/dist/img/sponsors/cwi.jpg",
-          "bio": "Algum texto sobre a CWI"
-        },
-        {
-          "name": "GitLab",
-          "url": "http://gitlab.com",
-          "image": "/dist/img/sponsors/gitlab.jpg",
-          "bio": "GitLab é uma aplicação completamente grátis para programar, testar e fazer deploy, tanto para projetos públicos quanto para projetos privados. GitLab provê o gerenciamento de repositórios Git com controle de acesso, revisão de código, mapeamento de issues, feed de atividades e integração contínua"
-        }
-      ]
-    }
-  ],
+  "sponsors": {
+    "title": "Sponsors",
+    "subtitle": "Our sponsors help us to organize a better event!",
+    "items": [
+      {
+        "type": "adamantium",
+        "label": "Adamantium",
+        "companies": [
+          {
+            "name": "CWI Software",
+            "url": "http://cwi.com.br",
+            "image": "/dist/img/sponsors/cwi.jpg",
+            "bio": "Algum texto sobre a CWI"
+          },
+          {
+            "name": "GitLab",
+            "url": "http://gitlab.com",
+            "image": "/dist/img/sponsors/gitlab.jpg",
+            "bio": "GitLab é uma aplicação completamente grátis para programar, testar e fazer deploy, tanto para projetos públicos quanto para projetos privados. GitLab provê o gerenciamento de repositórios Git com controle de acesso, revisão de código, mapeamento de issues, feed de atividades e integração contínua"
+          }
+        ]
+      },
+      {
+        "type": "golden",
+        "label": "Golden",
+        "companies": [
+          {
+            "name": "CWI Software",
+            "url": "http://cwi.com.br",
+            "image": "/dist/img/sponsors/cwi.jpg",
+            "bio": "Algum texto sobre a CWI"
+          },
+          {
+            "name": "CWI Software",
+            "url": "http://cwi.com.br",
+            "image": "/dist/img/sponsors/cwi.jpg",
+            "bio": "Algum texto sobre a CWI"
+          }
+        ]
+      },
+      {
+        "type": "silver",
+        "label": "Silver",
+        "companies": [
+          {
+            "name": "CWI Software",
+            "url": "http://cwi.com.br",
+            "image": "/dist/img/sponsors/cwi.jpg",
+            "bio": "Algum texto sobre a CWI"
+          },
+          {
+            "name": "CWI Software",
+            "url": "http://cwi.com.br",
+            "image": "/dist/img/sponsors/cwi.jpg",
+            "bio": "Algum texto sobre a CWI"
+          }
+        ]
+      }
+    ]
+  },
   "manifest": {
     "title": "Manifesto",
     "paragraphs": [

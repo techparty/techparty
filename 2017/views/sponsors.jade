@@ -1,13 +1,13 @@
 .sponsors
   .center
     .sponsors__layout
-      h2.section__title Patrocinadores
-      span Nossos parceiros contribuem para o sucesso da TechParty
+      h2.section__title #{sponsors.title}
+      span #{sponsors.subtitle}
       .sponsors-content
-        each val, index in sponsors
-          div(class="sponsors-group #{val.type}")
-            h2.section__title #{val.label}
-            each company, index in val.companies
+        each item, index in sponsors.items
+          div(class="sponsors-group #{item.type}")
+            h2.section__title #{item.label}
+            each company, index in item.companies
               .sponsor-item
                 .sponsor-photo
                   a(href="#{company.url}")
@@ -15,5 +15,5 @@
                 .sponsor-info
                   h3.sponsor-name
                     a(href="#{company.url}") #{company.name}
-                  if val.type == 'adamantium'
+                  if item.type == 'adamantium'
                     span.sponsor-bio #{company.bio}
