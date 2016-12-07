@@ -92,7 +92,7 @@
         {
           "name": "GitLab",
           "url": "http://gitlab.com",
-          "img": "/dist/img/sponsors/gitlab.jpg",
+          "image": "/dist/img/sponsors/gitlab.jpg",
           "bio": "GitLab é uma aplicação completamente grátis para programar, testar e fazer deploy, tanto para projetos públicos quanto para projetos privados. GitLab provê o gerenciamento de repositórios Git com controle de acesso, revisão de código, mapeamento de issues, feed de atividades e integração contínua"
         }
       ]
