@@ -1,0 +1,37 @@
+.register
+  .center
+    .rlayout
+      h2.section__title Inscrição
+      .rmain
+        .rcol
+          form(id="register-form" method="post" action="https://techparty-data.herokuapp.com/api/v1/participant")
+            .w
+              label(for="name" class="l") Nome
+              input(type="text" name="name" id="name" class="i")
+            .w
+              label(for="email" class="l") Email
+              input(type="email" name="name" id="email" class="i")
+            .w
+              label(for="cpf" class="l") CPF
+              input(type="number" name="cpf" id="cpf" class="i" placeholder="Somente números")
+            .w
+              label(class="l") Dias
+              .cb
+                input(type="checkbox" name="day" id="cb1" value="1")
+                label(for="cb1") Segunda
+              .cb
+                input(type="checkbox" name="day" id="cb2" value="2")
+                label(for="cb2") Terça
+              .cb
+                input(type="checkbox" name="day" id="cb3" value="3")
+                label(for="cb3") Quarta
+              .cb
+                input(type="checkbox" name="day" id="cb4" value="4")
+                label(for="cb4") Quinta
+            .w
+              button(class="btn") Salvar
+
+        .rcol.info
+          p Use o formulário para se cadastrar no evento.
+          p Como o número de vagas é limitado, se inscreva somente nos dias que poderá comparecer.
+          p Caso desejes editar os dias que pretendes participar, preencha o formulário novamente com os mesmos dados preenchidos no primeiro cadastro.
