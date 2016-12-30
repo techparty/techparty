@@ -1,7 +1,7 @@
-.speakers
+.spkrs
   .center
     h2.section__title #{speakers.title}
-    .speakers__layout
+    .spkrsl
 
       - var counter=0
       - var css=''
@@ -15,18 +15,18 @@
         if counter >= 4
           - counter=0
 
-        div(class="speakers__item #{css}")
-          .speakers__item-content
-            .speakers__photo(style="background:url(#{speaker.photo});background-size:cover;")
-            .speakers__info
-              h3.speakers__name #{speaker.name}
-              span.speakers__bio #{speaker.bio}
-              .speakers__social
+        div(class="spkrs-i #{css}")
+          .spkrs-ic
+            .spkrs-p(style="background:url(#{speaker.photo});background-size:cover;")
+            .spkrs-info
+              h3.spkrs-nm #{speaker.name}
+              span.spkrs-bio #{speaker.bio}
+              .spkrs-scl
                 span tt
                 span in
                 span fb
 
-.speakers-call-to-action
+.spkrs-cta
   .center
     h2.section__title #{speakers_call.title}
     span #{speakers_call.text} &nbsp;

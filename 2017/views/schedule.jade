@@ -1,25 +1,25 @@
-.schedule
+.sch
   .center
-    .schedule__layout
+    .schl
       h2.section__title #{schedule.title}
-      .schedule-nav
+      .schnav
         each day, index in schedule.days
           a(href="#", class="#{index < 1 ? 'active' : ''}", data-day="#{day.day}") #{day.date}
-      .schedule-talks
-        .schedule-talks-group
+      .scht
+        .schtg
           each talk, index in schedule.talks
-            div(class="schedule-talk #{talk.day != 'monday' ? 'none' : ''}", data-talk-day="#{talk.day}-talk")
-              time(class="schedule-talk__time", datetime="#{talk.time}") #{talk.time}
-              h2.schedule-talk__title #{talk.title}
-              a(href="#", class="schedule-talk__close") &times;
-              .schedule-talk__details
-                .schedule__speakers-group
+            div(class="schtlk #{talk.day != 'monday' ? 'none' : ''}", data-talk-day="#{talk.day}-talk")
+              time(class="schtlktime", datetime="#{talk.time}") #{talk.time}
+              h2.schtlkttl #{talk.title}
+              a(href="#", class="schtlkcls") &times;
+              .schtlkdtl
+                .schspkg
                   each performer, index in talk.performers
-                    .schedule__speakers-group__item
+                    .schspkgi
                       img(src="#{performer.photo}")
                       h3 #{performer.name}
-                .schedule__info
+                .schinf
                   p #{talk.desc}
-                  .schedule-talk__tags
+                  .schtgs
                     each tag, index in talk.tags
                       span #{tag}

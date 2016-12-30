@@ -1,19 +1,19 @@
-.sponsors
+.sprs
   .center
-    .sponsors__layout
+    .sprsl
       h2.section__title #{sponsors.title}
       span #{sponsors.subtitle}
-      .sponsors-content
+      .sprsc
         each item, index in sponsors.items
-          div(class="sponsors-group #{item.type}")
+          div(class="sprsg #{item.type}")
             h2.section__title #{item.label}
             each company, index in item.companies
-              .sponsor-item
-                .sponsor-photo
+              .sprsitm
+                .sprsp
                   a(href="#{company.url}")
                     img(src="#{company.image}")
-                .sponsor-info
-                  h3.sponsor-name
+                .sprsi
+                  h3.sprsn
                     a(href="#{company.url}") #{company.name}
                   if item.type == 'adamantium'
-                    span.sponsor-bio #{company.bio}
+                    span #{company.bio}

@@ -1,9 +1,9 @@
 ;(function(window, document, undefined) {
   'use strict';
 
-  var talks = document.querySelectorAll('.schedule-talk'),
-    scheduleLinks = document.querySelectorAll('.schedule-nav a'),
-    closeButtons = document.querySelectorAll('.schedule-talk__close');
+  var talks = document.querySelectorAll('.schtlk'),
+    scheduleLinks = document.querySelectorAll('.schnav a'),
+    closeButtons = document.querySelectorAll('.schtlkcls');
 
   function bindMobileNavigation() {
     if (!isMobile()) return;
@@ -58,7 +58,7 @@
   function bindEvents() {
     for (var i = 0; i < talks.length; i++) {
       talks[i].addEventListener('click', function(e) {
-        if (e.target.classList.contains('schedule-talk__close')) return;
+        if (e.target.classList.contains('schtlkcls')) return;
         expandTalk(this);
       }, false);
     }

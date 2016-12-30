@@ -1,13 +1,13 @@
 $desktop = 1000px
 $variant1 = 620px
 
-.speakers
+.spkrs
   padding 67px 0 69px
   background $scale4
   text-align center
   overflow hidden
 
-.speakers__layout
+.spkrsl
   width 100%
   +below($desktop)
     width 590px
@@ -17,7 +17,7 @@ $variant1 = 620px
     max-width 320px
     margin 0 auto
 
-.speakers__item
+.spkrs-i
   float left
   width 50%
   padding 10px
@@ -30,14 +30,14 @@ $variant1 = 620px
   +below($desktop)
     width 100%
     &:nth-child(odd)
-      direction ltr  
+      direction ltr
     &:nth-child(even)
       direction rtl
 
   +below($variant1)
     height auto
 
-.speakers__item-content
+.spkrs-ic
   width 100%
   background $scale2
   float left
@@ -47,31 +47,31 @@ $variant1 = 620px
   +below($variant1)
     display block
 
-.speakers__photo
-.speakers__info
+.spkrs-p
+.spkrs-info
   width 50%
   display table-cell
   +below($variant1)
     display block
     width 100%
 
-.speakers__photo
+.spkrs-p
   height 100%
   +below($variant1)
     height 300px
 
-.speakers__info
+.spkrs-info
   vertical-align middle
   position relative
   padding 20px 20px
 
-.speakers__name
+.spkrs-nm
   text-transform uppercase
   font-size 20px
   display block
   margin 0 0 19px
 
-.speakers__social
+.spkrs-scl
   text-align center
   position absolute
   bottom 16px;
@@ -82,7 +82,7 @@ $variant1 = 620px
     position relative
     bottom 0
 
-.speakers-call-to-action
+.spkrs-cta
   background $scale7
   padding 36px 0
   text-align center

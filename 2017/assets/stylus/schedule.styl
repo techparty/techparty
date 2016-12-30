@@ -1,15 +1,15 @@
 $desktop = 1000px
 $tablet = 768px
 
-.schedule
+.sch
   padding 67px 0
   .section__title
     text-align center
 
-.schedule__layout
+.schl
   width 100%
 
-.schedule-nav
+.schnav
   text-align center
   text-transform uppercase
   a
@@ -21,10 +21,10 @@ $tablet = 768px
     &.active
       background $scale7
 
-.schedule-talks
+.scht
   margin-top 70px
 
-.schedule-talk
+.schtlk
   padding 25px 50px
   border-top 1px solid $scale4
   cursor pointer
@@ -32,27 +32,27 @@ $tablet = 768px
     cursor default
     border 0
     box-shadow 0 0 40px 5px rgba(0, 0, 0, 0.1)
-    .schedule-talk__close
-    .schedule-talk__details
+    .schtlkcls
+    .schtlkdtl
       display block
   +below($tablet)
     padding 25px 0
 
-.schedule-talk__time
+.schtlktime
   width 14.9%
   display inline-block
   +below($tablet)
     width 100%
     text-align center
 
-.schedule-talk__title
+.schtlkttl
   display inline-block
   font-size 20px
   +below($tablet)
     width 100%
     text-align center
 
-.schedule-talk__close
+.schtlkcls
   float right
   display inline-block
   font-weight 700
@@ -62,7 +62,7 @@ $tablet = 768px
     width 100%
     text-align center
 
-.schedule-talk__details
+.schtlkdtl
   padding 8px 0 18px 15%
   direction rtl
   text-align left
@@ -70,7 +70,7 @@ $tablet = 768px
   +below($tablet)
     padding 8px 10px
 
-.schedule__speakers-group
+.schspkg
   display inline-block
   vertical-align top
   width 47.3%
@@ -81,9 +81,8 @@ $tablet = 768px
     padding 0
     width 100%
 
-.schedule__speakers-group__item
+.schspkgi
   width 100px
-  // height 100px
   float left
   margin 0 10px 0 0
   display inline-block
@@ -97,7 +96,7 @@ $tablet = 768px
     float none
     margin 30px 10px
 
-.schedule__info
+.schinf
   display inline-block
   vertical-align top
   max-width 100%
@@ -108,7 +107,7 @@ $tablet = 768px
     width 100%
     text-align center
 
-.schedule-talk__tags
+.schtgs
   margin-top 20px
   span
     margin-right 5px
