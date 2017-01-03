@@ -12,6 +12,6 @@ header(class="header")
             ul.header-menu__ul
               each val, index in navigation
                 li
-                  a(href="#") #{val}
+                  a(href="##{val.hash}") #{val.label}
               li
-                a(class="btn", href="#") #{registerButton}
+                a(class="btn", href="#register") #{registerButton}

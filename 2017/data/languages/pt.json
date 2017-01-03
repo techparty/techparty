@@ -1,7 +1,14 @@
 {
   "lang": "pt-br",
   "title": "TechParty - Faccat",
-  "navigation": ["Home", "Sobre", "Palestrantes", "Programação", "Local", "Parceiros"],
+  "navigation": [
+    {"label": "Home", "hash": "home"},
+    {"label": "Sobre", "hash": "about"},
+    {"label": "Palestrantes", "hash": "speakers"},
+    {"label": "Programação", "hash": "schedule"},
+    {"label": "Local", "hash": "local"},
+    {"label": "Parceiros", "hash": "sponsors"}
+  ],
   "registerButton": "Inscrição",
   "about": {
     "title": "Sobre",
