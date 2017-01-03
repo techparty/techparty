@@ -51,10 +51,11 @@
   "schedule": {
     "title": "Programação",
     "days": [
-      {"day": "monday", "date": "25 de março, 2017"},
-      {"day": "tuesday", "date": "22 de março, 2017"},
-      {"day": "wednesday", "date": "27 de março, 2017"},
-      {"day": "thursday", "date": "28 de março, 2017"}
+      {"day": "monday", "date": "24 de abril, 2017"},
+      {"day": "tuesday", "date": "25 de abril, 2017"},
+      {"day": "wednesday", "date": "26 de abril, 2017"},
+      {"day": "thursday", "date": "27 de abril, 2017"},
+      {"day": "friday", "date": "28 de abril, 2017"}
     ],
     "talks": [
       {

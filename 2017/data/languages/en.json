@@ -50,10 +50,11 @@
   "schedule": {
     "title": "Schedule",
     "days": [
-      {"day": "monday", "date": "March 25, 2017"},
-      {"day": "tuesday", "date": "March 26, 2017"},
-      {"day": "wednesday", "date": "March 27, 2017"},
-      {"day": "thursday", "date": "March 28, 2017"}
+      {"day": "monday", "date": "April 24, 2017"},
+      {"day": "tuesday", "date": "April 25, 2017"},
+      {"day": "wednesday", "date": "April 26, 2017"},
+      {"day": "thursday", "date": "April 27, 2017"},
+      {"day": "friday", "date": "April 28, 2017"}
     ],
     "talks": [
       {
