@@ -112,8 +112,8 @@
     "subtitle": "Nossos parceiros contribuem para o sucesso da TechParty",
     "items": [
       {
-        "type": "adamantium",
-        "label": "Adamantium",
+        "type": "diamond",
+        "label": "Diamante",
         "companies": [
           {
             "name": "CWI Software",
@@ -130,8 +130,8 @@
         ]
       },
       {
-        "type": "golden",
-        "label": "Golden",
+        "type": "emerald",
+        "label": "Esmeralda",
         "companies": [
           {
             "name": "CWI Software",
@@ -148,8 +148,8 @@
         ]
       },
       {
-        "type": "silver",
-        "label": "Silver",
+        "type": "safira",
+        "label": "Safira",
         "companies": [
           {
             "name": "CWI Software",

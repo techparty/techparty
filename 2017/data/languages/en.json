@@ -94,8 +94,8 @@
     "subtitle": "Our sponsors help us to organize a better event!",
     "items": [
       {
-        "type": "adamantium",
-        "label": "Adamantium",
+        "type": "diamond",
+        "label": "Diamond",
         "companies": [
           {
             "name": "CWI Software",
@@ -112,8 +112,8 @@
         ]
       },
       {
-        "type": "golden",
-        "label": "Golden",
+        "type": "emerald",
+        "label": "Emerald",
         "companies": [
           {
             "name": "CWI Software",
@@ -130,8 +130,8 @@
         ]
       },
       {
-        "type": "silver",
-        "label": "Silver",
+        "type": "Safira",
+        "label": "Safira",
         "companies": [
           {
             "name": "CWI Software",
