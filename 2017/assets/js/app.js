@@ -5,6 +5,17 @@
     scheduleLinks = document.querySelectorAll('.schnav a'),
     closeButtons = document.querySelectorAll('.schtlkcls');
 
+  function executeApiHealthcheck() {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', 'https://techparty-data.herokuapp.com/api/v1/healthcheck', true);
+    xhr.onload = function() {
+      if (xhr.status === 200) {
+        console.log('%c API is ok', 'color: green; font-weight: bold');
+      }
+    };
+    xhr.send();
+  }
+
   function bindMobileNavigation() {
     if (!isMobile()) return;
 
@@ -100,13 +111,90 @@
     marker.setMap(map);
   }
 
+  function showRegisterMessage(text, type) {
+    var msgWrapper = document.getElementById('regm');
+
+    msgWrapper.classList.add('display');
+    msgWrapper.classList.add(type === 'error' ? 'error' : 'success');
+    msgWrapper.innerHTML = text;
+  }
+
+  function bindRegisterSubmit() {
+    var form = document.getElementById('register-form');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      var name = document.getElementById('r_name').value,
+        email = document.getElementById('r_email').value,
+        cpf = document.getElementById('r_cpf').value,
+        $days = document.getElementsByName('r_day'),
+        days = [],
+        dataToPost;
+
+      if (name.trim() === '') {
+        showRegisterMessage('Nome inválido', 'error');
+        return;
+      }
+
+      if (email.trim() === '') {
+        showRegisterMessage('Email inválido', 'error');
+        return;
+      }
+
+      if (!CPF.isValid(cpf)) {
+        showRegisterMessage('CPF inválido', 'error');
+        return;
+      }
+
+      for (var i = 0; i < $days.length; i++) {
+        var self = $days[i];
+
+        if (self.checked) {
+          days.push(self.value);
+        }
+      }
+
+      if (!days.length) {
+        showRegisterMessage('Escolha os dias para participar', 'error');
+        return;
+      }
+
+      dataToPost = {
+        name: name,
+        email: email,
+        cpf: cpf,
+        year: 2017,
+        days: days
+      };
+
+      submitRegister(dataToPost, form);
+    }, false);
+  }
+
+  function submitRegister(data, form) {
+    var xhr = new XMLHttpRequest();
+
+    xhr.open(form.method, form.action, true);
+    xhr.responseType = 'text';
+
+    xhr.onload = function() {
+      console.log(xhr.status);
+    };
+
+    xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+    xhr.send(JSON.stringify(data));
+  }
+
   function isMobile() {
     return window.innerWidth < 1000;
   }
 
   function init() {
+    executeApiHealthcheck();
     bindMobileNavigation();
     bindEvents();
+    bindRegisterSubmit();
     initMap();
   }
 

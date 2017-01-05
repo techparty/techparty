@@ -7,30 +7,31 @@
           form(id="register-form" method="post" action="https://techparty-data.herokuapp.com/api/v1/participant")
             .w
               label(for="name" class="l") Nome
-              input(type="text" name="name" id="name" class="i")
+              input(type="text" name="name" id="r_name" class="i")
             .w
               label(for="email" class="l") Email
-              input(type="email" name="name" id="email" class="i")
+              input(type="email" name="name" id="r_email" class="i")
             .w
               label(for="cpf" class="l") CPF
-              input(type="number" name="cpf" id="cpf" class="i" placeholder="Somente números")
+              input(type="number" name="cpf" id="r_cpf" class="i" placeholder="Somente números")
             .w
               label(class="l") Dias
               .cb
-                input(type="checkbox" name="day" id="cb1" value="1")
+                input(type="checkbox" name="r_day" id="cb1" value="1")
                 label(for="cb1") Segunda
               .cb
-                input(type="checkbox" name="day" id="cb2" value="2")
+                input(type="checkbox" name="r_day" id="cb2" value="2")
                 label(for="cb2") Terça
               .cb
-                input(type="checkbox" name="day" id="cb3" value="3")
+                input(type="checkbox" name="r_day" id="cb3" value="3")
                 label(for="cb3") Quarta
               .cb
-                input(type="checkbox" name="day" id="cb4" value="4")
+                input(type="checkbox" name="r_day" id="cb4" value="4")
                 label(for="cb4") Quinta
               .cb
-                input(type="checkbox" name="day" id="cb5" value="5")
+                input(type="checkbox" name="r_day" id="cb5" value="5")
                 label(for="cb5") sexta
+            .w.regm#regm
             .w
               button(class="btn") Inscreva-se
 

@@ -56,7 +56,15 @@
     p
       margin-bottom 10px
 
-
   +below(768px)
     display block
     width 100%
+
+.regm
+  display none
+  &.display
+    display block
+  &.error
+    color $scale1
+  &.success
+    color green

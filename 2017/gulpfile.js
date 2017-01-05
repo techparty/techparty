@@ -30,7 +30,7 @@ gulp.task('stylus', () => {
 });
 
 gulp.task('js', () => {
-  gulp.src('assets/js/**/*.js')
+  gulp.src(['node_modules/cpf_cnpj/build/cpf.js', 'assets/js/**/*.js'])
     .pipe(uglify({
       output: {
         comments: /^!|@preserve|@license|@cc_on/i
