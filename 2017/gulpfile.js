@@ -5,6 +5,7 @@ const uglify = require('gulp-uglify');
 const jade = require('gulp-jade');
 const fs = require('fs');
 const connect = require('gulp-connect');
+const rm = require('rimraf');
 
 gulp.task('jade', () => {
   const languages = ['pt', 'en'];
@@ -58,5 +59,11 @@ gulp.task('watch', () => {
   gulp.watch('data/languages/*.json', ['jade']);
 });
 
-gulp.task('build', ['jade', 'stylus', 'js', 'img']);
+gulp.task('build', ['jade', 'stylus', 'js', 'img'], () => {
+  rm('build', () => {
+    gulp.src('dist/**').pipe(gulp.dest('build/dist'));
+    gulp.src('*.html').pipe(gulp.dest('build'));
+  });
+});
+
 gulp.task('dev', ['build', 'watch', 'webserver']);
