@@ -22,9 +22,9 @@
               h3.spkrs-nm #{speaker.name}
               span.spkrs-bio #{speaker.bio}
               .spkrs-scl
-                span tt
-                span in
-                span fb
+                each social, socialindex in speaker.social
+                  span
+                    a(href="#{social.url}", target="_blank") #{social.name}
 
 .spkrs-cta
   .center
