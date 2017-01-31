@@ -180,6 +180,8 @@
 
     xhr.onload = function() {
       console.log(xhr.status);
+      if (xhr.status === 200) showRegisterMessage('Inscrição bem sucedida.', 'success');
+      else showRegisterMessage(xhr.responseText, 'error');
     };
 
     xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
