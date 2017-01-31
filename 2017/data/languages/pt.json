@@ -118,13 +118,13 @@
           {
             "name": "CWI Software",
             "url": "http://cwi.com.br",
-            "image": "/dist/img/sponsors/cwi.jpg",
+            "image": "/img/sponsors/cwi.jpg",
             "bio": "Algum texto sobre a CWI"
           },
           {
             "name": "GitLab",
             "url": "http://gitlab.com",
-            "image": "/dist/img/sponsors/gitlab.jpg",
+            "image": "dist/img/sponsors/gitlab.jpg",
             "bio": "GitLab é uma aplicação completamente grátis para programar, testar e fazer deploy, tanto para projetos públicos quanto para projetos privados. GitLab provê o gerenciamento de repositórios Git com controle de acesso, revisão de código, mapeamento de issues, feed de atividades e integração contínua"
           }
         ]
@@ -136,13 +136,13 @@
           {
             "name": "CWI Software",
             "url": "http://cwi.com.br",
-            "image": "/dist/img/sponsors/cwi.jpg",
+            "image": "dist/img/sponsors/cwi.jpg",
             "bio": "Algum texto sobre a CWI"
           },
           {
             "name": "GitLab",
             "url": "http://gitlab.com",
-            "image": "/dist/img/sponsors/gitlab.jpg",
+            "image": "dist/img/sponsors/gitlab.jpg",
             "bio": "GitLab é uma aplicação completamente grátis para programar, testar e fazer deploy, tanto para projetos públicos quanto para projetos privados. GitLab provê o gerenciamento de repositórios Git com controle de acesso, revisão de código, mapeamento de issues, feed de atividades e integração contínua"
           }
         ]
@@ -154,13 +154,13 @@
           {
             "name": "CWI Software",
             "url": "http://cwi.com.br",
-            "image": "/dist/img/sponsors/cwi.jpg",
+            "image": "dist/img/sponsors/cwi.jpg",
             "bio": "Algum texto sobre a CWI"
           },
           {
             "name": "CWI Software",
             "url": "http://cwi.com.br",
-            "image": "/dist/img/sponsors/cwi.jpg",
+            "image": "dist/img/sponsors/cwi.jpg",
             "bio": "Algum texto sobre a CWI"
           }
         ]
@@ -172,13 +172,13 @@
           {
             "name": "CWI Software",
             "url": "http://cwi.com.br",
-            "image": "/dist/img/sponsors/cwi.jpg",
+            "image": "dist/img/sponsors/cwi.jpg",
             "bio": "Algum texto sobre a CWI"
           },
           {
             "name": "CWI Software",
             "url": "http://cwi.com.br",
-            "image": "/dist/img/sponsors/cwi.jpg",
+            "image": "dist/img/sponsors/cwi.jpg",
             "bio": "Algum texto sobre a CWI"
           }
         ]
