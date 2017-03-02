@@ -117,6 +117,11 @@
     msgWrapper.classList.add('display');
     msgWrapper.classList.add(type === 'error' ? 'error' : 'success');
     msgWrapper.innerHTML = text;
+
+    var timeout = setTimeout(function () {
+      msgWrapper.classList.remove('display');
+      clearTimeout(timeout);
+    }, 3000);
   }
 
   function bindRegisterSubmit() {
