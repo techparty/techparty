@@ -1,0 +1,224 @@
+{
+  "lang": "pt-br",
+  "title": "TechParty - Faccat",
+  "navigation": [
+    {"label": "Home", "hash": "home"},
+    {"label": "Sobre", "hash": "about"},
+    {"label": "Palestrantes", "hash": "speakers"},
+    {"label": "Programação", "hash": "schedule"},
+    {"label": "Local", "hash": "local"},
+    {"label": "Parceiros", "hash": "sponsors"}
+  ],
+  "registerButton": "Inscrição",
+  "about": {
+    "title": "Sobre",
+    "paragraphs": [
+      "A TechParty Faccat é um evento totalmente gratuito e aberto à comunidade, visando promover a Tecnologia da Informação (TI) e compartilhamento de conhecimentos.",
+      "Serão duas talks por noite durante uma semana inteira, com profissionais qualificados e experientes em suas áreas de atuação.",
+      "As atividades serão ministradas por profissionais internos e de fora da instituição.",
+      "O evento irá fornecer certificado de participação. Quem se inscrever e comparecer, pode contar com ele."
+    ]
+  },
+  "speakers": {
+    "title": "Palestrantes",
+    "items": [
+      {
+        "name": "Fernando Porazzi",
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "photo": "https://scontent.fpoa8-1.fna.fbcdn.net/v/t1.0-9/13061946_1292843007411833_4041981927349872052_n.jpg?oh=4d59ef7e6ac6f21e0c626611c9c54b66&oe=58C8B2B4",
+        "social": [
+          {"name": "twitter", "url": "http://twitter.com/fernandoporazzi"},
+          {"name": "instagram", "url": "http://instagram.com/fernandoporazzi"},
+          {"name": "linkedin", "url": "http://linkedin.com/fernandoporazzi"}
+        ]
+      },
+      {
+        "name": "Daniel Rohers",
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "photo": "https://scontent.fpoa8-1.fna.fbcdn.net/v/t1.0-9/10885062_604940959610919_4876682460404124091_n.jpg?oh=478c9fdcad59778b28f417277edb74f0&oe=58F7C957",
+        "social": [
+          {"name": "twitter", "url": "http://twitter.com/Daniel"},
+          {"name": "instagram", "url": "http://instagram.com/Daniel"}
+        ]
+      },
+      {
+        "name": "Marcelo Azambuja",
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "photo": "https://scontent.fpoa8-1.fna.fbcdn.net/v/t1.0-9/555815_10202277919739281_254458156_n.jpg?oh=63bf87834e9a8ad346247988f8831136&oe=58B9A830",
+        "social": [
+          {"name": "twitter", "url": "http://twitter.com/azambuja"},
+          {"name": "instagram", "url": "http://instagram.com/azambuja"}
+        ]
+      },
+      {
+        "name": "Rodrigo Nascimento",
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "photo": "https://scontent.fpoa8-1.fna.fbcdn.net/v/t1.0-9/11427243_10207274378126231_3834296775850402671_n.jpg?oh=147b119b9c7e04b24eccf4d901d64ced&oe=58BB93B0",
+        "social": [
+          {"name": "twitter", "url": "http://twitter.com/Rodrigo"},
+          {"name": "instagram", "url": "http://instagram.com/Rodrigo"}
+        ]
+      }
+    ]
+  },
+  "speakers_call": {
+    "title": "Deseja palestrar na TechParty?",
+    "text": "Preencha o formulário e entraremos em contato."
+  },
+  "schedule": {
+    "title": "Programação",
+    "days": [
+      {"day": "monday", "date": "24 de abril, 2017"},
+      {"day": "tuesday", "date": "25 de abril, 2017"},
+      {"day": "wednesday", "date": "26 de abril, 2017"},
+      {"day": "thursday", "date": "27 de abril, 2017"},
+      {"day": "friday", "date": "28 de abril, 2017"}
+    ],
+    "talks": [
+      {
+        "day": "monday",
+        "time": "19:45 - 20:30",
+        "title": "Audio Driven Applications",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "tags": ["audio", "javascript", "html5", "media"],
+        "performers": [
+          {
+            "name": "Fernando Porazzi",
+            "photo": "https://scontent.fpoa8-1.fna.fbcdn.net/v/t1.0-9/13061946_1292843007411833_4041981927349872052_n.jpg?oh=4d59ef7e6ac6f21e0c626611c9c54b66&oe=58C8B2B4"
+          }
+        ]
+      },
+      {
+        "day": "monday",
+        "time": "20:45 - 21:00",
+        "title": "Node ES6",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "tags": ["node", "es6", "js"],
+        "performers": [
+          {
+            "name": "Daniel Rohers",
+            "photo": "https://scontent.fpoa8-1.fna.fbcdn.net/v/t1.0-9/10885062_604940959610919_4876682460404124091_n.jpg?oh=478c9fdcad59778b28f417277edb74f0&oe=58F7C957"
+          },
+          {
+            "name": "Fernando Porazzi",
+            "photo": "https://scontent.fpoa8-1.fna.fbcdn.net/v/t1.0-9/13061946_1292843007411833_4041981927349872052_n.jpg?oh=4d59ef7e6ac6f21e0c626611c9c54b66&oe=58C8B2B4"
+          }
+        ]
+      },
+      {
+        "day": "tuesday",
+        "time": "20:45 - 21:00",
+        "title": "Empreendedorismo no Brasil e Exterior",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "tags": ["node", "es6", "js"],
+        "performers": [
+          {
+            "name": "Daniel Rohers",
+            "photo": "https://scontent.fpoa8-1.fna.fbcdn.net/v/t1.0-9/10885062_604940959610919_4876682460404124091_n.jpg?oh=478c9fdcad59778b28f417277edb74f0&oe=58F7C957"
+          },
+          {
+            "name": "Fernando Porazzi",
+            "photo": "https://scontent.fpoa8-1.fna.fbcdn.net/v/t1.0-9/13061946_1292843007411833_4041981927349872052_n.jpg?oh=4d59ef7e6ac6f21e0c626611c9c54b66&oe=58C8B2B4"
+          }
+        ]
+      }
+    ]
+  },
+  "sponsors": {
+    "title": "Patrocinadores",
+    "subtitle": "Nossos parceiros contribuem para o sucesso da TechParty",
+    "items": [
+      {
+        "type": "diamond",
+        "label": "Diamante",
+        "companies": [
+          {
+            "name": "CWI Software",
+            "url": "http://cwi.com.br",
+            "image": "dist/img/sponsors/cwi.jpg",
+            "bio": "Algum texto sobre a CWI"
+          },
+          {
+            "name": "GitLab",
+            "url": "http://gitlab.com",
+            "image": "dist/img/sponsors/gitlab.jpg",
+            "bio": "GitLab é uma aplicação completamente grátis para programar, testar e fazer deploy, tanto para projetos públicos quanto para projetos privados. GitLab provê o gerenciamento de repositórios Git com controle de acesso, revisão de código, mapeamento de issues, feed de atividades e integração contínua"
+          }
+        ]
+      },
+      {
+        "type": "ruby",
+        "label": "Rubi",
+        "companies": [
+          {
+            "name": "CWI Software",
+            "url": "http://cwi.com.br",
+            "image": "dist/img/sponsors/cwi.jpg",
+            "bio": "Algum texto sobre a CWI"
+          },
+          {
+            "name": "GitLab",
+            "url": "http://gitlab.com",
+            "image": "dist/img/sponsors/gitlab.jpg",
+            "bio": "GitLab é uma aplicação completamente grátis para programar, testar e fazer deploy, tanto para projetos públicos quanto para projetos privados. GitLab provê o gerenciamento de repositórios Git com controle de acesso, revisão de código, mapeamento de issues, feed de atividades e integração contínua"
+          },
+          {
+            "name": "GitHub",
+            "url": "http://gitlab.com",
+            "image": "dist/img/sponsors/gitlab.jpg",
+            "bio": "GitHub provê o gerenciamento de repositórios Git com controle de acesso, revisão de código, mapeamento de issues, feed de atividades e integração contínua"
+          }
+        ]
+      },
+      {
+        "type": "emerald",
+        "label": "Esmeralda",
+        "companies": [
+          {
+            "name": "CWI Software",
+            "url": "http://cwi.com.br",
+            "image": "dist/img/sponsors/cwi.jpg",
+            "bio": "Algum texto sobre a CWI"
+          },
+          {
+            "name": "CWI Software",
+            "url": "http://cwi.com.br",
+            "image": "dist/img/sponsors/cwi.jpg",
+            "bio": "Algum texto sobre a CWI"
+          }
+        ]
+      },
+      {
+        "type": "safira",
+        "label": "Safira",
+        "companies": [
+          {
+            "name": "CWI Software",
+            "url": "http://cwi.com.br",
+            "image": "dist/img/sponsors/cwi.jpg",
+            "bio": "Algum texto sobre a CWI"
+          },
+          {
+            "name": "CWI Software",
+            "url": "http://cwi.com.br",
+            "image": "dist/img/sponsors/cwi.jpg",
+            "bio": "Algum texto sobre a CWI"
+          }
+        ]
+      }
+    ]
+  },
+  "manifest": {
+    "title": "Manifesto",
+    "paragraphs": [
+      "A TechParty é um evento que visa promover a tecnologia (Tech) durante um evento informal e de congregação (Party).",
+      "Desde seu surgimento, em 2011, o evento é totalmente gratuito e aberto à comunidade. Inicialmente, ocorria uma vez por semestre em finais de semanas, com palestras e minicursos para leigos até usuários avançados de computação. Contava com apresentações de profissionais de fora da instituição e, também, apresentações feitas pelos próprios alunos e professores. Devido a imprevistos, em 2013 o evento não aconteceu.",
+      "Em 2014, estudantes da instituição com o objetivo de oferecer conhecimento para o maior número de pessoas, optam por retornar com o evento, mas agora com organização diferenciada.",
+      "A TechParty passou a ser um evento anual, com duração de uma semana inteira, com duas talks (apresentações) por noite e coffee break atraente a fim de estimular a interação das pessoas e o networking. Mantendo a proposta de contar com palestrantes da faculdade e convidados externos, mas sempre com assuntos interessantes e atuais, o evento teve um salto no número de participantes com esse novo formato, ultrapassando 700 pessoas (somadas as 5 noites), entre alunos, ex-alunos, pessoas da comunidade, alunos de escolas da região e representantes de muitas empresas da área de atuação da Faccat.",
+      "Rango Break. A estréia. Em 2015 o evento manteve o mesmo ritmo, com ainda mais público e empolgação dos participantes durante a semana da TechParty. Alguma novidade? Sim! Sai o coffee break e um novo evento é lançado (um evento dentro do evento!): o Rango Break.",
+      "A ideia agora é que o momento do lanche seja tão ou mais interessante que as próprias apresentações técnicas. O Rango Break é um momento onde, diariamente, após as duas talks de cada noite, é oferecido alguma comidinha (\"rango\") especial, tais como o cachorro-quente de uma famosa Towner de Taquara (que veio para o Campus da Faccat especialmente para o evento), ou a \"galinhada nerd\", feita por alunos do curso, sanduíche \"buraco quente\" e cupcakes, mais um super-dog feito por alunos e, finalmente, no último dia, o grande Churras de Integração dos cursos de TI da Faccat. Esses rangos são fornecidos sem custo aos participantes, graças ao apoio financeiro das empresas patrocinadoras e parcerias com empresas locais de alimentos.",
+      "2016, crescer nós iremos! Neste ano, queremos buscar profissionais de empresas conhecidas nacionalmente e do exterior. Como sempre, foram realizadas talks realmente incríveis e conseguimos profissionais de empresas renomadas, como Red Hat, Rocket.Chat, We Heart It, SAP, Mozilla, Terra, Arezzo, CWI Software.",
+      "Quanto a 2017, esperamos novamente realizar um grande evento, evoluindo como sempre! Logo após o final da edição de 2016, já iniciamos o planejamento para esta edição... ouvimos as sugestões, observamos o que deu mais ou menos certo, e, principalmente: nos empenhamos a buscar, como sempre, profissionais incríveis para compartilhar o seu conhecimento. Precisamos da sua participação para fazer dessa TechParty a mais incrível de todas!"
+    ]
+  }
+}

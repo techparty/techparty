@@ -3,6 +3,7 @@
     .sprsl
       h2.section__title #{sponsors.title}
       span #{sponsors.subtitle}
+      p !{sponsors.link}
       .sprsc
         each item, index in sponsors.items
           div(class="sprsg #{item.type}")

@@ -7,19 +7,20 @@
           a(href="#", class="#{index < 1 ? 'active' : ''}", data-day="#{day.day}") #{day.date}
       .scht
         .schtg
-          each talk, index in schedule.talks
-            div(class="schtlk #{talk.day != 'monday' ? 'none' : ''}", data-talk-day="#{talk.day}-talk")
-              time(class="schtlktime", datetime="#{talk.time}") #{talk.time}
-              h2.schtlkttl #{talk.title}
-              a(href="#", class="schtlkcls") &times;
-              .schtlkdtl
-                .schspkg
-                  each performer, index in talk.performers
-                    .schspkgi
-                      img(src="#{performer.photo}")
-                      h3 #{performer.name}
-                .schinf
-                  p #{talk.desc}
-                  .schtgs
-                    each tag, index in talk.tags
-                      span #{tag}
+          if schedule.talks
+            each talk, index in schedule.talks
+              div(class="schtlk #{talk.day != 'monday' ? 'none' : ''}", data-talk-day="#{talk.day}-talk")
+                time(class="schtlktime", datetime="#{talk.time}") #{talk.time}
+                h2.schtlkttl #{talk.title}
+                a(href="#", class="schtlkcls") &times;
+                .schtlkdtl
+                  .schspkg
+                    each performer, index in talk.performers
+                      .schspkgi
+                        img(src="#{performer.photo}")
+                        h3 #{performer.name}
+                  .schinf
+                    p #{talk.desc}
+                    .schtgs
+                      each tag, index in talk.tags
+                        span #{tag}

@@ -9,6 +9,11 @@
     {"label": "Local", "hash": "local"},
     {"label": "Parceiros", "hash": "sponsors"}
   ],
+  "banner": {
+    "time": "De 24 à 28 de Abril",
+    "time_text": "Garanta sua vaga!",
+    "register": "Inscreva-se"
+  },
   "registerButton": "Inscrição",
   "about": {
     "title": "Sobre",
@@ -21,45 +26,7 @@
   },
   "speakers": {
     "title": "Palestrantes",
-    "items": [
-      {
-        "name": "Fernando Porazzi",
-        "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "photo": "https://scontent.fpoa8-1.fna.fbcdn.net/v/t1.0-9/13061946_1292843007411833_4041981927349872052_n.jpg?oh=4d59ef7e6ac6f21e0c626611c9c54b66&oe=58C8B2B4",
-        "social": [
-          {"name": "twitter", "url": "http://twitter.com/fernandoporazzi"},
-          {"name": "instagram", "url": "http://instagram.com/fernandoporazzi"},
-          {"name": "linkedin", "url": "http://linkedin.com/fernandoporazzi"}
-        ]
-      },
-      {
-        "name": "Daniel Rohers",
-        "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "photo": "https://scontent.fpoa8-1.fna.fbcdn.net/v/t1.0-9/10885062_604940959610919_4876682460404124091_n.jpg?oh=478c9fdcad59778b28f417277edb74f0&oe=58F7C957",
-        "social": [
-          {"name": "twitter", "url": "http://twitter.com/Daniel"},
-          {"name": "instagram", "url": "http://instagram.com/Daniel"}
-        ]
-      },
-      {
-        "name": "Marcelo Azambuja",
-        "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "photo": "https://scontent.fpoa8-1.fna.fbcdn.net/v/t1.0-9/555815_10202277919739281_254458156_n.jpg?oh=63bf87834e9a8ad346247988f8831136&oe=58B9A830",
-        "social": [
-          {"name": "twitter", "url": "http://twitter.com/azambuja"},
-          {"name": "instagram", "url": "http://instagram.com/azambuja"}
-        ]
-      },
-      {
-        "name": "Rodrigo Nascimento",
-        "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "photo": "https://scontent.fpoa8-1.fna.fbcdn.net/v/t1.0-9/11427243_10207274378126231_3834296775850402671_n.jpg?oh=147b119b9c7e04b24eccf4d901d64ced&oe=58BB93B0",
-        "social": [
-          {"name": "twitter", "url": "http://twitter.com/Rodrigo"},
-          {"name": "instagram", "url": "http://instagram.com/Rodrigo"}
-        ]
-      }
-    ]
+    "items": []
   },
   "speakers_call": {
     "title": "Deseja palestrar na TechParty?",
@@ -67,146 +34,13 @@
   },
   "schedule": {
     "title": "Programação",
-    "days": [
-      {"day": "monday", "date": "24 de abril, 2017"},
-      {"day": "tuesday", "date": "25 de abril, 2017"},
-      {"day": "wednesday", "date": "26 de abril, 2017"},
-      {"day": "thursday", "date": "27 de abril, 2017"},
-      {"day": "friday", "date": "28 de abril, 2017"}
-    ],
-    "talks": [
-      {
-        "day": "monday",
-        "time": "19:45 - 20:30",
-        "title": "Audio Driven Applications",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "tags": ["audio", "javascript", "html5", "media"],
-        "performers": [
-          {
-            "name": "Fernando Porazzi",
-            "photo": "https://scontent.fpoa8-1.fna.fbcdn.net/v/t1.0-9/13061946_1292843007411833_4041981927349872052_n.jpg?oh=4d59ef7e6ac6f21e0c626611c9c54b66&oe=58C8B2B4"
-          }
-        ]
-      },
-      {
-        "day": "monday",
-        "time": "20:45 - 21:00",
-        "title": "Node ES6",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "tags": ["node", "es6", "js"],
-        "performers": [
-          {
-            "name": "Daniel Rohers",
-            "photo": "https://scontent.fpoa8-1.fna.fbcdn.net/v/t1.0-9/10885062_604940959610919_4876682460404124091_n.jpg?oh=478c9fdcad59778b28f417277edb74f0&oe=58F7C957"
-          },
-          {
-            "name": "Fernando Porazzi",
-            "photo": "https://scontent.fpoa8-1.fna.fbcdn.net/v/t1.0-9/13061946_1292843007411833_4041981927349872052_n.jpg?oh=4d59ef7e6ac6f21e0c626611c9c54b66&oe=58C8B2B4"
-          }
-        ]
-      },
-      {
-        "day": "tuesday",
-        "time": "20:45 - 21:00",
-        "title": "Empreendedorismo no Brasil e Exterior",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "tags": ["node", "es6", "js"],
-        "performers": [
-          {
-            "name": "Daniel Rohers",
-            "photo": "https://scontent.fpoa8-1.fna.fbcdn.net/v/t1.0-9/10885062_604940959610919_4876682460404124091_n.jpg?oh=478c9fdcad59778b28f417277edb74f0&oe=58F7C957"
-          },
-          {
-            "name": "Fernando Porazzi",
-            "photo": "https://scontent.fpoa8-1.fna.fbcdn.net/v/t1.0-9/13061946_1292843007411833_4041981927349872052_n.jpg?oh=4d59ef7e6ac6f21e0c626611c9c54b66&oe=58C8B2B4"
-          }
-        ]
-      }
-    ]
+    "days": []
   },
   "sponsors": {
     "title": "Patrocinadores",
     "subtitle": "Nossos parceiros contribuem para o sucesso da TechParty",
-    "items": [
-      {
-        "type": "diamond",
-        "label": "Diamante",
-        "companies": [
-          {
-            "name": "CWI Software",
-            "url": "http://cwi.com.br",
-            "image": "dist/img/sponsors/cwi.jpg",
-            "bio": "Algum texto sobre a CWI"
-          },
-          {
-            "name": "GitLab",
-            "url": "http://gitlab.com",
-            "image": "dist/img/sponsors/gitlab.jpg",
-            "bio": "GitLab é uma aplicação completamente grátis para programar, testar e fazer deploy, tanto para projetos públicos quanto para projetos privados. GitLab provê o gerenciamento de repositórios Git com controle de acesso, revisão de código, mapeamento de issues, feed de atividades e integração contínua"
-          }
-        ]
-      },
-      {
-        "type": "ruby",
-        "label": "Rubi",
-        "companies": [
-          {
-            "name": "CWI Software",
-            "url": "http://cwi.com.br",
-            "image": "dist/img/sponsors/cwi.jpg",
-            "bio": "Algum texto sobre a CWI"
-          },
-          {
-            "name": "GitLab",
-            "url": "http://gitlab.com",
-            "image": "dist/img/sponsors/gitlab.jpg",
-            "bio": "GitLab é uma aplicação completamente grátis para programar, testar e fazer deploy, tanto para projetos públicos quanto para projetos privados. GitLab provê o gerenciamento de repositórios Git com controle de acesso, revisão de código, mapeamento de issues, feed de atividades e integração contínua"
-          },
-          {
-            "name": "GitHub",
-            "url": "http://gitlab.com",
-            "image": "dist/img/sponsors/gitlab.jpg",
-            "bio": "GitHub provê o gerenciamento de repositórios Git com controle de acesso, revisão de código, mapeamento de issues, feed de atividades e integração contínua"
-          }
-        ]
-      },
-      {
-        "type": "emerald",
-        "label": "Esmeralda",
-        "companies": [
-          {
-            "name": "CWI Software",
-            "url": "http://cwi.com.br",
-            "image": "dist/img/sponsors/cwi.jpg",
-            "bio": "Algum texto sobre a CWI"
-          },
-          {
-            "name": "CWI Software",
-            "url": "http://cwi.com.br",
-            "image": "dist/img/sponsors/cwi.jpg",
-            "bio": "Algum texto sobre a CWI"
-          }
-        ]
-      },
-      {
-        "type": "safira",
-        "label": "Safira",
-        "companies": [
-          {
-            "name": "CWI Software",
-            "url": "http://cwi.com.br",
-            "image": "dist/img/sponsors/cwi.jpg",
-            "bio": "Algum texto sobre a CWI"
-          },
-          {
-            "name": "CWI Software",
-            "url": "http://cwi.com.br",
-            "image": "dist/img/sponsors/cwi.jpg",
-            "bio": "Algum texto sobre a CWI"
-          }
-        ]
-      }
-    ]
+    "link": "Seja um parceiro, entre em contato: <a href=\"mailto:techpartyfaccat@gmail.com?Subject=Parceiro\">techpartyfaccat@gmail.com</a>",
+    "items": []
   },
   "manifest": {
     "title": "Manifesto",
