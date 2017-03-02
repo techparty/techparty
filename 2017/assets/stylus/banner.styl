@@ -21,14 +21,17 @@ $variantion2 = 600px
     position relative
   .desktop
     display block
+    width 100%
     +below($desktop)
       display none
   .tablet
     display none
+    width 100%
     +between($tablet, $desktop)
       display block
   .mobile
     display none
+    width 100%
     +below($tablet)
       display block
 
