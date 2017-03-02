@@ -121,7 +121,7 @@
     var timeout = setTimeout(function () {
       msgWrapper.classList.remove('display');
       clearTimeout(timeout);
-    }, 3000);
+    }, 5000);
   }
 
   function bindRegisterSubmit() {
