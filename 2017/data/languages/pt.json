@@ -26,7 +26,28 @@
   },
   "speakers": {
     "title": "Palestrantes",
-    "items": []
+    "items": [
+      {
+        "name": "Fernando Porazzi",
+        "bio": "Desenvolvedor de software há 7 anos e apaixonado pelo que faz. Entusiasta de novas tecnologias e, atualmente, programa em Javascript e GoLang.",
+        "photo": "dist/img/speakers/fernandoporazzi.jpg",
+        "social": [
+          {"name": "twitter", "url": "http://twitter.com/fernandoporazzi"},
+          {"name": "instagram", "url": "http://instagram.com/fernandoporazzi"},
+          {"name": "linkedin", "url": "https://www.linkedin.com/in/fernando-porazzi-b272b050"}
+        ]
+      },
+      {
+        "name": "Lucas Goulart",
+        "bio": "Graduado em Psicologia pela Unisinos e mestre em Psicologia Social e Institucional pela UFRGS. Doutorando na UFRGS. Pesquisa sobre sexualidade, teoria queer, teoria crítica e tecnologias da informação",
+        "photo": "dist/img/speakers/lucas-goulart.jpg",
+        "social": [
+          {"name": "facebook", "url": "https://www.facebook.com/lucas.goulart.921"},
+          {"name": "linkedin", "url": "https://br.linkedin.com/in/lucas-goulart-310203105"},
+          {"name": "academia", "url": "http://ufrgs.academia.edu/LucasGoulart"}
+        ]
+      }
+    ]
   },
   "speakers_call": {
     "title": "Deseja palestrar na TechParty?",
@@ -40,7 +61,20 @@
     "title": "Patrocinadores",
     "subtitle": "Nossos parceiros contribuem para o sucesso da TechParty",
     "link": "Seja um parceiro, entre em contato: <a href=\"mailto:techpartyfaccat@gmail.com?Subject=Parceiro\">techpartyfaccat@gmail.com</a>",
-    "items": []
+    "items": [
+      {
+        "type": "diamond",
+        "label": "Diamante",
+        "companies": [
+          {
+            "name": "Senac",
+            "url": "http://www.senacrs.com.br/",
+            "image": "dist/img/sponsors/senac.jpg",
+            "bio": "O Serviço Nacional de Aprendizagem Comercial (SENAC) é uma instituição brasileira de educação profissional aberta a toda a sociedade.  É uma entidade privada com fins públicos, que recebe contribuição compulsória das empresas do comércio e de atividades assemelhadas. Sua missão é desenvolver pessoas e organizações para o mundo do trabalho com ações educacionais e disseminando conhecimentos em Comércio de Bens, Serviços e Turismo."
+          }
+        ]
+      }
+    ]
   },
   "manifest": {
     "title": "Manifesto",
