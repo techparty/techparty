@@ -36,6 +36,16 @@
           {"name": "instagram", "url": "http://instagram.com/fernandoporazzi"},
           {"name": "linkedin", "url": "https://www.linkedin.com/in/fernando-porazzi-b272b050"}
         ]
+      },
+      {
+        "name": "Lucas Goulart",
+        "bio": "Graduado em Psicologia pela Unisinos e mestre em Psicologia Social e Institucional pela UFRGS. Doutorando na UFRGS. Pesquisa sobre sexualidade, teoria queer, teoria crítica e tecnologias da informação",
+        "photo": "dist/img/speakers/lucas-goulart.jpg",
+        "social": [
+          {"name": "facebook", "url": "https://www.facebook.com/lucas.goulart.921"},
+          {"name": "linkedin", "url": "https://br.linkedin.com/in/lucas-goulart-310203105"},
+          {"name": "academia", "url": "http://ufrgs.academia.edu/LucasGoulart"}
+        ]
       }
     ]
   },
