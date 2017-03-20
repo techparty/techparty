@@ -26,7 +26,18 @@
   },
   "speakers": {
     "title": "Palestrantes",
-    "items": []
+    "items": [
+      {
+        "name": "Fernando Porazzi",
+        "bio": "Desenvolvedor de software há 7 anos e apaixonado pelo que faz. Entusiasta de novas tecnologias e, atualmente, programa em Javascript e GoLang.",
+        "photo": "dist/img/speakers/fernandoporazzi.jpg",
+        "social": [
+          {"name": "twitter", "url": "http://twitter.com/fernandoporazzi"},
+          {"name": "instagram", "url": "http://instagram.com/fernandoporazzi"},
+          {"name": "linkedin", "url": "https://www.linkedin.com/in/fernando-porazzi-b272b050"}
+        ]
+      }
+    ]
   },
   "speakers_call": {
     "title": "Deseja palestrar na TechParty?",
