@@ -46,6 +46,15 @@
           {"name": "linkedin", "url": "https://br.linkedin.com/in/lucas-goulart-310203105"},
           {"name": "academia", "url": "http://ufrgs.academia.edu/LucasGoulart"}
         ]
+      },
+      {
+        "name": "Alexandre Ramires",
+        "bio": "Exerce a função de executivo de TI (CIO) com experiência em implantação de processos de governança, gestão de projetos, governança de TI e gestão de serviços em TI.",
+        "photo": "dist/img/speakers/alexandre-ramires.jpg",
+        "social": [
+          {"name": "linkedin", "url": "https://www.linkedin.com/in/alexandreramires/"},
+          {"name": "lattes", "url": "http://lattes.cnpq.br/5961164017302520"}
+        ]
       }
     ]
   },
