@@ -55,6 +55,16 @@
           {"name": "linkedin", "url": "https://www.linkedin.com/in/alexandreramires/"},
           {"name": "lattes", "url": "http://lattes.cnpq.br/5961164017302520"}
         ]
+      },
+      {
+        "name": "Flávio Steffens de Castro",
+        "bio": "Flávio Steffens é um empreendedor apaixonado. Tem graduação, MBA e mestrado na área de computação pela PUCRS e FGV-RS",
+        "photo": "dist/img/speakers/flavio-castro.jpg",
+        "social": [
+          {"name": "facebook", "url": "https://facebook.com/flaviosteffens"},
+          {"name": "twitter", "url": "https://twitter.com/flaviosteffens"},
+          {"name": "instagram", "url": "https://instagram.com/flaviosteffens"}
+        ]
       }
     ]
   },
