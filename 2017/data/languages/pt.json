@@ -65,6 +65,15 @@
           {"name": "twitter", "url": "https://twitter.com/flaviosteffens"},
           {"name": "instagram", "url": "https://instagram.com/flaviosteffens"}
         ]
+      },
+      {
+        "name": "Luiz Alessandro Nörnberg",
+        "bio": "Bacharel em Ciência da Computação pela UCPel. Sócio-fundador do Izyplay Game Studio, onde assume hoje o cargo de Diretor de Tecnologia.",
+        "photo": "dist/img/speakers/luiz.jpg",
+        "social": [
+          {"name": "facebook", "url": "https://facebook.com/luiznornberg"},
+          {"name": "izyplay", "url": "http://izyplay.com.br"}
+        ]
       }
     ]
   },
