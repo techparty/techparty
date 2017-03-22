@@ -55,6 +55,7 @@ gulp.task('webserver', () => {
 gulp.task('watch', () => {
   gulp.watch('assets/stylus/**/*.styl', ['stylus']);
   gulp.watch('assets/js/**/*.js', ['js']);
+  gulp.watch('assets/img/**', ['img']);
   gulp.watch('views/**/*.jade', ['jade']);
   gulp.watch('data/languages/*.json', ['jade']);
 });
