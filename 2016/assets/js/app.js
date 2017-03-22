@@ -51,7 +51,7 @@
     };
 
     var _init = function () {
-      xhr('GET', baseUrl + '/assets/data/' + language + '/speakers.json', _success, _error)
+      xhr('GET', baseUrl + 'assets/data/' + language + '/speakers.json', _success, _error)
     };
 
     return {
@@ -110,7 +110,7 @@
     };
 
     var _init = function () {
-      xhr('GET', baseUrl + '/assets/data/' + language + '/schedule.json', _success, _error);
+      xhr('GET', baseUrl + 'assets/data/' + language + '/schedule.json', _success, _error);
 
       _bindNavigation();
     };
@@ -138,7 +138,7 @@
 
       var marker = new google.maps.Marker({
         position: center,
-        icon: baseUrl + '/assets/img/techparty_icon.png'
+        icon: baseUrl + 'assets/img/techparty_icon.png'
       });
 
       marker.setMap(map);
@@ -168,7 +168,7 @@
     };
 
     var _init = function () {
-      xhr('GET', baseUrl + '/assets/data/' + language + '/sponsors.json', _success, _error);
+      xhr('GET', baseUrl + 'assets/data/' + language + '/sponsors.json', _success, _error);
     };
 
     return {
@@ -377,7 +377,7 @@
     };
 
     var _bindLanguage = function () {
-      var pathname = window.location.pathname.slice(1,3);
+      var pathname = window.location.pathname.replace(/.*\//, '');
 
       if (pathname !== '') {
         language = pathname;
@@ -385,7 +385,7 @@
     };
 
     var _setBaseUrl = function () {
-      window.baseUrl = window.location.origin;
+      window.baseUrl = window.location.href;
     };
 
     var _init = function () {
