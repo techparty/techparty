@@ -74,6 +74,15 @@
           {"name": "facebook", "url": "https://facebook.com/luiznornberg"},
           {"name": "izyplay", "url": "http://izyplay.com.br"}
         ]
+      },
+      {
+        "name": "Ben-hur Santos Ott",
+        "bio": "Desenvolvedor mobile e javascript (NodeJS, Angular, React). Trabalhou em projetos de grandes clientes como Coca-Cola, Arezzo e Renner.",
+        "photo": "dist/img/speakers/ben-hur.jpg",
+        "social": [
+          {"name": "facebook", "url": "https://facebook.com/benhur.ott"},
+          {"name": "twitter", "url": "https://twitter.com/benhurott"}
+        ]
       }
     ]
   },
