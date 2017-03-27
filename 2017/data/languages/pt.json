@@ -88,7 +88,28 @@
   },
   "schedule": {
     "title": "Programação",
-    "days": []
+    "days": [
+      {"day": "monday", "date": "24 de abril, 2017"},
+      {"day": "tuesday", "date": "25 de abril, 2017"},
+      {"day": "wednesday", "date": "26 de abril, 2017"},
+      {"day": "thursday", "date": "27 de abril, 2017"},
+      {"day": "friday", "date": "28 de abril, 2017"}
+    ],
+    "talks": [
+      {
+        "day": "thursday",
+        "time": "19:45 - 20:30",
+        "title": "If you Go, I Go",
+        "desc": "Escolher uma linguagem de programação para um software nunca é uma tarefa fácil, entender as reais necessidades do projeto pode ser o fator decisivo para o sucesso ou tragédia. Nessa palestra, vamos ter uma breve introdução sobre a linguagem de programação Go e como criar uma REST API de forma simples e intuitiva.",
+        "tags": ["rest", "api", "golang"],
+        "performers": [
+          {
+            "name": "Fernando Porazzi",
+            "photo": "dist/img/speakers/fernandoporazzi.jpg"
+          }
+        ]
+      }
+    ]
   },
   "sponsors": {
     "title": "Patrocinadores",
