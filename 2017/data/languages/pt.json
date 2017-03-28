@@ -107,19 +107,6 @@
     ],
     "talks": [
       {
-        "day": "thursday",
-        "time": "19:45 - 20:30",
-        "title": "If you Go, I Go",
-        "desc": "Escolher uma linguagem de programação para um software nunca é uma tarefa fácil, entender as reais necessidades do projeto pode ser o fator decisivo para o sucesso ou tragédia. Nessa palestra, vamos ter uma breve introdução sobre a linguagem de programação Go e como criar uma REST API de forma simples e intuitiva.",
-        "tags": ["rest", "api", "golang"],
-        "performers": [
-          {
-            "name": "Fernando Porazzi",
-            "photo": "dist/img/speakers/fernandoporazzi.jpg"
-          }
-        ]
-      },
-      {
         "day": "monday",
         "time": "20:45 - 21:30",
         "title": "Persistência Poliglota: Indo além do SQL",
@@ -129,6 +116,19 @@
           {
             "name": "Luiz Fernando Duarte Junior",
             "photo": "dist/img/speakers/luiz-fernando-duarte-junior.jpg"
+          }
+        ]
+      },
+      {
+        "day": "tuesday",
+        "time": "20:45 - 21:30",
+        "title": "If you Go, I Go",
+        "desc": "Escolher uma linguagem de programação para um software nunca é uma tarefa fácil, entender as reais necessidades do projeto pode ser o fator decisivo para o sucesso ou tragédia. Nessa palestra, vamos ter uma breve introdução sobre a linguagem de programação Go e como criar uma REST API de forma simples e intuitiva.",
+        "tags": ["rest", "api", "golang"],
+        "performers": [
+          {
+            "name": "Fernando Porazzi",
+            "photo": "dist/img/speakers/fernandoporazzi.jpg"
           }
         ]
       },
