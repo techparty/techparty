@@ -131,6 +131,19 @@
             "photo": "dist/img/speakers/luiz-fernando-duarte-junior.jpg"
           }
         ]
+      },
+      {
+        "day": "wednesday",
+        "time": "20:45 - 21:30",
+        "title": "Desafios e armadilhas do desenvolvimento Mobile",
+        "desc": "Vamos discutir como montar o planejamento de desenvolvimento de um aplicativo e onde devemos ter cautela para não cair em erros que podem nos custar preciosas horas de desenvolvimento.",
+        "tags": ["mobile", "desafios", "planejamento"],
+        "performers": [
+          {
+            "name": "Ben-hur Santos Ott",
+            "photo": "dist/img/speakers/ben-hur.jpg"
+          }
+        ]
       }
     ]
   },
