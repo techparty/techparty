@@ -83,6 +83,16 @@
           {"name": "facebook", "url": "https://facebook.com/benhur.ott"},
           {"name": "twitter", "url": "https://twitter.com/benhurott"}
         ]
+      },
+      {
+        "name": "Luiz Fernando Duarte Junior",
+        "bio": "Graduado em Ciência da Computação e Pós-graduado em Computação Móvel. Empreendedor, professor do ensino superior e autor de livros de programação",
+        "photo": "dist/img/speakers/luiz-fernando-duarte-junior.jpg",
+        "social": [
+          {"name": "facebook", "url": "http://fb.com/luiztools"},
+          {"name": "twitter", "url": "https://twitter.com/luiztools"},
+          {"name": "linkedin", "url": "http://linkedin.com/in/luizfduartejr"}
+        ]
       }
     ]
   },
