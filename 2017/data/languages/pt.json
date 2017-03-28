@@ -118,6 +118,19 @@
             "photo": "dist/img/speakers/fernandoporazzi.jpg"
           }
         ]
+      },
+      {
+        "day": "monday",
+        "time": "20:45 - 21:30",
+        "title": "Persistência Poliglota: Indo além do SQL",
+        "desc": "Conheça e entenda como tirar proveito das tecnologias de banco de dados não-relacionais (NoSQL) mais importantes da atualidade como MongoDB, Redis e muito mais, sem ter de abrir mão da sua base SQL tradicional (ela ainda tem valor!).",
+        "tags": ["nosql", "banco de dados", "mongodb", "redis"],
+        "performers": [
+          {
+            "name": "Luiz Fernando Duarte Junior",
+            "photo": "dist/img/speakers/luiz-fernando-duarte-junior.jpg"
+          }
+        ]
       }
     ]
   },
@@ -159,6 +172,12 @@
             "url": "http://www.sanvitron.com.br",
             "image": "dist/img/sponsors/sanvitron.jpg",
             "bio": "A Sanvitron é uma empresa gaúcha que desenvolve e comercializa soluções em controle de estacionamento, controle de acesso e ponto eletrônico. Possui Engenharia própria, assim desenvolve projetos personalizados de sistemas e equipamentos, que se adaptam às necessidades dos clientes, tornando o processo de controle e de gerenciamento ágil e seguro."
+          },
+          {
+            "name": "Umbler",
+            "url": "https://www.umbler.com/br",
+            "image": "dist/img/sponsors/umbler.png",
+            "bio": "A Umbler é uma startup de Cloud Hosting focada em agências e desenvolvedores, que oferece serviços como hospedagem de sites, registro de domínios, criação de contas de e-mail e banco de dados com pagamento pay as you go, ou por demanda. Com um painel de controle moderno e usual, o usuário consegue criar estruturas complexas de hospedagem com apenas alguns cliques. Além disso, o cliente tem total controle sobre suas aplicações, escalando, pausando ou cancelando os serviços em tempo real."
           }
         ]
       }
