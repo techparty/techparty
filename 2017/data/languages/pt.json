@@ -169,6 +169,18 @@
             "bio": "A LoopHOST é uma empresa séria e estabelecida, que atende o mercado de pequenas, médias e grandes empresas de todo o Brasil. Disponibilizamos uma linha completa de soluções para a web, como hospedagem de sites e registro de domínios, além de nossa linha empresarial de cloud servers SSD, servidores dedicados e co-localização (colocation)."
           },
           {
+            "name": "Umbler",
+            "url": "https://www.umbler.com/br",
+            "image": "dist/img/sponsors/umbler.jpg",
+            "bio": "A Umbler é uma startup de Cloud Hosting focada em agências e desenvolvedores, que oferece serviços como hospedagem de sites, registro de domínios, criação de contas de e-mail e banco de dados com pagamento pay as you go, ou por demanda. Com um painel de controle moderno e usual, o usuário consegue criar estruturas complexas de hospedagem com apenas alguns cliques. Além disso, o cliente tem total controle sobre suas aplicações, escalando, pausando ou cancelando os serviços em tempo real."
+          }
+        ]
+      },
+      {
+        "type": "ruby",
+        "label": "Rubi",
+        "companies": [
+          {
             "name": "FlyByte",
             "url": "http://www.flybyte.com.br",
             "image": "dist/img/sponsors/flybyte.jpg",
@@ -185,12 +197,6 @@
             "url": "http://www.sanvitron.com.br",
             "image": "dist/img/sponsors/sanvitron.jpg",
             "bio": "A Sanvitron é uma empresa gaúcha que desenvolve e comercializa soluções em controle de estacionamento, controle de acesso e ponto eletrônico. Possui Engenharia própria, assim desenvolve projetos personalizados de sistemas e equipamentos, que se adaptam às necessidades dos clientes, tornando o processo de controle e de gerenciamento ágil e seguro."
-          },
-          {
-            "name": "Umbler",
-            "url": "https://www.umbler.com/br",
-            "image": "dist/img/sponsors/umbler.jpg",
-            "bio": "A Umbler é uma startup de Cloud Hosting focada em agências e desenvolvedores, que oferece serviços como hospedagem de sites, registro de domínios, criação de contas de e-mail e banco de dados com pagamento pay as you go, ou por demanda. Com um painel de controle moderno e usual, o usuário consegue criar estruturas complexas de hospedagem com apenas alguns cliques. Além disso, o cliente tem total controle sobre suas aplicações, escalando, pausando ou cancelando os serviços em tempo real."
           }
         ]
       }
