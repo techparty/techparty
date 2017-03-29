@@ -197,7 +197,13 @@
             "url": "http://cr.inf.br/site",
             "image": "dist/img/sponsors/cr.jpg",
             "bio": "Nossos sistemas integrados de gestão solucionam os problemas de informação na sua empresa, utilizando a tecnologia para agilizar processos e fornecendo dados mais seguros para a melhor tomada de decisão."
-          },
+          }
+        ]
+      },
+      {
+        "type": "emerald",
+        "label": "Esmeralda",
+        "companies": [
           {
             "name": "Sanvitron",
             "url": "http://www.sanvitron.com.br",
