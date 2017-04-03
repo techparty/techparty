@@ -93,6 +93,15 @@
           {"name": "twitter", "url": "https://twitter.com/luiztools"},
           {"name": "linkedin", "url": "http://linkedin.com/in/luizfduartejr"}
         ]
+      },
+      {
+        "name": "Marcos ALves",
+        "bio": "Co-fundador da Ubots, empresa especializada em IA. Graduado em Análise e Desenvolvimento de Sistemas pela Unisinos, MBA em Gestão Estratégica de Pessoas pela Estácio com mais de 10 anos de experiência",
+        "photo": "dist/img/speakers/marcos.jpg",
+        "social": [
+          {"name": "twitter", "url": "https://twitter.com/mvalvess"},
+          {"name": "linkedin", "url": "https://www.linkedin.com/in/marcosviniciusalves"}
+        ]
       }
     ]
   },
