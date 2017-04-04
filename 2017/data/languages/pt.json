@@ -117,7 +117,20 @@
     "talks": [
       {
         "day": "monday",
-        "time": "20:45 - 21:30",
+        "time": "19:45 - 20:35",
+        "title": "Empreendedorismo das trincheiras",
+        "desc": "",
+        "tags": ["empreendedorismo"],
+        "performers": [
+          {
+            "name": "Flávio Steffens De Castro",
+            "photo": "dist/img/speakers/flavio-castro.jpg"
+          }
+        ]
+      },
+      {
+        "day": "monday",
+        "time": "20:40 - 21:30",
         "title": "Persistência Poliglota: Indo além do SQL",
         "desc": "Conheça e entenda como tirar proveito das tecnologias de banco de dados não-relacionais (NoSQL) mais importantes da atualidade como MongoDB, Redis e muito mais, sem ter de abrir mão da sua base SQL tradicional (ela ainda tem valor!).",
         "tags": ["nosql", "banco de dados", "mongodb", "redis"],
@@ -130,7 +143,20 @@
       },
       {
         "day": "tuesday",
-        "time": "20:45 - 21:30",
+        "time": "19:45 - 20:35",
+        "title": "Jogos Digitais e Sociedade – Engenharia Crítica e Game Design",
+        "desc": "Tomando como ponto inicial a engenharia crítica – a compreensão de que diferentes maneiras de organizar as tecnologias levam a mudanças nas práticas da cultura – levantamos a necessidade de se pensar a responsabilidade e o papel dos programadores e designers em relação à experiência do usuário e em processos de mudança social. Reconhece-se que o jogo digital é uma mídia diferente de todas as outras, e que o encontro entre o jogo e seu jogador constrói uma experiência diferencial, podendo então mudar as referências e percepções desse jogador em relação aos sistemas presentes no mundo à sua volta.  Dessa maneira, pensaremos de que maneira os jogos digitais afetam por seu design seus usuários para poder pensar questões sociais, o que implica necessariamente em uma “ética do Game Design”. Por fim, exploraremos como diferentes formas de game design e organização de mecânicas de jogo podem ser usadas para discutir, construir e trazer a tona diferentes aspectos sociais e emocionais, utilizando como exemplo o jogo “That Dragon, Cancer”.",
+        "tags": ["game", "sociedade", "design"],
+        "performers": [
+          {
+            "name": "Lucas Goulart",
+            "photo": "dist/img/speakers/lucas-goulart.jpg"
+          }
+        ]
+      },
+      {
+        "day": "tuesday",
+        "time": "20:40 - 21:30",
         "title": "If you Go, I Go",
         "desc": "Escolher uma linguagem de programação para um software nunca é uma tarefa fácil, entender as reais necessidades do projeto pode ser o fator decisivo para o sucesso ou tragédia. Nessa palestra, vamos ter uma breve introdução sobre a linguagem de programação Go e como criar uma REST API de forma simples e intuitiva.",
         "tags": ["rest", "api", "golang"],
@@ -143,7 +169,20 @@
       },
       {
         "day": "wednesday",
-        "time": "20:45 - 21:30",
+        "time": "19:45 - 20:35",
+        "title": "Governança e Gestão na área de TI",
+        "desc": "",
+        "tags": ["governança", "gestão", "TI"],
+        "performers": [
+          {
+            "name": "Alexandre Ramires de Castro",
+            "photo": "dist/img/speakers/alexandre-ramires.jpg"
+          }
+        ]
+      },
+      {
+        "day": "wednesday",
+        "time": "20:40 - 21:30",
         "title": "Desafios e armadilhas do desenvolvimento Mobile",
         "desc": "Vamos discutir como montar o planejamento de desenvolvimento de um aplicativo e onde devemos ter cautela para não cair em erros que podem nos custar preciosas horas de desenvolvimento.",
         "tags": ["mobile", "desafios", "planejamento"],
@@ -153,6 +192,53 @@
             "photo": "dist/img/speakers/ben-hur.jpg"
           }
         ]
+      },
+      {
+        "day": "thursday",
+        "time": "19:45 - 20:35",
+        "title": "Jogos Digitais, por onde começar",
+        "desc": "Interessado em desenvolver jogos digitais? Tire aqui suas dúvidas! Nesta sessão de perguntas e respostas, após uma breve apresentação do Izyplay Game Studio e seus principais projetos, Luiz vai responder a dúvidas gerais do público com relação ao desenvolvimento de jogos digitais. Luiz estará respondendo perguntas em uma ampla variedade de assuntos. Você tem alguma dúvida de game design? Quer dicas sobre qual tecnologia usar no seu projeto? Quer saber como apresentar seu projeto para uma publisher? Ou quer fazer um jogo e nem sabe por onde começar? Traga sua pergunta!",
+        "tags": ["curiosidade", "game", "publisher"],
+        "performers": [
+          {
+            "name": "Luiz Alessandro Nörnberg",
+            "photo": "dist/img/speakers/luiz.jpg"
+          }
+        ]
+      },
+      {
+        "day": "thursday",
+        "time": "20:40 - 21:30",
+        "title": "Mercado Profissional de Jogos Digitais",
+        "desc": "",
+        "tags": ["mercado", "game", "TI"],
+        "performers": [
+          {
+            "name": "Luiz Alessandro Nörnberg",
+            "photo": "dist/img/speakers/luiz.jpg"
+          }
+        ]
+      },
+      {
+        "day": "friday",
+        "time": "19:45 - 20:35",
+        "title": "A Revolução dos Chatbots",
+        "desc": "",
+        "tags": ["revolução", "chatbots", "IA"],
+        "performers": [
+          {
+            "name": "Marcos Alves",
+            "photo": "dist/img/speakers/marcos.jpg"
+          }
+        ]
+      },
+      {
+        "day": "friday",
+        "time": "20:40 até aguentar",
+        "title": "Melhor churras do mundo!",
+        "desc": "Ao final da talk <b>A Revolução dos Chatbots</b>, vai rolar um churras muito especial para permitir a interação entre os participantes do evento, trocar ideias, escutar música, comer, bebemorar e muita nerdice! As inscrições custam R$12,00 e devem ser efetuadas presencialmente no Lab 202. Bebidas(cerveja, refrigerante e água) estarão à venda no dia do evento por preço de custo.",
+        "tags": ["party", "churras", "picanha"],
+        "performers": []
       }
     ]
   },
