@@ -163,14 +163,20 @@
     "items": [
       {
         "type": "diamond",
-        "label": "Diamante",
+        "label": "Apoio",
         "companies": [
           {
             "name": "Senac",
             "url": "http://www.senacrs.com.br/",
             "image": "dist/img/sponsors/senac.jpg",
             "bio": "O Serviço Nacional de Aprendizagem Comercial (SENAC) é uma instituição brasileira de educação profissional aberta a toda a sociedade.  É uma entidade privada com fins públicos, que recebe contribuição compulsória das empresas do comércio e de atividades assemelhadas. Sua missão é desenvolver pessoas e organizações para o mundo do trabalho com ações educacionais e disseminando conhecimentos em Comércio de Bens, Serviços e Turismo."
-          },
+          }
+        ]
+      },
+      {
+        "type": "diamond",
+        "label": "Diamante",
+        "companies": [
           {
             "name": "LoopHOST",
             "url": "https://www.loophost.com.br",
