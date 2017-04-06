@@ -299,6 +299,18 @@
             "bio": "A Sanvitron é uma empresa gaúcha que desenvolve e comercializa soluções em controle de estacionamento, controle de acesso e ponto eletrônico. Possui Engenharia própria, assim desenvolve projetos personalizados de sistemas e equipamentos, que se adaptam às necessidades dos clientes, tornando o processo de controle e de gerenciamento ágil e seguro."
           }
         ]
+      },
+      {
+        "type": "safira",
+        "label": "Safira",
+        "companies": [
+          {
+            "name": "Jorge Bischoff",
+            "url": "http://jorgebischoff.com.br/",
+            "image": "dist/img/sponsors/bischoff.jpg",
+            "bio": ""
+          }
+        ]
       }
     ]
   },
