@@ -311,6 +311,42 @@
             "bio": ""
           }
         ]
+      },
+      {
+        "type": "partner",
+        "label": "Parceiros",
+        "companies": [
+          {
+            "name": "Faccat",
+            "url": "https://www2.faccat.br/portal",
+            "image": "dist/img/sponsors/faccat.jpg",
+            "bio": ""
+          },
+          {
+            "name": "Vigília Nerd",
+            "url": "http://vigilianerd.com.br",
+            "image": "dist/img/sponsors/nerd.jpg",
+            "bio": ""
+          },
+          {
+            "name": "Confeitaria Elaine",
+            "url": "http://www.confeitariaelaine.com",
+            "image": "dist/img/sponsors/elaine.jpg",
+            "bio": ""
+          },
+          {
+            "name": "Nostro",
+            "url": "https://www.facebook.com/Nostro-Casa-de-Carnes-504585866379340",
+            "image": "dist/img/sponsors/nostro.jpg",
+            "bio": ""
+          },
+          {
+            "name": "Stier Bier",
+            "url": "http://www.stierbier.com.br",
+            "image": "dist/img/sponsors/stier.jpg",
+            "bio": ""
+          }
+        ]
       }
     ]
   },
