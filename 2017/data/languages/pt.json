@@ -285,6 +285,12 @@
             "url": "http://cr.inf.br/site",
             "image": "dist/img/sponsors/cr.jpg",
             "bio": "Nossos sistemas integrados de gestão solucionam os problemas de informação na sua empresa, utilizando a tecnologia para agilizar processos e fornecendo dados mais seguros para a melhor tomada de decisão."
+          },
+          {
+            "name": "Infisc Inteligência Fiscal",
+            "url": "https://www.infisc.com.br",
+            "image": "dist/img/sponsors/infisc.jpg",
+            "bio": "Empresa de Taquara focada no desenvolvimento de software para Web, utilizando principalmente tecnologias da plataforma Java EE, voltado para o Setor Público Municipal. Foi pioneira no sul do país, com o desenvolvimento e implantação da primeira \"Nota Fiscal de Serviços eletrônica\" no município de Campo Bom (2007), inovadora na implantação de \"Programa de concessão de créditos vinculados ao ISSQN\" no município de Farroupilha (2011) e de \"Sistema de Gestão Orçamentaria Inteligente\" no município de Santiago (2016)."
           }
         ]
       },
