@@ -357,6 +357,12 @@
             "url": "http://www.stierbier.com.br",
             "image": "dist/img/sponsors/stier.jpg",
             "bio": ""
+          },
+          {
+            "name": "ozoutros",
+            "url": "https://www.facebook.com/ozoutros",
+            "image": "dist/img/sponsors/ozoutros.jpg",
+            "bio": ""
           }
         ]
       }
