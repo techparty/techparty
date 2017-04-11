@@ -281,12 +281,6 @@
             "bio": "Te conectar com o que você quiser, quando quiser: este é o objetivo da Flybyte. Bem mais do que permitir acesso à internet, a Equipe Fly busca, sempre a par das mais novas tecnologias disponíveis, aumentar o seu mundo de possibilidades de conexões."
           },
           {
-            "name": "CR Sistemas e Web",
-            "url": "http://cr.inf.br/site",
-            "image": "dist/img/sponsors/cr.jpg",
-            "bio": "Nossos sistemas integrados de gestão solucionam os problemas de informação na sua empresa, utilizando a tecnologia para agilizar processos e fornecendo dados mais seguros para a melhor tomada de decisão."
-          },
-          {
             "name": "Infisc Inteligência Fiscal",
             "url": "https://www.infisc.com.br",
             "image": "dist/img/sponsors/infisc.jpg",
@@ -303,6 +297,12 @@
             "url": "http://www.sanvitron.com.br",
             "image": "dist/img/sponsors/sanvitron.jpg",
             "bio": "A Sanvitron é uma empresa gaúcha que desenvolve e comercializa soluções em controle de estacionamento, controle de acesso e ponto eletrônico. Possui Engenharia própria, assim desenvolve projetos personalizados de sistemas e equipamentos, que se adaptam às necessidades dos clientes, tornando o processo de controle e de gerenciamento ágil e seguro."
+          },
+          {
+            "name": "CR Sistemas e Web",
+            "url": "http://cr.inf.br/site",
+            "image": "dist/img/sponsors/cr.jpg",
+            "bio": "Nossos sistemas integrados de gestão solucionam os problemas de informação na sua empresa, utilizando a tecnologia para agilizar processos e fornecendo dados mais seguros para a melhor tomada de decisão."
           }
         ]
       },
