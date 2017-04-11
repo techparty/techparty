@@ -199,7 +199,17 @@
     return window.innerWidth < 1000;
   }
 
+  function disableRegister() {
+    if (Date.now() >= new Date(2017, 3, 24).getTime()) {
+      document.getElementById('register').remove();
+      document.querySelector('.time-schedule__text').remove();
+      document.querySelector('.banner a[href="#register"]').remove();
+      document.querySelector('.header a[href="#register"]').remove();
+    }
+  }
+
   function init() {
+    disableRegister();
     executeApiHealthcheck();
     bindMobileNavigation();
     bindEvents();
