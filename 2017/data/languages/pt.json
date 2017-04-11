@@ -102,6 +102,30 @@
           {"name": "twitter", "url": "https://twitter.com/mvalvess"},
           {"name": "linkedin", "url": "https://www.linkedin.com/in/marcosviniciusalves"}
         ]
+      },
+      {
+        "name": "Evandro Karpss",
+        "bio": "Diretor Comercial da Flybyte, formado em Informática pela PUC-RS com especialização em banco de dados na ULBRA; Auditor de sistemas da Rokembach+Lahm, Gais, Villanova & Cia Auditores",
+        "photo": "dist/img/speakers/evandro.jpg",
+        "social": [
+          {"name": "facebook", "url": "https://www.facebook.com/evandro.karpss"}
+        ]
+      },
+      {
+        "name": "Juliano Valentini",
+        "bio": "Diretor de Operações da Flybyte, formado Técnico em Eletrônica pelo CIMOL, onde foi professor por mais de 10 anos, bacharel em Ciência da Computação pela UNISINOS",
+        "photo": "dist/img/speakers/juliano.jpg",
+        "social": [
+          {"name": "facebook", "url": "https://www.facebook.com/valentini.juliano"}
+        ]
+      },
+      {
+        "name": "Rafael Julio Kohlrauch",
+        "bio": "Diretor Administrativo da Flybyte, graduado em Design Gráfico pela FEEVALE, experiência na área de mídias digitais e especialista em gestão da qualidade",
+        "photo": "dist/img/speakers/pea.jpg",
+        "social": [
+          {"name": "facebook", "url": "https://www.facebook.com/raphaeljk"}
+        ]
       }
     ]
   },
@@ -203,6 +227,27 @@
           {
             "name": "Luiz Alessandro Nörnberg",
             "photo": "dist/img/speakers/luiz.jpg"
+          }
+        ]
+      },
+      {
+        "day": "thursday",
+        "time": "20:40 - 21:30",
+        "title": "O Desafio de Conectar",
+        "desc": "Neste bate papo vamos conversar sobre o cenário vivido pelos provedores de acesso e empresas de TI em geral e os desafios de conectar as pessoas, empresas e coisas.",
+        "tags": ["provedores", "desafios", "TI"],
+        "performers": [
+          {
+            "name": "Evandro Karpss",
+            "photo": "dist/img/speakers/evandro.jpg"
+          },
+          {
+            "name": "Juliano Valentini",
+            "photo": "dist/img/speakers/juliano.jpg"
+          },
+          {
+            "name": "Rafael Julio Kohlrauch",
+            "photo": "dist/img/speakers/pea.jpg"
           }
         ]
       },
