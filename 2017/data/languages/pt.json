@@ -312,6 +312,12 @@
             "url": "https://www.umbler.com/br",
             "image": "dist/img/sponsors/umbler.jpg",
             "bio": "A Umbler é uma startup de Cloud Hosting focada em agências e desenvolvedores, que oferece serviços como hospedagem de sites, registro de domínios, criação de contas de e-mail e banco de dados com pagamento pay as you go, ou por demanda. Com um painel de controle moderno e usual, o usuário consegue criar estruturas complexas de hospedagem com apenas alguns cliques. Além disso, o cliente tem total controle sobre suas aplicações, escalando, pausando ou cancelando os serviços em tempo real."
+          },
+          {
+            "name": "FlyByte",
+            "url": "http://www.flybyte.com.br",
+            "image": "dist/img/sponsors/flybyte.jpg",
+            "bio": "Te conectar com o que você quiser, quando quiser: este é o objetivo da Flybyte. Bem mais do que permitir acesso à internet, a Equipe Fly busca, sempre a par das mais novas tecnologias disponíveis, aumentar o seu mundo de possibilidades de conexões."
           }
         ]
       },
@@ -319,12 +325,6 @@
         "type": "ruby",
         "label": "Rubi",
         "companies": [
-          {
-            "name": "FlyByte",
-            "url": "http://www.flybyte.com.br",
-            "image": "dist/img/sponsors/flybyte.jpg",
-            "bio": "Te conectar com o que você quiser, quando quiser: este é o objetivo da Flybyte. Bem mais do que permitir acesso à internet, a Equipe Fly busca, sempre a par das mais novas tecnologias disponíveis, aumentar o seu mundo de possibilidades de conexões."
-          },
           {
             "name": "Infisc Inteligência Fiscal",
             "url": "https://www.infisc.com.br",
