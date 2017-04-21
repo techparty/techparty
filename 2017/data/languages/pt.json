@@ -330,6 +330,12 @@
             "url": "https://www.infisc.com.br",
             "image": "dist/img/sponsors/infisc.jpg",
             "bio": "Empresa de Taquara focada no desenvolvimento de software para Web, utilizando principalmente tecnologias da plataforma Java EE, voltado para o Setor Público Municipal. Foi pioneira no sul do país, com o desenvolvimento e implantação da primeira \"Nota Fiscal de Serviços eletrônica\" no município de Campo Bom (2007), inovadora na implantação de \"Programa de concessão de créditos vinculados ao ISSQN\" no município de Farroupilha (2011) e de \"Sistema de Gestão Orçamentaria Inteligente\" no município de Santiago (2016)."
+          },
+          {
+            "name": "Bela Viagem",
+            "url": "http://site.belaviagem.com/",
+            "image": "dist/img/sponsors/belaviagem.jpg",
+            "bio": "Somos uma FinTech, nossa missão é melhorar o mercado de Turismo &  Entretenimento, para isso estamos transformando o mercado de pagamentos, através de alta tecnologia de gestão e vendas, sem amarras e transparente. Hoje atendemos todas as verticais: hotéis, pousadas, eventos, shows, parques, atrações, agências e restaurantes. Criamos ferramentas para realizar reservas, receber pagamentos, vender seus produtos e ganhar comissão."
           }
         ]
       },
