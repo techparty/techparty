@@ -208,8 +208,43 @@
     }
   }
 
+  function enableDay(day) {
+    var elements = document.querySelectorAll('.toggle-day');
+    Array.from(elements).forEach(function (element) {
+      if (element.classList.contains('toggle-day-' + day)) {
+        element.style.display = 'inline-block';
+      } else {
+        element.remove();
+      }
+    });
+  }
+
+  function manipuleLivesAndQR() {
+    var today = moment().format('DD/MM/YYYY');
+    switch (today) {
+      case '24/04/2017':
+        enableDay('24');
+        break;
+      case '25/04/2017':
+        enableDay('25');
+        break;
+      case '26/04/2017':
+        enableDay('26');
+        break;
+      case '27/04/2017':
+        enableDay('27');
+        break;
+      case '28/04/2017':
+        enableDay('28');
+        break;
+      default:
+        enableDay('');
+    }
+  }
+
   function init() {
     disableRegister();
+    manipuleLivesAndQR();
     executeApiHealthcheck();
     bindMobileNavigation();
     bindEvents();
