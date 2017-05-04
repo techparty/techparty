@@ -32,18 +32,16 @@ gulp.task('watch', () => {
 gulp.task('dev', ['watch', 'webserver']);
 
 gulp.task('minify', () => {
-  const path = './assets/css';
   gulp
-    .src(path)
+    .src('assets/css/**')
     .pipe(minifyCSS({ advanced: true }))
-    .pipe(gulp.dest(`dist/${path}`))
+    .pipe(gulp.dest(`dist/assets/css`))
 });
 
 gulp.task('uglify', () => {
-  const path = './assets/js';
   gulp
-    .src(path)
-    .pipe(gulp.dest(`dist/${path}`))
+    .src('assets/js/**')
+    .pipe(gulp.dest(`dist/assets/js`))
 });
 
 gulp.task('html', () => {
