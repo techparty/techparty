@@ -1,0 +1,100 @@
+$desktop = 1000px
+$variant1 = 620px
+
+.spkrs
+  padding 67px 0 69px
+  background $scale4
+  text-align center
+  overflow hidden
+
+.spkrsl
+  width 100%
+  +below($desktop)
+    width 590px
+    margin 0 auto
+  +below($variant1)
+    width 100%
+    max-width 320px
+    margin 0 auto
+
+.spkrs-i
+  float left
+  width 50%
+  padding 10px
+  height 305px
+  position relative
+  &.left
+    direction ltr
+  &.right
+    direction rtl
+  +below($desktop)
+    width 100%
+    &:nth-child(odd)
+      direction ltr
+    &:nth-child(even)
+      direction rtl
+
+  +below($variant1)
+    height auto
+
+.spkrs-ic
+  width 100%
+  background $scale2
+  float left
+  position relative
+  height 100%
+  display table
+  +below($variant1)
+    display block
+
+.spkrs-p
+.spkrs-info
+  width 50%
+  display table-cell
+  +below($variant1)
+    display block
+    width 100%
+
+.spkrs-p
+  height 100%
+  +below($variant1)
+    height 300px
+
+.spkrs-info
+  vertical-align middle
+  position relative
+  padding 20px 20px
+
+.spkrs-nm
+  text-transform uppercase
+  font-size 20px
+  display block
+  margin 0 0 19px
+
+.spkrs-scl
+  text-align center
+  position absolute
+  bottom 16px;
+  color $scale6
+  font-size 14px
+  width 100%
+  span
+    margin 0 10px
+    text-decoration underline
+  +below($variant1)
+    position relative
+    bottom 0
+
+.spkrs-cta
+  background $scale7
+  padding 36px 0
+  text-align center
+  .center
+    background $scale2
+    padding 40px 0
+    h2
+      text-transform uppercase
+      margin 0 0 10px 0
+    a
+      color $scale1
+      text-decoration underline

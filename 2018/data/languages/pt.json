@@ -1,0 +1,435 @@
+{
+  "lang": "pt-br",
+  "title": "TechParty Faccat 2018",
+  "navigation": [
+    {"label": "Home", "hash": "home"},
+    {"label": "Sobre", "hash": "about"},
+    {"label": "Palestrantes", "hash": "speakers"},
+    {"label": "Programação", "hash": "schedule"},
+    {"label": "Local", "hash": "local"},
+    {"label": "Parceiros", "hash": "sponsors"}
+  ],
+  "banner": {
+    "time": "De 24 a 28 de Abril",
+    "time_text": "Garanta sua vaga!",
+    "register": "Inscreva-se"
+  },
+  "registerButton": "Inscrição",
+  "about": {
+    "title": "Sobre",
+    "paragraphs": [
+      "A TechParty Faccat é um evento totalmente gratuito e aberto à comunidade, visando promover a Tecnologia da Informação (TI) e compartilhamento de conhecimentos.",
+      "Serão duas talks por noite durante uma semana inteira, com profissionais qualificados e experientes em suas áreas de atuação.",
+      "As atividades serão ministradas por profissionais internos e de fora da instituição.",
+      "O evento irá fornecer certificado de participação. Quem se inscrever e comparecer, pode contar com ele."
+    ]
+  },
+  "speakers": {
+    "title": "Palestrantes",
+    "items": [
+      {
+        "name": "Fernando Porazzi",
+        "bio": "Desenvolvedor de software há 7 anos e apaixonado pelo que faz. Entusiasta de novas tecnologias e, atualmente, programa em Javascript e GoLang.",
+        "photo": "img/speakers/fernandoporazzi.jpg",
+        "social": [
+          {"name": "twitter", "url": "http://twitter.com/fernandoporazzi"},
+          {"name": "instagram", "url": "http://instagram.com/fernandoporazzi"},
+          {"name": "linkedin", "url": "https://www.linkedin.com/in/fernando-porazzi-b272b050"}
+        ]
+      },
+      {
+        "name": "Lucas Goulart",
+        "bio": "Graduado em Psicologia pela Unisinos e mestre em Psicologia Social e Institucional pela UFRGS. Doutorando na UFRGS. Pesquisa sobre sexualidade, teoria queer, teoria crítica e tecnologias da informação",
+        "photo": "img/speakers/lucas-goulart.jpg",
+        "social": [
+          {"name": "facebook", "url": "https://www.facebook.com/lucas.goulart.921"},
+          {"name": "linkedin", "url": "https://br.linkedin.com/in/lucas-goulart-310203105"},
+          {"name": "academia", "url": "http://ufrgs.academia.edu/LucasGoulart"}
+        ]
+      },
+      {
+        "name": "Alexandre Ramires",
+        "bio": "Exerce a função de executivo de TI (CIO) com experiência em implantação de processos de governança, gestão de projetos, governança de TI e gestão de serviços em TI",
+        "photo": "img/speakers/alexandre-ramires.jpg",
+        "social": [
+          {"name": "linkedin", "url": "https://www.linkedin.com/in/alexandreramires/"},
+          {"name": "lattes", "url": "http://lattes.cnpq.br/5961164017302520"}
+        ]
+      },
+      {
+        "name": "Flávio Steffens de Castro",
+        "bio": "Flávio Steffens é um empreendedor apaixonado. Tem graduação, MBA e mestrado na área de computação pela PUCRS e FGV-RS",
+        "photo": "img/speakers/flavio-castro.jpg",
+        "social": [
+          {"name": "facebook", "url": "https://facebook.com/flaviosteffens"},
+          {"name": "twitter", "url": "https://twitter.com/flaviosteffens"},
+          {"name": "instagram", "url": "https://instagram.com/flaviosteffens"}
+        ]
+      },
+      {
+        "name": "Luiz Alessandro Nörnberg",
+        "bio": "Bacharel em Ciência da Computação pela UCPel. Sócio-fundador do Izyplay Game Studio, onde assume hoje o cargo de Diretor de Tecnologia.",
+        "photo": "img/speakers/luiz.jpg",
+        "social": [
+          {"name": "facebook", "url": "https://facebook.com/luiznornberg"},
+          {"name": "izyplay", "url": "http://izyplay.com.br"}
+        ]
+      },
+      {
+        "name": "Ben-hur Santos Ott",
+        "bio": "Desenvolvedor mobile e javascript (NodeJS, Angular, React). Trabalhou em projetos de grandes clientes como Coca-Cola, Arezzo e Renner.",
+        "photo": "img/speakers/ben-hur.jpg",
+        "social": [
+          {"name": "facebook", "url": "https://facebook.com/benhur.ott"},
+          {"name": "twitter", "url": "https://twitter.com/benhurott"}
+        ]
+      },
+      {
+        "name": "Luiz Fernando Duarte Junior",
+        "bio": "Graduado em Ciência da Computação e Pós-graduado em Computação Móvel. Empreendedor, professor do ensino superior e autor de livros de programação",
+        "photo": "img/speakers/luiz-fernando-duarte-junior.jpg",
+        "social": [
+          {"name": "facebook", "url": "http://fb.com/luiztools"},
+          {"name": "twitter", "url": "https://twitter.com/luiztools"},
+          {"name": "linkedin", "url": "http://linkedin.com/in/luizfduartejr"}
+        ]
+      },
+      {
+        "name": "Marcos ALves",
+        "bio": "Co-fundador da Ubots, empresa especializada em IA. Graduado em Análise e Desenvolvimento de Sistemas pela Unisinos, MBA em Gestão Estratégica de Pessoas pela Estácio com mais de 10 anos de experiência",
+        "photo": "img/speakers/marcos.jpg",
+        "social": [
+          {"name": "twitter", "url": "https://twitter.com/mvalvess"},
+          {"name": "linkedin", "url": "https://www.linkedin.com/in/marcosviniciusalves"}
+        ]
+      },
+      {
+        "name": "Evandro Karpss",
+        "bio": "Diretor Comercial da Flybyte, formado em Informática pela PUC-RS com especialização em banco de dados na ULBRA; Auditor de sistemas da Rokembach+Lahm, Gais, Villanova & Cia Auditores",
+        "photo": "img/speakers/evandro.jpg",
+        "social": [
+          {"name": "facebook", "url": "https://www.facebook.com/evandro.karpss"}
+        ]
+      },
+      {
+        "name": "Juliano Valentini",
+        "bio": "Diretor de Operações da Flybyte, formado Técnico em Eletrônica pelo CIMOL, onde foi professor por mais de 10 anos, bacharel em Ciência da Computação pela UNISINOS",
+        "photo": "img/speakers/juliano.jpg",
+        "social": [
+          {"name": "facebook", "url": "https://www.facebook.com/valentini.juliano"}
+        ]
+      },
+      {
+        "name": "Rafael Julio Kohlrauch",
+        "bio": "Diretor Administrativo da Flybyte, graduado em Design Gráfico pela FEEVALE, experiência na área de mídias digitais e especialista em gestão da qualidade",
+        "photo": "img/speakers/pea.jpg",
+        "social": [
+          {"name": "facebook", "url": "https://www.facebook.com/raphaeljk"}
+        ]
+      }
+    ]
+  },
+  "schedule": {
+    "title": "Programação",
+    "days": [
+      {"day": "monday", "date": "24 de abril, 2017"},
+      {"day": "tuesday", "date": "25 de abril, 2017"},
+      {"day": "wednesday", "date": "26 de abril, 2017"},
+      {"day": "thursday", "date": "27 de abril, 2017"},
+      {"day": "friday", "date": "28 de abril, 2017"}
+    ],
+    "talks": [
+      {
+        "day": "monday",
+        "time": "19:45 - 20:35",
+        "title": "Empreendedorismo das trincheiras",
+        "desc": "Nesse bate papo iremos ver como a jornada de um empreendedor, no Brasil, normalmente é. Serão lições preciosas para inspirar (ou não) as pessoas a realmente colocarem a mão na massa!",
+        "tags": ["empreendedorismo", "brasil", "mistério"],
+        "performers": [
+          {
+            "name": "Flávio Steffens De Castro",
+            "photo": "img/speakers/flavio-castro.jpg"
+          }
+        ]
+      },
+      {
+        "day": "monday",
+        "time": "20:40 - 21:30",
+        "title": "Persistência Poliglota: Indo além do SQL",
+        "desc": "Conheça e entenda como tirar proveito das tecnologias de banco de dados não-relacionais (NoSQL) mais importantes da atualidade como MongoDB, Redis e muito mais, sem ter de abrir mão da sua base SQL tradicional (ela ainda tem valor!).",
+        "tags": ["nosql", "banco de dados", "mongodb", "redis"],
+        "performers": [
+          {
+            "name": "Luiz Fernando Duarte Junior",
+            "photo": "img/speakers/luiz-fernando-duarte-junior.jpg"
+          }
+        ]
+      },
+      {
+        "day": "tuesday",
+        "time": "19:45 - 20:35",
+        "title": "Jogos Digitais e Sociedade – Engenharia Crítica e Game Design",
+        "desc": "Tomando como ponto inicial a engenharia crítica – a compreensão de que diferentes maneiras de organizar as tecnologias levam a mudanças nas práticas da cultura – levantamos a necessidade de se pensar a responsabilidade e o papel dos programadores e designers em relação à experiência do usuário e em processos de mudança social. Reconhece-se que o jogo digital é uma mídia diferente de todas as outras, e que o encontro entre o jogo e seu jogador constrói uma experiência diferencial, podendo então mudar as referências e percepções desse jogador em relação aos sistemas presentes no mundo à sua volta.  Dessa maneira, pensaremos de que maneira os jogos digitais afetam por seu design seus usuários para poder pensar questões sociais, o que implica necessariamente em uma “ética do Game Design”. Por fim, exploraremos como diferentes formas de game design e organização de mecânicas de jogo podem ser usadas para discutir, construir e trazer a tona diferentes aspectos sociais e emocionais, utilizando como exemplo o jogo “That Dragon, Cancer”.",
+        "tags": ["game", "sociedade", "design"],
+        "performers": [
+          {
+            "name": "Lucas Goulart",
+            "photo": "img/speakers/lucas-goulart.jpg"
+          }
+        ]
+      },
+      {
+        "day": "tuesday",
+        "time": "20:40 - 21:30",
+        "title": "If you Go, I Go",
+        "desc": "Escolher uma linguagem de programação para um software nunca é uma tarefa fácil, entender as reais necessidades do projeto pode ser o fator decisivo para o sucesso ou tragédia. Nessa palestra, vamos ter uma breve introdução sobre a linguagem de programação Go e como criar uma REST API de forma simples e intuitiva.",
+        "tags": ["rest", "api", "golang"],
+        "performers": [
+          {
+            "name": "Fernando Porazzi",
+            "photo": "img/speakers/fernandoporazzi.jpg"
+          }
+        ]
+      },
+      {
+        "day": "wednesday",
+        "time": "19:45 - 20:35",
+        "title": "Governança e Gestão na área de TI",
+        "desc": "",
+        "tags": ["governança", "gestão", "TI"],
+        "performers": [
+          {
+            "name": "Alexandre Ramires de Castro",
+            "photo": "img/speakers/alexandre-ramires.jpg"
+          }
+        ]
+      },
+      {
+        "day": "wednesday",
+        "time": "20:40 - 21:30",
+        "title": "Desafios e armadilhas do desenvolvimento Mobile",
+        "desc": "Vamos discutir como montar o planejamento de desenvolvimento de um aplicativo e onde devemos ter cautela para não cair em erros que podem nos custar preciosas horas de desenvolvimento.",
+        "tags": ["mobile", "desafios", "planejamento"],
+        "performers": [
+          {
+            "name": "Ben-hur Santos Ott",
+            "photo": "img/speakers/ben-hur.jpg"
+          }
+        ]
+      },
+      {
+        "day": "thursday",
+        "time": "19:45 - 20:35",
+        "title": "Jogos Digitais, por onde começar",
+        "desc": "Interessado em desenvolver jogos digitais? Tire aqui suas dúvidas! Nesta sessão de perguntas e respostas, após uma breve apresentação do Izyplay Game Studio e seus principais projetos, Luiz vai responder a dúvidas gerais do público com relação ao desenvolvimento de jogos digitais. Luiz estará respondendo perguntas em uma ampla variedade de assuntos. Você tem alguma dúvida de game design? Quer dicas sobre qual tecnologia usar no seu projeto? Quer saber como apresentar seu projeto para uma publisher? Ou quer fazer um jogo e nem sabe por onde começar? Traga sua pergunta!",
+        "tags": ["curiosidade", "game", "publisher"],
+        "performers": [
+          {
+            "name": "Luiz Alessandro Nörnberg",
+            "photo": "img/speakers/luiz.jpg"
+          }
+        ]
+      },
+      {
+        "day": "thursday",
+        "time": "20:40 - 21:30",
+        "title": "O Desafio de Conectar",
+        "desc": "Neste bate papo vamos conversar sobre o cenário vivido pelos provedores de acesso e empresas de TI em geral e os desafios de conectar as pessoas, empresas e coisas.",
+        "tags": ["provedores", "desafios", "TI"],
+        "performers": [
+          {
+            "name": "Evandro Karpss",
+            "photo": "img/speakers/evandro.jpg"
+          },
+          {
+            "name": "Juliano Valentini",
+            "photo": "img/speakers/juliano.jpg"
+          },
+          {
+            "name": "Rafael Julio Kohlrauch",
+            "photo": "img/speakers/pea.jpg"
+          }
+        ]
+      },
+      {
+        "day": "friday",
+        "time": "19:45 - 20:35",
+        "title": "A Revolução dos Chatbots",
+        "desc": "",
+        "tags": ["revolução", "chatbots", "IA"],
+        "performers": [
+          {
+            "name": "Marcos Alves",
+            "photo": "img/speakers/marcos.jpg"
+          }
+        ]
+      },
+      {
+        "day": "friday",
+        "time": "20:40 até aguentar",
+        "title": "Melhor churras do mundo!",
+        "desc": "Ao final da talk <b>A Revolução dos Chatbots</b>, vai rolar um churras muito especial para permitir a interação entre os participantes do evento, trocar ideias, escutar música, comer, bebemorar e muita nerdice! As inscrições custam R$15,00 e devem ser efetuadas presencialmente no Lab 202. Bebidas(cerveja, refrigerante e água) estarão à venda no dia do evento por preço de custo.",
+        "tags": ["party", "churras", "picanha"],
+        "performers": []
+      }
+    ]
+  },
+  "sponsors": {
+    "title": "Patrocinadores",
+    "subtitle": "Nossos parceiros contribuem para o sucesso da TechParty",
+    "link": "Seja um parceiro, entre em contato: <a href=\"mailto:techpartyfaccat@gmail.com?Subject=Parceiro\">techpartyfaccat@gmail.com</a>",
+    "items": [
+      {
+        "type": "diamond",
+        "label": "Apoio",
+        "companies": [
+          {
+            "name": "Senac",
+            "url": "http://www.senacrs.com.br/",
+            "image": "img/sponsors/senac.jpg",
+            "bio": "O Serviço Nacional de Aprendizagem Comercial (SENAC) é uma instituição brasileira de educação profissional aberta a toda a sociedade.  É uma entidade privada com fins públicos, que recebe contribuição compulsória das empresas do comércio e de atividades assemelhadas. Sua missão é desenvolver pessoas e organizações para o mundo do trabalho com ações educacionais e disseminando conhecimentos em Comércio de Bens, Serviços e Turismo."
+          }
+        ]
+      },
+      {
+        "type": "diamond",
+        "label": "Diamante",
+        "companies": [
+          {
+            "name": "LoopHOST",
+            "url": "https://www.loophost.com.br",
+            "image": "img/sponsors/loophost.jpg",
+            "bio": "A LoopHOST é uma empresa séria e estabelecida, que atende o mercado de pequenas, médias e grandes empresas de todo o Brasil. Disponibilizamos uma linha completa de soluções para a web, como hospedagem de sites e registro de domínios, além de nossa linha empresarial de cloud servers SSD, servidores dedicados e co-localização (colocation)."
+          },
+          {
+            "name": "Rocket.Chat",
+            "url": "https://rocket.chat",
+            "image": "img/sponsors/rocket-chat.jpg",
+            "bio": "Rocket.Chat é um Web Chat Server, desenvolvido 100% em JavaScript, usando o framework Meteor. Uma plataforma de comunicação open-source, ótima solução para comunidades e empresas que buscam ter seu próprio serviço de chat ou para desenvolvedores que desejam construir ou evoluir suas plataformas de chat."
+          },
+          {
+            "name": "Umbler",
+            "url": "https://www.umbler.com/br",
+            "image": "img/sponsors/umbler.jpg",
+            "bio": "A Umbler é uma startup de Cloud Hosting focada em agências e desenvolvedores, que oferece serviços como hospedagem de sites, registro de domínios, criação de contas de e-mail e banco de dados com pagamento pay as you go, ou por demanda. Com um painel de controle moderno e usual, o usuário consegue criar estruturas complexas de hospedagem com apenas alguns cliques. Além disso, o cliente tem total controle sobre suas aplicações, escalando, pausando ou cancelando os serviços em tempo real."
+          },
+          {
+            "name": "FlyByte",
+            "url": "http://www.flybyte.com.br",
+            "image": "img/sponsors/flybyte.jpg",
+            "bio": "Te conectar com o que você quiser, quando quiser: este é o objetivo da Flybyte. Bem mais do que permitir acesso à internet, a Equipe Fly busca, sempre a par das mais novas tecnologias disponíveis, aumentar o seu mundo de possibilidades de conexões."
+          }
+        ]
+      },
+      {
+        "type": "ruby",
+        "label": "Rubi",
+        "companies": [
+          {
+            "name": "Infisc Inteligência Fiscal",
+            "url": "https://www.infisc.com.br",
+            "image": "img/sponsors/infisc.jpg",
+            "bio": "Empresa de Taquara focada no desenvolvimento de software para Web, utilizando principalmente tecnologias da plataforma Java EE, voltado para o Setor Público Municipal. Foi pioneira no sul do país, com o desenvolvimento e implantação da primeira \"Nota Fiscal de Serviços eletrônica\" no município de Campo Bom (2007), inovadora na implantação de \"Programa de concessão de créditos vinculados ao ISSQN\" no município de Farroupilha (2011) e de \"Sistema de Gestão Orçamentaria Inteligente\" no município de Santiago (2016)."
+          },
+          {
+            "name": "Bela Viagem",
+            "url": "http://site.belaviagem.com/",
+            "image": "img/sponsors/belaviagem.jpg",
+            "bio": "Somos uma FinTech, nossa missão é melhorar o mercado de Turismo &  Entretenimento, para isso estamos transformando o mercado de pagamentos, através de alta tecnologia de gestão e vendas, sem amarras e transparente. Hoje atendemos todas as verticais: hotéis, pousadas, eventos, shows, parques, atrações, agências e restaurantes. Criamos ferramentas para realizar reservas, receber pagamentos, vender seus produtos e ganhar comissão."
+          }
+        ]
+      },
+      {
+        "type": "emerald",
+        "label": "Esmeralda",
+        "companies": [
+          {
+            "name": "Sanvitron",
+            "url": "http://www.sanvitron.com.br",
+            "image": "img/sponsors/sanvitron.jpg",
+            "bio": "A Sanvitron é uma empresa gaúcha que desenvolve e comercializa soluções em controle de estacionamento, controle de acesso e ponto eletrônico. Possui Engenharia própria, assim desenvolve projetos personalizados de sistemas e equipamentos, que se adaptam às necessidades dos clientes, tornando o processo de controle e de gerenciamento ágil e seguro."
+          },
+          {
+            "name": "CR Sistemas e Web",
+            "url": "http://cr.inf.br/site",
+            "image": "img/sponsors/cr.jpg",
+            "bio": "Nossos sistemas integrados de gestão solucionam os problemas de informação na sua empresa, utilizando a tecnologia para agilizar processos e fornecendo dados mais seguros para a melhor tomada de decisão."
+          }
+        ]
+      },
+      {
+        "type": "safira",
+        "label": "Safira",
+        "companies": [
+          {
+            "name": "Jorge Bischoff",
+            "url": "http://jorgebischoff.com.br/",
+            "image": "img/sponsors/bischoff.jpg",
+            "bio": ""
+          }
+        ]
+      },
+      {
+        "type": "partner",
+        "label": "Parceiros",
+        "companies": [
+          {
+            "name": "Faccat",
+            "url": "https://www2.faccat.br/portal",
+            "image": "img/sponsors/faccat.jpg",
+            "bio": ""
+          },
+          {
+            "name": "SI - TI - JD",
+            "url": "https://fit.faccat.br",
+            "image": "img/sponsors/si-ti.jpg",
+            "bio": ""
+          },
+          {
+            "name": "Vigília Nerd",
+            "url": "http://vigilianerd.com.br",
+            "image": "img/sponsors/nerd.jpg",
+            "bio": ""
+          },
+          {
+            "name": "Confeitaria Elaine",
+            "url": "http://www.confeitariaelaine.com",
+            "image": "img/sponsors/elaine.jpg",
+            "bio": ""
+          },
+          {
+            "name": "Nostro",
+            "url": "https://www.facebook.com/Nostro-Casa-de-Carnes-504585866379340",
+            "image": "img/sponsors/nostro.jpg",
+            "bio": ""
+          },
+          {
+            "name": "Stier Bier",
+            "url": "http://www.stierbier.com.br",
+            "image": "img/sponsors/stier.jpg",
+            "bio": ""
+          },
+          {
+            "name": "ozoutros",
+            "url": "https://www.facebook.com/ozoutros",
+            "image": "img/sponsors/ozoutros.jpg",
+            "bio": ""
+          }
+        ]
+      }
+    ]
+  },
+  "manifest": {
+    "title": "Manifesto",
+    "paragraphs": [
+      "A TechParty é um evento que visa promover a tecnologia (Tech) durante um evento informal e de congregação (Party).",
+      "Desde seu surgimento, em 2011, o evento é totalmente gratuito e aberto à comunidade. Inicialmente, ocorria uma vez por semestre em finais de semanas, com palestras e minicursos para leigos até usuários avançados de computação. Contava com apresentações de profissionais de fora da instituição e, também, apresentações feitas pelos próprios alunos e professores. Devido a imprevistos, em 2013 o evento não aconteceu.",
+      "Em <a href=\"/2014\">2014</a>, estudantes da instituição com o objetivo de oferecer conhecimento para o maior número de pessoas, optam por retornar com o evento, mas agora com organização diferenciada.",
+      "A TechParty passou a ser um evento anual, com duração de uma semana inteira, com duas talks (apresentações) por noite e coffee break atraente a fim de estimular a interação das pessoas e o networking. Mantendo a proposta de contar com palestrantes da faculdade e convidados externos, mas sempre com assuntos interessantes e atuais, o evento teve um salto no número de participantes com esse novo formato, ultrapassando 700 pessoas (somadas as 5 noites), entre alunos, ex-alunos, pessoas da comunidade, alunos de escolas da região e representantes de muitas empresas da área de atuação da Faccat.",
+      "Rango Break. A estréia. Em <a href=\"/2015\">2015</a> o evento manteve o mesmo ritmo, com ainda mais público e empolgação dos participantes durante a semana da TechParty. Alguma novidade? Sim! Sai o coffee break e um novo evento é lançado (um evento dentro do evento!): o Rango Break.",
+      "A ideia agora é que o momento do lanche seja tão ou mais interessante que as próprias apresentações técnicas. O Rango Break é um momento onde, diariamente, após as duas talks de cada noite, é oferecido alguma comidinha (\"rango\") especial, tais como o cachorro-quente de uma famosa Towner de Taquara (que veio para o Campus da Faccat especialmente para o evento), ou a \"galinhada nerd\", feita por alunos do curso, sanduíche \"buraco quente\" e cupcakes, mais um super-dog feito por alunos e, finalmente, no último dia, o grande Churras de Integração dos cursos de TI da Faccat. Esses rangos são fornecidos sem custo aos participantes, graças ao apoio financeiro das empresas patrocinadoras e parcerias com empresas locais de alimentos.",
+      "<a href=\"/2016\">2016</a>, seguimos crescendo! Neste ano, queríamos buscar profissionais de empresas conhecidas nacionalmente e do exterior. Como sempre, foram realizadas talks realmente incríveis e conseguimos profissionais de empresas renomadas, como Red Hat, Rocket.Chat, We Heart It, SAP, Mozilla, Terra, Arezzo, CWI Software.",
+      "Quanto a 2017, esperamos novamente realizar um grande evento, evoluindo como sempre! Logo após o final da edição de <a href=\"/2016\">2016</a>, já iniciamos o planejamento para esta edição... ouvimos as sugestões, observamos o que deu mais ou menos certo, e, principalmente: nos empenhamos a buscar, como sempre, profissionais incríveis para compartilhar o seu conhecimento. Precisamos da sua participação para fazer dessa TechParty a mais incrível de todas!"
+    ]
+  }
+}

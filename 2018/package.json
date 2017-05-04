@@ -1,0 +1,30 @@
+{
+  "name": "techparty",
+  "version": "1.0.0",
+  "description": "![alt tag](http://techparty.faccat.br/assets/img/tech-party.png)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/techparty/techparty.git"
+  },
+  "author": "TechParty Team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/techparty/techparty/issues"
+  },
+  "homepage": "https://github.com/techparty/techparty",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^5.0.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-stylus": "^2.6.0",
+    "gulp-uglify": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=5.12.0"
+  },
+  "dependencies": {
+    "cpf_cnpj": "^0.2.0"
+  }
+}

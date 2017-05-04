@@ -1,0 +1,153 @@
+$tablet = 768px
+$variant1 = 590px
+
+.sprs
+  padding 67px 0
+  text-align center
+  background $scale4
+
+.sprsl
+  > h2
+    margin-bottom 10px
+  a
+    color #e84c3d
+    text-decoration underline
+
+.sprsc
+  margin-top 40px
+
+.sprsg
+  margin-bottom 65px
+  &.diamond
+    .sprsitm
+      width 100%
+      background $scale2
+      display table
+      margin 20px 0
+    .sprsn
+      margin-bottom 10px
+    .sprsp
+      width 30%
+      height 200px
+      display table-cell
+      vertical-align middle
+      +below($variant1)
+        width 100%
+        display block
+      img
+        height 150%
+
+    .sprsi
+      text-align left
+      display table-cell
+      width 70%
+      vertical-align top
+      padding 30px
+      +below($variant1)
+        width 100%
+        display block
+  &.ruby
+    .sprsitm
+      width 49%
+      background $scale2
+      display inline-block
+      margin 20px 0.5%
+      vertical-align top
+    .sprsn
+      margin-bottom 10px
+    .sprsp
+      width 30%
+      height 200px
+      display table-cell
+      vertical-align middle
+      +below($variant1)
+        width 100%
+        display block
+      img
+        height 110%
+
+    .sprsi
+      text-align left
+      display table-cell
+      width 70%
+      vertical-align top
+      padding 30px
+      +below($variant1)
+        width 100%
+        display block
+  &.emerald
+    padding 0 100px
+    .sprsitm
+      width 30%
+      display inline-block
+
+      margin 1.5% 1.5%
+      background $scale2
+      +below($tablet)
+        width 47%
+    +below($tablet)
+      padding 0 80px
+    +below($variant1)
+      padding 0 10px
+      font-size 12px
+
+    .sprsp
+      img
+        padding 30px
+        width 80%
+        +below($variant1)
+          padding 10px
+    .sprsi
+      background $scale5
+      color $scale2
+      padding 10px 0
+  &.safira
+    padding 0 90px
+    +below($tablet)
+      padding 0 50px
+    +below($variant1)
+      padding 0
+      font-size 11px
+    .sprsitm
+      width 22%
+      display inline-block
+      margin 20px 1.5%
+      background $scale2
+      +below($tablet)
+        width 30%
+        margin 1.5% 1.5%
+    .sprsp
+      padding 30px
+      img
+        width 100%
+      +below($variant1)
+        padding 5px
+    .sprsi
+      background $scale5
+      color $scale2
+      padding 10px 0
+  &.partner
+    padding 0 90px
+    +below($tablet)
+      padding 0 50px
+    +below($variant1)
+      padding 0
+      font-size 11px
+    .sprsitm
+      width 22%
+      display inline-block
+      margin 20px 1.5%
+      background $scale2
+      +below($tablet)
+        width 30%
+        margin 1.5% 1.5%
+    .sprsp
+      padding 30px
+      img
+        width 100%
+      +below($variant1)
+        padding 5px
+    .sprsi
+      background $scale5
+      color $scale2
+      padding 10px 0
