@@ -5,7 +5,6 @@ const uglify = require('gulp-uglify');
 const jade = require('gulp-jade');
 const fs = require('fs');
 const connect = require('gulp-connect');
-const rm = require('rimraf');
 
 gulp.task('jade', () => {
   const languages = ['pt', 'en'];
@@ -16,7 +15,7 @@ gulp.task('jade', () => {
 
     gulp.src('views/index.jade')
       .pipe(jade({ data }))
-      .pipe(gulp.dest(lang === 'pt' ? './' : `./${lang}/`));
+      .pipe(gulp.dest(`./dist/${ lang === 'pt' ? '' : lang }`));
   }
 });
 
@@ -48,6 +47,7 @@ gulp.task('img', () => {
 
 gulp.task('webserver', () => {
   connect.server({
+    root: 'dist',
     port: 3000,
   });
 });
@@ -60,11 +60,6 @@ gulp.task('watch', () => {
   gulp.watch('data/languages/*.json', ['jade']);
 });
 
-gulp.task('build', ['jade', 'stylus', 'js', 'img'], () => {
-  rm('build', () => {
-    gulp.src('dist/**').pipe(gulp.dest('build/dist'));
-    gulp.src('*.html').pipe(gulp.dest('build'));
-  });
-});
+gulp.task('dist', ['jade', 'stylus', 'js', 'img']);
 
-gulp.task('dev', ['build', 'watch', 'webserver']);
+gulp.task('dev', ['dist', 'watch', 'webserver']);

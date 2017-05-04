@@ -105,7 +105,7 @@
 
     var marker = new google.maps.Marker({
       position: center,
-      icon: '/dist/img/techparty_icon.png'
+      icon: '../img/techparty_icon.png'
     });
 
     marker.setMap(map);

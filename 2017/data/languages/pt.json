@@ -30,7 +30,7 @@
       {
         "name": "Fernando Porazzi",
         "bio": "Desenvolvedor de software há 7 anos e apaixonado pelo que faz. Entusiasta de novas tecnologias e, atualmente, programa em Javascript e GoLang.",
-        "photo": "dist/img/speakers/fernandoporazzi.jpg",
+        "photo": "img/speakers/fernandoporazzi.jpg",
         "social": [
           {"name": "twitter", "url": "http://twitter.com/fernandoporazzi"},
           {"name": "instagram", "url": "http://instagram.com/fernandoporazzi"},
@@ -40,7 +40,7 @@
       {
         "name": "Lucas Goulart",
         "bio": "Graduado em Psicologia pela Unisinos e mestre em Psicologia Social e Institucional pela UFRGS. Doutorando na UFRGS. Pesquisa sobre sexualidade, teoria queer, teoria crítica e tecnologias da informação",
-        "photo": "dist/img/speakers/lucas-goulart.jpg",
+        "photo": "img/speakers/lucas-goulart.jpg",
         "social": [
           {"name": "facebook", "url": "https://www.facebook.com/lucas.goulart.921"},
           {"name": "linkedin", "url": "https://br.linkedin.com/in/lucas-goulart-310203105"},
@@ -50,7 +50,7 @@
       {
         "name": "Alexandre Ramires",
         "bio": "Exerce a função de executivo de TI (CIO) com experiência em implantação de processos de governança, gestão de projetos, governança de TI e gestão de serviços em TI",
-        "photo": "dist/img/speakers/alexandre-ramires.jpg",
+        "photo": "img/speakers/alexandre-ramires.jpg",
         "social": [
           {"name": "linkedin", "url": "https://www.linkedin.com/in/alexandreramires/"},
           {"name": "lattes", "url": "http://lattes.cnpq.br/5961164017302520"}
@@ -59,7 +59,7 @@
       {
         "name": "Flávio Steffens de Castro",
         "bio": "Flávio Steffens é um empreendedor apaixonado. Tem graduação, MBA e mestrado na área de computação pela PUCRS e FGV-RS",
-        "photo": "dist/img/speakers/flavio-castro.jpg",
+        "photo": "img/speakers/flavio-castro.jpg",
         "social": [
           {"name": "facebook", "url": "https://facebook.com/flaviosteffens"},
           {"name": "twitter", "url": "https://twitter.com/flaviosteffens"},
@@ -69,7 +69,7 @@
       {
         "name": "Luiz Alessandro Nörnberg",
         "bio": "Bacharel em Ciência da Computação pela UCPel. Sócio-fundador do Izyplay Game Studio, onde assume hoje o cargo de Diretor de Tecnologia.",
-        "photo": "dist/img/speakers/luiz.jpg",
+        "photo": "img/speakers/luiz.jpg",
         "social": [
           {"name": "facebook", "url": "https://facebook.com/luiznornberg"},
           {"name": "izyplay", "url": "http://izyplay.com.br"}
@@ -78,7 +78,7 @@
       {
         "name": "Ben-hur Santos Ott",
         "bio": "Desenvolvedor mobile e javascript (NodeJS, Angular, React). Trabalhou em projetos de grandes clientes como Coca-Cola, Arezzo e Renner.",
-        "photo": "dist/img/speakers/ben-hur.jpg",
+        "photo": "img/speakers/ben-hur.jpg",
         "social": [
           {"name": "facebook", "url": "https://facebook.com/benhur.ott"},
           {"name": "twitter", "url": "https://twitter.com/benhurott"}
@@ -87,7 +87,7 @@
       {
         "name": "Luiz Fernando Duarte Junior",
         "bio": "Graduado em Ciência da Computação e Pós-graduado em Computação Móvel. Empreendedor, professor do ensino superior e autor de livros de programação",
-        "photo": "dist/img/speakers/luiz-fernando-duarte-junior.jpg",
+        "photo": "img/speakers/luiz-fernando-duarte-junior.jpg",
         "social": [
           {"name": "facebook", "url": "http://fb.com/luiztools"},
           {"name": "twitter", "url": "https://twitter.com/luiztools"},
@@ -97,7 +97,7 @@
       {
         "name": "Marcos ALves",
         "bio": "Co-fundador da Ubots, empresa especializada em IA. Graduado em Análise e Desenvolvimento de Sistemas pela Unisinos, MBA em Gestão Estratégica de Pessoas pela Estácio com mais de 10 anos de experiência",
-        "photo": "dist/img/speakers/marcos.jpg",
+        "photo": "img/speakers/marcos.jpg",
         "social": [
           {"name": "twitter", "url": "https://twitter.com/mvalvess"},
           {"name": "linkedin", "url": "https://www.linkedin.com/in/marcosviniciusalves"}
@@ -106,7 +106,7 @@
       {
         "name": "Evandro Karpss",
         "bio": "Diretor Comercial da Flybyte, formado em Informática pela PUC-RS com especialização em banco de dados na ULBRA; Auditor de sistemas da Rokembach+Lahm, Gais, Villanova & Cia Auditores",
-        "photo": "dist/img/speakers/evandro.jpg",
+        "photo": "img/speakers/evandro.jpg",
         "social": [
           {"name": "facebook", "url": "https://www.facebook.com/evandro.karpss"}
         ]
@@ -114,7 +114,7 @@
       {
         "name": "Juliano Valentini",
         "bio": "Diretor de Operações da Flybyte, formado Técnico em Eletrônica pelo CIMOL, onde foi professor por mais de 10 anos, bacharel em Ciência da Computação pela UNISINOS",
-        "photo": "dist/img/speakers/juliano.jpg",
+        "photo": "img/speakers/juliano.jpg",
         "social": [
           {"name": "facebook", "url": "https://www.facebook.com/valentini.juliano"}
         ]
@@ -122,7 +122,7 @@
       {
         "name": "Rafael Julio Kohlrauch",
         "bio": "Diretor Administrativo da Flybyte, graduado em Design Gráfico pela FEEVALE, experiência na área de mídias digitais e especialista em gestão da qualidade",
-        "photo": "dist/img/speakers/pea.jpg",
+        "photo": "img/speakers/pea.jpg",
         "social": [
           {"name": "facebook", "url": "https://www.facebook.com/raphaeljk"}
         ]
@@ -148,7 +148,7 @@
         "performers": [
           {
             "name": "Flávio Steffens De Castro",
-            "photo": "dist/img/speakers/flavio-castro.jpg"
+            "photo": "img/speakers/flavio-castro.jpg"
           }
         ]
       },
@@ -161,7 +161,7 @@
         "performers": [
           {
             "name": "Luiz Fernando Duarte Junior",
-            "photo": "dist/img/speakers/luiz-fernando-duarte-junior.jpg"
+            "photo": "img/speakers/luiz-fernando-duarte-junior.jpg"
           }
         ]
       },
@@ -174,7 +174,7 @@
         "performers": [
           {
             "name": "Lucas Goulart",
-            "photo": "dist/img/speakers/lucas-goulart.jpg"
+            "photo": "img/speakers/lucas-goulart.jpg"
           }
         ]
       },
@@ -187,7 +187,7 @@
         "performers": [
           {
             "name": "Fernando Porazzi",
-            "photo": "dist/img/speakers/fernandoporazzi.jpg"
+            "photo": "img/speakers/fernandoporazzi.jpg"
           }
         ]
       },
@@ -200,7 +200,7 @@
         "performers": [
           {
             "name": "Alexandre Ramires de Castro",
-            "photo": "dist/img/speakers/alexandre-ramires.jpg"
+            "photo": "img/speakers/alexandre-ramires.jpg"
           }
         ]
       },
@@ -213,7 +213,7 @@
         "performers": [
           {
             "name": "Ben-hur Santos Ott",
-            "photo": "dist/img/speakers/ben-hur.jpg"
+            "photo": "img/speakers/ben-hur.jpg"
           }
         ]
       },
@@ -226,7 +226,7 @@
         "performers": [
           {
             "name": "Luiz Alessandro Nörnberg",
-            "photo": "dist/img/speakers/luiz.jpg"
+            "photo": "img/speakers/luiz.jpg"
           }
         ]
       },
@@ -239,15 +239,15 @@
         "performers": [
           {
             "name": "Evandro Karpss",
-            "photo": "dist/img/speakers/evandro.jpg"
+            "photo": "img/speakers/evandro.jpg"
           },
           {
             "name": "Juliano Valentini",
-            "photo": "dist/img/speakers/juliano.jpg"
+            "photo": "img/speakers/juliano.jpg"
           },
           {
             "name": "Rafael Julio Kohlrauch",
-            "photo": "dist/img/speakers/pea.jpg"
+            "photo": "img/speakers/pea.jpg"
           }
         ]
       },
@@ -260,7 +260,7 @@
         "performers": [
           {
             "name": "Marcos Alves",
-            "photo": "dist/img/speakers/marcos.jpg"
+            "photo": "img/speakers/marcos.jpg"
           }
         ]
       },
@@ -286,7 +286,7 @@
           {
             "name": "Senac",
             "url": "http://www.senacrs.com.br/",
-            "image": "dist/img/sponsors/senac.jpg",
+            "image": "img/sponsors/senac.jpg",
             "bio": "O Serviço Nacional de Aprendizagem Comercial (SENAC) é uma instituição brasileira de educação profissional aberta a toda a sociedade.  É uma entidade privada com fins públicos, que recebe contribuição compulsória das empresas do comércio e de atividades assemelhadas. Sua missão é desenvolver pessoas e organizações para o mundo do trabalho com ações educacionais e disseminando conhecimentos em Comércio de Bens, Serviços e Turismo."
           }
         ]
@@ -298,25 +298,25 @@
           {
             "name": "LoopHOST",
             "url": "https://www.loophost.com.br",
-            "image": "dist/img/sponsors/loophost.jpg",
+            "image": "img/sponsors/loophost.jpg",
             "bio": "A LoopHOST é uma empresa séria e estabelecida, que atende o mercado de pequenas, médias e grandes empresas de todo o Brasil. Disponibilizamos uma linha completa de soluções para a web, como hospedagem de sites e registro de domínios, além de nossa linha empresarial de cloud servers SSD, servidores dedicados e co-localização (colocation)."
           },
           {
             "name": "Rocket.Chat",
             "url": "https://rocket.chat",
-            "image": "dist/img/sponsors/rocket-chat.jpg",
+            "image": "img/sponsors/rocket-chat.jpg",
             "bio": "Rocket.Chat é um Web Chat Server, desenvolvido 100% em JavaScript, usando o framework Meteor. Uma plataforma de comunicação open-source, ótima solução para comunidades e empresas que buscam ter seu próprio serviço de chat ou para desenvolvedores que desejam construir ou evoluir suas plataformas de chat."
           },
           {
             "name": "Umbler",
             "url": "https://www.umbler.com/br",
-            "image": "dist/img/sponsors/umbler.jpg",
+            "image": "img/sponsors/umbler.jpg",
             "bio": "A Umbler é uma startup de Cloud Hosting focada em agências e desenvolvedores, que oferece serviços como hospedagem de sites, registro de domínios, criação de contas de e-mail e banco de dados com pagamento pay as you go, ou por demanda. Com um painel de controle moderno e usual, o usuário consegue criar estruturas complexas de hospedagem com apenas alguns cliques. Além disso, o cliente tem total controle sobre suas aplicações, escalando, pausando ou cancelando os serviços em tempo real."
           },
           {
             "name": "FlyByte",
             "url": "http://www.flybyte.com.br",
-            "image": "dist/img/sponsors/flybyte.jpg",
+            "image": "img/sponsors/flybyte.jpg",
             "bio": "Te conectar com o que você quiser, quando quiser: este é o objetivo da Flybyte. Bem mais do que permitir acesso à internet, a Equipe Fly busca, sempre a par das mais novas tecnologias disponíveis, aumentar o seu mundo de possibilidades de conexões."
           }
         ]
@@ -328,13 +328,13 @@
           {
             "name": "Infisc Inteligência Fiscal",
             "url": "https://www.infisc.com.br",
-            "image": "dist/img/sponsors/infisc.jpg",
+            "image": "img/sponsors/infisc.jpg",
             "bio": "Empresa de Taquara focada no desenvolvimento de software para Web, utilizando principalmente tecnologias da plataforma Java EE, voltado para o Setor Público Municipal. Foi pioneira no sul do país, com o desenvolvimento e implantação da primeira \"Nota Fiscal de Serviços eletrônica\" no município de Campo Bom (2007), inovadora na implantação de \"Programa de concessão de créditos vinculados ao ISSQN\" no município de Farroupilha (2011) e de \"Sistema de Gestão Orçamentaria Inteligente\" no município de Santiago (2016)."
           },
           {
             "name": "Bela Viagem",
             "url": "http://site.belaviagem.com/",
-            "image": "dist/img/sponsors/belaviagem.jpg",
+            "image": "img/sponsors/belaviagem.jpg",
             "bio": "Somos uma FinTech, nossa missão é melhorar o mercado de Turismo &  Entretenimento, para isso estamos transformando o mercado de pagamentos, através de alta tecnologia de gestão e vendas, sem amarras e transparente. Hoje atendemos todas as verticais: hotéis, pousadas, eventos, shows, parques, atrações, agências e restaurantes. Criamos ferramentas para realizar reservas, receber pagamentos, vender seus produtos e ganhar comissão."
           }
         ]
@@ -346,13 +346,13 @@
           {
             "name": "Sanvitron",
             "url": "http://www.sanvitron.com.br",
-            "image": "dist/img/sponsors/sanvitron.jpg",
+            "image": "img/sponsors/sanvitron.jpg",
             "bio": "A Sanvitron é uma empresa gaúcha que desenvolve e comercializa soluções em controle de estacionamento, controle de acesso e ponto eletrônico. Possui Engenharia própria, assim desenvolve projetos personalizados de sistemas e equipamentos, que se adaptam às necessidades dos clientes, tornando o processo de controle e de gerenciamento ágil e seguro."
           },
           {
             "name": "CR Sistemas e Web",
             "url": "http://cr.inf.br/site",
-            "image": "dist/img/sponsors/cr.jpg",
+            "image": "img/sponsors/cr.jpg",
             "bio": "Nossos sistemas integrados de gestão solucionam os problemas de informação na sua empresa, utilizando a tecnologia para agilizar processos e fornecendo dados mais seguros para a melhor tomada de decisão."
           }
         ]
@@ -364,7 +364,7 @@
           {
             "name": "Jorge Bischoff",
             "url": "http://jorgebischoff.com.br/",
-            "image": "dist/img/sponsors/bischoff.jpg",
+            "image": "img/sponsors/bischoff.jpg",
             "bio": ""
           }
         ]
@@ -376,43 +376,43 @@
           {
             "name": "Faccat",
             "url": "https://www2.faccat.br/portal",
-            "image": "dist/img/sponsors/faccat.jpg",
+            "image": "img/sponsors/faccat.jpg",
             "bio": ""
           },
           {
             "name": "SI - TI - JD",
             "url": "https://fit.faccat.br",
-            "image": "dist/img/sponsors/si-ti.jpg",
+            "image": "img/sponsors/si-ti.jpg",
             "bio": ""
           },
           {
             "name": "Vigília Nerd",
             "url": "http://vigilianerd.com.br",
-            "image": "dist/img/sponsors/nerd.jpg",
+            "image": "img/sponsors/nerd.jpg",
             "bio": ""
           },
           {
             "name": "Confeitaria Elaine",
             "url": "http://www.confeitariaelaine.com",
-            "image": "dist/img/sponsors/elaine.jpg",
+            "image": "img/sponsors/elaine.jpg",
             "bio": ""
           },
           {
             "name": "Nostro",
             "url": "https://www.facebook.com/Nostro-Casa-de-Carnes-504585866379340",
-            "image": "dist/img/sponsors/nostro.jpg",
+            "image": "img/sponsors/nostro.jpg",
             "bio": ""
           },
           {
             "name": "Stier Bier",
             "url": "http://www.stierbier.com.br",
-            "image": "dist/img/sponsors/stier.jpg",
+            "image": "img/sponsors/stier.jpg",
             "bio": ""
           },
           {
             "name": "ozoutros",
             "url": "https://www.facebook.com/ozoutros",
-            "image": "dist/img/sponsors/ozoutros.jpg",
+            "image": "img/sponsors/ozoutros.jpg",
             "bio": ""
           }
         ]
