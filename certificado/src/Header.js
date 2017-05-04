@@ -9,7 +9,7 @@ export default class Header extends React.Component {
     return (
       <header className="header">
         <h1>
-          <a href="./">TechPary 2016 - Certificados</a>
+          <a href="./">TechPary - Certificados</a>
         </h1>
       </header>
     );

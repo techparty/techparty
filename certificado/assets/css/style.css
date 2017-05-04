@@ -60,6 +60,7 @@ body {
   margin-bottom: 15px;
 }
 
+.form-item select,
 .form-item input {
   height: 45px;
   width: 100%;
