@@ -1,0 +1,12 @@
+section#sponsors.clients-section
+  .container
+    h2
+      strong #{ sponsors.title }
+    each item in sponsors.items
+      h2
+        strong #{ item.label }
+      ul.list-unstyled
+        each sponsor in item.companies
+          li
+            a(href=`${ sponsor.url }`)
+              img(src=`${ sponsor.image }`, alt=`${ sponsor.name }`, class=`sponsor-${ item.type }`)

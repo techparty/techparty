@@ -1,21 +1,63 @@
 doctype html
-html(lang="#{lang}")
+html(lang=`${lang}`)
   head
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1")
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1')
+
+    title #{ title }
 
     link(rel="icon" type="image/png" href="img/techparty_icon.png")
 
-    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700")
-    link(rel="stylesheet", href="css/main.css?v=2.1")
+    link(rel='dns-prefetch', href='//ajax.googleapis.com')
+    link(rel='dns-prefetch', href='//fonts.googleapis.com')
+    link(rel='dns-prefetch', href='//themes.googleusercontent.com')
+    link(rel='dns-prefetch', href='//www.google-analytics.com')
 
-    title #{ title }
+    link(rel='stylesheet', href='css/main.css')
+
+    meta(name='description', content='')
+    meta(name='author', content='')
   body
-    h1 Olá
+    .popup-email
+      .element
+        button#btn.btn--primary(type='button') OK
+    header.header-main
+      .container
+        a(href='')
+          img.logo-default(src='img/techparty.png', alt='')
+          img.logo-second(src='img/techparty.png', alt='')
+        a.right.bars(href='javascript:void(0)')
+          span.fa.fa-bars
+        nav
+          ul.list-unstyled
+            each nav in navigation
+              li
+                a(href=`#${ nav.hash }`) #{ nav.label }
+    main
+      include _register
 
+      include _banner
+
+      include _about
+
+      include _speakers
+
+      include _schedule
+
+      include _location
+
+      include _sponsors
+
+      include _manifest
+
+      a#top(href='#subheader')
+        img(src='img/arrow-top.png', alt='')
+
+    include _footer
+
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js')
     script(src="//maps.google.com/maps/api/js")
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js")
-    script(src="js/bundle.js?v=2.1")
+    script(src="js/bundle.js?v=0.1")
     script.
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

@@ -1,9 +1,10 @@
+const fs = require('fs');
 const gulp = require('gulp');
-const stylus = require('gulp-stylus');
+const css = require('gulp-minify-css');
+const sourcemaps = require('gulp-sourcemaps');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
 const pug = require('gulp-pug');
-const fs = require('fs');
 const connect = require('gulp-connect');
 
 gulp.task('pug', () => {
@@ -18,12 +19,9 @@ gulp.task('pug', () => {
   }
 });
 
-gulp.task('stylus', () => {
-  gulp.src('assets/stylus/main.styl')
-    .pipe(stylus({
-      'compress': true,
-      'include css': true,
-    }))
+gulp.task('css', () => {
+  gulp.src('assets/css/**')
+    .pipe(css({ advanced: true }))
     .pipe(concat('main.css'))
     .pipe(gulp.dest('dist/css/'));
 });
@@ -35,13 +33,20 @@ gulp.task('js', () => {
         comments: /^!|@preserve|@license|@cc_on/i
       }
     }))
+    .pipe(sourcemaps.init())
     .pipe(concat('bundle.js'))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('dist/js/'));
 });
 
 gulp.task('img', () => {
   gulp.src('assets/img/**/')
     .pipe(gulp.dest('dist/img'));
+});
+
+gulp.task('fonts', () => {
+  gulp.src('assets/fonts/**/')
+    .pipe(gulp.dest('dist/fonts'));
 });
 
 gulp.task('webserver', () => {
@@ -52,13 +57,13 @@ gulp.task('webserver', () => {
 });
 
 gulp.task('watch', () => {
-  gulp.watch('assets/stylus/**/*.styl', ['stylus']);
+  gulp.watch('assets/css/**/*.css', ['css']);
   gulp.watch('assets/js/**/*.js', ['js']);
   gulp.watch('assets/img/**', ['img']);
   gulp.watch('views/**/*.pug', ['pug']);
   gulp.watch('data/languages/*.json', ['pug']);
 });
 
-gulp.task('dist', ['pug', 'stylus', 'js', 'img']);
+gulp.task('dist', ['pug', 'css', 'js', 'img', 'fonts']);
 
 gulp.task('dev', ['dist', 'watch', 'webserver']);

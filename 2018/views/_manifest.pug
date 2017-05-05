@@ -1,0 +1,7 @@
+section#manifest.manifest-section
+  .container
+    //- h5 #{ manifest.title }
+    h2
+      strong #{ manifest.title }
+    each text in manifest.text
+      p !{ text }

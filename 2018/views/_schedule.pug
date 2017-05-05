@@ -1,0 +1,36 @@
+section#schedule.when-section
+  .container
+    //- h5 WHEN
+
+    h2
+      strong #{ schedule.title }
+
+    .customNavigation.nav-slider.text-center
+      a.inline.middle.btn.prev(href='javascript:void(0)')
+        img.m-t--3(src='fonts/arrow-left.svg', alt='')
+
+      span.text-nav.inline.middle #{ schedule.days[0].date }
+
+      a.inline.middle.btn.next(href='javascript:void(0)')
+        img.m-t--3(src='fonts/arrow-right.svg', alt='')
+
+    #when-slider.owl-carousel.owl-theme
+      each day in schedule.days
+        .item(data-date=`${ day.date }`)
+          article
+            ul.list-unstyled
+              each talk in schedule.talks.filter(t => t.day === day.label)
+                li
+                  .row
+                    .col-lg-2
+                      h3
+                        strong #{ talk.time }
+                      p
+                        span.fa.fa-clock-o.m-r-5 #{ talk.duration } min
+                    .col-lg-6
+                      h3
+                        strong #{ talk.title }
+                      p #{ talk.description }
+                    .col-lg-3.col-lg-offset-1
+                      each speaker in talk.speakers
+                        h3.light #{ speaker.name }

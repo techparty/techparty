@@ -1,0 +1,29 @@
+section#speakers.who-section.gray-section
+  .container
+    //- h5 #{ speakers.who }
+
+    h2.m-b-20
+      strong #{ speakers.title }
+
+    h5.regular.m-b-140 #{ date }
+
+    - var items = speakers.items
+    while items.length > 0
+      - var temp = items.splice(3)
+      .row
+        each speaker in items
+          .col-sm-4
+            .box
+              .img-wrap(style=`background-image:url('${ speaker.photo }');`)
+                .overlay
+                  each social in speaker.social
+                    a.social-link(href=`${ social.url }`, target='_blank')
+                      span(class=`fa fa-${ social.name }`)
+              h3.bold #{ speaker.name }
+              h5 #{ speaker.bio }
+        - items = temp
+    .clearfix
+    |
+    a.btn--primary.btn--black.register-now(href='#subheader')
+      | #{ speakers.button }
+      span.fa.fa-long-arrow-right

@@ -1,0 +1,11 @@
+section#where.where-section
+  .container
+    //- h5 WHERE
+
+    h2
+      strong #{ location.title }
+
+    each address in location.address
+      p.text-center #{ address }
+  .map
+    #map

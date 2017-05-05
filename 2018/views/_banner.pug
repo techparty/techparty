@@ -1,0 +1,24 @@
+#subheader-section.subheader(style="background-image:url('img/banner-1.jpg')")
+  article.typography
+    .container
+      h4 #{ date }
+      h1 TechParty
+      |
+      a.btn--primary.register-now(href='#subheader')
+        | #{ banner.button }
+        span.fa.fa-long-arrow-right
+  .counter
+    h5 #{ banner.begin }
+    ul.countdown
+      li
+        span.days 00
+        p.days_ref #{ banner.days }
+      li
+        span.hours 00
+        p.hours_ref #{ banner.hours }
+      li
+        span.minutes 00
+        p.minutes_ref #{ banner.minutes }
+      li
+        span.seconds 00
+        p.seconds_ref #{ banner.seconds }

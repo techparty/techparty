@@ -1,0 +1,26 @@
+.popup.register-popup
+  .overlay-popup
+  .content-popup
+    a.close-popup(href='javascript:void(0)') &times;
+    h2.text-center.uppercase #{ register.notice }
+    h5.text-center.light #{ register.required }
+    form.contact-form
+      label
+        input.input.input--primary(type='text', name='name', placeholder='Nome', required)
+
+      label
+        input.input.input--primary(type='email', name='email', placeholder='Email', required)
+
+      label
+        input.input.input--primary(type='number', name='cpf', placeholder='CPF', required)
+
+      label #{ register.daysLabel }
+
+      .register-days
+        each day in register.days
+          label(for="day-1")
+            input(type="checkbox" name='days' id=`day-${ day.value }` value=`${ day.value }`)
+            |#{ day.name }
+
+      br
+      button.big-blue-btn(type='submit') #{ register.button }

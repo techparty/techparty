@@ -1,6 +1,10 @@
 {
   "lang": "pt-br",
+
   "title": "TechParty Faccat 2018",
+
+  "date": "De 24 a 28 de Abril",
+
   "navigation": [
     {"label": "Home", "hash": "home"},
     {"label": "Sobre", "hash": "about"},
@@ -9,23 +13,44 @@
     {"label": "Local", "hash": "local"},
     {"label": "Parceiros", "hash": "sponsors"}
   ],
-  "banner": {
-    "time": "De 24 a 28 de Abril",
-    "time_text": "Garanta sua vaga!",
-    "register": "Inscreva-se"
+
+  "register": {
+    "notice": "Registre-se para este evento",
+    "required": "Por favor preencha todos os campos abaixo",
+    "button": "Inscreva-se",
+    "daysLabel": "Escolha os dias que deseja",
+    "days": [
+      { "name": "Segunda", "value": "1" },
+      { "name": "Terça", "value": "2" },
+      { "name": "Quarta", "value": "3" },
+      { "name": "Quinta", "value": "4" },
+      { "name": "Sexta", "value": "5" }
+    ]
   },
-  "registerButton": "Inscrição",
+
+  "banner": {
+    "begin": "Evento começa em:",
+    "days": "dias",
+    "hours": "horas",
+    "minutes": "minutos",
+    "seconds": "segundos",
+    "button": "INSCREVA-SE"
+  },
+
   "about": {
     "title": "Sobre",
-    "paragraphs": [
+    "strong": "Maior e melhor evento do vale",
+    "text": [
       "A TechParty Faccat é um evento totalmente gratuito e aberto à comunidade, visando promover a Tecnologia da Informação (TI) e compartilhamento de conhecimentos.",
       "Serão duas talks por noite durante uma semana inteira, com profissionais qualificados e experientes em suas áreas de atuação.",
       "As atividades serão ministradas por profissionais internos e de fora da instituição.",
       "O evento irá fornecer certificado de participação. Quem se inscrever e comparecer, pode contar com ele."
     ]
   },
+
   "speakers": {
     "title": "Palestrantes",
+    "button": "INSCREVA-SE",
     "items": [
       {
         "name": "Fernando Porazzi",
@@ -33,8 +58,7 @@
         "photo": "img/speakers/fernandoporazzi.jpg",
         "social": [
           {"name": "twitter", "url": "http://twitter.com/fernandoporazzi"},
-          {"name": "instagram", "url": "http://instagram.com/fernandoporazzi"},
-          {"name": "linkedin", "url": "https://www.linkedin.com/in/fernando-porazzi-b272b050"}
+          {"name": "instagram", "url": "http://instagram.com/fernandoporazzi"}
         ]
       },
       {
@@ -43,8 +67,7 @@
         "photo": "img/speakers/lucas-goulart.jpg",
         "social": [
           {"name": "facebook", "url": "https://www.facebook.com/lucas.goulart.921"},
-          {"name": "linkedin", "url": "https://br.linkedin.com/in/lucas-goulart-310203105"},
-          {"name": "academia", "url": "http://ufrgs.academia.edu/LucasGoulart"}
+          {"name": "linkedin", "url": "https://br.linkedin.com/in/lucas-goulart-310203105"}
         ]
       },
       {
@@ -62,8 +85,7 @@
         "photo": "img/speakers/flavio-castro.jpg",
         "social": [
           {"name": "facebook", "url": "https://facebook.com/flaviosteffens"},
-          {"name": "twitter", "url": "https://twitter.com/flaviosteffens"},
-          {"name": "instagram", "url": "https://instagram.com/flaviosteffens"}
+          {"name": "twitter", "url": "https://twitter.com/flaviosteffens"}
         ]
       },
       {
@@ -90,8 +112,7 @@
         "photo": "img/speakers/luiz-fernando-duarte-junior.jpg",
         "social": [
           {"name": "facebook", "url": "http://fb.com/luiztools"},
-          {"name": "twitter", "url": "https://twitter.com/luiztools"},
-          {"name": "linkedin", "url": "http://linkedin.com/in/luizfduartejr"}
+          {"name": "twitter", "url": "https://twitter.com/luiztools"}
         ]
       },
       {
@@ -129,23 +150,24 @@
       }
     ]
   },
+
   "schedule": {
     "title": "Programação",
     "days": [
-      {"day": "monday", "date": "24 de abril, 2017"},
-      {"day": "tuesday", "date": "25 de abril, 2017"},
-      {"day": "wednesday", "date": "26 de abril, 2017"},
-      {"day": "thursday", "date": "27 de abril, 2017"},
-      {"day": "friday", "date": "28 de abril, 2017"}
+      {"label": "monday", "date": "24 de abril, 2017"},
+      {"label": "tuesday", "date": "25 de abril, 2017"},
+      {"label": "wednesday", "date": "26 de abril, 2017"},
+      {"label": "thursday", "date": "27 de abril, 2017"},
+      {"label": "friday", "date": "28 de abril, 2017"}
     ],
     "talks": [
       {
         "day": "monday",
-        "time": "19:45 - 20:35",
+        "time": "19:45",
+        "duration": "50",
         "title": "Empreendedorismo das trincheiras",
-        "desc": "Nesse bate papo iremos ver como a jornada de um empreendedor, no Brasil, normalmente é. Serão lições preciosas para inspirar (ou não) as pessoas a realmente colocarem a mão na massa!",
-        "tags": ["empreendedorismo", "brasil", "mistério"],
-        "performers": [
+        "description": "Nesse bate papo iremos ver como a jornada de um empreendedor, no Brasil, normalmente é. Serão lições preciosas para inspirar (ou não) as pessoas a realmente colocarem a mão na massa!",
+        "speakers": [
           {
             "name": "Flávio Steffens De Castro",
             "photo": "img/speakers/flavio-castro.jpg"
@@ -154,11 +176,11 @@
       },
       {
         "day": "monday",
-        "time": "20:40 - 21:30",
+        "time": "20:40",
+        "duration": "50",
         "title": "Persistência Poliglota: Indo além do SQL",
-        "desc": "Conheça e entenda como tirar proveito das tecnologias de banco de dados não-relacionais (NoSQL) mais importantes da atualidade como MongoDB, Redis e muito mais, sem ter de abrir mão da sua base SQL tradicional (ela ainda tem valor!).",
-        "tags": ["nosql", "banco de dados", "mongodb", "redis"],
-        "performers": [
+        "description": "Conheça e entenda como tirar proveito das tecnologias de banco de dados não-relacionais (NoSQL) mais importantes da atualidade como MongoDB, Redis e muito mais, sem ter de abrir mão da sua base SQL tradicional (ela ainda tem valor!).",
+        "speakers": [
           {
             "name": "Luiz Fernando Duarte Junior",
             "photo": "img/speakers/luiz-fernando-duarte-junior.jpg"
@@ -167,11 +189,11 @@
       },
       {
         "day": "tuesday",
-        "time": "19:45 - 20:35",
+        "time": "19:45",
+        "duration": "50",
         "title": "Jogos Digitais e Sociedade – Engenharia Crítica e Game Design",
-        "desc": "Tomando como ponto inicial a engenharia crítica – a compreensão de que diferentes maneiras de organizar as tecnologias levam a mudanças nas práticas da cultura – levantamos a necessidade de se pensar a responsabilidade e o papel dos programadores e designers em relação à experiência do usuário e em processos de mudança social. Reconhece-se que o jogo digital é uma mídia diferente de todas as outras, e que o encontro entre o jogo e seu jogador constrói uma experiência diferencial, podendo então mudar as referências e percepções desse jogador em relação aos sistemas presentes no mundo à sua volta.  Dessa maneira, pensaremos de que maneira os jogos digitais afetam por seu design seus usuários para poder pensar questões sociais, o que implica necessariamente em uma “ética do Game Design”. Por fim, exploraremos como diferentes formas de game design e organização de mecânicas de jogo podem ser usadas para discutir, construir e trazer a tona diferentes aspectos sociais e emocionais, utilizando como exemplo o jogo “That Dragon, Cancer”.",
-        "tags": ["game", "sociedade", "design"],
-        "performers": [
+        "description": "Tomando como ponto inicial a engenharia crítica – a compreensão de que diferentes maneiras de organizar as tecnologias levam a mudanças nas práticas da cultura – levantamos a necessidade de se pensar a responsabilidade e o papel dos programadores e designers em relação à experiência do usuário e em processos de mudança social. Reconhece-se que o jogo digital é uma mídia diferente de todas as outras, e que o encontro entre o jogo e seu jogador constrói uma experiência diferencial, podendo então mudar as referências e percepções desse jogador em relação aos sistemas presentes no mundo à sua volta.  Dessa maneira, pensaremos de que maneira os jogos digitais afetam por seu design seus usuários para poder pensar questões sociais, o que implica necessariamente em uma “ética do Game Design”. Por fim, exploraremos como diferentes formas de game design e organização de mecânicas de jogo podem ser usadas para discutir, construir e trazer a tona diferentes aspectos sociais e emocionais, utilizando como exemplo o jogo “That Dragon, Cancer”.",
+        "speakers": [
           {
             "name": "Lucas Goulart",
             "photo": "img/speakers/lucas-goulart.jpg"
@@ -180,11 +202,11 @@
       },
       {
         "day": "tuesday",
-        "time": "20:40 - 21:30",
+        "time": "20:40",
+        "duration": "50",
         "title": "If you Go, I Go",
-        "desc": "Escolher uma linguagem de programação para um software nunca é uma tarefa fácil, entender as reais necessidades do projeto pode ser o fator decisivo para o sucesso ou tragédia. Nessa palestra, vamos ter uma breve introdução sobre a linguagem de programação Go e como criar uma REST API de forma simples e intuitiva.",
-        "tags": ["rest", "api", "golang"],
-        "performers": [
+        "description": "Escolher uma linguagem de programação para um software nunca é uma tarefa fácil, entender as reais necessidades do projeto pode ser o fator decisivo para o sucesso ou tragédia. Nessa palestra, vamos ter uma breve introdução sobre a linguagem de programação Go e como criar uma REST API de forma simples e intuitiva.",
+        "speakers": [
           {
             "name": "Fernando Porazzi",
             "photo": "img/speakers/fernandoporazzi.jpg"
@@ -193,11 +215,11 @@
       },
       {
         "day": "wednesday",
-        "time": "19:45 - 20:35",
+        "time": "19:45",
+        "duration": "50",
         "title": "Governança e Gestão na área de TI",
-        "desc": "",
-        "tags": ["governança", "gestão", "TI"],
-        "performers": [
+        "description": "",
+        "speakers": [
           {
             "name": "Alexandre Ramires de Castro",
             "photo": "img/speakers/alexandre-ramires.jpg"
@@ -206,11 +228,11 @@
       },
       {
         "day": "wednesday",
-        "time": "20:40 - 21:30",
+        "time": "20:40",
+        "duration": "50",
         "title": "Desafios e armadilhas do desenvolvimento Mobile",
-        "desc": "Vamos discutir como montar o planejamento de desenvolvimento de um aplicativo e onde devemos ter cautela para não cair em erros que podem nos custar preciosas horas de desenvolvimento.",
-        "tags": ["mobile", "desafios", "planejamento"],
-        "performers": [
+        "description": "Vamos discutir como montar o planejamento de desenvolvimento de um aplicativo e onde devemos ter cautela para não cair em erros que podem nos custar preciosas horas de desenvolvimento.",
+        "speakers": [
           {
             "name": "Ben-hur Santos Ott",
             "photo": "img/speakers/ben-hur.jpg"
@@ -219,11 +241,11 @@
       },
       {
         "day": "thursday",
-        "time": "19:45 - 20:35",
+        "time": "19:45",
+        "duration": "50",
         "title": "Jogos Digitais, por onde começar",
-        "desc": "Interessado em desenvolver jogos digitais? Tire aqui suas dúvidas! Nesta sessão de perguntas e respostas, após uma breve apresentação do Izyplay Game Studio e seus principais projetos, Luiz vai responder a dúvidas gerais do público com relação ao desenvolvimento de jogos digitais. Luiz estará respondendo perguntas em uma ampla variedade de assuntos. Você tem alguma dúvida de game design? Quer dicas sobre qual tecnologia usar no seu projeto? Quer saber como apresentar seu projeto para uma publisher? Ou quer fazer um jogo e nem sabe por onde começar? Traga sua pergunta!",
-        "tags": ["curiosidade", "game", "publisher"],
-        "performers": [
+        "description": "Interessado em desenvolver jogos digitais? Tire aqui suas dúvidas! Nesta sessão de perguntas e respostas, após uma breve apresentação do Izyplay Game Studio e seus principais projetos, Luiz vai responder a dúvidas gerais do público com relação ao desenvolvimento de jogos digitais. Luiz estará respondendo perguntas em uma ampla variedade de assuntos. Você tem alguma dúvida de game design? Quer dicas sobre qual tecnologia usar no seu projeto? Quer saber como apresentar seu projeto para uma publisher? Ou quer fazer um jogo e nem sabe por onde começar? Traga sua pergunta!",
+        "speakers": [
           {
             "name": "Luiz Alessandro Nörnberg",
             "photo": "img/speakers/luiz.jpg"
@@ -232,11 +254,11 @@
       },
       {
         "day": "thursday",
-        "time": "20:40 - 21:30",
+        "time": "20:40",
+        "duration": "50",
         "title": "O Desafio de Conectar",
-        "desc": "Neste bate papo vamos conversar sobre o cenário vivido pelos provedores de acesso e empresas de TI em geral e os desafios de conectar as pessoas, empresas e coisas.",
-        "tags": ["provedores", "desafios", "TI"],
-        "performers": [
+        "description": "Neste bate papo vamos conversar sobre o cenário vivido pelos provedores de acesso e empresas de TI em geral e os desafios de conectar as pessoas, empresas e coisas.",
+        "speakers": [
           {
             "name": "Evandro Karpss",
             "photo": "img/speakers/evandro.jpg"
@@ -253,11 +275,11 @@
       },
       {
         "day": "friday",
-        "time": "19:45 - 20:35",
+        "time": "19:45",
+        "duration": "50",
         "title": "A Revolução dos Chatbots",
-        "desc": "",
-        "tags": ["revolução", "chatbots", "IA"],
-        "performers": [
+        "description": "",
+        "speakers": [
           {
             "name": "Marcos Alves",
             "photo": "img/speakers/marcos.jpg"
@@ -267,13 +289,23 @@
       {
         "day": "friday",
         "time": "20:40 até aguentar",
+        "duration": "50",
         "title": "Melhor churras do mundo!",
-        "desc": "Ao final da talk <b>A Revolução dos Chatbots</b>, vai rolar um churras muito especial para permitir a interação entre os participantes do evento, trocar ideias, escutar música, comer, bebemorar e muita nerdice! As inscrições custam R$15,00 e devem ser efetuadas presencialmente no Lab 202. Bebidas(cerveja, refrigerante e água) estarão à venda no dia do evento por preço de custo.",
-        "tags": ["party", "churras", "picanha"],
-        "performers": []
+        "description": "Ao final da talk <b>A Revolução dos Chatbots</b>, vai rolar um churras muito especial para permitir a interação entre os participantes do evento, trocar ideias, escutar música, comer, bebemorar e muita nerdice! As inscrições custam R$15,00 e devem ser efetuadas presencialmente no Lab 202. Bebidas(cerveja, refrigerante e água) estarão à venda no dia do evento por preço de custo.",
+        "speakers": []
       }
     ]
   },
+
+  "location": {
+    "title": "Local",
+    "address": [
+      "Avenida Oscar Martins Rangel, 4500",
+      "Bairro Fogão Gaúcho",
+      "Taquara, Rio Grande do Sul"
+    ]
+  },
+
   "sponsors": {
     "title": "Patrocinadores",
     "subtitle": "Nossos parceiros contribuem para o sucesso da TechParty",
@@ -419,9 +451,10 @@
       }
     ]
   },
+
   "manifest": {
     "title": "Manifesto",
-    "paragraphs": [
+    "text": [
       "A TechParty é um evento que visa promover a tecnologia (Tech) durante um evento informal e de congregação (Party).",
       "Desde seu surgimento, em 2011, o evento é totalmente gratuito e aberto à comunidade. Inicialmente, ocorria uma vez por semestre em finais de semanas, com palestras e minicursos para leigos até usuários avançados de computação. Contava com apresentações de profissionais de fora da instituição e, também, apresentações feitas pelos próprios alunos e professores. Devido a imprevistos, em 2013 o evento não aconteceu.",
       "Em <a href=\"/2014\">2014</a>, estudantes da instituição com o objetivo de oferecer conhecimento para o maior número de pessoas, optam por retornar com o evento, mas agora com organização diferenciada.",
