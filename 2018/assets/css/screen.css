@@ -3531,12 +3531,12 @@ input[type="checkbox"]:checked+.check-box-item {
   padding-right: 30px
 }
 
-.popup-email .success p {
-  color: #15ad9e
+.popup-email .element .success {
+  color: #15ad9e;
 }
 
-.popup-email .error p {
-  color: #ea5555
+.popup-email .element .error {
+  color: #ea5555;
 }
 
 .popup {

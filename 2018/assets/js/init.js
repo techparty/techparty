@@ -6,6 +6,8 @@ var $ = window.jQuery;
 //ON DOCUMENT READY
 $(document).ready(function() {
 
+  var API_BASE = 'https://techparty-data.herokuapp.com/api/';
+
   	//SVG for Everybody (ie9+, ...)
   	// svg4everybody();
     $("select").selectOrDie();
@@ -304,10 +306,22 @@ $(document).ready(function() {
     /*-------------------------------------------------*/
     /* =  Popup notification
     /*-------------------------------------------------*/
-    var showNotification = function(message, className) {
+    var showNotification = function(data, className) {
         $('.popup-email').fadeIn('fast');
-        $('.element p').remove();
-        $('.element').prepend('<p class="' + className + '">' + message + '</p>');
+        var $element = $('.element');
+        $element.find('p').remove();
+        function getMessage(message) {
+          return '<p class="' + className + '">' + message + '</p>';
+        };
+        var result = '';
+        if (Array.isArray(data)) {
+          data.forEach(function (message) {
+            result += getMessage(message);
+          });
+        } else {
+          result = getMessage(data);
+        }
+        $element.prepend(result);
     }
 
     var closeNotification = function(element) {
@@ -327,37 +341,56 @@ $(document).ready(function() {
     }, "* CPF invalid.");
 
      $('.contact-form').validate({
-        errorElement: 'p',
-        errorClass: 'notify',
-        rules: {
-            name: "required",
-            email: { required: true, email: true },
-            cpf: {
-              required: true,
-              validateCpf: true,
-            },
-            days: "required"
-        },
-        submitHandler: function(form) {
-            // if($('input[name=rand]:checked').val() === correct) {
-            //     $.post('form_data.php', $(form).serialize(), function(response) {
-            //         $(form)[0].reset();
-            //         correct = generateRandom('.test p span');
-            //         closeNotification('.contact-wrap');
-            //         showNotification(response.msg, response.class);
-            //     }, 'json');
-            // } else showNotification('Incorrect number selected!', 'error');
+      errorElement: 'p',
+      errorClass: 'notify',
+      rules: {
+          name: "required",
+          email: { required: true, email: true },
+          cpf: {
+            required: true,
+            validateCpf: true,
+          },
+          days: "required"
+      },
+      submitHandler: function(form) {
+        var data = {};
+        data.name = form.name.value;
+        data.email = form.email.value;
+        data.cpf = form.cpf.value;
+        data.year = 2018;
+        data.days = [];
 
-        }
+        var message = [
+          'Inscrição bem sucedida',
+          'Você esta inscrito nos dias:',
+        ];
+
+        Array.from(form.querySelectorAll('input[name="days"]')).forEach(function (input) {
+          if (input.checked) {
+            data.days.push(input.value);
+            message.push(input.parentNode.innerText);
+          }
+        });
+        data.days = data.days.join(',');
+        var url = API_BASE + 'v1/participant';
+        $.post(url, data)
+          .done(function () {
+            form.reset();
+            showNotification(message, 'success');
+          })
+          .fail(function (err) {
+            showNotification(err.responseJSON, 'error');
+          });
+      }
     });
 
-    $('.register-now').on('click' , function() {
-        $('.register-popup').toggleClass('active');
-    });
+    var openRegisterPopup = function () {
+      $.get(API_BASE + 'v1/healthcheck');
+      $('.register-popup').toggleClass('active');
+    };
 
-    $('.register-popup .close-popup, .register-popup .overlay-popup').on('click' , function() {
-        $('.register-popup').toggleClass('active');
-    });
+    $('.register-now').on('click' , openRegisterPopup);
+    $('.register-popup .close-popup, .register-popup .overlay-popup').on('click' , openRegisterPopup);
 
     $(document).on('click','.drop-link',function() {
       $(this).find('.drop-down').slideToggle('fast');
