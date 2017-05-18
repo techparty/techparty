@@ -77,8 +77,6 @@ export default class SearchGroup extends React.Component {
 
     if (!user.isSpeaker) params.cpf = user.cpf;
 
-    console.log('params: ', params);
-
     xhr.send(JSON.stringify(params));
   }
 

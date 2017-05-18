@@ -24,31 +24,36 @@ export default class UserCard extends React.Component {
   }
 
   render() {
-    var downloadName = 'Certificado_' + this.props.user.name.replace(/\s+/g, '') + '.png',
-      showButton,
-      content;
+    const { user } = this.props;
+    const downloadName = `Certificado_TechParty_${user.year}_${user.email}.png`;
+    var showButton;
+    var content;
 
-    var downloadButton = <a ref="downloadAnchor" download={downloadName} className="btn btn-secondary" onClick={this._download.bind(this)}>DOWNLOAD</a>;
+    var downloadButton;
 
-    if (!this.props.user.isSpeaker) {
+    if (this.state.encoded) {
+      downloadButton = <a ref="downloadAnchor" download={downloadName} className="btn btn-secondary" onClick={this._download.bind(this)}>DOWNLOAD</a>
+    }
+
+    if (!user.isSpeaker) {
       content = <div className="user-card__info">
                   <p className="user-card__p">
                     <span className="user-card__desc">Dias comparecidos:</span>
-                    <span className="user-card__count">{this.props.user.present}</span>
+                    <span className="user-card__count">{user.present}</span>
                   </p>
 
                   <p className="user-card__p">
                     <span className="user-card__desc">Total de horas:</span>
-                    <span className="user-card__count">{this.props.user.totalTime}</span>
+                    <span className="user-card__count">{user.totalTime}</span>
                   </p>
                 </div>
     }
 
-    if (this.props.user.present) {
+    if (user.present) {
       showButton = downloadButton;
     }
 
-    if (this.props.user.isSpeaker) {
+    if (user.isSpeaker) {
       content = <div className="user-card__info">
                   <p className="user-card__p">
                     <span className="user-card__desc">Duração da palestra:</span>
@@ -61,13 +66,13 @@ export default class UserCard extends React.Component {
 
     return (
       <section className="card user-card">
-        <h2>{this.props.user.name}</h2>
+        <h2>{user.name}</h2>
 
         {content}
 
         {showButton}
 
-        <Canvas onFinished={this._encodeCanvas.bind(this)} canvasData={this.props.user} />
+        <Canvas onFinished={this._encodeCanvas.bind(this)} canvasData={user} />
       </section>
     );
   }
