@@ -1,6 +1,14 @@
 const path = require('path');
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+
+const paths = {
+  entry: path.join(__dirname, 'src', 'Application.js'),
+  output: path.join(__dirname, 'dist')
+};
+
+const CleanWebpackPluginConfig = new CleanWebpackPlugin([paths.output]);
 
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   template: './index.html',
@@ -8,17 +16,27 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   inject: 'body'
 });
 
-const paths = {
-  entry: path.join(__dirname, 'src', 'Application.js'),
-  output: path.join(__dirname, 'dist')
-}
+const CommonsChunkPluginConfig = [
+  new webpack.optimize.CommonsChunkPlugin({
+    name: 'vendor'
+  }),
+  new webpack.optimize.CommonsChunkPlugin({
+    name: 'runtime'
+  })
+];
 
 module.exports = {
 
-  entry: paths.entry,
+  entry: {
+    main: paths.entry,
+    vendor: [
+      'react',
+      'react-dom'
+    ]
+  },
 
   output: {
-    filename: 'bundle.js',
+    filename: '[name].[chunkhash].js',
     path: paths.output
   },
 
@@ -49,7 +67,8 @@ module.exports = {
   },
 
   plugins: [
-    new CleanWebpackPlugin([paths.output]),
+    ...CommonsChunkPluginConfig,
+    CleanWebpackPluginConfig,
     HtmlWebpackPluginConfig
   ]
 }

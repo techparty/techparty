@@ -1,4 +1,5 @@
 const merge = require('webpack-merge');
+const webpack = require('webpack');
 const common = require('./webpack.common');
 
 module.exports = merge(common, {
@@ -7,6 +8,10 @@ module.exports = merge(common, {
 
   devServer: {
     contentBase: common.output.path
-  }
+  },
+
+  plugins: [
+    new webpack.NamedModulesPlugin()
+  ]
 
 });

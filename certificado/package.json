@@ -5,15 +5,13 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js"
+    "build": "cross-env NODE_ENV=production webpack --config webpack.prod.js"
   },
   "author": "Fernando Porazzi <fernandoporazzi@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "react": "^15.6.2",
-    "react-dom": "^15.6.2",
-    "vinyl-buffer": "^1.0.0",
-    "vinyl-source-stream": "^1.1.0"
+    "react-dom": "^15.6.2"
   },
   "engines": {
     "node": ">=8.0.0"
@@ -24,6 +22,7 @@
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
     "clean-webpack-plugin": "^0.1.16",
+    "cross-env": "^5.0.5",
     "css-loader": "^0.28.7",
     "file-loader": "^0.11.2",
     "html-webpack-plugin": "^2.30.1",
