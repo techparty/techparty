@@ -39,6 +39,12 @@ body {
   color: rgba(0,0,0,0.8);
 }
 
+.header img {
+  height: 2em;
+  vertical-align: middle;
+  margin-right: 1em;
+}
+
 .col {
   float: left;
   width: 50%;
