@@ -1,19 +1,20 @@
 'use strict';
 
 var $ = window.jQuery;
+var $document = $(document);
+var $window = $(window);
 
 
 //ON DOCUMENT READY
-$(document).ready(function() {
+$document.ready(function() {
 
   var API_BASE = 'https://techparty-data.herokuapp.com/api/';
 
   	//SVG for Everybody (ie9+, ...)
-  	// svg4everybody();
-    $("select").selectOrDie();
+    $('select').selectOrDie();
 
     $('.countdown').downCount({
-        date: '04/24/2018 00:00:00',
+        date: '04/23/2018 19:30:00',
         offset: -3
     });
 
@@ -21,39 +22,37 @@ $(document).ready(function() {
     /* =  header style change
     /*-------------------------------------------------*/
 
-    var num = $('.header-main').offset().top;
+    var $headerMain = $('.header-main');
+    var num = $headerMain.offset().top;
 
-    $(window).bind('scroll', function() {
-
-        if ($(window).scrollTop() > num) {
-            $('.header-main').addClass('change');
-        }
-        else {
-            num = $('.header-main').offset().top;
-            $('.header-main').removeClass('change');
-
-        }
+    $window.bind('scroll', function() {
+      if ($window.scrollTop() > num) {
+        $headerMain.addClass('change');
+      } else {
+        num = $headerMain.offset().top;
+        $headerMain.removeClass('change');
+      }
     });
 
     /*-------------------------------------------------*/
     /* =  Back to top
     /*-------------------------------------------------*/
 
-    var back_top = $("#top");
+    var back_top = $('#top');
+    var $header = $('header');
 
-    if ($(back_top).hide(), $(window).scroll(function() {
-        $(this).scrollTop() > 75 ? back_top.fadeIn() : back_top.fadeOut()
-    }), $(window).width() < 950) var n = $("header").height() + 60;
+    if ($(back_top).hide(), $window.scroll(function() {
+      $(this).scrollTop() > 75 ? back_top.fadeIn() : back_top.fadeOut()
+    }), $window.width() < 950) var n = $header.height() + 60;
 
     /*-------------------------------------------------*/
     /* =  scroll on link
     /*-------------------------------------------------*/
 
-    if ($(window).width() < 950) {
-      var top_ofset = $('header').height() + 60;
-    }
-    else {
-      var top_ofset = $('header').height() + 60;
+    if ($window.width() < 950) {
+      var top_ofset = $header.height() + 60;
+    } else {
+      var top_ofset = $header.height() + 60;
     }
 
 
@@ -157,18 +156,18 @@ $(document).ready(function() {
     });
 
     $('#people-slider').owlCarousel({
-        items:1,
-        margin:0,
-        loop:true,
-        smartSpeed:450
+      items:1,
+      margin:0,
+      loop:true,
+      smartSpeed:450
     });
 
-    $(".people-say .prev").click(function () {
-        $('#people-slider').trigger('prev');
+    $('.people-say .prev').click(function () {
+      $('#people-slider').trigger('prev');
     });
 
-    $(".people-say .next").click(function () {
-        $('#people-slider').trigger('next');
+    $('.people-say .next').click(function () {
+      $('#people-slider').trigger('next');
     });
 
     var $whenSection = $('.when-section');
@@ -205,11 +204,7 @@ $(document).ready(function() {
       midClick: true,
       removalDelay: 50,
       callbacks: {
-        // open: function() {
-        //   $('.mfp-close').empty().append(close_icon);
-        // },
         beforeOpen: function() {
-          // just a hack that adds mfp-anim class to markup
            this.st.image.markup = this.st.image.markup.replace('mfp-figure', 'mfp-figure mfp-with-anim');
            this.st.mainClass = this.st.el.attr('data-effect');
         }
@@ -222,10 +217,10 @@ $(document).ready(function() {
       removalDelay: 500, //delay removal by X to allow out-animation
       callbacks: {
         beforeClose: function() {
-            this.content.addClass('hinge');
+          this.content.addClass('hinge');
         },
         close: function() {
-            this.content.removeClass('hinge');
+          this.content.removeClass('hinge');
         }
       },
       midClick: true
@@ -271,9 +266,6 @@ $(document).ready(function() {
       preloader: false,
       fixedContentPos: true,
       callbacks: {
-        // open: function() {
-        //   $('.mfp-close').empty().append(close_icon);
-        // },
         beforeOpen: function() {
           // just a hack that adds mfp-anim class to markup
            this.st.image.markup = this.st.image.markup.replace('mfp-figure', 'mfp-figure mfp-with-anim');
@@ -286,11 +278,11 @@ $(document).ready(function() {
     /* =  Generate random number for form check
     /*-------------------------------------------------*/
     var generateRandom = function(element) {
-        var word = ['one', 'two', 'three', 'four', 'five'];
-        var rand = (Math.floor(Math.random() * 4));
-        var correct = word[rand];
-        $(element).html(correct);
-        return correct;
+      var word = ['one', 'two', 'three', 'four', 'five'];
+      var rand = (Math.floor(Math.random() * 4));
+      var correct = word[rand];
+      $(element).html(correct);
+      return correct;
     }
 
     var correct = generateRandom('.test p span');
@@ -299,37 +291,37 @@ $(document).ready(function() {
     /* =  Highlighting checked radio button
     /*-------------------------------------------------*/
     $('input[name=rand]').on('click', function() {
-        $('input[name=rand]').parent().removeClass('active1');
-        $('input[name=rand]:checked').parent().addClass('active1');
+      $('input[name=rand]').parent().removeClass('active1');
+      $('input[name=rand]:checked').parent().addClass('active1');
     });
 
     /*-------------------------------------------------*/
     /* =  Popup notification
     /*-------------------------------------------------*/
     var showNotification = function(data, className) {
-        $('.popup-email').fadeIn('fast');
-        var $element = $('.element');
-        $element.find('p').remove();
-        function getMessage(message) {
-          return '<p class="' + className + '">' + message + '</p>';
-        };
-        var result = '';
-        if (Array.isArray(data)) {
-          data.forEach(function (message) {
-            result += getMessage(message);
-          });
-        } else {
-          result = getMessage(data);
-        }
-        $element.prepend(result);
+      $('.popup-email').fadeIn('fast');
+      var $element = $('.element');
+      $element.find('p').remove();
+      function getMessage(message) {
+        return '<p class="' + className + '">' + message + '</p>';
+      };
+      var result = '';
+      if (Array.isArray(data)) {
+        data.forEach(function (message) {
+          result += getMessage(message);
+        });
+      } else {
+        result = getMessage(data);
+      }
+      $element.prepend(result);
     }
 
     var closeNotification = function(element) {
-        $(element).fadeOut('fast');
+      $(element).fadeOut('fast');
     }
 
     $('#btn').on('click', function() {
-        closeNotification('.popup-email');
+      closeNotification('.popup-email');
     });
 
     /*-------------------------------------------------*/
@@ -344,13 +336,13 @@ $(document).ready(function() {
       errorElement: 'p',
       errorClass: 'notify',
       rules: {
-          name: "required",
-          email: { required: true, email: true },
-          cpf: {
-            required: true,
-            validateCpf: true,
-          },
-          days: "required"
+        name: "required",
+        email: { required: true, email: true },
+        cpf: {
+          required: true,
+          validateCpf: true,
+        },
+        days: "required"
       },
       submitHandler: function(form) {
         var data = {};
@@ -392,22 +384,21 @@ $(document).ready(function() {
     $('.register-now').on('click' , openRegisterPopup);
     $('.register-popup .close-popup, .register-popup .overlay-popup').on('click' , openRegisterPopup);
 
-    $(document).on('click','.drop-link',function() {
+    $document.on('click','.drop-link',function() {
       $(this).find('.drop-down').slideToggle('fast');
     });
-
 });
 
 
 
 //WINDOW ONLOAD
-$(window).load(function() {
+$window.load(function() {
 
-  $(document).on('click','.bars',function(){
+  $document.on('click','.bars',function(){
     $('nav').toggleClass('active');
   });
-  $(document).on("click","nav ul a",function(){
-    $("nav").removeClass("active");
+  $document.on('click', 'nav ul a',function(){
+    $('nav').removeClass('active');
   });
 
 });

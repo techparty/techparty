@@ -3,7 +3,7 @@
 
   "title": "TechParty Faccat 2018",
 
-  "date": "De 24 a 28 de Abril",
+  "date": "23, 24 e 25 de Abril",
 
   "navigation": [
     {"label": "Home", "hash": "home"},
@@ -22,9 +22,7 @@
     "days": [
       { "name": "Segunda", "value": "1" },
       { "name": "Terça", "value": "2" },
-      { "name": "Quarta", "value": "3" },
-      { "name": "Quinta", "value": "4" },
-      { "name": "Sexta", "value": "5" }
+      { "name": "Quarta", "value": "3" }
     ]
   },
 
@@ -42,7 +40,7 @@
     "strong": "Maior e melhor evento do vale",
     "text": [
       "A TechParty Faccat é um evento totalmente gratuito e aberto à comunidade, visando promover a Tecnologia da Informação (TI) e compartilhamento de conhecimentos.",
-      "Serão duas talks por noite durante uma semana inteira, com profissionais qualificados e experientes em suas áreas de atuação.",
+      "Serão duas talks por noite durante três noites, com profissionais qualificados e experientes em suas áreas de atuação.",
       "As atividades serão ministradas por profissionais internos e de fora da instituição.",
       "O evento irá fornecer certificado de participação. Quem se inscrever e comparecer, pode contar com ele."
     ]
@@ -53,99 +51,21 @@
     "button": "INSCREVA-SE",
     "items": [
       {
-        "name": "Fernando Porazzi",
-        "bio": "Desenvolvedor de software há 7 anos e apaixonado pelo que faz. Entusiasta de novas tecnologias e, atualmente, programa em Javascript e GoLang.",
-        "photo": "img/speakers/fernandoporazzi.jpg",
+        "name": "Gabriel Viégas",
+        "bio": "Administrador de Empresas, Especialista em Gestão de Projetos de TI, Marketing Digital e E-commerce, CSPO (Certified Scrum Product Owner). Nos dias atuais é Business Analyst na ThoughtWorks de Porto Alegre e organizador dos Meetups de Negócios, Metodologias Ágeis e Facilitação.",
+        "photo": "img/speakers/gabriel.png",
         "social": [
-          {"name": "twitter", "url": "http://twitter.com/fernandoporazzi"},
-          {"name": "instagram", "url": "http://instagram.com/fernandoporazzi"}
+          {"name": "facebook", "url": "https://www.facebook.com/viegas.gabriel"},
+          {"name": "linkedin", "url": "https://www.linkedin.com/in/gabriel-vi%C3%A9gas-1233679/"}
         ]
       },
       {
-        "name": "Lucas Goulart",
-        "bio": "Graduado em Psicologia pela Unisinos e mestre em Psicologia Social e Institucional pela UFRGS. Doutorando na UFRGS. Pesquisa sobre sexualidade, teoria queer, teoria crítica e tecnologias da informação",
-        "photo": "img/speakers/lucas-goulart.jpg",
+        "name": "Rafael Gomes",
+        "bio": "Graduado em Gestão de Tecnologia da Informação, Especialista em Data Science Teams Management. 10 anos de experiência em projetos de Business Intelligence em diversos dominios de negócio. Atualmente está como Business Analyst na ThoughtWorks de Porto Alegre.",
+        "photo": "img/speakers/rafael.png",
         "social": [
-          {"name": "facebook", "url": "https://www.facebook.com/lucas.goulart.921"},
-          {"name": "linkedin", "url": "https://br.linkedin.com/in/lucas-goulart-310203105"}
-        ]
-      },
-      {
-        "name": "Alexandre Ramires",
-        "bio": "Exerce a função de executivo de TI (CIO) com experiência em implantação de processos de governança, gestão de projetos, governança de TI e gestão de serviços em TI",
-        "photo": "img/speakers/alexandre-ramires.jpg",
-        "social": [
-          {"name": "linkedin", "url": "https://www.linkedin.com/in/alexandreramires/"},
-          {"name": "lattes", "url": "http://lattes.cnpq.br/5961164017302520"}
-        ]
-      },
-      {
-        "name": "Flávio Steffens de Castro",
-        "bio": "Flávio Steffens é um empreendedor apaixonado. Tem graduação, MBA e mestrado na área de computação pela PUCRS e FGV-RS",
-        "photo": "img/speakers/flavio-castro.jpg",
-        "social": [
-          {"name": "facebook", "url": "https://facebook.com/flaviosteffens"},
-          {"name": "twitter", "url": "https://twitter.com/flaviosteffens"}
-        ]
-      },
-      {
-        "name": "Luiz Alessandro Nörnberg",
-        "bio": "Bacharel em Ciência da Computação pela UCPel. Sócio-fundador do Izyplay Game Studio, onde assume hoje o cargo de Diretor de Tecnologia.",
-        "photo": "img/speakers/luiz.jpg",
-        "social": [
-          {"name": "facebook", "url": "https://facebook.com/luiznornberg"},
-          {"name": "izyplay", "url": "http://izyplay.com.br"}
-        ]
-      },
-      {
-        "name": "Ben-hur Santos Ott",
-        "bio": "Desenvolvedor mobile e javascript (NodeJS, Angular, React). Trabalhou em projetos de grandes clientes como Coca-Cola, Arezzo e Renner.",
-        "photo": "img/speakers/ben-hur.jpg",
-        "social": [
-          {"name": "facebook", "url": "https://facebook.com/benhur.ott"},
-          {"name": "twitter", "url": "https://twitter.com/benhurott"}
-        ]
-      },
-      {
-        "name": "Luiz Fernando Duarte Junior",
-        "bio": "Graduado em Ciência da Computação e Pós-graduado em Computação Móvel. Empreendedor, professor do ensino superior e autor de livros de programação",
-        "photo": "img/speakers/luiz-fernando-duarte-junior.jpg",
-        "social": [
-          {"name": "facebook", "url": "http://fb.com/luiztools"},
-          {"name": "twitter", "url": "https://twitter.com/luiztools"}
-        ]
-      },
-      {
-        "name": "Marcos ALves",
-        "bio": "Co-fundador da Ubots, empresa especializada em IA. Graduado em Análise e Desenvolvimento de Sistemas pela Unisinos, MBA em Gestão Estratégica de Pessoas pela Estácio com mais de 10 anos de experiência",
-        "photo": "img/speakers/marcos.jpg",
-        "social": [
-          {"name": "twitter", "url": "https://twitter.com/mvalvess"},
-          {"name": "linkedin", "url": "https://www.linkedin.com/in/marcosviniciusalves"}
-        ]
-      },
-      {
-        "name": "Evandro Karpss",
-        "bio": "Diretor Comercial da Flybyte, formado em Informática pela PUC-RS com especialização em banco de dados na ULBRA; Auditor de sistemas da Rokembach+Lahm, Gais, Villanova & Cia Auditores",
-        "photo": "img/speakers/evandro.jpg",
-        "social": [
-          {"name": "facebook", "url": "https://www.facebook.com/evandro.karpss"}
-        ]
-      },
-      {
-        "name": "Juliano Valentini",
-        "bio": "Diretor de Operações da Flybyte, formado Técnico em Eletrônica pelo CIMOL, onde foi professor por mais de 10 anos, bacharel em Ciência da Computação pela UNISINOS",
-        "photo": "img/speakers/juliano.jpg",
-        "social": [
-          {"name": "facebook", "url": "https://www.facebook.com/valentini.juliano"}
-        ]
-      },
-      {
-        "name": "Rafael Julio Kohlrauch",
-        "bio": "Diretor Administrativo da Flybyte, graduado em Design Gráfico pela FEEVALE, experiência na área de mídias digitais e especialista em gestão da qualidade",
-        "photo": "img/speakers/pea.jpg",
-        "social": [
-          {"name": "facebook", "url": "https://www.facebook.com/raphaeljk"}
+          {"name": "facebook", "url": "https://www.facebook.com/viegas.gabriel"},
+          {"name": "linkedin", "url": "https://www.linkedin.com/in/gabriel-vi%C3%A9gas-1233679/"}
         ]
       }
     ]
@@ -156,9 +76,7 @@
     "days": [
       {"label": "monday", "date": "24 de abril, 2017"},
       {"label": "tuesday", "date": "25 de abril, 2017"},
-      {"label": "wednesday", "date": "26 de abril, 2017"},
-      {"label": "thursday", "date": "27 de abril, 2017"},
-      {"label": "friday", "date": "28 de abril, 2017"}
+      {"label": "wednesday", "date": "26 de abril, 2017"}
     ],
     "talks": [
       {
@@ -225,74 +143,6 @@
             "photo": "img/speakers/alexandre-ramires.jpg"
           }
         ]
-      },
-      {
-        "day": "wednesday",
-        "time": "20:40",
-        "duration": "50",
-        "title": "Desafios e armadilhas do desenvolvimento Mobile",
-        "description": "Vamos discutir como montar o planejamento de desenvolvimento de um aplicativo e onde devemos ter cautela para não cair em erros que podem nos custar preciosas horas de desenvolvimento.",
-        "speakers": [
-          {
-            "name": "Ben-hur Santos Ott",
-            "photo": "img/speakers/ben-hur.jpg"
-          }
-        ]
-      },
-      {
-        "day": "thursday",
-        "time": "19:45",
-        "duration": "50",
-        "title": "Jogos Digitais, por onde começar",
-        "description": "Interessado em desenvolver jogos digitais? Tire aqui suas dúvidas! Nesta sessão de perguntas e respostas, após uma breve apresentação do Izyplay Game Studio e seus principais projetos, Luiz vai responder a dúvidas gerais do público com relação ao desenvolvimento de jogos digitais. Luiz estará respondendo perguntas em uma ampla variedade de assuntos. Você tem alguma dúvida de game design? Quer dicas sobre qual tecnologia usar no seu projeto? Quer saber como apresentar seu projeto para uma publisher? Ou quer fazer um jogo e nem sabe por onde começar? Traga sua pergunta!",
-        "speakers": [
-          {
-            "name": "Luiz Alessandro Nörnberg",
-            "photo": "img/speakers/luiz.jpg"
-          }
-        ]
-      },
-      {
-        "day": "thursday",
-        "time": "20:40",
-        "duration": "50",
-        "title": "O Desafio de Conectar",
-        "description": "Neste bate papo vamos conversar sobre o cenário vivido pelos provedores de acesso e empresas de TI em geral e os desafios de conectar as pessoas, empresas e coisas.",
-        "speakers": [
-          {
-            "name": "Evandro Karpss",
-            "photo": "img/speakers/evandro.jpg"
-          },
-          {
-            "name": "Juliano Valentini",
-            "photo": "img/speakers/juliano.jpg"
-          },
-          {
-            "name": "Rafael Julio Kohlrauch",
-            "photo": "img/speakers/pea.jpg"
-          }
-        ]
-      },
-      {
-        "day": "friday",
-        "time": "19:45",
-        "duration": "50",
-        "title": "A Revolução dos Chatbots",
-        "description": "",
-        "speakers": [
-          {
-            "name": "Marcos Alves",
-            "photo": "img/speakers/marcos.jpg"
-          }
-        ]
-      },
-      {
-        "day": "friday",
-        "time": "20:40 até aguentar",
-        "duration": "50",
-        "title": "Melhor churras do mundo!",
-        "description": "Ao final da talk <b>A Revolução dos Chatbots</b>, vai rolar um churras muito especial para permitir a interação entre os participantes do evento, trocar ideias, escutar música, comer, bebemorar e muita nerdice! As inscrições custam R$15,00 e devem ser efetuadas presencialmente no Lab 202. Bebidas(cerveja, refrigerante e água) estarão à venda no dia do evento por preço de custo.",
-        "speakers": []
       }
     ]
   },

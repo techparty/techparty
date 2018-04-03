@@ -2,12 +2,16 @@
   "name": "techparty",
   "version": "1.0.0",
   "description": "![alt tag](http://techparty.faccat.br/assets/img/tech-party.png)",
+  "scripts": {
+    "start": "gulp dev",
+    "build": "gulp dist"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/techparty/techparty.git"
   },
   "author": "TechParty Team",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/techparty/techparty/issues"
   },
@@ -17,7 +21,9 @@
     "gulp-concat": "^2.6.0",
     "gulp-connect": "^5.0.0",
     "gulp-jade": "^1.1.0",
+    "gulp-minify-css": "^1.2.4",
     "gulp-pug": "^3.3.0",
+    "gulp-sourcemaps": "^2.6.4",
     "gulp-stylus": "^2.6.0",
     "gulp-uglify": "^2.0.0",
     "website-scraper": "^2.4.0"
