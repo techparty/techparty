@@ -25,8 +25,9 @@ section#schedule.when-section
                     .col-lg-2
                       h3
                         strong #{ talk.time }
-                      p
-                        span.fa.fa-clock-o.m-r-5 #{ talk.duration } min
+                      if talk.duration
+                        p
+                          span.fa.fa-clock-o.m-r-5 #{ talk.duration } min
                     .col-lg-6
                       h3
                         strong #{ talk.title }

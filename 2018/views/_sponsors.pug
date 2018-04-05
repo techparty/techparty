@@ -1,4 +1,4 @@
-section#sponsors.clients-section
+section#sponsors.sponsor-section.clients-section
   .container
     h2
       strong #{ sponsors.title }
@@ -10,3 +10,4 @@ section#sponsors.clients-section
           li
             a(href=`${ sponsor.url }`)
               img(src=`${ sponsor.image }`, alt=`${ sponsor.name }`, class=`sponsor-${ item.type }`)
+    p.text-center !{ sponsors.link }

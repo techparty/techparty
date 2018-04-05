@@ -3915,6 +3915,13 @@ input[type="checkbox"]:checked+.check-box-item {
   max-width: 25%;
 }
 
+/* SPONSOR */
+
+.sponsor-section a {
+  color: #e84c3d;
+  text-decoration: underline;
+}
+
 /* MANIFEST */
 
 .manifest-section {

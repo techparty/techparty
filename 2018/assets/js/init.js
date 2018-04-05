@@ -14,7 +14,7 @@ $document.ready(function() {
     $('select').selectOrDie();
 
     $('.countdown').downCount({
-        date: '04/23/2018 19:30:00',
+        date: '04/23/2018 19:45:00',
         offset: -3
     });
 

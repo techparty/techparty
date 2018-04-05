@@ -18,6 +18,7 @@
     "notice": "Registre-se para este evento",
     "required": "Por favor preencha todos os campos abaixo",
     "button": "Inscreva-se",
+    "link": "https://saga2.faccat.br/index.php?op=1068&chave=895&portal=E",
     "daysLabel": "Escolha os dias que deseja",
     "days": [
       { "name": "Segunda", "value": "1" },
@@ -40,7 +41,7 @@
     "strong": "Maior e melhor evento do vale",
     "text": [
       "A TechParty Faccat é um evento totalmente gratuito e aberto à comunidade, visando promover a Tecnologia da Informação (TI) e compartilhamento de conhecimentos.",
-      "Serão duas talks por noite durante três noites, com profissionais qualificados e experientes em suas áreas de atuação.",
+      "Serão talks durante três noites, com profissionais qualificados e experientes em suas áreas de atuação.",
       "As atividades serão ministradas por profissionais internos e de fora da instituição.",
       "O evento irá fornecer certificado de participação. Quem se inscrever e comparecer, pode contar com ele."
     ]
@@ -51,21 +52,51 @@
     "button": "INSCREVA-SE",
     "items": [
       {
+        "name": "Prof. Dr. Paulo Ferreira",
+        "bio": "Professor Associado no Centro de Desenvolvimento Tecnológico da Universidade Federal de Pelotas (UFPel) desde 2009, é Doutor em Ciência da Computação pela UFGRS - Universidade Federal do Rio Grande do Sul (2008) e mestre, na mesma área, pela UNICAMP - Universidade Estadual de Campinas (2000). Realizou estágio pós-doutoral no Real-Time Systems Research Group at York, University of York - Reino Unido (2015). Atualmente é membro do Grupo de Pesquisa em Engenharia de Sistemas Ciber-Físicos e do Grupo de Pesquisa em Aplicações em Inteligência Artificial.",
+        "photo": "img/speakers/paulo-ferreira.jpeg",
+        "social": [
+          {"name": "facebook", "url": "https://www.facebook.com/paulo.ferreira.169067"}
+        ]
+      },
+
+      {
+        "name": "Carlos Hennig",
+        "bio": "Gerente de Tecnologia da Coester Automação e CTO da SkyDrones Tecnologia Aviônica",
+        "photo": "img/speakers/carlos-hennig.jpeg",
+        "social": [
+          {"name": "facebook", "url": "https://www.facebook.com/carlos.h.hennig"},
+          {"name": "linkedin", "url": "https://www.linkedin.com/in/carlos-henrique-hennig-2884064"}
+        ]
+      },
+
+      {
         "name": "Gabriel Viégas",
         "bio": "Administrador de Empresas, Especialista em Gestão de Projetos de TI, Marketing Digital e E-commerce, CSPO (Certified Scrum Product Owner). Nos dias atuais é Business Analyst na ThoughtWorks de Porto Alegre e organizador dos Meetups de Negócios, Metodologias Ágeis e Facilitação.",
-        "photo": "img/speakers/gabriel.png",
+        "photo": "img/speakers/gabriel-viegas.jpeg",
         "social": [
           {"name": "facebook", "url": "https://www.facebook.com/viegas.gabriel"},
           {"name": "linkedin", "url": "https://www.linkedin.com/in/gabriel-vi%C3%A9gas-1233679/"}
         ]
       },
+
       {
         "name": "Rafael Gomes",
         "bio": "Graduado em Gestão de Tecnologia da Informação, Especialista em Data Science Teams Management. 10 anos de experiência em projetos de Business Intelligence em diversos dominios de negócio. Atualmente está como Business Analyst na ThoughtWorks de Porto Alegre.",
-        "photo": "img/speakers/rafael.png",
+        "photo": "img/speakers/rafael-gomes.jpeg",
         "social": [
           {"name": "facebook", "url": "https://www.facebook.com/viegas.gabriel"},
           {"name": "linkedin", "url": "https://www.linkedin.com/in/gabriel-vi%C3%A9gas-1233679/"}
+        ]
+      },
+
+      {
+        "name": "Rafael Barboza",
+        "bio": "Com quase 10 anos de experiência em desenvolvimento de software e tendo passado pelos mais diferentes contextos, de Haskell a Rust, trás consigo a proposta de linguagens como ferramental. Entusiasta de Data Science e IA hoje atua como consultor em desenvolvimento de software na Thoughtworks em Porto Alegre.",
+        "photo": "img/speakers/rafael-barboza.jpeg",
+        "social": [
+          {"name": "facebook", "url": "https://github.com/barboza"},
+          {"name": "twitter", "url": "https://twitter.com/rbarboza"}
         ]
       }
     ]
@@ -74,75 +105,92 @@
   "schedule": {
     "title": "Programação",
     "days": [
-      {"label": "monday", "date": "24 de abril, 2017"},
-      {"label": "tuesday", "date": "25 de abril, 2017"},
-      {"label": "wednesday", "date": "26 de abril, 2017"}
+      {"label": "monday", "date": "23 de abril, 2017"},
+      {"label": "tuesday", "date": "24 de abril, 2017"},
+      {"label": "wednesday", "date": "25 de abril, 2017"}
     ],
     "talks": [
       {
         "day": "monday",
         "time": "19:45",
-        "duration": "50",
-        "title": "Empreendedorismo das trincheiras",
-        "description": "Nesse bate papo iremos ver como a jornada de um empreendedor, no Brasil, normalmente é. Serão lições preciosas para inspirar (ou não) as pessoas a realmente colocarem a mão na massa!",
+        "duration": "90",
+        "title": "IA, algoritmos de localização e robótica",
+        "description": "",
         "speakers": [
           {
-            "name": "Flávio Steffens De Castro",
-            "photo": "img/speakers/flavio-castro.jpg"
+            "name": "Prof. Dr. Paulo Ferreira"
           }
         ]
       },
+
       {
         "day": "monday",
-        "time": "20:40",
-        "duration": "50",
-        "title": "Persistência Poliglota: Indo além do SQL",
-        "description": "Conheça e entenda como tirar proveito das tecnologias de banco de dados não-relacionais (NoSQL) mais importantes da atualidade como MongoDB, Redis e muito mais, sem ter de abrir mão da sua base SQL tradicional (ela ainda tem valor!).",
-        "speakers": [
-          {
-            "name": "Luiz Fernando Duarte Junior",
-            "photo": "img/speakers/luiz-fernando-duarte-junior.jpg"
-          }
-        ]
+        "time": "Após a talk",
+        "duration": "",
+        "title": "RangoBreak",
+        "description": "",
+        "speakers": []
       },
+
       {
         "day": "tuesday",
         "time": "19:45",
-        "duration": "50",
-        "title": "Jogos Digitais e Sociedade – Engenharia Crítica e Game Design",
-        "description": "Tomando como ponto inicial a engenharia crítica – a compreensão de que diferentes maneiras de organizar as tecnologias levam a mudanças nas práticas da cultura – levantamos a necessidade de se pensar a responsabilidade e o papel dos programadores e designers em relação à experiência do usuário e em processos de mudança social. Reconhece-se que o jogo digital é uma mídia diferente de todas as outras, e que o encontro entre o jogo e seu jogador constrói uma experiência diferencial, podendo então mudar as referências e percepções desse jogador em relação aos sistemas presentes no mundo à sua volta.  Dessa maneira, pensaremos de que maneira os jogos digitais afetam por seu design seus usuários para poder pensar questões sociais, o que implica necessariamente em uma “ética do Game Design”. Por fim, exploraremos como diferentes formas de game design e organização de mecânicas de jogo podem ser usadas para discutir, construir e trazer a tona diferentes aspectos sociais e emocionais, utilizando como exemplo o jogo “That Dragon, Cancer”.",
+        "duration": "90",
+        "title": "",
+        "description": "",
         "speakers": [
           {
-            "name": "Lucas Goulart",
-            "photo": "img/speakers/lucas-goulart.jpg"
+            "name": "Carlos Hennig"
           }
         ]
       },
+
       {
         "day": "tuesday",
-        "time": "20:40",
-        "duration": "50",
-        "title": "If you Go, I Go",
-        "description": "Escolher uma linguagem de programação para um software nunca é uma tarefa fácil, entender as reais necessidades do projeto pode ser o fator decisivo para o sucesso ou tragédia. Nessa palestra, vamos ter uma breve introdução sobre a linguagem de programação Go e como criar uma REST API de forma simples e intuitiva.",
-        "speakers": [
-          {
-            "name": "Fernando Porazzi",
-            "photo": "img/speakers/fernandoporazzi.jpg"
-          }
-        ]
+        "time": "Após a talk",
+        "duration": "",
+        "title": "RangoBreak",
+        "description": "",
+        "speakers": []
       },
+
+
       {
         "day": "wednesday",
         "time": "19:45",
         "duration": "50",
-        "title": "Governança e Gestão na área de TI",
+        "title": "Lean Inception - Criando produtos de forma enxuta",
         "description": "",
         "speakers": [
           {
-            "name": "Alexandre Ramires de Castro",
-            "photo": "img/speakers/alexandre-ramires.jpg"
+            "name": "Gabriel Viégas"
+          },
+          {
+            "name": "Rafael Gomes"
           }
         ]
+      },
+
+      {
+        "day": "wednesday",
+        "time": "20:40",
+        "duration": "50",
+        "title": "Inteligência Artificial sem generalizações",
+        "description": "O que faz um cientista de dados? O que é Deep Learning? Como criar sua própria inteligência artificial? Nesta palestra iremos falar sobre as diferenças entre os diferentes tipos de inteligência artificial, suas utilidades, como iniciar uma carreira na área e como evitar que as máquinas dominem o mundo tão cedo.",
+        "speakers": [
+          {
+            "name": "Rafael Barboza"
+          }
+        ]
+      },
+
+      {
+        "day": "tuesday",
+        "time": "Após a talk",
+        "duration": "",
+        "title": "RangoBreak",
+        "description": "",
+        "speakers": []
       }
     ]
   },
@@ -160,146 +208,7 @@
     "title": "Patrocinadores",
     "subtitle": "Nossos parceiros contribuem para o sucesso da TechParty",
     "link": "Seja um parceiro, entre em contato: <a href=\"mailto:techpartyfaccat@gmail.com?Subject=Parceiro\">techpartyfaccat@gmail.com</a>",
-    "items": [
-      {
-        "type": "diamond",
-        "label": "Apoio",
-        "companies": [
-          {
-            "name": "Senac",
-            "url": "http://www.senacrs.com.br/",
-            "image": "img/sponsors/senac.jpg",
-            "bio": "O Serviço Nacional de Aprendizagem Comercial (SENAC) é uma instituição brasileira de educação profissional aberta a toda a sociedade.  É uma entidade privada com fins públicos, que recebe contribuição compulsória das empresas do comércio e de atividades assemelhadas. Sua missão é desenvolver pessoas e organizações para o mundo do trabalho com ações educacionais e disseminando conhecimentos em Comércio de Bens, Serviços e Turismo."
-          }
-        ]
-      },
-      {
-        "type": "diamond",
-        "label": "Diamante",
-        "companies": [
-          {
-            "name": "LoopHOST",
-            "url": "https://www.loophost.com.br",
-            "image": "img/sponsors/loophost.jpg",
-            "bio": "A LoopHOST é uma empresa séria e estabelecida, que atende o mercado de pequenas, médias e grandes empresas de todo o Brasil. Disponibilizamos uma linha completa de soluções para a web, como hospedagem de sites e registro de domínios, além de nossa linha empresarial de cloud servers SSD, servidores dedicados e co-localização (colocation)."
-          },
-          {
-            "name": "Rocket.Chat",
-            "url": "https://rocket.chat",
-            "image": "img/sponsors/rocket-chat.jpg",
-            "bio": "Rocket.Chat é um Web Chat Server, desenvolvido 100% em JavaScript, usando o framework Meteor. Uma plataforma de comunicação open-source, ótima solução para comunidades e empresas que buscam ter seu próprio serviço de chat ou para desenvolvedores que desejam construir ou evoluir suas plataformas de chat."
-          },
-          {
-            "name": "Umbler",
-            "url": "https://www.umbler.com/br",
-            "image": "img/sponsors/umbler.jpg",
-            "bio": "A Umbler é uma startup de Cloud Hosting focada em agências e desenvolvedores, que oferece serviços como hospedagem de sites, registro de domínios, criação de contas de e-mail e banco de dados com pagamento pay as you go, ou por demanda. Com um painel de controle moderno e usual, o usuário consegue criar estruturas complexas de hospedagem com apenas alguns cliques. Além disso, o cliente tem total controle sobre suas aplicações, escalando, pausando ou cancelando os serviços em tempo real."
-          },
-          {
-            "name": "FlyByte",
-            "url": "http://www.flybyte.com.br",
-            "image": "img/sponsors/flybyte.jpg",
-            "bio": "Te conectar com o que você quiser, quando quiser: este é o objetivo da Flybyte. Bem mais do que permitir acesso à internet, a Equipe Fly busca, sempre a par das mais novas tecnologias disponíveis, aumentar o seu mundo de possibilidades de conexões."
-          }
-        ]
-      },
-      {
-        "type": "ruby",
-        "label": "Rubi",
-        "companies": [
-          {
-            "name": "Infisc Inteligência Fiscal",
-            "url": "https://www.infisc.com.br",
-            "image": "img/sponsors/infisc.jpg",
-            "bio": "Empresa de Taquara focada no desenvolvimento de software para Web, utilizando principalmente tecnologias da plataforma Java EE, voltado para o Setor Público Municipal. Foi pioneira no sul do país, com o desenvolvimento e implantação da primeira \"Nota Fiscal de Serviços eletrônica\" no município de Campo Bom (2007), inovadora na implantação de \"Programa de concessão de créditos vinculados ao ISSQN\" no município de Farroupilha (2011) e de \"Sistema de Gestão Orçamentaria Inteligente\" no município de Santiago (2016)."
-          },
-          {
-            "name": "Bela Viagem",
-            "url": "http://site.belaviagem.com/",
-            "image": "img/sponsors/belaviagem.jpg",
-            "bio": "Somos uma FinTech, nossa missão é melhorar o mercado de Turismo &  Entretenimento, para isso estamos transformando o mercado de pagamentos, através de alta tecnologia de gestão e vendas, sem amarras e transparente. Hoje atendemos todas as verticais: hotéis, pousadas, eventos, shows, parques, atrações, agências e restaurantes. Criamos ferramentas para realizar reservas, receber pagamentos, vender seus produtos e ganhar comissão."
-          }
-        ]
-      },
-      {
-        "type": "emerald",
-        "label": "Esmeralda",
-        "companies": [
-          {
-            "name": "Sanvitron",
-            "url": "http://www.sanvitron.com.br",
-            "image": "img/sponsors/sanvitron.jpg",
-            "bio": "A Sanvitron é uma empresa gaúcha que desenvolve e comercializa soluções em controle de estacionamento, controle de acesso e ponto eletrônico. Possui Engenharia própria, assim desenvolve projetos personalizados de sistemas e equipamentos, que se adaptam às necessidades dos clientes, tornando o processo de controle e de gerenciamento ágil e seguro."
-          },
-          {
-            "name": "CR Sistemas e Web",
-            "url": "http://cr.inf.br/site",
-            "image": "img/sponsors/cr.jpg",
-            "bio": "Nossos sistemas integrados de gestão solucionam os problemas de informação na sua empresa, utilizando a tecnologia para agilizar processos e fornecendo dados mais seguros para a melhor tomada de decisão."
-          }
-        ]
-      },
-      {
-        "type": "safira",
-        "label": "Safira",
-        "companies": [
-          {
-            "name": "Jorge Bischoff",
-            "url": "http://jorgebischoff.com.br/",
-            "image": "img/sponsors/bischoff.jpg",
-            "bio": ""
-          }
-        ]
-      },
-      {
-        "type": "partner",
-        "label": "Parceiros",
-        "companies": [
-          {
-            "name": "Faccat",
-            "url": "https://www2.faccat.br/portal",
-            "image": "img/sponsors/faccat.jpg",
-            "bio": ""
-          },
-          {
-            "name": "SI - TI - JD",
-            "url": "https://fit.faccat.br",
-            "image": "img/sponsors/si-ti.jpg",
-            "bio": ""
-          },
-          {
-            "name": "Vigília Nerd",
-            "url": "http://vigilianerd.com.br",
-            "image": "img/sponsors/nerd.jpg",
-            "bio": ""
-          },
-          {
-            "name": "Confeitaria Elaine",
-            "url": "http://www.confeitariaelaine.com",
-            "image": "img/sponsors/elaine.jpg",
-            "bio": ""
-          },
-          {
-            "name": "Nostro",
-            "url": "https://www.facebook.com/Nostro-Casa-de-Carnes-504585866379340",
-            "image": "img/sponsors/nostro.jpg",
-            "bio": ""
-          },
-          {
-            "name": "Stier Bier",
-            "url": "http://www.stierbier.com.br",
-            "image": "img/sponsors/stier.jpg",
-            "bio": ""
-          },
-          {
-            "name": "ozoutros",
-            "url": "https://www.facebook.com/ozoutros",
-            "image": "img/sponsors/ozoutros.jpg",
-            "bio": ""
-          }
-        ]
-      }
-    ]
+    "items": []
   },
 
   "manifest": {
@@ -312,7 +221,8 @@
       "Rango Break. A estréia. Em <a href=\"/2015\">2015</a> o evento manteve o mesmo ritmo, com ainda mais público e empolgação dos participantes durante a semana da TechParty. Alguma novidade? Sim! Sai o coffee break e um novo evento é lançado (um evento dentro do evento!): o Rango Break.",
       "A ideia agora é que o momento do lanche seja tão ou mais interessante que as próprias apresentações técnicas. O Rango Break é um momento onde, diariamente, após as duas talks de cada noite, é oferecido alguma comidinha (\"rango\") especial, tais como o cachorro-quente de uma famosa Towner de Taquara (que veio para o Campus da Faccat especialmente para o evento), ou a \"galinhada nerd\", feita por alunos do curso, sanduíche \"buraco quente\" e cupcakes, mais um super-dog feito por alunos e, finalmente, no último dia, o grande Churras de Integração dos cursos de TI da Faccat. Esses rangos são fornecidos sem custo aos participantes, graças ao apoio financeiro das empresas patrocinadoras e parcerias com empresas locais de alimentos.",
       "<a href=\"/2016\">2016</a>, seguimos crescendo! Neste ano, queríamos buscar profissionais de empresas conhecidas nacionalmente e do exterior. Como sempre, foram realizadas talks realmente incríveis e conseguimos profissionais de empresas renomadas, como Red Hat, Rocket.Chat, We Heart It, SAP, Mozilla, Terra, Arezzo, CWI Software.",
-      "Quanto a 2017, esperamos novamente realizar um grande evento, evoluindo como sempre! Logo após o final da edição de <a href=\"/2016\">2016</a>, já iniciamos o planejamento para esta edição... ouvimos as sugestões, observamos o que deu mais ou menos certo, e, principalmente: nos empenhamos a buscar, como sempre, profissionais incríveis para compartilhar o seu conhecimento. Precisamos da sua participação para fazer dessa TechParty a mais incrível de todas!"
+      "Em <a href=\"/2017\">2017</a> foi um sucesso como todos os outros anos, batemos mais um recorde em presenças e contamos com palestrantes de primeira classe como, desenvolvedores, empreendedores, psicólogos, gamers, diretores e ninjas em IA. Mais uma vez podemos contar com o patrocínio de empresas excepcionais que ajudam MUITO o evento acontecer, muito obrigado <a href=\"http://www.senacrs.com.br/\">Senac</a>, <a href=\"https://www.loophost.com.br\">LoopHOST</a>, <a href=\"https://rocket.chat/\">Rocket.Chat</a>, <a href=\"https://www.umbler.com/br\"></a>Umbler, <a href=\"http://www.flybyte.com.br/\">FlyByte</a>, <a href=\"https://www.infisc.com.br/\">Infisc Inteligência Fiscal</a>, <a href=\"http://site.belaviagem.com/\">Bela Viagem</a>, <a href=\"http://www.sanvitron.com.br/\">Sanvitron</a>, <a href=\"http://cr.inf.br/site\">CR Sistemas e Web</a>, e <a href=\"http://jorgebischoff.com.br/\">Jorge Bischoff</a>.",
+      "Este ano, baseado em sugestões e críticas dos anos anteriores, iremos mudar a abordagem do evento visando um melhor conforto para todos os envolvidos. Continuaremos com as talks em formato diferente e o delicioso RangoBreak após cada noite. Esperamos agradar a todos os participantes."
     ]
   }
 }
