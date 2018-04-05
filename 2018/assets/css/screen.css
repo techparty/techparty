@@ -2852,6 +2852,7 @@ section.gray-section {
 }
 
 .footer-main {
+  display: flex;
   background-color: #111111;
   padding: 40px
 }
