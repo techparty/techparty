@@ -230,6 +230,12 @@
             "url": "http://www.flybyte.com.br",
             "image": "img/sponsors/flybyte.jpg",
             "bio": "Te conectar com o que você quiser, quando quiser: este é o objetivo da Flybyte. Bem mais do que permitir acesso à internet, a Equipe Fly busca, sempre a par das mais novas tecnologias disponíveis, aumentar o seu mundo de possibilidades de conexões."
+          },
+          {
+            "name": "SICOOB Ecocredi",
+            "url": "http://www.ecocredi.com.br/",
+            "image": "img/sponsors/sicoob.jpeg",
+            "bio": "O Sicoob é o maior sistema financeiro cooperativo do país. Tem todos os serviços bancários, mas não é banco. É uma cooperativa financeira, onde os clientes são os donos e por isso os resultados financeiros são divididos entre os cooperados."
           }
         ]
       }
