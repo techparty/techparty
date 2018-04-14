@@ -208,7 +208,32 @@
     "title": "Patrocinadores",
     "subtitle": "Nossos parceiros contribuem para o sucesso da TechParty",
     "link": "Seja um parceiro, entre em contato: <a href=\"mailto:techpartyfaccat@gmail.com?Subject=Parceiro\">techpartyfaccat@gmail.com</a>",
-    "items": []
+    "items": [
+      {
+        "type": "diamond",
+        "label": "Diamante",
+        "companies": [
+          {
+            "name": "LoopHOST",
+            "url": "https://www.loophost.com.br",
+            "image": "img/sponsors/loophost.jpg",
+            "bio": "A LoopHOST é uma empresa séria e estabelecida, que atende o mercado de pequenas, médias e grandes empresas de todo o Brasil. Disponibilizamos uma linha completa de soluções para a web, como hospedagem de sites e registro de domínios, além de nossa linha empresarial de cloud servers SSD, servidores dedicados e co-localização (colocation)."
+          },
+          {
+            "name": "Rocket.Chat",
+            "url": "https://rocket.chat",
+            "image": "img/sponsors/rocket-chat.jpg",
+            "bio": "Rocket.Chat é um Web Chat Server, desenvolvido 100% em JavaScript, usando o framework Meteor. Uma plataforma de comunicação open-source, ótima solução para comunidades e empresas que buscam ter seu próprio serviço de chat ou para desenvolvedores que desejam construir ou evoluir suas plataformas de chat."
+          },
+          {
+            "name": "FlyByte",
+            "url": "http://www.flybyte.com.br",
+            "image": "img/sponsors/flybyte.jpg",
+            "bio": "Te conectar com o que você quiser, quando quiser: este é o objetivo da Flybyte. Bem mais do que permitir acesso à internet, a Equipe Fly busca, sempre a par das mais novas tecnologias disponíveis, aumentar o seu mundo de possibilidades de conexões."
+          }
+        ]
+      }
+    ]
   },
 
   "manifest": {
