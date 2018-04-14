@@ -53,7 +53,7 @@
     "items": [
       {
         "name": "Prof. Dr. Paulo Ferreira",
-        "bio": "Professor Associado no Centro de Desenvolvimento Tecnológico da Universidade Federal de Pelotas (UFPel) desde 2009, é Doutor em Ciência da Computação pela UFGRS - Universidade Federal do Rio Grande do Sul (2008) e mestre, na mesma área, pela UNICAMP - Universidade Estadual de Campinas (2000). Realizou estágio pós-doutoral no Real-Time Systems Research Group at York, University of York - Reino Unido (2015). Atualmente é membro do Grupo de Pesquisa em Engenharia de Sistemas Ciber-Físicos e do Grupo de Pesquisa em Aplicações em Inteligência Artificial.",
+        "bio": "Professor na UFPel e organizador geral da Competição Brasileira de Robótica. Atua em projetos de pesquisa e desenvolvimento em engenharia de sistemas ciber-físicos inteligentes, envolvendo redes de sensores sem fio, robôs terrestres e voadores.",
         "photo": "img/speakers/paulo-ferreira.jpeg",
         "social": [
           {"name": "facebook", "url": "https://www.facebook.com/paulo.ferreira.169067"}
