@@ -3923,6 +3923,25 @@ input[type="checkbox"]:checked+.check-box-item {
   text-decoration: underline;
 }
 
+.sponsor-section .emerald {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.sponsor-section .emerald li {
+  flex-basis: 50%;
+}
+
+.sponsor-section .partner {
+  display: flex;
+  flex: 1;
+}
+
+.sponsor-section .partner li {
+  flex-basis: 50%;
+}
+
 /* MANIFEST */
 
 .manifest-section {

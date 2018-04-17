@@ -5,7 +5,7 @@ section#sponsors.sponsor-section.clients-section
     each item in sponsors.items
       h2
         strong #{ item.label }
-      ul.list-unstyled
+      ul(class=`list-unstyled ${ item.type }`)
         each sponsor in item.companies
           li
             a(href=`${ sponsor.url }`)

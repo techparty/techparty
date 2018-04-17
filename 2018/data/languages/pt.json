@@ -92,7 +92,7 @@
 
       {
         "name": "Rafael Barboza",
-        "bio": "Com quase 10 anos de experiência em desenvolvimento de software e tendo passado pelos mais diferentes contextos, de Haskell a Rust, trás consigo a proposta de linguagens como ferramental. Entusiasta de Data Science e IA hoje atua como consultor em desenvolvimento de software na Thoughtworks em Porto Alegre.",
+        "bio": "Com quase 10 anos de experiência em desenvolvimento de software e tendo passado pelos mais diferentes contextos, de Haskell a Rust, traz consigo a proposta de linguagens como ferramental. Entusiasta de Data Science e IA hoje atua como consultor em desenvolvimento de software na Thoughtworks em Porto Alegre.",
         "photo": "img/speakers/rafael-barboza.jpeg",
         "social": [
           {"name": "facebook", "url": "https://github.com/barboza"},
@@ -185,7 +185,7 @@
       },
 
       {
-        "day": "tuesday",
+        "day": "wednesday",
         "time": "Após a talk",
         "duration": "",
         "title": "RangoBreak",
@@ -235,7 +235,39 @@
             "name": "SICOOB Ecocredi",
             "url": "http://www.ecocredi.com.br/",
             "image": "img/sponsors/sicoob.jpeg",
-            "bio": "O Sicoob é o maior sistema financeiro cooperativo do país. Tem todos os serviços bancários, mas não é banco. É uma cooperativa financeira, onde os clientes são os donos e por isso os resultados financeiros são divididos entre os cooperados."
+            "bio": "Somos o SICOOB, o maior sistema financeiro cooperativo do país com mais de 4 milhões de cooperados, atuamos em 100% dos estados brasileiros com a  5ª maior rede de atendimento do país. Oferecemos aos nossos cooperados soluções financeiras com participação nos resultados, contribuindo com o desenvolvimento social das comunidades em que atuamos. Conta corrente, cartões de débito e crédito, aplicação, crédito, financiamentos, previdência, consórcios, seguros e muito mais. Conheça o Sicoob sua vida financeira diferente e completa. Faça Parte."
+          }
+        ]
+      },
+      {
+        "type": "emerald",
+        "label": "Esmeralda",
+        "companies": [
+          {
+            "name": "Sanvitron",
+            "url": "http://www.sanvitron.com.br",
+            "image": "img/sponsors/sanvitron.jpg"
+          }
+        ]
+      },
+      {
+        "type": "partner",
+        "label": "Parceiros",
+        "companies": [
+          {
+            "name": "Cimol",
+            "url": "http://www.cimol.g12.br/",
+            "image": "img/sponsors/cimol.png"
+          },
+          {
+            "name": "NFO Cimol",
+            "url": "https://github.com/Info-Cimol",
+            "image": "img/sponsors/nfo-cimol.jpeg"
+          },
+          {
+            "name": "Vigília Nerd",
+            "url": "http://vigilianerd.com.br/",
+            "image": "img/sponsors/nerd.jpg"
           }
         ]
       }
