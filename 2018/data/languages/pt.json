@@ -265,6 +265,12 @@
             "url": "https://www.umbler.com/br",
             "image": "img/sponsors/umbler.jpg",
             "bio": "A Umbler é uma startup de Cloud Hosting focada em agências e desenvolvedores, que oferece serviços como hospedagem de sites, registro de domínios, criação de contas de e-mail e banco de dados com pagamento pay as you go, ou por demanda. Com um painel de controle moderno e usual, o usuário consegue criar estruturas complexas de hospedagem com apenas alguns cliques. Além disso, o cliente tem total controle sobre suas aplicações, escalando, pausando ou cancelando os serviços em tempo real."
+          },
+          {
+            "name": "Universo Varejo",
+            "url": "http://www.universovarejo.com.br",
+            "image": "img/sponsors/universo-varejo.jpeg",
+            "bio": "Há dez anos no mercado de desenvolvimento de software, com sede em Taquara/RS, a UNIVERSO VAREJO é especializada em redes de franquias com uma plataforma completa que é utilizada pelas maiores franqueadoras do Brasil. Com soluções tecnológicas desenvolvidas para o franchising organizar, gerenciar, operar e relacionar-se com toda a rede, atende aos diversos setores do mercado como moda, alimentação e serviços especializados em todo o território nacional e no exterior."
           }
         ]
       },
