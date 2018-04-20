@@ -3762,13 +3762,15 @@ input[type="checkbox"]:checked+.check-box-item {
 }
 
 .who-section .box .img-wrap {
-  width: 220px;
-  height: 220px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   display: block;
   margin: 0 auto 50px;
   overflow: hidden;
-  position: relative
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .who-section .box .img-wrap:hover .overlay {

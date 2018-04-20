@@ -98,6 +98,16 @@
           {"name": "facebook", "url": "https://github.com/barboza"},
           {"name": "twitter", "url": "https://twitter.com/rbarboza"}
         ]
+      },
+
+      {
+        "name": "Cristiano Diedrich",
+        "bio": "Trabalho a mais de 10 anos com TI, sete deles em administração de servidores (em sua grande maioria Linux). Meu objetivo é tornar-se um profissional diferenciado no mercado, para isso estou a cada dia buscando novas tecnologias para estudar e aprimorar meus conhecimentos.",
+        "photo": "img/speakers/cristiano.jpg",
+        "social": [
+          {"name": "linkedin", "url": "https://www.linkedin.com/in/cristianodiedrich"},
+          {"name": "twitter", "url": "https://twitter.com/@mundodocker"}
+        ]
       }
     ]
   },
@@ -135,12 +145,25 @@
       {
         "day": "tuesday",
         "time": "19:45",
-        "duration": "90",
+        "duration": "50",
         "title": "VANTS e Drones",
         "description": "",
         "speakers": [
           {
             "name": "Carlos Hennig"
+          }
+        ]
+      },
+
+      {
+        "day": "tuesday",
+        "time": "20:55",
+        "duration": "50",
+        "title": "DevOps - Passado, presente e futuro",
+        "description": "A vida de quem trabalha com tecnologia muda constantemente, a cada dia surgem mais e mais soluções, metodologias e formas de melhorar o nosso trabalho. DevOps é um dos diversos termos que se destacam nos últimos anos, então nada melhor do que conversarmos um pouco sobre ele, entender como ele pode ajudar as empresas atualmente e pensarmos juntos em como será não só DevOps mas sim, nossa vida com DevOps.",
+        "speakers": [
+          {
+            "name": "Cristiano Diedrich"
           }
         ]
       },
