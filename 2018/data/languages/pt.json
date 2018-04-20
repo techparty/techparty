@@ -274,6 +274,20 @@
           }
         ]
       },
+
+      {
+        "type": "ruby",
+        "label": "Rubi",
+        "companies": [
+          {
+            "name": "CR Sistemas e Web",
+            "url": "http://cr.inf.br/site",
+            "image": "img/sponsors/cr.jpg",
+            "bio": "Nossos sistemas integrados de gestão solucionam os problemas de informação na sua empresa, utilizando a tecnologia para agilizar processos e fornecendo dados mais seguros para a melhor tomada de decisão."
+          }
+        ]
+      },
+
       {
         "type": "emerald",
         "label": "Esmeralda",
@@ -282,6 +296,11 @@
             "name": "Sanvitron",
             "url": "http://www.sanvitron.com.br",
             "image": "img/sponsors/sanvitron.jpg"
+          },
+          {
+            "name": "Infisc Inteligência Fiscal",
+            "url": "https://www.infisc.com.br",
+            "image": "img/sponsors/infisc.jpg"
           }
         ]
       },
