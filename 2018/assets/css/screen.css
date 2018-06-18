@@ -341,9 +341,10 @@ select,
 input,
 textarea,
 button {
-  font-size: 16px;
+  font-size: 16px; 
   font-size: 1rem;
   margin: 0
+  
 }
 
 select:focus,
